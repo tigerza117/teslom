@@ -55,7 +55,7 @@ export const Navbar = () => {
           />
         </Box>
         <Box display="flex">
-          <Stack direction="row" spacing={0}>
+          <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
               <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
                 {label}
@@ -64,7 +64,7 @@ export const Navbar = () => {
           </Stack>
         </Box>
         <Box display="flex">
-          <Stack direction="row" spacing={0}>
+          <Stack direction="row" spacing={2}>
             {NavbarPortal.map(({ label }, index) => (
               <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
                 {label}
