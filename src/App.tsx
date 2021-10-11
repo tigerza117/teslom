@@ -1,10 +1,9 @@
-import React from "react";
-import { Home } from "./views/Home";
+import Routes from "./configs/routes";
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Routes />
     </div>
   );
 };
