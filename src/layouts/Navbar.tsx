@@ -51,13 +51,13 @@ export const Navbar = () => {
         <Box>
           <img
             src={Logo}
-            style={{ width: "100%", height: "12.5px", padding: "20px" }}
+            style={{ width: "100%", height: "12.5px", padding: "20px"}}
           />
         </Box>
         <Box display="flex">
           <Stack direction="row" spacing={0}>
             {NavbarProducts.map(({ label }, index) => (
-              <Button size="large" key={index}>
+              <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
                 {label}
               </Button>
             ))}
@@ -66,7 +66,7 @@ export const Navbar = () => {
         <Box display="flex">
           <Stack direction="row" spacing={0}>
             {NavbarPortal.map(({ label }, index) => (
-              <Button size="large" key={index}>
+              <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
                 {label}
               </Button>
             ))}
