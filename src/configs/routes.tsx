@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import { Main } from "../layouts/Main";
 
 const Home = React.lazy(() => import("../view/home/Home"));
 
@@ -10,10 +11,12 @@ const publicRoutes = publicPaths.map(({ path, ...props }) => (
 ));
 
 export default () => (
-  <Switch>
-    <Suspense fallback={<div />}>
-      {publicRoutes}
-      {/* <Route component={NotFound} /> */}
-    </Suspense>
-  </Switch>
+  <Router>
+    <Switch>
+      <Suspense fallback={<div />}>
+        {publicRoutes}
+        {/* <Route component={NotFound} /> */}
+      </Suspense>
+    </Switch>
+  </Router>
 );
