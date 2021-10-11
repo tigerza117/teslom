@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import { Main } from "../layouts/Main";
+import { Layout } from "../layouts/Layout";
 
 const Home = React.lazy(() => import("../view/home/Home"));
 
@@ -14,8 +14,10 @@ export default () => (
   <Router>
     <Switch>
       <Suspense fallback={<div />}>
-        {publicRoutes}
-        {/* <Route component={NotFound} /> */}
+        <Layout>
+          {publicRoutes}
+          {/* <Route component={NotFound} /> */}
+        </Layout>
       </Suspense>
     </Switch>
   </Router>
