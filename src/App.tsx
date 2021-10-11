@@ -1,9 +1,20 @@
+import { createTheme, ThemeProvider } from "@mui/material";
 import Routes from "./configs/routes";
 
 const App = () => {
+  const theme = createTheme({
+    typography:{
+      fontFamily: [
+        'Montserrat',
+        'sans-serif'
+      ].join(',')
+    }
+  })
   return (
     <div>
-      <Routes />
+      <ThemeProvider theme={theme}>
+        <Routes/>
+      </ThemeProvider>
     </div>
   );
 };
