@@ -1,4 +1,5 @@
-import { Box, Button, Drawer, Stack } from "@mui/material";
+import { Box, Button, Drawer, Grid, Stack } from "@mui/material";
+import { styled } from "@mui/system";
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/logo.svg";
 
@@ -29,6 +30,14 @@ const NavbarProducts = [
   },
 ];
 
+const SideBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  minInlineSize: "245px",
+  [theme.breakpoints.down("lg")]: {
+    minInlineSize: "0px",
+  },
+}));
+
 /*
 const NavbarPortal = [
   {
@@ -53,19 +62,18 @@ export const Navbar = () => {
     const width = window.innerWidth;
     //const height = window.innerHeight;
 
-    setIsMobile(width < 1200)
+    setIsMobile(width < 1200);
   };
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-
   return (
-    <div style={{ width: "100%" }}>
+    <Box sx={{ width: "100%", position: "fixed", top: 0, left: 0 }}>
       <React.Fragment>
         <Drawer
           anchor="right"
@@ -73,26 +81,29 @@ export const Navbar = () => {
           onClose={() => {
             setOpen(false);
           }}
-          style={{backdropFilter: "blur(5px)"}}
+          style={{ backdropFilter: "blur(5px)" }}
         >
           <Box width={300}>
             <Button>Hello</Button>
           </Box>
         </Drawer>
       </React.Fragment>
-      <Box justifyContent="space-between" display="flex" padding="0 1rem">
-        <Box>
-          <img
-            src={Logo}
-            style={{ width: "100%", height: "12.5px", padding: "20px" }}
-          />
-        </Box>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        padding="0 2rem"
+      >
+        <SideBox>
+          <img src={Logo} style={{ height: "12.5px" }} />
+        </SideBox>
         <Box display={isMobile ? "none" : "flex"}>
           <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
               <Button
                 size="large"
-                style={{
+                sx={{
                   color: "#393c41",
                   fontWeight: 600,
                   textTransform: "capitalize",
@@ -104,7 +115,7 @@ export const Navbar = () => {
             ))}
           </Stack>
         </Box>
-        <Box display="flex">
+        <SideBox>
           <Stack direction="row" spacing={2} padding=".5rem 0">
             <Button
               size="large"
@@ -112,7 +123,7 @@ export const Navbar = () => {
                 color: "#393c41",
                 fontWeight: 600,
                 textTransform: "capitalize",
-                display: isMobile ? "none" : "block"
+                display: isMobile ? "none" : "block",
               }}
             >
               shop
@@ -123,7 +134,7 @@ export const Navbar = () => {
                 color: "#393c41",
                 fontWeight: 600,
                 textTransform: "capitalize",
-                display: isMobile ? "none" : "block"
+                display: isMobile ? "none" : "block",
               }}
             >
               account
@@ -142,8 +153,8 @@ export const Navbar = () => {
               Menu
             </Button>
           </Stack>
-        </Box>
-      </Box>
-    </div>
+        </SideBox>
+      </Grid>
+    </Box>
   );
 };
