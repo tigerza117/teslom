@@ -4,17 +4,14 @@ import "./app.css";
 
 const App = () => {
   const theme = createTheme({
-    typography:{
-      fontFamily: [
-        'Montserrat',
-        'sans-serif'
-      ].join(',')
-    }
-  })
+    typography: {
+      fontFamily: ["Montserrat", "sans-serif"].join(","),
+    },
+  });
   return (
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <Routes />
-      </ThemeProvider>
+    </ThemeProvider>
   );
 };
 
