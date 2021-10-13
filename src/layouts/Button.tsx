@@ -1,6 +1,22 @@
 import { Box, Button, Stack } from "@mui/material";
 import React from "react";
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import {styled} from "@mui/material/styles";
+
+const MainTitle = styled("h1")(({ theme }) => ({
+    fontWeight: 600,
+    fontSize: "3rem",
+    marginBottom: 0,
+    color: '#393c41',
+}));
+
+const MainSubTitle = styled("h5")(({ theme }) => ({
+    fontWeight: 200,
+    fontSize: "1rem",
+    "& a": {
+        color:"#393c41"
+    },
+}));
 
 export const MainButton = () => {
   return (
@@ -8,8 +24,10 @@ export const MainButton = () => {
         <Box display="flex" flexDirection="column" justifyContent="space-between" padding="0 1rem">
             <Box display="flex" justifyContent="space-evenly" textAlign="center">
                 <Stack direction="column" spacing={0}>
-                    <h1 style={{fontWeight: "600", fontSize:"3rem", marginBottom:"0", color:'#393c41'}}>Model S</h1>
-                    <h5 style={{fontWeight: "200", fontSize:"1.1rem", marginTop:"2px"}}>Order Online for <a style={{color:"#393c41"}} href="#">Touchless Delivery</a></h5>
+                    <MainTitle>Model S</MainTitle>
+                    <MainSubTitle>
+                        Order Online for <a href="#">Touchless Delivery</a>
+                    </MainSubTitle>
                 </Stack>
             </Box>
             <Box display="flex" justifyContent="space-around" flexDirection="column"  textAlign="center">
