@@ -12,11 +12,9 @@ const App = () => {
     }
   })
   return (
-    <div>
       <ThemeProvider theme={theme}>
-        <Routes/>
+      <Routes />
       </ThemeProvider>
-    </div>
   );
 };
 
