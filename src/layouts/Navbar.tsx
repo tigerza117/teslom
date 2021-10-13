@@ -73,6 +73,7 @@ export const Navbar = () => {
           onClose={() => {
             setOpen(false);
           }}
+          style={{backdropFilter: "blur(5px)"}}
         >
           <Box width={300}>
             <Button>Hello</Button>
