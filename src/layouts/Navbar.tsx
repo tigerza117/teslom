@@ -1,6 +1,7 @@
 import { Box, Button, Stack } from "@mui/material";
 import React from "react";
 import Logo from "../assets/images/logo.svg";
+import { Navside } from "./Sidebar";
 
 const NavbarProducts = [
   {
@@ -29,6 +30,7 @@ const NavbarProducts = [
   },
 ];
 
+/*
 const NavbarPortal = [
   {
     label: "Shop",
@@ -42,7 +44,7 @@ const NavbarPortal = [
     label: "Menu",
     path: "menu",
   },
-];
+];*/
 
 export const Navbar = () => {
   return (
@@ -57,20 +59,14 @@ export const Navbar = () => {
         <Box display="flex">
           <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
-              <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
+              <Button size="large" style={{color: "#393c41", fontWeight: "600", textTransform:"capitalize"}} key={index}>
                 {label}
               </Button>
             ))}
           </Stack>
         </Box>
-        <Box display="flex">
-          <Stack direction="row" spacing={2}>
-            {NavbarPortal.map(({ label }, index) => (
-              <Button size="large" style={{color: "black", fontWeight: "600", textTransform:"capitalize"}} key={index}>
-                {label}
-              </Button>
-            ))}
-          </Stack>
+        <Box display="flex" >
+          <Navside />
         </Box>
       </Box>
     </div>
