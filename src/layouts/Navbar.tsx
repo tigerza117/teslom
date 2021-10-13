@@ -1,5 +1,5 @@
 import { Box, Button, Drawer, Stack } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/logo.svg";
 
 const NavbarProducts = [
@@ -47,6 +47,23 @@ const NavbarPortal = [
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+    //const height = window.innerHeight;
+
+    setIsMobile(width < 1200)
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
     <div style={{ width: "100vw" }}>
       <React.Fragment>
@@ -69,7 +86,7 @@ export const Navbar = () => {
             style={{ width: "100%", height: "12.5px", padding: "20px" }}
           />
         </Box>
-        <Box display="flex">
+        <Box display={isMobile ? "none" : "flex"}>
           <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
               <Button
@@ -94,6 +111,7 @@ export const Navbar = () => {
                 color: "#393c41",
                 fontWeight: 600,
                 textTransform: "capitalize",
+                display: isMobile ? "none" : "block"
               }}
             >
               shop
@@ -104,6 +122,7 @@ export const Navbar = () => {
                 color: "#393c41",
                 fontWeight: 600,
                 textTransform: "capitalize",
+                display: isMobile ? "none" : "block"
               }}
             >
               account
