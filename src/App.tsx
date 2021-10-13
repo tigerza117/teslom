@@ -1,5 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import Routes from "./configs/routes";
+import "./app.css";
 
 const App = () => {
   const theme = createTheme({
