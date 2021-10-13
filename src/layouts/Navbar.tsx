@@ -65,7 +65,7 @@ export const Navbar = () => {
 
 
   return (
-    <div style={{ width: "100vw" }}>
+    <div style={{ width: "100%" }}>
       <React.Fragment>
         <Drawer
           anchor="right"
