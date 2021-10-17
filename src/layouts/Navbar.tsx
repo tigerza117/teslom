@@ -1,4 +1,4 @@
-import CloseIcon from "@mui/icons-material/Close";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { Box, Button, Drawer, Grid, Stack, Typography } from "@mui/material";
 import { fontSize, styled } from "@mui/system";
 import React, { useState, useEffect } from "react";
@@ -108,9 +108,21 @@ const SidebarList = [
     label: "Account",
     path: "account",
   },
+];
+
+const MoreList = [
+  { label: "Cybertruck", path: "cybertruck" },
   {
-    label: "More",
-    path: "more",
+    label: "roadster",
+    path: "roadster",
+  },
+  {
+    label: "Semi",
+    path: "semi",
+  },
+  {
+    label: "news",
+    path: "news",
   },
 ];
 
@@ -189,40 +201,6 @@ export const Navbar = () => {
           <Box width={280} sx={{ margin: "1rem" }}>
             <Box
               sx={{
-                width: "100%",
-                justifyContent: "flex-end",
-                display: "flex",
-              }}
-            >
-              <Button
-                sx={{
-                  ":hover": {
-                    backgroundColor: "#fff",
-                    pointerEvents: "none",
-                  },
-                  padding: 0,
-                  margin: 0,
-                }}
-              >
-                <CloseIcon
-                  sx={{
-                    ":hover": {
-                      backgroundColor: "#eee",
-                      borderRadius: "100%",
-                      pointerEvents: "visible",
-                    },
-                    width: "auto",
-                    padding: "0.1rem",
-                    color: "#000",
-                  }}
-                  onClick={() => {
-                    setOpen(false);
-                  }}
-                />
-              </Button>
-            </Box>
-            <Box
-              sx={{
                 display: "flex",
                 padding: "1rem",
                 flexDirection: "column",
@@ -233,7 +211,36 @@ export const Navbar = () => {
                   <MenuBtnText>{label}</MenuBtnText>
                 </MenuBtn>
               ))}
+              <MenuBtn>
+                <MenuBtnText>more</MenuBtnText>
+              </MenuBtn>
             </Box>
+          </Box>
+          <Box
+            sx={{
+              width: "280px",
+              backgroundColor: "#fff",
+              padding: "2rem 0",
+              display: "flex",
+              justifyContent: "flex-end",
+              position: "fixed",
+            }}
+          >
+              <CloseRoundedIcon
+                sx={{
+                  ":hover": {
+                    backgroundColor: "#eee",
+                    borderRadius: "100%",
+                    pointerEvents: "visible",
+                  },
+                  padding: ".2rem",
+                  color: "#000",
+                  transition: ".2s linear",
+                }}
+                onClick={() => {
+                  setOpen(false);
+                }}
+              />
           </Box>
         </Drawer>
       </React.Fragment>
