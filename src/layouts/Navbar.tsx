@@ -173,6 +173,15 @@ const SidebarList = [
     label: "Account",
     path: "account",
   },
+  {
+    label: "more",
+    path: "more",
+  },
+  {
+    icon: <LanguageIcon/>,
+    label: "united states",
+    path: "country",
+  },
 ];
 
 
@@ -199,7 +208,7 @@ const MenuBtnText = styled(Typography)(({ theme }) => ({
   fontSize: "0.9rem",
   color: "#393c41",
   textTransform: "capitalize",
-  fontWeight: 500,
+  fontWeight: 600,
   paddingLeft: "0.3rem",
 }));
 
@@ -240,13 +249,7 @@ export const Navbar = () => {
                 }}
               >
                 {SideFullPage.map(({icon , label }, index) => (
-                  <MenuBtn
-                  sx={{
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    verticalAlign: 'middle',
-                  }}
-                  >
+                  <MenuBtn>
                     <MenuBtnText
                     sx={{
                       "svg":{
@@ -265,9 +268,16 @@ export const Navbar = () => {
                   flexDirection: "column",
                 }}
               >
-                {SidebarList.map(({ label }, index) => (
+                {SidebarList.map(({icon, label }, index) => (
                   <MenuBtn>
-                    <MenuBtnText>{label}</MenuBtnText>
+                    <MenuBtnText
+                    sx={{
+                      "svg":{
+                        padding: ".3rem .8rem 0 0",
+                        fontSize: "1.6rem",
+                      }
+                    }}
+                    >{icon}{label}</MenuBtnText>
                   </MenuBtn>
                 ))}
               </Box>
