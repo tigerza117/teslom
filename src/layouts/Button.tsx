@@ -8,6 +8,7 @@ const MainTitle = styled(Typography)(({ theme }) => ({
   fontSize: "3rem",
   marginBottom: 0,
   color: "#393c41",
+  padding: 0,
 }));
 
 const MainSubTitle = styled("h5")(({ theme }) => ({
@@ -30,8 +31,9 @@ export const MainButton = () => {
       }}
     >
       <Box>
-        <Stack direction="column" sx={{ margin: "4rem 0" }}>
+        <Stack direction="column" spacing={-1} sx={{ margin: "4rem 0" }}>
           <MainTitle>Model 3</MainTitle>
+          <MainSubTitle>Order Online for <a href="#">Touchless Delivery</a></MainSubTitle>
         </Stack>
       </Box>
       <Box display="flex" justifyContent="space-around" flexDirection="column">
