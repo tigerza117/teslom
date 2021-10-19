@@ -1,5 +1,6 @@
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import { Box, Button, Drawer, Grid, Stack, Typography } from "@mui/material";
+import LanguageIcon from '@mui/icons-material/Language';
+import { Box, Button, Drawer, Grid, Icon, Stack, Typography } from "@mui/material";
 import { fontSize, styled } from "@mui/system";
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/logo.svg";
@@ -28,6 +29,70 @@ const NavbarProducts = [
   {
     label: "Solar Panels",
     path: "solar-panel",
+  },
+];
+
+const SideFullPage = [
+  {
+    label: "Existing Inventory",
+    path: "existing-inventory",
+  },
+  {
+    label: "Used Inventory",
+    path: "used-inventory",
+  },
+  {
+    label: "Trade-in",
+    path: "trade-in",
+  },
+  {
+    label: "Test Drive",
+    path: "test-drive",
+  },
+  {
+    label: "cybertruck",
+    path: "cybertruck",
+  },
+  {
+    label: "roadster",
+    path: "roadster",
+  },
+  {
+    label: "semi",
+    path: "semi",
+  },
+  {
+    label: "Charging",
+    path: "charging",
+  },
+  {
+    label: "powerwall",
+    path: "powerwall",
+  },
+  {
+    label: "commercial energy",
+    path: "commercial-energy",
+  },
+  {
+    label: "utilities",
+    path: "utilities",
+  },
+  {
+    label: "find us",
+    path: "find-us",
+  },
+  {
+    label: "support",
+    path: "support",
+  },
+  {
+    label: "investor relations",
+    path: "investor-relations",
+  },
+  {
+    icon: <LanguageIcon/>,
+    label: "united states",
+    path: "country",
   },
 ];
 
@@ -110,21 +175,6 @@ const SidebarList = [
   },
 ];
 
-const MoreList = [
-  { label: "Cybertruck", path: "cybertruck" },
-  {
-    label: "roadster",
-    path: "roadster",
-  },
-  {
-    label: "Semi",
-    path: "semi",
-  },
-  {
-    label: "news",
-    path: "news",
-  },
-];
 
 const SideBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -152,22 +202,6 @@ const MenuBtnText = styled(Typography)(({ theme }) => ({
   fontWeight: 500,
   paddingLeft: "0.3rem",
 }));
-
-/*
-const NavbarPortal = [
-  {
-    label: "Shop",
-    path: "shop",
-  },
-  {
-    label: "Account",
-    path: "account",
-  },
-  {
-    label: "Menu",
-    path: "menu",
-  },
-];*/
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -199,22 +233,44 @@ export const Navbar = () => {
           style={{ backdropFilter: "blur(5px)" }}
         >
           <Box width={280} sx={{ margin: "1rem" }}>
-            <Box
-              sx={{
-                display: "flex",
-                padding: "5rem 1rem",
-                flexDirection: "column",
-              }}
-            >
-              {SidebarList.map(({ label }, index) => (
-                <MenuBtn>
-                  <MenuBtnText>{label}</MenuBtnText>
-                </MenuBtn>
-              ))}
-              <MenuBtn>
-                <MenuBtnText>more</MenuBtnText>
-              </MenuBtn>
-            </Box>
+              <Box  display={isMobile ? "none" : "flex"}/*100% width display*/
+                sx={{
+                  padding: "5rem 1rem",
+                  flexDirection: "column",
+                }}
+              >
+                {SideFullPage.map(({icon , label }, index) => (
+                  <MenuBtn
+                  sx={{
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    verticalAlign: 'middle',
+                  }}
+                  >
+                    <MenuBtnText
+                    sx={{
+                      "svg":{
+                        padding: ".3rem .8rem 0 0",
+                        fontSize: "1.6rem",
+                      }
+                    }}>{icon}{label}</MenuBtnText>
+                  </MenuBtn>
+                ))}
+
+              </Box>
+
+              <Box  display={isMobile ? "flex" : "none"}  /*mobile display*/
+                sx={{
+                  padding: "5rem 1rem",
+                  flexDirection: "column",
+                }}
+              >
+                {SidebarList.map(({ label }, index) => (
+                  <MenuBtn>
+                    <MenuBtnText>{label}</MenuBtnText>
+                  </MenuBtn>
+                ))}
+              </Box>
           </Box>
           <Box
             sx={{
