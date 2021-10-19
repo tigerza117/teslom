@@ -46,10 +46,12 @@ export const MainButton = () => {
             <Button
               variant="contained"
               style={{
-                padding: ".6rem 5.2rem",
+                fontSize: ".8rem",
+                padding: ".55rem 4.6rem",
                 borderRadius: "25px",
                 backgroundColor: "black",
-                opacity: "0.8",
+                opacity: ".75",
+                boxShadow: "none",
               }}
             >
               CUSTOM ORDER
@@ -57,11 +59,13 @@ export const MainButton = () => {
             <Button
               variant="contained"
               style={{
-                padding: ".5rem 4.2rem",
+                fontSize: ".8rem",
+                padding: ".35rem 3.6rem",
                 borderRadius: "25px",
                 backgroundColor: "white",
                 color: "black",
-                opacity: "0.8",
+                opacity: ".75",
+                boxShadow: "none",
               }}
             >
               EXISTING INVENTORY
