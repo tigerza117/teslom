@@ -202,7 +202,7 @@ export const Navbar = () => {
             <Box
               sx={{
                 display: "flex",
-                padding: "1rem",
+                padding: "5rem 1rem",
                 flexDirection: "column",
               }}
             >
