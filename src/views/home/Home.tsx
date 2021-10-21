@@ -1,6 +1,7 @@
 import { Box, Button, Stack, styled, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import gsap, { Power2 } from "gsap";
 
 const MainTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
@@ -27,11 +28,41 @@ const Home: React.FC = () => {
   );
 };
 
+const GoAway = styled(ExpandMoreRoundedIcon)(({ theme }) => ({
+  fontSize: "3.5rem",
+  padding: ".6rem",
+  animation: `loopUpDown 1000ms infinite`,
+  "@keyframes loopUpDown": {
+    "80%": {
+      opacity: 1,
+      transform: "translate3d(0,20px,0)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translate3d(0,0px,0)",
+    },
+  },
+}));
+
 interface ISession {
   backgroundUrl: string;
 }
 
 const Section: React.FC<ISession> = ({ backgroundUrl }) => {
+  const [state, setState] = useState({ yyy: "" });
+  let x = { counter: 0 };
+  useEffect(() => {
+    gsap.timeline({ paused: false }).to(x, {
+      duration: 1,
+      counter: 3.1,
+      ease: Power2.easeIn,
+      onUpdate: () => {
+        setState({ yyy: x.counter.toFixed(1) });
+      },
+    });
+    return () => {};
+  }, []);
+
   return (
     <Box
       sx={{
@@ -53,7 +84,7 @@ const Section: React.FC<ISession> = ({ backgroundUrl }) => {
       >
         <Box>
           <Stack direction="column" spacing={-1} sx={{ margin: "4rem 0" }}>
-            <MainTitle>Model 3</MainTitle>
+            <MainTitle>Model {state.yyy}</MainTitle>
             <MainSubTitle>
               Order Online for <a href="#">Touchless Delivery</a>
             </MainSubTitle>
@@ -100,9 +131,7 @@ const Section: React.FC<ISession> = ({ backgroundUrl }) => {
             </Stack>
           </Box>
           <span>
-            <ExpandMoreRoundedIcon
-              style={{ fontSize: "3.5rem", padding: ".6rem" }}
-            />
+            <GoAway />
           </span>
         </Box>
       </Box>
