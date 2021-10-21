@@ -1,6 +1,6 @@
 import { Button, Drawer, Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
-import { useLayoutContext } from "../contexts/LayoutContext";
+import { useLayoutContext } from "@contexts/LayoutContext";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import LanguageIcon from "@mui/icons-material/Language";
 import { DrawerBarList } from "@constants/layout";

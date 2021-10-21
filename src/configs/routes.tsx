@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import { Layout } from "../layouts/Layout";
+import { Layout } from "@layouts/Layout";
 
 const Home = React.lazy(() => import("@views/home/Home"));
 

@@ -1,8 +1,8 @@
 import { NavbarProducts } from "@constants/layout";
 import { Box, Button, Grid, Stack } from "@mui/material";
 import { styled } from "@mui/system";
-import Logo from "../assets/images/logo.svg";
-import { useLayoutContext } from "../contexts/LayoutContext";
+import Logo from "@assets/images/logo.svg";
+import { useLayoutContext } from "@contexts/LayoutContext";
 import { DrawerBar } from "./DrawerBar";
 
 const SideBox = styled(Box)(({ theme }) => ({
