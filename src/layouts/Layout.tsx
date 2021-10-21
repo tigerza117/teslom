@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { Box } from "@mui/system";
-import LayoutContext from "../contexts/LayoutContext";
+import LayoutContext from "@contexts/LayoutContext";
 
 export const Layout: React.FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
