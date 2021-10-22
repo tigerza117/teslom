@@ -1,11 +1,29 @@
 import { NavbarProducts } from "@constants/layout";
-import { Box, Button, Grid, Stack } from "@mui/material";
+import { Box, Button, Fade, Grid, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 import Logo from "@assets/images/logo.svg";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { DrawerBar } from "./DrawerBar";
+import { forwardRef, useEffect, useRef } from "react";
+import gsap from "gsap";
 
-const SideBox = styled(Box)(({ theme }) => ({
+interface CustomProps {}
+
+const NavbarWrapper = styled(Box)(({ theme }) => ({
+  width: "100%",
+  position: "fixed",
+  left: 0,
+  opacity: 0,
+  zIndex: 999,
+}));
+
+const NavbarProductsWrapper = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
+}));
+
+const SideWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   minInlineSize: "245px",
   [theme.breakpoints.down("lg")]: {
@@ -13,11 +31,31 @@ const SideBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+const Btn = styled(Button)<{ mobileHide?: boolean }>(
+  ({ theme, mobileHide }) => ({
+    color: "#393c41",
+    fontWeight: 600,
+    textTransform: "capitalize",
+    [theme.breakpoints.down("lg")]: {
+      display: mobileHide ? "none" : "",
+    },
+  })
+);
+
 export const Navbar = () => {
-  const { isMobile, toggleDrawer } = useLayoutContext();
+  const { toggleDrawer } = useLayoutContext();
+  const ref = useRef(null);
+
+  useEffect(() => {
+    gsap.to(ref.current, {
+      duration: 0.8,
+      opacity: 1,
+    });
+    return () => {};
+  }, []);
 
   return (
-    <Box sx={{ width: "100%", position: "fixed", top: 0, left: 0 }}>
+    <NavbarWrapper ref={ref}>
       <DrawerBar />
       <Grid
         container
@@ -26,66 +64,37 @@ export const Navbar = () => {
         alignItems="center"
         padding="0 2rem"
       >
-        <SideBox>
+        <SideWrapper>
           <img src={Logo} style={{ height: "12.5px" }} />
-        </SideBox>
-        <Box display={isMobile ? "none" : "flex"}>
+        </SideWrapper>
+        <NavbarProductsWrapper>
           <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
-              <Button
-                size="large"
-                sx={{
-                  color: "#393c41",
-                  fontWeight: 600,
-                  textTransform: "capitalize",
-                }}
-                key={index}
-              >
+              <Btn size="large" key={index}>
                 {label}
-              </Button>
+              </Btn>
             ))}
           </Stack>
-        </Box>
-        <SideBox>
+        </NavbarProductsWrapper>
+        <SideWrapper>
           <Stack direction="row" spacing={2} padding=".5rem 0">
-            <Button
-              size="large"
-              style={{
-                color: "#393c41",
-                fontWeight: 600,
-                textTransform: "capitalize",
-                display: isMobile ? "none" : "block",
-              }}
-            >
+            <Btn size="large" mobileHide={true}>
               shop
-            </Button>
-            <Button
-              size="large"
-              style={{
-                color: "#393c41",
-                fontWeight: 600,
-                textTransform: "capitalize",
-                display: isMobile ? "none" : "block",
-              }}
-            >
+            </Btn>
+            <Btn size="large" mobileHide={true}>
               account
-            </Button>
-            <Button
+            </Btn>
+            <Btn
               size="large"
-              style={{
-                color: "#393c41",
-                fontWeight: 600,
-                textTransform: "capitalize",
-              }}
               onClick={() => {
                 toggleDrawer();
               }}
             >
               Menu
-            </Button>
+            </Btn>
           </Stack>
-        </SideBox>
+        </SideWrapper>
       </Grid>
-    </Box>
+    </NavbarWrapper>
   );
 };
