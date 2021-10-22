@@ -157,8 +157,8 @@ const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
     >
       <FixedWrapper ref={refFixed}>
         <TitleWrapper>
-          <Box>
-            <Stack direction="column" spacing={-1} sx={{ margin: "4rem 0" }}>
+          <Box sx={{ marginTop: "16vh" }}>
+            <Stack direction="column" spacing={-1}>
               <MainTitle ref={refTitle}>{title}</MainTitle>
               <MainSubTitle ref={refSubTitle}>{subTitle}</MainSubTitle>
             </Stack>
