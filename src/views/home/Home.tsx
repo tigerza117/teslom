@@ -2,10 +2,7 @@ import { Box, Button, Stack, styled, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import gsap, { Power2 } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ProductList } from "@constants/home";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
