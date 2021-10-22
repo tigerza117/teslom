@@ -173,7 +173,10 @@ const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
                 margin: "auto",
               }}
             >
-              <Stack direction="row" spacing={4} padding="1rem">
+              <Stack
+                direction={{ xs: "column", md: "row" }}
+                spacing={{ xs: 2, md: 4 }}
+              >
                 <OrderBtn>CUSTOM ORDER</OrderBtn>
                 <InventoryBtn>EXISTING INVENTORY</InventoryBtn>
               </Stack>
