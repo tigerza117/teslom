@@ -108,9 +108,4 @@ export const DrawerBarList = [
     label: "more",
     path: "more",
   },
-  {
-    icon: <LanguageIcon />,
-    label: "united states",
-    path: "country",
-  },
 ];
