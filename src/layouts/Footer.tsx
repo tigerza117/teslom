@@ -11,18 +11,24 @@ const LinkBtn = styled(Button)(({ theme }) => ({
   color: "#5D5C61",
 }));
 
+const ResponsiveLinkBtn = styled(LinkBtn)(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
+}));
+
 export default function Footer() {
   return (
     <Wrapper>
       <Box sx={{ display: "flex" }}>
-        <Stack direction="row" sx={{ m: "auto" }}>
+        <Stack direction={{ xs: "column", md: "row" }} sx={{ m: "auto" }}>
           <LinkBtn>Tesla 2021</LinkBtn>
           <LinkBtn>Privacy & Legal</LinkBtn>
-          <LinkBtn>Contact</LinkBtn>
+          <ResponsiveLinkBtn>Contact</ResponsiveLinkBtn>
           <LinkBtn>Careers</LinkBtn>
           <LinkBtn>News</LinkBtn>
-          <LinkBtn>Engage</LinkBtn>
-          <LinkBtn>Locations</LinkBtn>
+          <ResponsiveLinkBtn>Engage</ResponsiveLinkBtn>
+          <ResponsiveLinkBtn>Locations</ResponsiveLinkBtn>
         </Stack>
       </Box>
     </Wrapper>
