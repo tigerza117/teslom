@@ -50,8 +50,14 @@ const MainSubTitle = styled("h5")(({ theme }) => ({
 const Home: React.FC = () => {
   return (
     <>
-      {ProductList.map(({ title, subTitle, image }) => (
-        <Section title={title} subTitle={subTitle} image={image} />
+      {ProductList.map(({ title, subTitle, image }, index) => (
+        <Section
+          key={index}
+          index={index}
+          title={title}
+          subTitle={subTitle}
+          image={image}
+        />
       ))}
     </>
   );
@@ -59,18 +65,22 @@ const Home: React.FC = () => {
 
 const ExpandBtn = styled(ExpandMoreRoundedIcon)(({ theme }) => ({
   fontSize: "3.5rem",
-  padding: ".6rem",
+  padding: ".5rem",
   animation: `loopUpDown 1000ms infinite`,
   "@keyframes loopUpDown": {
     "80%": {
       opacity: 1,
-      transform: "translate3d(0,20px,0)",
+      transform: "translate3d(0,10px,0)",
     },
     "100%": {
       opacity: 1,
       transform: "translate3d(0,0px,0)",
     },
   },
+}));
+
+const MockExpandBtn = styled(ExpandBtn)(({ theme }) => ({
+  color: "transparent",
 }));
 
 const OrderBtn = styled(Button)(({ theme }) => ({
@@ -97,9 +107,10 @@ interface ISession {
   image: string;
   title: string;
   subTitle: string;
+  index: number;
 }
 
-const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
+const Section: React.FC<ISession> = ({ image, title, subTitle, index }) => {
   const refWrapper = useRef(null);
   const refFixed = useRef(null);
   const refTitle = useRef(null);
@@ -172,9 +183,7 @@ const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
                 <InventoryBtn>EXISTING INVENTORY</InventoryBtn>
               </Stack>
             </Box>
-            <Box>
-              <ExpandBtn />
-            </Box>
+            <Box>{index === 0 ? <ExpandBtn /> : <MockExpandBtn />}</Box>
           </Box>
         </TitleWrapper>
       </FixedWrapper>
