@@ -7,8 +7,6 @@ import { DrawerBar } from "./DrawerBar";
 import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
 
-interface CustomProps {}
-
 const NavbarWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   position: "fixed",
@@ -31,16 +29,17 @@ const SideWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Btn = styled(Button)<{ mobileHide?: boolean }>(
-  ({ theme, mobileHide }) => ({
-    color: "#393c41",
-    fontWeight: 600,
-    textTransform: "capitalize",
-    [theme.breakpoints.down("lg")]: {
-      display: mobileHide ? "none" : "",
-    },
-  })
-);
+const Btn = styled(Button)(({ theme }) => ({
+  color: "#393c41",
+  fontWeight: 600,
+  textTransform: "capitalize",
+}));
+
+const ResponsiveBtn = styled(Btn)(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
+}));
 
 export const Navbar = () => {
   const { toggleDrawer } = useLayoutContext();
@@ -70,20 +69,16 @@ export const Navbar = () => {
         <NavbarProductsWrapper>
           <Stack direction="row" spacing={2}>
             {NavbarProducts.map(({ label }, index) => (
-              <Btn size="large" key={index}>
+              <ResponsiveBtn size="large" key={index}>
                 {label}
-              </Btn>
+              </ResponsiveBtn>
             ))}
           </Stack>
         </NavbarProductsWrapper>
         <SideWrapper>
           <Stack direction="row" spacing={2} padding=".5rem 0">
-            <Btn size="large" mobileHide={true}>
-              shop
-            </Btn>
-            <Btn size="large" mobileHide={true}>
-              account
-            </Btn>
+            <ResponsiveBtn size="large">shop</ResponsiveBtn>
+            <ResponsiveBtn size="large">account</ResponsiveBtn>
             <Btn
               size="large"
               onClick={() => {
