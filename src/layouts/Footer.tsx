@@ -12,7 +12,7 @@ const LinkBtn = styled(Button)(({ theme }) => ({
 }));
 
 const ResponsiveLinkBtn = styled(LinkBtn)(({ theme }) => ({
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down("md")]: {
     display: "none",
   },
 }));
