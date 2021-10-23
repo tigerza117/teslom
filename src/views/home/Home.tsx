@@ -112,13 +112,8 @@ const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
         scrub: true,
         start: "40% 60%",
         end: "60% 60%",
-        markers: false,
-        onEnter: () => {
-          console.log("e");
-        },
       },
       display: "inline",
-      duration: 1,
       opacity: 1,
     });
     gsap.to(refFixed.current, {
@@ -127,7 +122,6 @@ const Section: React.FC<ISession> = ({ image, title, subTitle }) => {
         scrub: true,
         start: "40% 0%",
         end: "60% 0%",
-        markers: false,
       },
       opacity: 0,
     });
