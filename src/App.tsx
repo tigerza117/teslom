@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
 import Routes from "./configs/routes";
 import "./app.css";
+import { useEffect } from "react";
 
 const App = () => {
   const theme = responsiveFontSizes(
@@ -10,6 +11,10 @@ const App = () => {
       },
     })
   );
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    return () => {};
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Routes />
