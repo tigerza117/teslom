@@ -77,6 +77,9 @@ export const DrawerBar = () => {
               key={index}
               {...({ to: "/" + path } as any)}
               component={Link}
+              onClick={() => {
+                toggleDrawer();
+              }}
             >
               <TextLink>{label}</TextLink>
             </MenuLink>
