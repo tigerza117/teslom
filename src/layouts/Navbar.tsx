@@ -65,7 +65,9 @@ export const Navbar = () => {
         padding="0 2rem"
       >
         <SideWrapper>
-          <img src={Logo} style={{ height: "12.5px" }} />
+          <Link to="/">
+            <img src={Logo} style={{ height: "12.5px" }} />
+          </Link>
         </SideWrapper>
         <NavbarProductsWrapper>
           <Stack direction="row" spacing={2}>
