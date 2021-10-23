@@ -3,6 +3,7 @@ import { Box, styled } from "@mui/system";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { DrawerBarList } from "@constants/layout";
+import { Link } from "react-router-dom";
 
 const DrawerWrapper = styled(Box)(({ theme }) => ({
   margin: "1rem",
@@ -14,7 +15,7 @@ const MenuWrapper = styled(Box)(({ theme }) => ({
   flexDirection: "column",
 }));
 
-const Btn = styled(Button)(({ theme }) => ({
+const MenuLink = styled(Button)(({ theme }) => ({
   width: "100%",
   textAlign: "left",
   justifyContent: "flex-start",
@@ -25,7 +26,7 @@ const Btn = styled(Button)(({ theme }) => ({
   margin: "0.25rem 0",
 }));
 
-const BtnText = styled(Typography)(({ theme }) => ({
+const TextLink = styled(Typography)(({ theme }) => ({
   fontSize: "0.9rem",
   color: "#393c41",
   textTransform: "capitalize",
@@ -71,10 +72,14 @@ export const DrawerBar = () => {
     >
       <DrawerWrapper>
         <MenuWrapper>
-          {DrawerBarList.map(({ label }, index) => (
-            <Btn key={index}>
-              <BtnText>{label}</BtnText>
-            </Btn>
+          {DrawerBarList.map(({ label, path }, index) => (
+            <MenuLink
+              key={index}
+              {...({ to: "/" + path } as any)}
+              component={Link}
+            >
+              <TextLink>{label}</TextLink>
+            </MenuLink>
           ))}
         </MenuWrapper>
       </DrawerWrapper>
