@@ -6,6 +6,7 @@ import { useLayoutContext } from "@contexts/LayoutContext";
 import { DrawerBar } from "./DrawerBar";
 import { forwardRef, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const NavbarWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -68,8 +69,13 @@ export const Navbar = () => {
         </SideWrapper>
         <NavbarProductsWrapper>
           <Stack direction="row" spacing={2}>
-            {NavbarProducts.map(({ label }, index) => (
-              <ResponsiveBtn size="large" key={index}>
+            {NavbarProducts.map(({ label, path }, index) => (
+              <ResponsiveBtn
+                size="large"
+                key={index}
+                {...({ to: "/" + path } as any)}
+                component={Link}
+              >
                 {label}
               </ResponsiveBtn>
             ))}
