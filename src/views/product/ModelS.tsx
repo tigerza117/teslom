@@ -3,6 +3,7 @@ import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { height } from "@mui/system";
 import React from "react";
+import Chat from "@layouts/ChatSupport";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
@@ -171,6 +172,7 @@ const BtnFeatTitle = styled("h5")(({ theme }) => ({
 function ModelS() {
   return (
     <>
+      <Chat />
       <BackgroundWrapper
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/32e5e0f3-5c04-42ef-8f8f-c6b1c26f8a9e/bvlatuR/std/2880x1800/ms-main-hero-desktop)`,
@@ -559,7 +561,9 @@ function ModelS() {
                 padding: "0 0 12rem 0",
                 color: "#5c5d61",
               }}
-            >* With rollout subtracted</TriBtnContent>
+            >
+              * With rollout subtracted
+            </TriBtnContent>
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
@@ -569,10 +573,35 @@ function ModelS() {
           loading="lazy"
           style={{
             width: "100%",
-            height: "75vh",
+            height: "70vh",
             objectFit: "cover",
+            objectPosition: "0 60%",
           }}
         />
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ margin: "-11rem auto", padding: "1.8rem 0" }}>
+            <Stack direction="row" spacing={12} textAlign="center">
+              <Box>
+                <Stack direction="column" margin="3rem 0">
+                  <FeatureSubTitle>Performance-focused chassis</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack direction="column" spacing={0.5}>
+                  <FeatureTitle style={{ textAlign: "left" }}>
+                    0.208 <i style={{fontSize:"1rem"}}>Cd</i>
+                  </FeatureTitle>
+                  <FeatureSubTitle>Lowest-drag car on Earth</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack direction="column" margin="3rem 0">
+                  <FeatureSubTitle>Refined exterior styling</FeatureSubTitle>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+        </Box>
         <Box sx={{ padding: "2rem 0" }}>
           <Stack
             direction="row"
