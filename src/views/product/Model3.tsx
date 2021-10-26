@@ -23,7 +23,7 @@ const MainTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   fontSize: "2.5rem",
   marginBottom: 0,
-  color: "#181b21",
+  color: "white",
   padding: 0,
   transform: "translateY(20px)",
 }));
@@ -145,14 +145,13 @@ function Model3() {
     <>
       <BackgroundWrapper
         sx={{
-          backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/32e5e0f3-5c04-42ef-8f8f-c6b1c26f8a9e/bvlatuR/std/2880x1800/ms-main-hero-desktop)`,
+          backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D)`,
         }}
       >
         <TitleWrapper>
           <Box sx={{ marginTop: "12vh" }}>
             <Stack direction="column" spacing={-1}>
-              <MainTitle>Model S</MainTitle>
-              <MainSubTitle>Plaid</MainSubTitle>
+              <MainTitle>Model 3</MainTitle>
             </Stack>
           </Box>
           <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>
@@ -188,11 +187,40 @@ function Model3() {
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        sx={{
-          backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/32e5e0f3-5c04-42ef-8f8f-c6b1c26f8a9e/bvlatuR/std/2880x1800/ms-main-hero-desktop)`,
-        }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{backgroundColor:"#f5f5f5"}}>
+        <Box>
+          <img
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
+            alt=""
+            loading="lazy"
+            style={{
+                float: "right",
+                width: "67.5vw",
+                height: "100vh",
+                objectFit: "cover",
+                objectPosition: "-15rem",
+                paddingRight: "1.5rem",
+            }}
+          />
+        </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{backgroundColor:"#f5f5f5"}}>
+        <Box>
+          <img
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
+            alt=""
+            loading="lazy"
+            style={{
+                float: "right",
+                width: "67.5vw",
+                height: "100vh",
+                objectFit: "cover",
+                objectPosition: "-15rem",
+                paddingRight: "1.5rem",
+            }}
+          />
+        </Box>
+      </BackgroundWrapper>
     </>
   );
 }
