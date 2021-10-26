@@ -46,13 +46,23 @@ const FeatureSubTitle = styled(Typography)(({ theme }) => ({
   fontSize: "0.8rem",
 }));
 
-const OrderBtn = styled(Button)(({ theme }) => ({
+const OutlineBtnWhite = styled(Button)(({ theme }) => ({
   fontSize: ".8rem",
   padding: ".3rem 2.5rem",
   borderRadius: "25px",
   border: "3px solid white",
   boxShadow: "none",
   color: "white",
+  marginTop: ".8rem",
+}));
+
+const OutlineBtnBlack = styled(Button)(({ theme }) => ({
+  fontSize: ".8rem",
+  padding: ".3rem 2.5rem",
+  borderRadius: "25px",
+  border: "3px solid black",
+  boxShadow: "none",
+  color: "black",
   marginTop: ".8rem",
 }));
 
@@ -107,6 +117,28 @@ const InfoSubTitle = styled(Typography)(({ theme }) => ({
   fontSize: "0.9rem",
 }));
 
+const MainContent = styled(Typography)(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "1.8rem",
+  margin: 0,
+  color: "#181b21",
+  padding: 0,
+}));
+
+const SubTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 200,
+  fontSize: "1.2rem",
+  margin: "0",
+  padding: "0",
+}));
+
+const SubContent = styled("h5")(({ theme }) => ({
+  fontWeight: 400,
+  fontSize: "1rem",
+  margin: "0",
+  padding: "0",
+}));
+
 function ModelS() {
   return (
     <>
@@ -149,7 +181,7 @@ function ModelS() {
                 </Stack>
               </Box>
               <Box>
-                <OrderBtn>ORDER NOW</OrderBtn>
+                <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
               </Box>
             </Stack>
           </Box>
@@ -272,7 +304,7 @@ function ModelS() {
           </Stack>
         </InfoFeature>
       </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto"}}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06e710a1-0428-45e9-8945-580e80d77b55/bvlatuR/std/2880x1800/MS-Performance-Hero-Desktop"
           loading="lazy"
@@ -282,6 +314,51 @@ function ModelS() {
             objectFit: "cover",
           }}
         />
+        <Box sx={{display:"flex", justifyContent:"center"}}>
+          <Box sx={{ margin: "-10rem auto", padding: "1.8rem 0" }}>
+            <Stack direction="row" spacing={8}>
+              <Box>
+                <Stack direction="column" spacing={1}>
+                  <FeatureTitle>1,020 hp</FeatureTitle>
+                  <FeatureSubTitle>Peak power</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack direction="column" spacing={1}>
+                  <FeatureTitle>9.23 s</FeatureTitle>
+                  <FeatureSubTitle>@155 mph 1/4 mile</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack direction="column" spacing={1}>
+                  <FeatureTitle>1.99 s</FeatureTitle>
+                  <FeatureSubTitle>0-60mph</FeatureSubTitle>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+        </Box>
+        <Box sx={{ padding:"3rem 0 6rem 0"}}>
+          <Stack direction="row" spacing={15} sx={{display:"flex", justifyContent:"center"}}>
+            <Box>
+              <Stack direction="column">
+                <SubTitle>Plaid</SubTitle>
+                <MainContent>Beyond Ludicrous</MainContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                  With the longest range and quickest acceleration of any electric vehicle in
+                 production, Model S Plaid is the highest performing sedan ever built.
+                 Both Long Range and Plaid powertrains, with updated battery architecture,
+                 are capable of back-to-back, consistent 1/4 mile runs.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "#f5f5f5" }}
