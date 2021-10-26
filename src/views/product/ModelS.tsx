@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { ImageAspectRatio } from "@mui/icons-material";
-import { Box, Button, Stack, TableCell, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
