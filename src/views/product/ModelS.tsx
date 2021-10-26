@@ -316,7 +316,7 @@ function ModelS() {
         />
         <Box sx={{display:"flex", justifyContent:"center"}}>
           <Box sx={{ margin: "-10rem auto", padding: "1.8rem 0" }}>
-            <Stack direction="row" spacing={8}>
+            <Stack direction="row" spacing={8} textAlign="center">
               <Box>
                 <Stack direction="column" spacing={1}>
                   <FeatureTitle>1,020 hp</FeatureTitle>
