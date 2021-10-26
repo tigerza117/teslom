@@ -305,7 +305,7 @@ function ModelS() {
           </Stack>
         </InfoFeature>
       </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto"}}>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06e710a1-0428-45e9-8945-580e80d77b55/bvlatuR/std/2880x1800/MS-Performance-Hero-Desktop"
           loading="lazy"
@@ -315,7 +315,7 @@ function ModelS() {
             objectFit: "cover",
           }}
         />
-        <Box sx={{display:"flex", justifyContent:"center"}}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box sx={{ margin: "-10rem auto", padding: "1.8rem 0" }}>
             <Stack direction="row" spacing={8} textAlign="center">
               <Box>
@@ -333,14 +333,18 @@ function ModelS() {
               <Box>
                 <Stack direction="column" spacing={1}>
                   <FeatureTitle>1.99 s</FeatureTitle>
-                  <FeatureSubTitle>0-60mph</FeatureSubTitle>
+                  <FeatureSubTitle>0-60 mph</FeatureSubTitle>
                 </Stack>
               </Box>
             </Stack>
           </Box>
         </Box>
-        <Box sx={{ padding:"3rem 0 6rem 0"}}>
-          <Stack direction="row" spacing={15} sx={{display:"flex", justifyContent:"center"}}>
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={15}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
             <Box>
               <Stack direction="column">
                 <SubTitleContent>Plaid</SubTitleContent>
@@ -352,10 +356,11 @@ function ModelS() {
             </Box>
             <Box width="45%">
               <SubContent>
-                  With the longest range and quickest acceleration of any electric vehicle in
-                 production, Model S Plaid is the highest performing sedan ever built.
-                 Both Long Range and Plaid powertrains, with updated battery architecture,
-                 are capable of back-to-back, consistent 1/4 mile runs.
+                With the longest range and quickest acceleration of any electric
+                vehicle in production, Model S Plaid is the highest performing
+                sedan ever built. Both Long Range and Plaid powertrains, with
+                updated battery architecture, are capable of back-to-back,
+                consistent 1/4 mile runs.
               </SubContent>
             </Box>
           </Stack>
@@ -364,7 +369,7 @@ function ModelS() {
       <BackgroundWrapper
         style={{ backgroundColor: "#f5f5f5" }}
       ></BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "white", height:"auto"}}>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06af56e3-91c4-4bad-8d2e-0a24f64ec2a8/bvlatuR/std/2880x1800/MS-Exterior-Hero-Desktop"
           loading="lazy"
@@ -374,8 +379,12 @@ function ModelS() {
             objectFit: "cover",
           }}
         />
-        <Box sx={{ padding:"2rem 0"}}>
-          <Stack direction="row" spacing={5} sx={{display:"flex", justifyContent:"center"}}>
+        <Box sx={{ padding: "2rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={5}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
             <Box>
               <Stack direction="column">
                 <SubTitleContent>Exterior</SubTitleContent>
@@ -387,17 +396,16 @@ function ModelS() {
             </Box>
             <Box width="45%">
               <SubContent>
-              With the lowest drag coefficient on Earth and unmatched efficiency, Model S is
-              built for speed and range. Together with a wider body and chassis, these elements
-              help you go down the straight or around corners quicker than ever.
+                With the lowest drag coefficient on Earth and unmatched
+                efficiency, Model S is built for speed and range. Together with
+                a wider body and chassis, these elements help you go down the
+                straight or around corners quicker than ever.
               </SubContent>
             </Box>
           </Stack>
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black", height: "auto" }}
-      >
+      <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
         <InfoFeature>
           <Stack direction="row">
             <InfoContainer>
@@ -412,8 +420,8 @@ function ModelS() {
               >
                 <InfoTitle>Responsive Performance</InfoTitle>
                 <InfoSubTitle>
-                Staggered, performance-focused wheels and tires keep the car planted and
-                 transfer even more power down to the road.
+                  Staggered, performance-focused wheels and tires keep the car
+                  planted and transfer even more power down to the road.
                 </InfoSubTitle>
               </Stack>
             </InfoContainer>
@@ -441,7 +449,8 @@ function ModelS() {
               >
                 <InfoTitle>Optimized Aerodynamics</InfoTitle>
                 <InfoSubTitle>
-                Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.
+                  Attention to detail on all exterior surfaces makes Model S the
+                  most aerodynamic production car on Earth.
                 </InfoSubTitle>
               </Stack>
             </InfoContainer>
@@ -459,7 +468,8 @@ function ModelS() {
               >
                 <InfoTitle>Refined Styling</InfoTitle>
                 <InfoSubTitle>
-                Exterior design combines an iconic look with elegant proportions.
+                  Exterior design combines an iconic look with elegant
+                  proportions.
                 </InfoSubTitle>
               </Stack>
             </InfoContainer>
@@ -472,15 +482,46 @@ function ModelS() {
         </InfoFeature>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
-          loading="lazy"
-          style={{
-            width: "80vw",
-            height: "100vh",
-            objectFit: "cover",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
+              loading="lazy"
+              style={{
+                width: "72vw",
+                height: "100vh",
+                objectFit: "cover",
+              }}
+            />
+            <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+            >
+              <Stack direction="column" padding="2.5rem 0 0 1.5rem">
+                <SubTitleContent>Range</SubTitleContent>
+                <MainTitleContent>Go Anywhere</MainTitleContent>
+                <SubContent
+                style={{padding: "1rem 0"}}>
+                Travel farther on a single charge than any other electric vehicle—and keep going
+                 with access to 25,000+ Superchargers globally. By combining up to 405 miles of
+                 estimated range with Tesla fast charging technology, you’ll spend less time charging and even more time on the road.
+                </SubContent>
+              </Stack>
+              <Box>
+                <OutlineBtnBlack
+                  style={{
+                    padding: ".3rem 1.5rem",
+                    marginLeft: "1.5rem",
+                    marginBottom: "7rem",
+                  }}
+                >Order now</OutlineBtnBlack>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "white" }}
