@@ -187,40 +187,87 @@ function Model3() {
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
-      <BackgroundWrapper style={{backgroundColor:"#f5f5f5"}}>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
           <img
             src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
             alt=""
             loading="lazy"
             style={{
-                float: "right",
-                width: "67.5vw",
-                height: "100vh",
-                objectFit: "cover",
-                objectPosition: "-15rem",
-                paddingRight: "1.5rem",
+              float: "right",
+              width: "67.5vw",
+              height: "100vh",
+              objectFit: "cover",
+              objectPosition: "-15rem",
+              paddingRight: "1.5rem",
             }}
           />
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper style={{backgroundColor:"#f5f5f5"}}>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
           <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop"
             alt=""
             loading="lazy"
             style={{
-                float: "right",
-                width: "67.5vw",
-                height: "100vh",
-                objectFit: "cover",
-                objectPosition: "-15rem",
-                paddingRight: "1.5rem",
+              width: "100vw",
+              height: "72vh",
+              objectFit: "cover",
+              objectPosition: "0 60%",
             }}
           />
         </Box>
       </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+        <Box>
+          <img
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/02b9fe62-2569-4fc8-bfa1-a8f8cdd9d48e/bvlatuR/std/1440x900/lhd-awd-hero-desktop"
+            alt=""
+            loading="lazy"
+            style={{
+              width: "100vw",
+              height: "72vh",
+              objectFit: "cover",
+              objectPosition: "0 57%",
+            }}
+          />
+        </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+        <Box>
+          <img
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b2b118a7-7e86-4e8f-b7af-092f3e64d847/bvlatuR/std/1254x1080/lhd-range-hero-desktop"
+            alt=""
+            loading="lazy"
+            style={{
+              width: "70vw",
+              height: "100vh",
+              objectFit: "cover",
+              objectPosition: "0 57%",
+            }}
+          />
+        </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+        <video
+          src="https://tesla-cdn.thron.com/delivery/public/video/tesla/65011bbb-6f1c-422e-9e7a-727ba24bad15/bvlatuR/WEBHD/autopilot"
+          style={{
+            width: "100%",
+            height: "75vh",
+            objectFit: "cover",
+          }}
+          autoPlay
+          loop
+          preload="auto"
+        />
+      </BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "black" }}
+      ></BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "black" }}
+      ></BackgroundWrapper>
     </>
   );
 }
