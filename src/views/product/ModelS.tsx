@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { ImageAspectRatio } from "@mui/icons-material";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, TableCell, Typography } from "@mui/material";
 import React from "react";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
@@ -61,7 +61,7 @@ const AdsTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   fontSize: "1.8rem",
   margin: "auto 0",
-  "&::after" : {
+  "&::after": {
     content: '""',
     display: "block",
     position: "absolute",
@@ -69,7 +69,42 @@ const AdsTitle = styled(Typography)(({ theme }) => ({
     height: "40vh",
     marginTop: "2vh",
     background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
-  }
+  },
+}));
+
+const InfoFeature = styled(Box)(({ theme }) => ({
+  margin: "auto",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  padding: "2rem 0",
+}));
+
+const GalleryContainer = styled(Box)(({ theme }) => ({
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  height: "45vh",
+  width: "80vh",
+}));
+
+const InfoContainer = styled(Box)(({ theme }) => ({
+  height: "45vh",
+  width: "80vh",
+  verticalAlign: "middle",
+}));
+
+const InfoTitle = styled(Typography)(({ theme }) => ({
+  color: "white",
+  fontWeight: 700,
+  fontSize: ".9rem",
+  padding: "5.5rem 0 0 0",
+}));
+
+const InfoSubTitle = styled(Typography)(({ theme }) => ({
+  color: "white",
+  fontWeight: 500,
+  fontSize: "0.9rem",
 }));
 
 function ModelS() {
@@ -87,10 +122,10 @@ function ModelS() {
               <MainSubTitle>Plaid</MainSubTitle>
             </Stack>
           </Box>
-          <Box sx={{margin:"0 auto", padding: "1.8rem 0"}}>
+          <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>
             <Stack direction="row" spacing={8}>
               <Box>
-                <Stack direction="column" spacing={1} >
+                <Stack direction="column" spacing={1}>
                   <FeatureTitle>396 mi</FeatureTitle>
                   <FeatureSubTitle>Range (EPA est.)</FeatureSubTitle>
                 </Stack>
@@ -120,11 +155,7 @@ function ModelS() {
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black",
-        height: "15vh",
-       }}
-      >
+      <BackgroundWrapper style={{ backgroundColor: "black", height: "15vh" }}>
         <TitleWrapper>
           <AdsTitle>All-New Interior</AdsTitle>
         </TitleWrapper>
@@ -133,12 +164,113 @@ function ModelS() {
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/177c0faf-b852-47ea-a218-394368e15a20/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop)`,
         }}
-      >
-      </BackgroundWrapper>
+      ></BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
-      >
-
+      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
+        <InfoFeature>
+          <Stack direction="row">
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/9865e92b-731c-4f1a-9430-e984ee0001ca/bvlatuR/std/1040x584/MS-Interior-Grid-A-Desktop)`,
+              }}
+            ></GalleryContainer>
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "right",
+                }}
+              >
+                <InfoTitle>Game from Anywhere</InfoTitle>
+                <InfoSubTitle>
+                  Up to 10 teraflops of processing power enables in-car gaming
+                  on-par with today’s newest consoles. Wireless controller
+                  compatibility lets you game from any seat.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+          </Stack>
+          <Stack direction="row">
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "left",
+                }}
+              >
+                <InfoTitle>Stay Connected</InfoTitle>
+                <InfoSubTitle>
+                  Multi-device Bluetooth, wireless and USB-C charging for every
+                  passenger, with enough power to fast-charge your tablets and
+                  laptop.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/08d2e941-2be2-4e1a-bed9-924ac30fb115/bvlatuR/std/1040x584/MS-Interior-Grid-B-Desktop)`,
+              }}
+            ></GalleryContainer>
+          </Stack>
+          <Stack direction="row">
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/dcfc40cb-6b46-4be7-b173-be10e0c9143c/bvlatuR/std/1040x584/MS-Interior-Grid-C-Desktop)`,
+              }}
+            ></GalleryContainer>
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "right",
+                }}
+              >
+                <InfoTitle>Your Best Audio System</InfoTitle>
+                <InfoSubTitle>
+                  A 22-speaker, 960-watt audio system with active noise
+                  canceling offers the best listening experience at home or on
+                  the road.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+          </Stack>
+          <Stack direction="row">
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "left",
+                }}
+              >
+                <InfoTitle>Real Storage</InfoTitle>
+                <InfoSubTitle>
+                  With front and rear trunks and fold-flat seats, Model S is a
+                  luxury car where you can fit your bike without taking the
+                  wheel off, and your luggage too.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ab165f41-fa4e-4abe-b82a-51bdc295cf42/bvlatuR/std/1040x584/MS-Interior-Grid-D-Desktop)`,
+              }}
+            ></GalleryContainer>
+          </Stack>
+        </InfoFeature>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
