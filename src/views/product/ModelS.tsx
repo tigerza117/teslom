@@ -117,7 +117,7 @@ const InfoSubTitle = styled(Typography)(({ theme }) => ({
   fontSize: "0.9rem",
 }));
 
-const MainContent = styled(Typography)(({ theme }) => ({
+const MainTitleContent = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   fontSize: "1.8rem",
   margin: 0,
@@ -125,7 +125,7 @@ const MainContent = styled(Typography)(({ theme }) => ({
   padding: 0,
 }));
 
-const SubTitle = styled("h5")(({ theme }) => ({
+const SubTitleContent = styled("h5")(({ theme }) => ({
   fontWeight: 200,
   fontSize: "1.2rem",
   margin: "0",
@@ -137,6 +137,7 @@ const SubContent = styled("h5")(({ theme }) => ({
   fontSize: "1rem",
   margin: "0",
   padding: "0",
+  color: "#393c41",
 }));
 
 function ModelS() {
@@ -342,8 +343,8 @@ function ModelS() {
           <Stack direction="row" spacing={15} sx={{display:"flex", justifyContent:"center"}}>
             <Box>
               <Stack direction="column">
-                <SubTitle>Plaid</SubTitle>
-                <MainContent>Beyond Ludicrous</MainContent>
+                <SubTitleContent>Plaid</SubTitleContent>
+                <MainTitleContent>Beyond Ludicrous</MainTitleContent>
                 <Box>
                   <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
                 </Box>
@@ -363,7 +364,7 @@ function ModelS() {
       <BackgroundWrapper
         style={{ backgroundColor: "#f5f5f5" }}
       ></BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white", height:"auto"}}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06af56e3-91c4-4bad-8d2e-0a24f64ec2a8/bvlatuR/std/2880x1800/MS-Exterior-Hero-Desktop"
           loading="lazy"
@@ -373,6 +374,26 @@ function ModelS() {
             objectFit: "cover",
           }}
         />
+        <Box sx={{ padding:"2rem 0"}}>
+          <Stack direction="row" spacing={5} sx={{display:"flex", justifyContent:"center"}}>
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Exterior</SubTitleContent>
+                <MainTitleContent>Designed for Efficiency</MainTitleContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+              With the lowest drag coefficient on Earth and unmatched efficiency, Model S is
+              built for speed and range. Together with a wider body and chassis, these elements
+              help you go down the straight or around corners quicker than ever.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
