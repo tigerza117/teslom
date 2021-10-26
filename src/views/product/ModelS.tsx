@@ -98,7 +98,7 @@ const InfoTitle = styled(Typography)(({ theme }) => ({
   color: "white",
   fontWeight: 700,
   fontSize: ".9rem",
-  padding: "5.5rem 0 0 0",
+  padding: "6rem 0 0 0",
 }));
 
 const InfoSubTitle = styled(Typography)(({ theme }) => ({
