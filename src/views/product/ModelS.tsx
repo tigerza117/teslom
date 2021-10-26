@@ -751,7 +751,23 @@ function ModelS() {
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "white" }}
-      ></BackgroundWrapper>
+      >
+        <Box
+            sx={{
+              margin: "20vh auto auto auto",
+              width: "60vw",
+              padding: "1rem 0",
+            }}
+          >
+            <Stack direction="column" textAlign="left" spacing={1}>
+              <MainTitleContent>Freedom to Travel</MainTitleContent>
+              <SubContent>
+              Enter a destination on your touchscreen and Trip Planner will automatically
+              calculate your route with Superchargers along the way.
+              </SubContent>
+            </Stack>
+          </Box>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
