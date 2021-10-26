@@ -56,6 +56,22 @@ const OrderBtn = styled(Button)(({ theme }) => ({
   marginTop: ".8rem",
 }));
 
+const AdsTitle = styled(Typography)(({ theme }) => ({
+  color: "white",
+  fontWeight: 600,
+  fontSize: "1.8rem",
+  margin: "auto 0",
+  "&::after" : {
+    content: '""',
+    display: "block",
+    position: "absolute",
+    width: "100%",
+    height: "40vh",
+    marginTop: "2vh",
+    background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
+  }
+}));
+
 function ModelS() {
   return (
     <>
@@ -82,7 +98,7 @@ function ModelS() {
               <Box>
                 <Stack direction="column" spacing={1}>
                   <FeatureTitle>1.99 s</FeatureTitle>
-                  <FeatureSubTitle>0-6 mph*</FeatureSubTitle>
+                  <FeatureSubTitle>0-60 mph*</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
@@ -105,6 +121,15 @@ function ModelS() {
         </TitleWrapper>
       </BackgroundWrapper>
       <BackgroundWrapper
+        style={{ backgroundColor: "black",
+        height: "15vh",
+       }}
+      >
+        <TitleWrapper>
+          <AdsTitle>All-New Interior</AdsTitle>
+        </TitleWrapper>
+      </BackgroundWrapper>
+      <BackgroundWrapper
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/177c0faf-b852-47ea-a218-394368e15a20/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop)`,
         }}
@@ -112,7 +137,9 @@ function ModelS() {
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+      >
+
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06e710a1-0428-45e9-8945-580e80d77b55/bvlatuR/std/2880x1800/MS-Performance-Hero-Desktop"
