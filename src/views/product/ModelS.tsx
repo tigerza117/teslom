@@ -87,7 +87,7 @@ const InfoFeature = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  padding: "2rem 0",
+  padding: "5rem 0",
 }));
 
 const GalleryContainer = styled(Box)(({ theme }) => ({
@@ -396,8 +396,81 @@ function ModelS() {
         </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+        style={{ backgroundColor: "black", height: "auto" }}
+      >
+        <InfoFeature>
+          <Stack direction="row">
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "left",
+                }}
+              >
+                <InfoTitle>Responsive Performance</InfoTitle>
+                <InfoSubTitle>
+                Staggered, performance-focused wheels and tires keep the car planted and
+                 transfer even more power down to the road.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/2cf7296e-1bba-40b6-9490-929b47eb50cd/bvlatuR/std/1040x584/MS-Exterior-Grid-B-Desktop)`,
+              }}
+            ></GalleryContainer>
+          </Stack>
+          <Stack direction="row">
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/5207af00-08c6-4b97-83c2-72b82e429977/bvlatuR/std/1040x584/MS-Exterior-Grid-A-Desktop)`,
+              }}
+            ></GalleryContainer>
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "right",
+                }}
+              >
+                <InfoTitle>Optimized Aerodynamics</InfoTitle>
+                <InfoSubTitle>
+                Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+          </Stack>
+          <Stack direction="row">
+            <InfoContainer>
+              <Stack
+                direction="column"
+                spacing={1}
+                sx={{
+                  width: "80%",
+                  margin: "auto 0",
+                  float: "left",
+                }}
+              >
+                <InfoTitle>Refined Styling</InfoTitle>
+                <InfoSubTitle>
+                Exterior design combines an iconic look with elegant proportions.
+                </InfoSubTitle>
+              </Stack>
+            </InfoContainer>
+            <GalleryContainer
+              sx={{
+                backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/2b807bf9-bd89-46a3-97a3-2fecca31beaf/bvlatuR/std/1040x584/MS-Exterior-Grid-C-Desktop)`,
+              }}
+            ></GalleryContainer>
+          </Stack>
+        </InfoFeature>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
