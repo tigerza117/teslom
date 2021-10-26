@@ -11,6 +11,7 @@ const ChatBtn = styled(Button)(({ theme }) => ({
     position: "fixed",
     bottom: "5rem",
     right: "3rem",
+    boxShadow: "0 1px 4px 0 rgb(0 0 0 / 50%) ",
     zIndex: 1000,
   }));
 
