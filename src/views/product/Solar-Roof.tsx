@@ -3,6 +3,7 @@ import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
+import ExpandingLight from "@layouts/ExpandIcon-light";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
@@ -209,91 +210,95 @@ function SolarRoof() {
                 <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
               </Box>
             </Stack>
+            <ExpandingLight />
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/de6a52fa-f842-422e-a248-c44f036154a6/bvlatuR/std/2880x1800/SR-Design-D"
-            alt=""
-            loading="lazy"
-            style={{
-              width: "100vw",
-              height: "72vh",
-              objectFit: "cover",
-              objectPosition: "0 60%",
-            }}
-          />
-      </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-      <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop"
-            alt=""
-            loading="lazy"
-            style={{
-              width: "73vw",
-              height: "100vh",
-              objectFit: "cover",
-              float: "right",
-            }}
-          />
-      </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-      <video
-            src="https://www.tesla.com/sites/default/files/solarroof/v3/durability/SR-Durability-Desktop.mp4"
-            style={{
-              width: "74vw",
-              height: "100vh",
-              objectFit: "cover",
-              float: "left",
-            }}
-          />
-      </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/de6a52fa-f842-422e-a248-c44f036154a6/bvlatuR/std/2880x1800/SR-Design-D"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "100vw",
+            height: "72vh",
+            objectFit: "cover",
+            objectPosition: "0 60%",
+          }}
+        />
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <img
-            src="https://www.tesla.com/sites/default/files/solarroof/v3/inverter/Inverter_V8_D.jpg"
-            alt=""
-            loading="lazy"
-            style={{
-              width: "73vw",
-              height: "100vh",
-              objectFit: "cover",
-              float: "right",
-            }}
-          />
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "73vw",
+            height: "100vh",
+            objectFit: "cover",
+            float: "right",
+          }}
+        />
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+        <video
+          src="https://www.tesla.com/sites/default/files/solarroof/v3/durability/SR-Durability-Desktop.mp4"
+          style={{
+            width: "74vw",
+            height: "100vh",
+            objectFit: "cover",
+            float: "left",
+          }}
+        />
+      </BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "#f5f5f5" }}
+      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+        <img
+          src="https://www.tesla.com/sites/default/files/solarroof/v3/inverter/Inverter_V8_D.jpg"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "73vw",
+            height: "100vh",
+            objectFit: "cover",
+            float: "right",
+          }}
+        />
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/7218535a-a8b7-4630-b4d5-17edcf5daa1d/bvlatuR/std/2880x1800/SR-tesla-app-D"
-            alt=""
-            loading="lazy"
-            style={{
-              width: "100vw",
-              height: "65vh",
-              objectFit: "cover",
-              objectPosition: "0 51%",
-            }}
-          />
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/7218535a-a8b7-4630-b4d5-17edcf5daa1d/bvlatuR/std/2880x1800/SR-tesla-app-D"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "100vw",
+            height: "65vh",
+            objectFit: "cover",
+            objectPosition: "0 51%",
+          }}
+        />
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/4aedd73e-cd73-4051-9cc7-68955ad4646d/bvlatuR/std/2880x1800/SR-Value-D"
-            alt=""
-            loading="lazy"
-            style={{
-              width: "73vw",
-              height: "100vh",
-              objectFit: "cover",
-              float: "right",
-            }}
-          />
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/4aedd73e-cd73-4051-9cc7-68955ad4646d/bvlatuR/std/2880x1800/SR-Value-D"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "73vw",
+            height: "100vh",
+            objectFit: "cover",
+            float: "right",
+          }}
+        />
       </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "black" }}>
-      </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "black" }}>
-      </BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "black" }}
+      ></BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "black" }}
+      ></BackgroundWrapper>
     </>
   );
 }
