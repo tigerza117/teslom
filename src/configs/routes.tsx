@@ -3,7 +3,7 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "@layouts/Layout";
 import ModelS from "@views/product/ModelS";
 import Model3 from "@views/product/Model3";
-import SolarRoof from "@views/product/SolarRoof";
+import SolarRoof from "@views/product/Solar-Roof";
 
 const Home = React.lazy(() => import("@views/home/Home"));
 
