@@ -240,15 +240,10 @@ function SolarRoof() {
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
       <video
             src="https://www.tesla.com/sites/default/files/solarroof/v3/durability/SR-Durability-Desktop.mp4"
-            alt=""
-            autoPlay
-            muted
-            loading="lazy"
             style={{
               width: "74vw",
               height: "100vh",
               objectFit: "cover",
-              objectPosition: "45%",
               float: "left",
             }}
           />
