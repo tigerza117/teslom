@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import styled from "@emotion/styled";
+import { ShowCaseList_SolarPanel } from "@constants/layout";
 
 const ShowCaseNavWrapper = styled(Box)(({ theme }) => ({
   position: "fixed",
@@ -57,42 +58,12 @@ export default function ShowCaseWrapper() {
   return (
     <ShowCaseNavWrapper>
       <ShowCaseNav>
-        <ShowCaseList>
-          <SpanText>Solar panel</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Savings</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Design</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Powerwall</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Power on</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Efficiency</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Experience</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Specs</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
-        <ShowCaseList>
-          <SpanText>Order</SpanText>
-          <SpanBar></SpanBar>
-        </ShowCaseList>
+        {ShowCaseList_SolarPanel.map(({ label, path }, index) => (
+            <ShowCaseList>
+              <SpanText>{label}</SpanText>
+              <SpanBar></SpanBar>
+            </ShowCaseList>
+          ))}
       </ShowCaseNav>
     </ShowCaseNavWrapper>
   );
