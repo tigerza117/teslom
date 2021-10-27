@@ -4,6 +4,7 @@ import { Box, styled } from "@mui/material";
 const ExpandBtn = styled(ExpandMoreRoundedIcon)(({ theme }) => ({
     fontSize: "3.5rem",
     padding: ".2rem",
+    color: "white",
     animation: `loopUpDown 1000ms infinite`,
     "@keyframes loopUpDown": {
       "80%": {
@@ -17,7 +18,7 @@ const ExpandBtn = styled(ExpandMoreRoundedIcon)(({ theme }) => ({
     },
   }));
 
-export default function Expanding() {
+export default function ExpandingLight() {
     return (
         <Box><ExpandBtn /></Box>
     );
