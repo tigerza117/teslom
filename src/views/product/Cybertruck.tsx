@@ -158,6 +158,7 @@ const Cybertruck = () => {
             <BackgroundWrapper
                 style={{backgroundColor: "black", height: "auto"}}>
                 //slider
+                //description
             </BackgroundWrapper>
 
             <BackgroundWrapper
