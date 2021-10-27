@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React from "react";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
@@ -19,67 +20,30 @@ const TitleWrapper = styled(Box)(({ theme }) => ({
     margin: "auto",
 }));
 
-const MainTitle = styled(Typography)(({ theme }) => ({
-    fontWeight: 600,
-    fontSize: "2.5rem",
-    marginBottom: 0,
-    color: "#181b21",
-    padding: 0,
-    transform: "translateY(20px)",
-}));
-
-const MainSubTitle = styled("h5")(({ theme }) => ({
-    fontWeight: 200,
-    fontSize: "1.2rem",
-    padding: "1.3rem 0",
-}));
-
-const FeatureTitle = styled(Typography)(({ theme }) => ({
+const MainTitleContent = styled(Typography)(({theme}) => ({
     color: "white",
     fontWeight: 600,
     fontSize: "1.8rem",
+    margin: 0,
+    padding: "0px 0px 8px",
 }));
 
-const FeatureSubTitle = styled(Typography)(({ theme }) => ({
-    color: "white",
-    fontWeight: 500,
-    fontSize: "0.8rem",
+const MainSubtitleContent = styled(Typography)(({theme}) => ({
+    color: "#BABABA",
+    padding: "0px 0px 16px",
+    fontWeight: 700,
+    fontSize: "0.875rem",
 }));
 
-const OutlineBtnWhite = styled(Button)(({ theme }) => ({
-    fontSize: ".8rem",
-    padding: ".3rem 2.5rem",
-    borderRadius: "25px",
-    border: "3px solid white",
-    boxShadow: "none",
-    color: "white",
-    marginTop: ".8rem",
+const SubtitleContent = styled(Typography)(({theme}) => ({
+    color: "#BABABA",
+    padding: "0px 0px 16px",
+    fontSize: "0.875rem",
+    margin: "auto",
 }));
 
-const OutlineBtnBlack = styled(Button)(({ theme }) => ({
-    fontSize: ".8rem",
-    padding: ".3rem 2.5rem",
-    borderRadius: "25px",
-    border: "3px solid black",
-    boxShadow: "none",
-    color: "black",
-    marginTop: ".8rem",
-}));
-
-const AdsTitle = styled(Typography)(({ theme }) => ({
-    color: "white",
-    fontWeight: 600,
-    fontSize: "1.8rem",
-    margin: "auto 0",
-    "&::after": {
-        content: '""',
-        display: "block",
-        position: "absolute",
-        width: "100%",
-        height: "40vh",
-        marginTop: "2vh",
-        background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
-    },
+const FeatureContainer = styled(Box)(({theme}) => ({
+    margin: "auto",
 }));
 
 const InfoFeature = styled(Box)(({ theme }) => ({
@@ -94,78 +58,24 @@ const GalleryContainer = styled(Box)(({ theme }) => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "45vh",
-    width: "80vh",
+    height: "64vh",
+    width: "133vh",
+    paddingBottom: "20px",
+    marginBottom: "20px",
+}));
+
+const ButtonSlider = styled(Button)(({theme}) => ({
+    backgroundColor: "white",
+    color: "black",
+    fontSize: "medium",
+    padding: "10px",
 }));
 
 const InfoContainer = styled(Box)(({ theme }) => ({
-
-    height: "45vh",
+    height: "10vh",
     width: "80vh",
     verticalAlign: "middle",
-}));
-
-const InfoTitle = styled(Typography)(({ theme }) => ({
-    color: "white",
-    fontWeight: 700,
-    fontSize: ".9rem",
-    padding: "6rem 0 0 0",
-}));
-
-const InfoSubTitle = styled(Typography)(({ theme }) => ({
-    color: "white",
-    fontWeight: 500,
-    fontSize: "0.9rem",
-}));
-
-const MainTitleContent = styled(Typography)(({ theme }) => ({
-    fontWeight: 600,
-    fontSize: "1.8rem",
-    margin: 0,
-    color: "#181b21",
-    padding: 0,
-}));
-
-const SubTitleContent = styled("h5")(({ theme }) => ({
-    fontWeight: 200,
-    fontSize: "1.2rem",
-    margin: "0",
-    padding: "0",
-}));
-
-const SubContent = styled("h5")(({ theme }) => ({
-    fontWeight: 400,
-    fontSize: "1rem",
-    margin: "0",
-    padding: "0",
-    color: "#393c41",
-}));
-
-const TriBtnTitle = styled("h5")(({ theme }) => ({
-    fontWeight: 600,
-    fontSize: "1rem",
-    margin: "0",
-    padding: "0",
-    color: "#393c41",
-    textTransform: "capitalize",
-}));
-
-const TriBtnContent = styled("h5")(({ theme }) => ({
-    fontWeight: 500,
-    fontSize: ".75rem",
-    margin: "0",
-    padding: "0",
-    color: "#393c41",
-    textTransform: "capitalize",
-}));
-
-const BtnFeatTitle = styled("h5")(({ theme }) => ({
-    fontWeight: 600,
-    fontSize: "1.5rem",
-    margin: "0",
-    padding: "0",
-    color: "#393c41",
-    textTransform: "capitalize",
+    margin: "auto",
 }));
 
 
@@ -173,28 +83,91 @@ const Cybertruck = () => {
     return (
         <>
             <BackgroundWrapper
-            sx={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/01_Main_Hero_Desktop.jpg)`}}>
+                sx={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/01_Main_Hero_Desktop.jpg)`}}>
                 <TitleWrapper>
-                    <MainTitle
-                    sx={{
-                        background: `url()`,
-                    }}>
 
-                    </MainTitle>
                 </TitleWrapper>
             </BackgroundWrapper>
 
             <BackgroundWrapper
                 style={{backgroundColor: "black", height: "auto"}}>
                 <InfoFeature>
-                    <Stack direction="row">
+                    <Stack direction="column">
+
                         <GalleryContainer
                             style={{
                                 backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg)`,
                             }}>
                         </GalleryContainer>
+
+                        <FeatureContainer>
+                            <MainTitleContent>
+                                EXOSKELETON
+                            </MainTitleContent>
+                            <InfoContainer
+                                style={{
+                                    padding: "0px 0px 80px",
+                                }}>
+                                <SubtitleContent>
+                                    Cybertruck is built with an exterior shell made for ultimate durability and passenger protection.
+                                    Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance,
+                                    from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.
+                                </SubtitleContent>
+                            </InfoContainer>
+                        </FeatureContainer>
+
+
+                            <GalleryContainer
+                                style={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,}}>
+                            </GalleryContainer>
+
+                        <Box display="row" sx={{
+                            width: "45%",
+                        }}>
+                            <MainSubtitleContent>
+                                ULTRA-HARD 30X COLD-ROLLED STAINLESS STEEL
+                            </MainSubtitleContent>
+                            <InfoContainer
+                                style={{
+                                    padding: "0px 0px 80px",
+                                }}>
+                                <SubtitleContent>
+                                    If there was something better, we’d use it. Help eliminate dents, damage and long-term corrosion
+                                    with a smooth monochrome exoskeleton that puts the shell on the outside of the
+                                    car and provides you and your passengers maximum protection.
+                                </SubtitleContent>
+                            </InfoContainer>
+                        </Box>
+
+                        <GalleryContainer
+                            style={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,}}>
+
+                        </GalleryContainer>
+
+                        <Box display="row" sx={{
+                            width: "50%",
+                            margin: "0 auto",
+                            flexFlow: "row nowrap",
+                        }}>
+                            <MainSubtitleContent>
+                                TESLA ARMOR GLASS
+                            </MainSubtitleContent>
+                            <InfoContainer
+                                style={{
+                                    padding: "0px 0px 80px",
+                                }}>
+                                <SubtitleContent>
+                                    Ultra-strong glass and polymer-layered composite can absorb and redirect impact force for improved performance and damage tolerance.
+                                </SubtitleContent>
+                            </InfoContainer>
+                        </Box>
                     </Stack>
                 </InfoFeature>
+            </BackgroundWrapper>
+
+            <BackgroundWrapper
+                style={{backgroundColor: "black", height: "auto"}}>
+                //slider
             </BackgroundWrapper>
 
             <BackgroundWrapper
