@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "@layouts/Layout";
 import ModelS from "@views/product/ModelS";
 import Model3 from "@views/product/Model3";
+import Cybertruck from "@views/product/Cybertruck";
 
 const Home = React.lazy(() => import("@views/home/Home"));
 
@@ -10,6 +11,7 @@ const publicPaths = [
   { exact: true, path: "/", component: Home },
   { exact: true, path: "/models", component: ModelS },
   { exact: true, path: "/model3", component: Model3 },
+    { exact: true, path: "/cybertruck", component: Cybertruck },
 ];
 
 const publicRoutes = publicPaths.map(({ path, ...props }) => (

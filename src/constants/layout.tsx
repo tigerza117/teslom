@@ -69,6 +69,10 @@ export const DrawerBarList = [
     path: "test-drive",
   },
   {
+    label: "Cybertruck",
+    path: "cybertruck",
+  },
+  {
     label: "Powerwall",
     path: "powerwall",
   },
