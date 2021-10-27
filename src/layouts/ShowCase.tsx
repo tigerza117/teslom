@@ -9,8 +9,6 @@ const ShowCaseNavWrapper = styled(Box)(({ theme }) => ({
   top: "0",
   display: "flex",
   justifyContent: "center",
-  WebkitBoxOrient: "vertical",
-  WebkitBoxDirection: "normal",
   flexFlow: "column nowrap",
   zIndex: 3,
   color: "#393c41",
@@ -19,8 +17,6 @@ const ShowCaseNavWrapper = styled(Box)(({ theme }) => ({
 const ShowCaseNav = styled("ul")(({ theme }) => ({
   backgroundColor: "transparent",
   listStyleType: "none",
-  paddingInline: "8px",
-  marginBlock: "8px",
   margin: "0",
   padding: "0",
   display: "block",
@@ -29,9 +25,6 @@ const ShowCaseNav = styled("ul")(({ theme }) => ({
 const ShowCaseList = styled("li")(({ theme }) => ({
   margin: "0",
   display: "list-item",
-  marginBlockEnd: "0",
-  paddingInlineStart: "0",
-  paddingInlineEnd: "0",
   position: "relative",
   cursor: "pointer",
   width: "24px",
@@ -44,8 +37,6 @@ const SpanBar = styled("span")(({ theme }) => ({
   backgroundColor: "#181b21",
   width: "1px",
   height: "24px",
-  marginInlineStart: "14px",
-  marginInlineEnd: "0",
   opacity: 0.25,
 }));
 
@@ -55,7 +46,6 @@ const SpanText = styled("span")(({ theme }) => ({
   fontWeight: 600,
   textTransform: "uppercase",
   position: "absolute",
-  insetInlineStart: "0",
   marginLeft: "24px",
   float: "left",
   width: "304px",
