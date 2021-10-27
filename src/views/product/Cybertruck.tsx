@@ -76,6 +76,7 @@ const InfoContainer = styled(Box)(({ theme }) => ({
     width: "80vh",
     verticalAlign: "middle",
     margin: "auto",
+    display: "inline-block",
 }));
 
 
@@ -121,9 +122,6 @@ const Cybertruck = () => {
                                 style={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,}}>
                             </GalleryContainer>
 
-                        <Box display="row" sx={{
-                            width: "45%",
-                        }}>
                             <MainSubtitleContent>
                                 ULTRA-HARD 30X COLD-ROLLED STAINLESS STEEL
                             </MainSubtitleContent>
@@ -137,18 +135,11 @@ const Cybertruck = () => {
                                     car and provides you and your passengers maximum protection.
                                 </SubtitleContent>
                             </InfoContainer>
-                        </Box>
 
                         <GalleryContainer
                             style={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,}}>
 
                         </GalleryContainer>
-
-                        <Box display="row" sx={{
-                            width: "50%",
-                            margin: "0 auto",
-                            flexFlow: "row nowrap",
-                        }}>
                             <MainSubtitleContent>
                                 TESLA ARMOR GLASS
                             </MainSubtitleContent>
@@ -160,7 +151,6 @@ const Cybertruck = () => {
                                     Ultra-strong glass and polymer-layered composite can absorb and redirect impact force for improved performance and damage tolerance.
                                 </SubtitleContent>
                             </InfoContainer>
-                        </Box>
                     </Stack>
                 </InfoFeature>
             </BackgroundWrapper>
