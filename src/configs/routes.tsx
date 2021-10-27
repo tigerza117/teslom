@@ -4,6 +4,7 @@ import { Layout } from "@layouts/Layout";
 import ModelS from "@views/product/ModelS";
 import Model3 from "@views/product/Model3";
 import SolarRoof from "@views/product/Solar-Roof";
+import SolarPanel from "@views/product/Solar-Panel";
 
 const Home = React.lazy(() => import("@views/home/Home"));
 
@@ -12,7 +13,7 @@ const publicPaths = [
   { exact: true, path: "/models", component: ModelS },
   { exact: true, path: "/model3", component: Model3 },
   { exact: true, path: "/solar-roof", component: SolarRoof },
-];
+  { exact: true, path: "/solar-panel", component: SolarPanel },];
 
 const publicRoutes = publicPaths.map(({ path, ...props }) => (
   <Route key={path} path={path} {...props} />
