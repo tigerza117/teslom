@@ -4,7 +4,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
 import ExpandingLight from "@layouts/ExpandIcon-light";
-import ShowCaseWrapper from "@layouts/ShowCase";
+import ShowCaseWrapper from "@layouts/ShowCase_SolarPanel";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
