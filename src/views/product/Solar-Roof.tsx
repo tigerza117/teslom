@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
-
+import Chat from "@layouts/ChatSupport";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
@@ -145,6 +145,7 @@ const SubContent = styled("h5")(({ theme }) => ({
 function SolarRoof() {
   return (
     <>
+      <Chat />
       <BackgroundWrapper
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/b614dd66-cc50-4cba-8c15-186b95bb4a8d/bvlatuR/std/2880x1800/sr-storm-desktop)`,
