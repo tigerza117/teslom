@@ -70,57 +70,6 @@ const OutlineBtnBlack = styled(Button)(({ theme }) => ({
   marginTop: ".8rem",
 }));
 
-const AdsTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: "auto 0",
-  "&::after": {
-    content: '""',
-    display: "block",
-    position: "absolute",
-    width: "100%",
-    height: "40vh",
-    marginTop: "2vh",
-    background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
-  },
-}));
-
-const InfoFeature = styled(Box)(({ theme }) => ({
-  margin: "auto",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "5rem 0",
-}));
-
-const GalleryContainer = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "45vh",
-  width: "80vh",
-}));
-
-const InfoContainer = styled(Box)(({ theme }) => ({
-  height: "45vh",
-  width: "80vh",
-  verticalAlign: "middle",
-}));
-
-const InfoTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 700,
-  fontSize: ".9rem",
-  padding: "6rem 0 0 0",
-}));
-
-const InfoSubTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 500,
-  fontSize: "0.9rem",
-}));
-
 const MainTitleContent = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   fontSize: "1.8rem",
