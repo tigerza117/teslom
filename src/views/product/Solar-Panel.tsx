@@ -3,6 +3,7 @@ import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
+import Expanding from "@layouts/ExpandIcon";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
@@ -160,7 +161,7 @@ function SolarPanel() {
               </MainSubTitle>
             </Stack>
           </Box>
-          <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>
+          <Box sx={{ margin: "0 auto", padding: "1.8rem 0 0 0" }}>
             <Stack direction="row" spacing={12}>
               <Box>
                 <Stack direction="column" spacing={-1.5}>
@@ -209,6 +210,7 @@ function SolarPanel() {
                 <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
               </Box>
             </Stack>
+            <Expanding/>
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
