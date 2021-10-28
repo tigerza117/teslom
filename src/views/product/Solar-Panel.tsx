@@ -122,6 +122,35 @@ const SpecTitle = styled("h5")(({ theme }) => ({
   },
 }));
 
+const SpecUl = styled("ul")(({ theme }) => ({
+  listStyleType: "none",
+  display: "block",
+  width: "250px",
+  margin: "0",
+  padding: "2.5rem 0",
+}));
+
+const Specli = styled("li")(({ theme }) => ({
+  display: "list-item",
+  color: "white",
+  margin: "0",
+  padding: "0",
+  lineHeight: "6px",
+  "&::before": {
+    content: "''",
+    display: "block",
+    blockSize: "1px",
+    width: "2rem",
+    backgroundColor: "#8f8f8f",
+  },
+}));
+
+const SpecSubText = styled("p")(({ theme }) => ({
+  color: "white",
+  margin: "1rem 0 2rem 0",
+  padding: "0",
+}));
+
 function SolarPanel() {
   return (
     <>
@@ -484,40 +513,109 @@ function SolarPanel() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      >
-      <Box style={{width: "100%"}}>
-        <Stack direction="row">
-          <Box>
-          <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2e1f9207-01b8-4455-a9c8-b4ca95b7afb4/bvlatuR/std/2880x1800/_25-Specs-D"
-          alt=""
-          loading="lazy"
-          style={{
-            width: "50vw",
-            height: "100vh",
-            objectFit: "contain",
-          }}
-        />
-          </Box>
-          <Box>
-            <Box style={{padding: "5rem 3rem"}}>
-              <Stack direction="column">
-                <Box>
-                  <SpecTitle style={{color: "white"}}>Solar Panel <span>Specs</span> </SpecTitle>
-                </Box>
-                <Box>
-
-                </Box>
-              </Stack>
+      <BackgroundWrapper style={{ backgroundColor: "black" }}>
+        <Box style={{ width: "100%" }}>
+          <Stack direction="row">
+            <Box>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2e1f9207-01b8-4455-a9c8-b4ca95b7afb4/bvlatuR/std/2880x1800/_25-Specs-D"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "50vw",
+                  height: "100vh",
+                  objectFit: "contain",
+                }}
+              />
             </Box>
-          </Box>
-        </Stack>
-      </Box>
+            <Box>
+              <Box style={{ padding: "5rem 3rem" }}>
+                <Stack direction="column">
+                  <Box>
+                    <SpecTitle style={{ color: "white" }}>
+                      Solar Panel <span>Specs</span>{" "}
+                    </SpecTitle>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "black" }}>
-        <TitleWrapper style={{justifyContent:"center"}}>
+        <TitleWrapper style={{ justifyContent: "center" }}>
           <Stack direction="column" spacing={1}>
             <Box>
               <MainTitleContent style={{ color: "white" }}>
