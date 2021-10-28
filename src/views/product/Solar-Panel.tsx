@@ -322,7 +322,11 @@ function SolarPanel() {
               <Stack direction="column">
                 <SubTitleContent>Powerwall</SubTitleContent>
                 <MainTitleContent>Home Battery Backup</MainTitleContent>
-                <Stack direction="row" display="flex" justifyContent="space-between">
+                <Stack
+                  direction="row"
+                  display="flex"
+                  justifyContent="space-between"
+                >
                   <Box>
                     <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
                   </Box>
@@ -334,7 +338,9 @@ function SolarPanel() {
             </Box>
             <Box width="45%">
               <SubContent>
-              Powerwall is bundled with every Tesla solar purchase, allowing you to store your solar energy for use anytime—at night or during an outage.
+                Powerwall is bundled with every Tesla solar purchase, allowing
+                you to store your solar energy for use anytime—at night or
+                during an outage.
               </SubContent>
             </Box>
           </Stack>
@@ -352,27 +358,141 @@ function SolarPanel() {
             objectPosition: "50%",
           }}
         />
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={6}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Powerwall</SubTitleContent>
+                <MainTitleContent>Order and Installation</MainTitleContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                From permitting to powering on, we’ll take care of everything.
+                After you order, we’ll gather remote aerial imagery of your
+                home, design your system, take care of any necessary permits and
+                schedule your installation.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <Box>
+          <Stack direction="row">
+            <Box>
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box
+                  sx={{
+                    padding: "3rem 1.5rem",
+                  }}
+                >
+                  <SubTitleContent>Efficiency</SubTitleContent>
+                  <MainTitleContent>Maximum Solar Production</MainTitleContent>
+                  <SubContent style={{ padding: "1rem 0" }}>
+                    Tesla solar panels are designed to be highly efficient,
+                    delivering maximum solar production year-round, even on
+                    roofs with complicated angles. Powered by{" "}
+                    <a href="">Tesla Solar Inverter</a>, your fully integrated
+                    system is safe and reliable.
+                  </SubContent>
+                </Box>
+                <Box
+                  style={{
+                    padding: "10rem 0 0 1.5rem",
+                  }}
+                >
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box>
+              <img
+                src="https://www.tesla.com/sites/default/files/solarpanels/inverter/Inverter_V8_D.jpg"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "70vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  objectPosition: "50% 100%",
+                  float: "right",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
-          src="https://www.tesla.com/sites/default/files/solarpanels/inverter/Inverter_V8_D.jpg"
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/f7e7ce60-a70b-4dd9-883c-7baf1c0eb636/bvlatuR/std/2880x1800/SP-tesla-app-D"
           alt=""
           loading="lazy"
           style={{
-            width: "73vw",
-            height: "100vh",
+            width: "100vw",
+            height: "69vh",
             objectFit: "cover",
-            objectPosition: "50% 100%",
-            float: "right",
+            objectPosition: "50%",
           }}
         />
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={12}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Experience</SubTitleContent>
+                <MainTitleContent>24/7 Monitoring</MainTitleContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                Manage your solar system from anywhere in the world with 24/7
+                mobile monitoring. Watch your energy in real time or set your
+                preferences to optimize for energy independence.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
       ></BackgroundWrapper>
       <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+        style={{ backgroundColor: "black"}}
+      >
+        <Box style={{display: "grid", justifyItems:"center", textAlign:"center", height: "100%"}}>
+          <Stack direction="column" spacing={1}>
+            <Box>
+              <MainTitleContent style={{color:"white"}}>Power Your Home</MainTitleContent>
+            </Box>
+            <Box>
+              <SubContent style={{color:"white"}}>Purchase solar today</SubContent>
+            </Box>
+            <Box>
+              <OutlineBtnWhite style={{margin:"1.5rem 0"}} >ORDER NOW</OutlineBtnWhite>
+            </Box>
+          </Stack>
+        </Box>
+      </BackgroundWrapper>
     </>
   );
 }
