@@ -312,6 +312,33 @@ function SolarPanel() {
             objectPosition: "50%",
           }}
         />
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={6}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Powerwall</SubTitleContent>
+                <MainTitleContent>Home Battery Backup</MainTitleContent>
+                <Stack direction="row" display="flex" justifyContent="space-between">
+                  <Box>
+                    <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                  </Box>
+                  <Box>
+                    <OutlineBtnBlack>LEARN MORE</OutlineBtnBlack>
+                  </Box>
+                </Stack>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+              Powerwall is bundled with every Tesla solar purchase, allowing you to store your solar energy for use anytime—at night or during an outage.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <video
