@@ -4,6 +4,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
 import ExpandingLight from "@layouts/ExpandIcon-light";
+import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import ShowCaseWrapper from "@layouts/ShowCase_SolarPanel";
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
@@ -72,6 +73,10 @@ const OutlineBtnBlack = styled(Button)(({ theme }) => ({
   boxShadow: "none",
   color: "black",
   marginTop: ".8rem",
+  "&:hover": {
+    backgroundColor: "black",
+    color: "white",
+  },
 }));
 
 const MainTitleContent = styled(Typography)(({ theme }) => ({
@@ -100,16 +105,6 @@ const SubContent = styled("h5")(({ theme }) => ({
   },
 }));
 
-const BtnRoundedOutline = styled(Button)(({ theme }) => ({
-  width: "100px",
-  height: "100px",
-  justifyContent: "center",
-  alignItems: "center",
-  borderRadius: 100,
-  backgroundColor: "orange",
-  border: "3px solid black",
-}));
-
 const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
   width: "210px",
   margin: "0",
@@ -127,7 +122,7 @@ function SolarPanel() {
         }}
       >
         <TitleWrapper>
-          <Box sx={{ marginTop: "12vh", marginBottom: "auto"}}>
+          <Box sx={{ marginTop: "12vh", marginBottom: "auto" }}>
             <Stack direction="column" spacing={-1}>
               <MainTitle>Solar for Existing Roofs</MainTitle>
               <MainSubTitle>
@@ -227,7 +222,7 @@ function SolarPanel() {
                 muted
                 loop
                 style={{
-                  width: "73vw",
+                  width: "70vw",
                   height: "100vh",
                   objectFit: "cover",
                   objectPosition: "50%",
@@ -240,48 +235,51 @@ function SolarPanel() {
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Stack direction="row">
-          <Box>
+          <Box
+            sx={{
+              padding: "3rem",
+              display: "flex",
+            }}
+          >
             <Stack
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
+              direction="column"
+              display="flex"
+              justifyContent="space-between"
             >
-              <Box
-                sx={{
-                  padding: "3rem 1.5rem",
-                }}
-              >
-                <SubTitleContent>Savings</SubTitleContent>
-                <MainTitleContent>Electricity For Less</MainTitleContent>
-                <SubContent style={{ padding: "1rem 0" }}>
-                  Use solar energy to power your home and reduce your dependence
-                  on the grid. Purchase solar at the lowest price of any
-                  national provider with{" "}
-                  <a href="">Tesla's price match guarantee</a> and take control
-                  of your monthly electricity bill. Learn more about your
-                  potential savings in our Design Studio.
+              <Box>
+                <SubTitleContent>Design</SubTitleContent>
+                <MainTitleContent>Sleek and Durable</MainTitleContent>
+              </Box>
+              <Box>
+                <SubContent>
+                  Our solar panels are low-profile and durable — quietly
+                  converting sunlight to energy for decades to come. Integrated
+                  hardware and simple design achieve this by securing the panels
+                  close to your roof and to each other for a minimalist
+                  aesthetic.
                 </SubContent>
               </Box>
-              <Box
-                style={{
-                  padding: "10rem 0 0 1.5rem",
-                  height: "3.5rem",
-                }}
-              >
-                <Stack direction="row" spacing={1}>
-                  <OutlineBtnBlack
-                    style={{
-                      width: "1rem",
-                      height: "4rem",
-                      fontSize: "1.5rem",
-                      borderRadius: "100%",
-                    }}
-                  >
-                    +
-                  </OutlineBtnBlack>
-                  <OutlineBtnBlack>SEE YOUR SAVINGS</OutlineBtnBlack>
+              <Box padding="4rem 0">
+                <Stack
+                  direction="row"
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Box>
+                    <ControlPointIcon
+                      sx={{
+                        padding: ".5rem 0 0 0",
+                        fontSize: "2.5rem",
+                      }}
+                    />
+                  </Box>
+                  <Box>
+                    <SubContent>LEARN MORE</SubContent>
+                  </Box>
+                  <Box>
+                    <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                  </Box>
                 </Stack>
               </Box>
             </Stack>
@@ -292,7 +290,7 @@ function SolarPanel() {
               alt=""
               loading="lazy"
               style={{
-                width: "73vw",
+                width: "70vw",
                 height: "100vh",
                 objectFit: "cover",
                 objectPosition: "0 100%",
