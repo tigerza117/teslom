@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { ShowCaseList_SolarPanel } from "@constants/layout";
-/*import '../components/shared/Showcase.css';*/
 
 const ShowCaseNavWrapper = styled(Box)(({ theme }) => ({
   position: "fixed",
@@ -67,8 +66,8 @@ export default function ShowCaseWrapper() {
       <ShowCaseNav>
         {ShowCaseList_SolarPanel.map(({ label, path }, index) => (
             <ShowCaseList>
-              <SpanText className="CaseSelected_Label">{label}</SpanText>
-              <SpanBar className="CaseSelected"></SpanBar>
+              <SpanText>{label}</SpanText>
+              <SpanBar></SpanBar>
             </ShowCaseList>
           ))}
       </ShowCaseNav>
