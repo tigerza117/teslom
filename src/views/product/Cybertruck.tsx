@@ -2,7 +2,10 @@ import styled from "@emotion/styled";
 import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import React from "react";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import React, {useState, useEffect} from "react";
+import { CybertruckPictureSlider } from "@constants/cybertruckSlider";
+
 
 const BackgroundWrapper = styled(Box)(({ theme }) => ({
     backgroundPosition: "center",
@@ -75,11 +78,54 @@ const InfoContainer = styled(Box)(({ theme }) => ({
     width: "80vh",
 }));
 
-const PassageWrapper = styled(Box)(({theme}) => ({
-    display: "inline-block",
+const PictureSliderContainer = styled(Box)(({theme}) => ({
+    width: "160vh",
+    height: "77vh",
+    backgroundPosition: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    margin: "auto",
+    display: "flex",
+    padding: 0,
 }));
 
+const PictureSliderImage = styled(Box)(({theme}) => ({
+    display: "flex",
+    backgroundSize: "cover",
+    height: "100%",
+    width: "100%",
+    paddingBottom: "20px",
+    marginBottom: "20px",
+}));
+
+const SliderBtn = styled(Button)(({theme}) => ({
+    backgroundColor: "#00000066",
+    color: "#BABABA",
+    border: "solid 2px white",
+    zIndex: 10,
+    height: "4vh",
+}));
+
+const ImageSlider = () => {
+    const lengthPic = CybertruckPictureSlider.length;
+    const [current, setCurrent] = useState(0);
+    const nextSlide = () => {
+        setCurrent(current === lengthPic - 1 ? 0 : current + 1);
+    };
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? lengthPic - 1 : current - 1);
+    };
+
+    if (!Array.isArray(CybertruckPictureSlider) || CybertruckPictureSlider.length <= 0) {
+        return null;
+    }
+};
+
 const Cybertruck = () => {
+
+
     return (
         <>
             <BackgroundWrapper
@@ -168,6 +214,7 @@ const Cybertruck = () => {
                             style={{backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,}}>
 
                         </GalleryContainer>
+
                         <InfoContainer style={{
                             padding: "0px 0px 40px",
                         }}>
@@ -253,14 +300,22 @@ const Cybertruck = () => {
 
             <BackgroundWrapper
                 style={{backgroundColor: "black", height: "auto"}}>
-                //slider
-                //description
-            </BackgroundWrapper>
 
-            <BackgroundWrapper
-                style={{backgroundColor: "black", height: "auto"}}>
+                <PictureSliderContainer sx={{
+                    height: "100%",
+                    width: "100%",
+                }}>
 
 
+                    <PictureSliderImage style={{
+
+                        backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/07_Desktop.jpg)`,
+                    }}></PictureSliderImage>
+                    {CybertruckPictureSlider.map((slider, index) => {
+                        return
+                    })};
+
+                </PictureSliderContainer>
             </BackgroundWrapper>
 
             <BackgroundWrapper
