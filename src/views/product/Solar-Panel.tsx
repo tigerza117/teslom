@@ -111,6 +111,17 @@ const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
   padding: "0",
 }));
 
+const SpecTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "2rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  "& span": {
+    fontWeight: 300,
+  },
+}));
+
 function SolarPanel() {
   return (
     <>
@@ -475,23 +486,56 @@ function SolarPanel() {
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black"}}
       >
-        <Box style={{display: "grid", justifyItems:"center", textAlign:"center", height: "100%"}}>
+      <Box style={{width: "100%"}}>
+        <Stack direction="row">
+          <Box>
+          <img
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2e1f9207-01b8-4455-a9c8-b4ca95b7afb4/bvlatuR/std/2880x1800/_25-Specs-D"
+          alt=""
+          loading="lazy"
+          style={{
+            width: "50vw",
+            height: "100vh",
+            objectFit: "contain",
+          }}
+        />
+          </Box>
+          <Box>
+            <Box style={{padding: "5rem 3rem"}}>
+              <Stack direction="column">
+                <Box>
+                  <SpecTitle style={{color: "white"}}>Solar Panel <span>Specs</span> </SpecTitle>
+                </Box>
+                <Box>
+
+                </Box>
+              </Stack>
+            </Box>
+          </Box>
+        </Stack>
+      </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "black" }}>
+        <TitleWrapper style={{justifyContent:"center"}}>
           <Stack direction="column" spacing={1}>
             <Box>
-              <MainTitleContent style={{color:"white"}}>Power Your Home</MainTitleContent>
+              <MainTitleContent style={{ color: "white" }}>
+                Power Your Home
+              </MainTitleContent>
             </Box>
             <Box>
-              <SubContent style={{color:"white"}}>Purchase solar today</SubContent>
+              <SubContent style={{ color: "white" }}>
+                Purchase solar today
+              </SubContent>
             </Box>
             <Box>
-              <OutlineBtnWhite style={{margin:"1.5rem 0"}} >ORDER NOW</OutlineBtnWhite>
+              <OutlineBtnWhite style={{ margin: "1.5rem 0" }}>
+                ORDER NOW
+              </OutlineBtnWhite>
             </Box>
           </Stack>
-        </Box>
+        </TitleWrapper>
       </BackgroundWrapper>
     </>
   );
