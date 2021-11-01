@@ -169,6 +169,18 @@ const BtnFeatTitle = styled("h5")(({ theme }) => ({
   textTransform: "capitalize",
 }));
 
+const MapButton = styled("h5")(({ theme }) => ({
+  width: "12rem",
+  borderTop: "3px solid black",
+  borderRadius: "0",
+}));
+
+const ButtonStack = styled(Stack)(({ theme }) => ({
+  flexDirection: "column",
+  padding: "1rem",
+  textAlign: "left",
+}));
+
 function ModelS() {
   return (
     <>
@@ -507,14 +519,7 @@ function ModelS() {
                       borderRadius: "0",
                     }}
                   >
-                    <Stack
-                      direction="column"
-                      sx={{
-                        padding: "1rem",
-                        textAlign: "left",
-                      }}
-                      spacing={2}
-                    >
+                    <ButtonStack spacing={2}>
                       <TriBtnTitle style={{}}>Plaid</TriBtnTitle>
                       <TriBtnContent>
                         Tri Motor All-Wheel Drive platform with torque vectoring
@@ -551,7 +556,7 @@ function ModelS() {
                           </Box>
                         </Stack>
                       </Box>
-                    </Stack>
+                    </ButtonStack>
                   </Button>
                 </Stack>
               </Box>
@@ -589,7 +594,7 @@ function ModelS() {
               <Box>
                 <Stack direction="column" spacing={0.5}>
                   <FeatureTitle style={{ textAlign: "left" }}>
-                    0.208 <i style={{fontSize:"1rem"}}>Cd</i>
+                    0.208 <i style={{ fontSize: "1rem" }}>Cd</i>
                   </FeatureTitle>
                   <FeatureSubTitle>Lowest-drag car on Earth</FeatureSubTitle>
                 </Stack>
@@ -749,9 +754,106 @@ function ModelS() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "white" }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
+        <TitleWrapper>
+        <Box
+          sx={{
+            margin: "auto",
+            width: "55vw",
+            padding: "22vh 0 2rem 0",
+          }}
+        >
+          <Stack direction="column" textAlign="left" spacing={1}>
+            <MainTitleContent>Freedom to Travel</MainTitleContent>
+            <SubContent>
+              Enter a destination on your touchscreen and Trip Planner will
+              automatically calculate your route with Superchargers along the
+              way.
+            </SubContent>
+          </Stack>
+        </Box>
+
+        <Box>
+            <Stack>
+              <Box
+                sx={{
+                  padding: "1rem 0",
+                }}
+              >
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589779466653706/1635264436900.jpg"
+                  alt="SanJose"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589782742417418/1635264486681.jpg"
+                  alt="Berkeley"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589778741055528/1635264404630.jpg"
+                  alt="Manhattan"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589783585460294/1635264519801.jpg"
+                  alt="Fort"
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "1rem 0",
+                }}
+              >
+                <Stack direction="row" spacing={4}>
+                  <MapButton style={{margin:"0"}}>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+          </TitleWrapper>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
