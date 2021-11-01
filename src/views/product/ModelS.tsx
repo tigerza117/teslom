@@ -756,24 +756,24 @@ function ModelS() {
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
         <TitleWrapper>
-        <Box
-          sx={{
-            margin: "auto",
-            width: "55vw",
-            padding: "22vh 0 2rem 0",
-          }}
-        >
-          <Stack direction="column" textAlign="left" spacing={1}>
-            <MainTitleContent>Freedom to Travel</MainTitleContent>
-            <SubContent>
-              Enter a destination on your touchscreen and Trip Planner will
-              automatically calculate your route with Superchargers along the
-              way.
-            </SubContent>
-          </Stack>
-        </Box>
+          <Box
+            sx={{
+              margin: "auto",
+              width: "55vw",
+              padding: "22vh 0 2rem 0",
+            }}
+          >
+            <Stack direction="column" textAlign="left" spacing={1}>
+              <MainTitleContent>Freedom to Travel</MainTitleContent>
+              <SubContent>
+                Enter a destination on your touchscreen and Trip Planner will
+                automatically calculate your route with Superchargers along the
+                way.
+              </SubContent>
+            </Stack>
+          </Box>
 
-        <Box>
+          <Box>
             <Stack>
               <Box
                 sx={{
@@ -824,7 +824,7 @@ function ModelS() {
                 }}
               >
                 <Stack direction="row" spacing={4}>
-                  <MapButton style={{margin:"0"}}>
+                  <MapButton style={{ margin: "0" }}>
                     <ButtonStack spacing={2}>
                       <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <BtnFeatTitle>670 hp</BtnFeatTitle>
@@ -851,8 +851,15 @@ function ModelS() {
                 </Stack>
               </Box>
             </Stack>
+            <OutlineBtnBlack
+              style={{
+                margin: "2rem 0",
+              }}
+            >
+              Learn more
+            </OutlineBtnBlack>
           </Box>
-          </TitleWrapper>
+        </TitleWrapper>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
