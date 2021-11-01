@@ -1224,16 +1224,36 @@ function ModelS() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "white"}}>
-        <Box style={{width: "100%", height: "100%", display: "flex", justifyContent: "center" }}>
-          <Stack direction="row" style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <Box
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Stack
+            direction="row"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
             <Box alignItems="center" margin="auto" padding="0 1rem 0 10rem ">
               <Stack spacing={6}>
                 <MainTitleContent>Model S</MainTitleContent>
                 <Box>
                   <Stack direction="row" spacing={4}>
-                    <OutlineBtnBlack style={{margin: "0", padding:".4rem 4rem"}}>order now</OutlineBtnBlack>
-                    <OutlineBtnBlack style={{padding:".4rem 5.5rem"}}>compare</OutlineBtnBlack>
+                    <OutlineBtnBlack
+                      style={{ margin: "0", padding: ".4rem 4rem" }}
+                    >
+                      order now
+                    </OutlineBtnBlack>
+                    <OutlineBtnBlack style={{ padding: ".4rem 5.5rem" }}>
+                      compare
+                    </OutlineBtnBlack>
                   </Stack>
                 </Box>
               </Stack>
