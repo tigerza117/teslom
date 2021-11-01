@@ -203,7 +203,7 @@ const SpecUl = styled("ul")(({ theme }) => ({
   display: "block",
   width: "250px",
   margin: "0",
-  padding: "2.5rem 0",
+  padding: "2rem 0",
 }));
 
 const Specli = styled("li")(({ theme }) => ({
@@ -219,6 +219,12 @@ const Specli = styled("li")(({ theme }) => ({
     width: "2rem",
     backgroundColor: "#8f8f8f",
   },
+}));
+
+const SpecSubText = styled("p")(({ theme }) => ({
+  color: "white",
+  margin: "1rem 0 2rem 0",
+  padding: "0",
 }));
 
 function ModelS() {
@@ -996,7 +1002,9 @@ function ModelS() {
             <Stack direction="column" textAlign="left" spacing={1}>
               <MainTitleContent>Features</MainTitleContent>
               <SubContent>
-              Full Self-Driving Capability introduces additional features and improves existing functionality to make your car more capable over time including:
+                Full Self-Driving Capability introduces additional features and
+                improves existing functionality to make your car more capable
+                over time including:
               </SubContent>
             </Stack>
           </Box>
@@ -1031,7 +1039,10 @@ function ModelS() {
                       <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
                         <BtnFeatTitle>670 hp</BtnFeatTitle>
-                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
@@ -1040,7 +1051,10 @@ function ModelS() {
                       <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
                         <BtnFeatTitle>670 hp</BtnFeatTitle>
-                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
@@ -1049,7 +1063,10 @@ function ModelS() {
                       <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
                         <BtnFeatTitle>670 hp</BtnFeatTitle>
-                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
@@ -1058,7 +1075,10 @@ function ModelS() {
                       <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
                         <BtnFeatTitle>670 hp</BtnFeatTitle>
-                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
@@ -1069,15 +1089,140 @@ function ModelS() {
         </TitleWrapper>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "black" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea201786-4dec-4ca2-b266-c7a180443853/bvlatuR/std/1440x1080/MS-Specs-Hero-Desktop"
-          loading="lazy"
-          style={{
-            width: "50vw",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
+        <Box style={{ width: "100%" }}>
+          <Stack direction="row">
+            <Box>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea201786-4dec-4ca2-b266-c7a180443853/bvlatuR/std/1440x1080/MS-Specs-Hero-Desktop"
+                loading="lazy"
+                style={{
+                  width: "50vw",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+            <Box>
+              <Box style={{ padding: "2.2rem 3rem" }}>
+                <Stack direction="column">
+                  <Box>
+                    <SpecTitle style={{ color: "white" }}>
+                      Model S <span>Specs</span>{" "}
+                    </SpecTitle>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <OutlineBtnWhite
+                        style={{
+                          padding: ".1rem 6rem",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Plaid
+                      </OutlineBtnWhite>
+                      <OutlineBtnWhite
+                        style={{
+                          padding: ".1rem 6rem",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Long Range
+                      </OutlineBtnWhite>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p
+                                style={{
+                                  lineHeight: "120%",
+                                  fontStyle: "italic",
+                                }}
+                              >
+                                †when equipped with the proper wheels and tires
+                                (available fall 2021)
+                              </p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
