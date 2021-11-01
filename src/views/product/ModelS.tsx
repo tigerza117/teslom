@@ -772,7 +772,6 @@ function ModelS() {
               </SubContent>
             </Stack>
           </Box>
-
           <Box>
             <Stack>
               <Box
@@ -862,19 +861,53 @@ function ModelS() {
         </TitleWrapper>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
-          loading="lazy"
-          style={{
-            width: "80vw",
-            height: "100vh",
-            objectFit: "cover",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Stack direction="column" padding="2.5rem 0 0 3rem">
+                <SubTitleContent>Safety</SubTitleContent>
+                <MainTitleContent>High Impact Protection</MainTitleContent>
+                <SubContent style={{ padding: "4rem 0 0 0" }}>
+                  Model S is built from the ground up as an electric vehicle,
+                  with a high-strength architecture and floor-mounted battery
+                  pack for incredible occupant protection and low rollover risk.
+                  Every Model S includes Tesla’s latest active safety features,
+                  such as Automatic Emergency Braking, at no extra cost.
+                </SubContent>
+              </Stack>
+              <Box>
+                <OutlineBtnBlack
+                  style={{
+                    padding: ".3rem 1.5rem",
+                    marginLeft: "3rem",
+                    marginBottom: "7rem",
+                  }}
+                >
+                  Order now
+                </OutlineBtnBlack>
+              </Box>
+            </Box>
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
+              loading="lazy"
+              style={{
+                width: "70vw",
+                height: "100vh",
+                objectFit: "cover",
+              }}
+            />
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <video
-          src="https://tesla-cdn.thron.com/delivery/public/video/tesla/65011bbb-6f1c-422e-9e7a-727ba24bad15/bvlatuR/WEBHD/autopilot"
+          src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
           style={{
             width: "100%",
             height: "75vh",
@@ -884,10 +917,117 @@ function ModelS() {
           loop
           preload="auto"
         />
+        <Box sx={{ padding: "2rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={14}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Autopilot</SubTitleContent>
+                <MainTitleContent>Future of Driving</MainTitleContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                Autopilot enables your car to steer, accelerate and brake
+                automatically within its lane under your active supervision,
+                assisting with the most burdensome parts of driving. With
+                over-the-air software updates, the latest enhancements are
+                available instantly.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "white" }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
+        <TitleWrapper>
+          <Box
+            sx={{
+              margin: "auto",
+              width: "55vw",
+              padding: "14vh 0 2rem 0",
+            }}
+          >
+            <Stack direction="column" textAlign="left" spacing={1}>
+              <MainTitleContent>Features</MainTitleContent>
+              <SubContent>
+              Full Self-Driving Capability introduces additional features and improves existing functionality to make your car more capable over time including:
+              </SubContent>
+            </Stack>
+          </Box>
+          <Box>
+            <Stack marginBottom="3rem">
+              <Box
+                sx={{
+                  padding: "1rem 0",
+                }}
+              >
+                <video
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                  }}
+                  autoPlay
+                  loop
+                  preload="auto"
+                  src="https://tesla-cdn.thron.com/static/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4?xseo="
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "1rem 0",
+                }}
+              >
+                <Stack direction="row" spacing={4}>
+                  <MapButton style={{ margin: "0" }}>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>Automatically change lanes while driving on the highway</TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+        </TitleWrapper>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "black" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea201786-4dec-4ca2-b266-c7a180443853/bvlatuR/std/1440x1080/MS-Specs-Hero-Desktop"
