@@ -181,6 +181,46 @@ const ButtonStack = styled(Stack)(({ theme }) => ({
   textAlign: "left",
 }));
 
+const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
+  width: "210px",
+  margin: "0",
+  padding: "0",
+}));
+
+const SpecTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "2rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  "& span": {
+    fontWeight: 300,
+  },
+}));
+
+const SpecUl = styled("ul")(({ theme }) => ({
+  listStyleType: "none",
+  display: "block",
+  width: "250px",
+  margin: "0",
+  padding: "2.5rem 0",
+}));
+
+const Specli = styled("li")(({ theme }) => ({
+  display: "list-item",
+  color: "white",
+  margin: "0",
+  padding: "0",
+  lineHeight: "6px",
+  "&::before": {
+    content: "''",
+    display: "block",
+    blockSize: "1px",
+    width: "2rem",
+    backgroundColor: "#8f8f8f",
+  },
+}));
+
 function ModelS() {
   return (
     <>
