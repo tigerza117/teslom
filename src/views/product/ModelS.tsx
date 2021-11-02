@@ -847,6 +847,14 @@ function ModelS() {
               margin: "auto",
               width: "55vw",
               padding: "22vh 0 2rem 0",
+      <BackgroundWrapper
+        style={{ backgroundColor: "white" }}
+      >
+        <Box
+            sx={{
+              margin: "20vh auto auto auto",
+              width: "60vw",
+              padding: "1rem 0",
             }}
           >
             <Stack direction="column" textAlign="left" spacing={1}>
@@ -945,6 +953,11 @@ function ModelS() {
             </OutlineBtnBlack>
           </Box>
         </TitleWrapper>
+              Enter a destination on your touchscreen and Trip Planner will automatically
+              calculate your route with Superchargers along the way.
+              </SubContent>
+            </Stack>
+          </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
