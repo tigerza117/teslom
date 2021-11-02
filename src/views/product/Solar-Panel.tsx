@@ -151,6 +151,14 @@ const SpecSubText = styled("p")(({ theme }) => ({
   padding: "0",
 }));
 
+const RowSectionBlock = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-around",
+  flexDirection: "row",
+  textAlign: "left",
+  width: "80vw",
+}));
+
 function SolarPanel() {
   return (
     <>
@@ -352,39 +360,39 @@ function SolarPanel() {
             objectPosition: "50%",
           }}
         />
-        <Box sx={{ padding: "3rem 0 6rem 0" }}>
-          <Stack
-            direction="row"
-            spacing={6}
-            sx={{ display: "flex", justifyContent: "center" }}
-          >
-            <Box>
-              <Stack direction="column">
-                <SubTitleContent>Powerwall</SubTitleContent>
-                <MainTitleContent>Home Battery Backup</MainTitleContent>
-                <Stack
-                  direction="row"
-                  display="flex"
-                  justifyContent="space-between"
-                >
+        <RowSectionBlock
+          style={{
+            margin: "3rem auto 0 auto",
+          }}
+        >
+          <Box style={{ width: "40%" }}>
+            <Stack direction="column">
+              <SubTitleContent>quod maxime placeat</SubTitleContent>
+              <MainTitleContent>maxime placeat</MainTitleContent>
+              <Box style={{ padding: "1rem 0" }}>
+                <Stack direction="row" spacing={2}>
                   <Box>
-                    <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                    <OutlineBtnBlack style={{ margin: "0" }}>
+                      Order now
+                    </OutlineBtnBlack>
                   </Box>
                   <Box>
-                    <OutlineBtnBlack>LEARN MORE</OutlineBtnBlack>
+                    <OutlineBtnBlack style={{ margin: "0" }}>
+                      learn more
+                    </OutlineBtnBlack>
                   </Box>
                 </Stack>
-              </Stack>
-            </Box>
-            <Box width="45%">
-              <SubContent>
-                Powerwall is bundled with every Tesla solar purchase, allowing
-                you to store your solar energy for use anytime—at night or
-                during an outage.
-              </SubContent>
-            </Box>
-          </Stack>
-        </Box>
+              </Box>
+            </Stack>
+          </Box>
+          <Box>
+            <SubContent>
+              Enter a destination on your touchscreen and Trip Planner will
+              automatically calculate your route with Superchargers along the
+              way.
+            </SubContent>
+          </Box>
+        </RowSectionBlock>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <video
@@ -494,22 +502,30 @@ function SolarPanel() {
             spacing={12}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <Box>
-              <Stack direction="column">
-                <SubTitleContent>Experience</SubTitleContent>
-                <MainTitleContent>24/7 Monitoring</MainTitleContent>
-                <Box>
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
-                </Box>
-              </Stack>
-            </Box>
-            <Box width="45%">
-              <SubContent>
-                Manage your solar system from anywhere in the world with 24/7
-                mobile monitoring. Watch your energy in real time or set your
-                preferences to optimize for energy independence.
-              </SubContent>
-            </Box>
+            <RowSectionBlock
+              style={{
+                margin: "0 auto",
+              }}
+            >
+              <Box style={{ width: "40%" }}>
+                <Stack direction="column">
+                  <SubTitleContent>quod maxime placeat</SubTitleContent>
+                  <MainTitleContent>maxime placeat</MainTitleContent>
+                  <Box style={{ padding: "1rem 0" }}>
+                    <OutlineBtnBlack style={{ margin: "0" }}>
+                      Order now
+                    </OutlineBtnBlack>
+                  </Box>
+                </Stack>
+              </Box>
+              <Box>
+                <SubContent>
+                  Enter a destination on your touchscreen and Trip Planner will
+                  automatically calculate your route with Superchargers along
+                  the way.
+                </SubContent>
+              </Box>
+            </RowSectionBlock>
           </Stack>
         </Box>
       </BackgroundWrapper>
