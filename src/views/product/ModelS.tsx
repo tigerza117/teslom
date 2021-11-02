@@ -758,15 +758,55 @@ function ModelS() {
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
-            <img
-              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
-              loading="lazy"
-              style={{
-                width: "72vw",
-                height: "100vh",
-                objectFit: "cover",
-              }}
-            />
+            <Stack>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
+                loading="lazy"
+                style={{
+                  width: "72vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                }}
+              />
+              <Box sx={{ margin: "-8rem auto 0 auto" }}>
+                <Stack
+                  direction="row"
+                  spacing={5}
+                  sx={{
+                    width: "55vw",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    paddingRight: "10vh",
+                  }}
+                >
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>405 mi</FeatureTitle>
+                      <FeatureSubTitle>
+                        Go anywhere with up to 405 miles of estimated range on a
+                        single charge
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>200 mi</FeatureTitle>
+                      <FeatureSubTitle>
+                        Supercharge up to 200 miles in 15 minutes
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>25,000+</FeatureTitle>
+                      <FeatureSubTitle>
+                        Superchargers placed along popular routes
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Stack>
             <Box
               sx={{
                 display: "flex",
