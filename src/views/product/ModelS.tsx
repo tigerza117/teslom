@@ -169,6 +169,64 @@ const BtnFeatTitle = styled("h5")(({ theme }) => ({
   textTransform: "capitalize",
 }));
 
+const MapButton = styled("h5")(({ theme }) => ({
+  width: "12rem",
+  borderTop: "3px solid black",
+  borderRadius: "0",
+}));
+
+const ButtonStack = styled(Stack)(({ theme }) => ({
+  flexDirection: "column",
+  padding: "1rem",
+  textAlign: "left",
+}));
+
+const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
+  width: "210px",
+  margin: "0",
+  padding: "0",
+}));
+
+const SpecTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "2rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  "& span": {
+    fontWeight: 300,
+  },
+}));
+
+const SpecUl = styled("ul")(({ theme }) => ({
+  listStyleType: "none",
+  display: "block",
+  width: "250px",
+  margin: "0",
+  padding: "2rem 0",
+}));
+
+const Specli = styled("li")(({ theme }) => ({
+  display: "list-item",
+  color: "white",
+  margin: "0",
+  padding: "0",
+  lineHeight: "6px",
+  "&::before": {
+    content: "''",
+    display: "block",
+    blockSize: "1px",
+    width: "2rem",
+    backgroundColor: "#8f8f8f",
+  },
+}));
+
+const SpecSubText = styled("p")(({ theme }) => ({
+  color: "white",
+  margin: "1rem 0 2rem 0",
+  padding: "0",
+}));
+
 function ModelS() {
   return (
     <>
@@ -507,14 +565,7 @@ function ModelS() {
                       borderRadius: "0",
                     }}
                   >
-                    <Stack
-                      direction="column"
-                      sx={{
-                        padding: "1rem",
-                        textAlign: "left",
-                      }}
-                      spacing={2}
-                    >
+                    <ButtonStack spacing={2}>
                       <TriBtnTitle style={{}}>Plaid</TriBtnTitle>
                       <TriBtnContent>
                         Tri Motor All-Wheel Drive platform with torque vectoring
@@ -551,7 +602,7 @@ function ModelS() {
                           </Box>
                         </Stack>
                       </Box>
-                    </Stack>
+                    </ButtonStack>
                   </Button>
                 </Stack>
               </Box>
@@ -589,7 +640,7 @@ function ModelS() {
               <Box>
                 <Stack direction="column" spacing={0.5}>
                   <FeatureTitle style={{ textAlign: "left" }}>
-                    0.208 <i style={{fontSize:"1rem"}}>Cd</i>
+                    0.208 <i style={{ fontSize: "1rem" }}>Cd</i>
                   </FeatureTitle>
                   <FeatureSubTitle>Lowest-drag car on Earth</FeatureSubTitle>
                 </Stack>
@@ -707,15 +758,55 @@ function ModelS() {
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
-            <img
-              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
-              loading="lazy"
-              style={{
-                width: "72vw",
-                height: "100vh",
-                objectFit: "cover",
-              }}
-            />
+            <Stack>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
+                loading="lazy"
+                style={{
+                  width: "72vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                }}
+              />
+              <Box sx={{ margin: "-8rem auto 0 auto" }}>
+                <Stack
+                  direction="row"
+                  spacing={5}
+                  sx={{
+                    width: "55vw",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    paddingRight: "10vh",
+                  }}
+                >
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>405 mi</FeatureTitle>
+                      <FeatureSubTitle>
+                        Go anywhere with up to 405 miles of estimated range on a
+                        single charge
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>200 mi</FeatureTitle>
+                      <FeatureSubTitle>
+                        Supercharge up to 200 miles in 15 minutes
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="column" spacing={1} textAlign="center">
+                      <FeatureTitle>25,000+</FeatureTitle>
+                      <FeatureSubTitle>
+                        Superchargers placed along popular routes
+                      </FeatureSubTitle>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Stack>
             <Box
               sx={{
                 display: "flex",
@@ -749,6 +840,13 @@ function ModelS() {
           </Stack>
         </Box>
       </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
+        <TitleWrapper>
+          <Box
+            sx={{
+              margin: "auto",
+              width: "55vw",
+              padding: "22vh 0 2rem 0",
       <BackgroundWrapper
         style={{ backgroundColor: "white" }}
       >
@@ -762,6 +860,99 @@ function ModelS() {
             <Stack direction="column" textAlign="left" spacing={1}>
               <MainTitleContent>Freedom to Travel</MainTitleContent>
               <SubContent>
+                Enter a destination on your touchscreen and Trip Planner will
+                automatically calculate your route with Superchargers along the
+                way.
+              </SubContent>
+            </Stack>
+          </Box>
+          <Box>
+            <Stack>
+              <Box
+                sx={{
+                  padding: "1rem 0",
+                }}
+              >
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589779466653706/1635264436900.jpg"
+                  alt="SanJose"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589782742417418/1635264486681.jpg"
+                  alt="Berkeley"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589778741055528/1635264404630.jpg"
+                  alt="Manhattan"
+                />
+                <img
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589783585460294/1635264519801.jpg"
+                  alt="Fort"
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "1rem 0",
+                }}
+              >
+                <Stack direction="row" spacing={4}>
+                  <MapButton style={{ margin: "0" }}>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
+                    </ButtonStack>
+                  </MapButton>
+                </Stack>
+              </Box>
+            </Stack>
+            <OutlineBtnBlack
+              style={{
+                margin: "2rem 0",
+              }}
+            >
+              Learn more
+            </OutlineBtnBlack>
+          </Box>
+        </TitleWrapper>
               Enter a destination on your touchscreen and Trip Planner will automatically
               calculate your route with Superchargers along the way.
               </SubContent>
@@ -769,19 +960,53 @@ function ModelS() {
           </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
-          loading="lazy"
-          style={{
-            width: "80vw",
-            height: "100vh",
-            objectFit: "cover",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Stack direction="column" padding="2.5rem 0 0 3rem">
+                <SubTitleContent>Safety</SubTitleContent>
+                <MainTitleContent>High Impact Protection</MainTitleContent>
+                <SubContent style={{ padding: "4rem 0 0 0" }}>
+                  Model S is built from the ground up as an electric vehicle,
+                  with a high-strength architecture and floor-mounted battery
+                  pack for incredible occupant protection and low rollover risk.
+                  Every Model S includes Tesla’s latest active safety features,
+                  such as Automatic Emergency Braking, at no extra cost.
+                </SubContent>
+              </Stack>
+              <Box>
+                <OutlineBtnBlack
+                  style={{
+                    padding: ".3rem 1.5rem",
+                    marginLeft: "3rem",
+                    marginBottom: "7rem",
+                  }}
+                >
+                  Order now
+                </OutlineBtnBlack>
+              </Box>
+            </Box>
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
+              loading="lazy"
+              style={{
+                width: "70vw",
+                height: "100vh",
+                objectFit: "cover",
+              }}
+            />
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <video
-          src="https://tesla-cdn.thron.com/delivery/public/video/tesla/65011bbb-6f1c-422e-9e7a-727ba24bad15/bvlatuR/WEBHD/autopilot"
+          src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
           style={{
             width: "100%",
             height: "75vh",
@@ -791,31 +1016,313 @@ function ModelS() {
           loop
           preload="auto"
         />
+        <Box sx={{ padding: "2rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={14}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Autopilot</SubTitleContent>
+                <MainTitleContent>Future of Driving</MainTitleContent>
+                <Box>
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                Autopilot enables your car to steer, accelerate and brake
+                automatically within its lane under your active supervision,
+                assisting with the most burdensome parts of driving. With
+                over-the-air software updates, the latest enhancements are
+                available instantly.
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "white" }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
+        <TitleWrapper>
+          <Box
+            sx={{
+              margin: "auto",
+              width: "55vw",
+              padding: "14vh 0 2rem 0",
+            }}
+          >
+            <Stack direction="column" textAlign="left" spacing={1}>
+              <MainTitleContent>Features</MainTitleContent>
+              <SubContent>
+                Full Self-Driving Capability introduces additional features and
+                improves existing functionality to make your car more capable
+                over time including:
+              </SubContent>
+            </Stack>
+          </Box>
+          <Box>
+            <Stack marginBottom="3rem">
+              <Box
+                sx={{
+                  padding: "1rem 0",
+                }}
+              >
+                <video
+                  style={{
+                    width: "80vw",
+                    margin: "0 auto",
+                  }}
+                  autoPlay
+                  loop
+                  preload="auto"
+                  src="https://tesla-cdn.thron.com/static/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4?xseo="
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "1rem 0",
+                }}
+              >
+                <Stack direction="row" spacing={4}>
+                  <MapButton style={{ margin: "0" }}>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+        </TitleWrapper>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "black" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea201786-4dec-4ca2-b266-c7a180443853/bvlatuR/std/1440x1080/MS-Specs-Hero-Desktop"
-          loading="lazy"
-          style={{
-            width: "50vw",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
+        <Box style={{ width: "100%" }}>
+          <Stack direction="row">
+            <Box>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea201786-4dec-4ca2-b266-c7a180443853/bvlatuR/std/1440x1080/MS-Specs-Hero-Desktop"
+                loading="lazy"
+                style={{
+                  width: "50vw",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+            <Box>
+              <Box style={{ padding: "2.2rem 3rem" }}>
+                <Stack direction="column">
+                  <Box>
+                    <SpecTitle style={{ color: "white" }}>
+                      Model S <span>Specs</span>{" "}
+                    </SpecTitle>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <OutlineBtnWhite
+                        style={{
+                          padding: ".1rem 6rem",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Plaid
+                      </OutlineBtnWhite>
+                      <OutlineBtnWhite
+                        style={{
+                          padding: ".1rem 6rem",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Long Range
+                      </OutlineBtnWhite>
+                    </Stack>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p
+                                style={{
+                                  lineHeight: "120%",
+                                  fontStyle: "italic",
+                                }}
+                              >
+                                †when equipped with the proper wheels and tires
+                                (available fall 2021)
+                              </p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/1c9e3fa8-7eba-4d75-bf00-03a3dbdd6d06/bvlatuR/std/1660x920/MS-Order-Hero-Desktop"
-          loading="lazy"
+        <Box
           style={{
-            width: "50vw",
+            width: "100%",
             height: "100%",
-            objectFit: "cover",
+            display: "flex",
+            justifyContent: "center",
           }}
-        />
+        >
+          <Stack
+            direction="row"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box alignItems="center" margin="auto" padding="0 1rem 0 10rem ">
+              <Stack spacing={6}>
+                <MainTitleContent>Model S</MainTitleContent>
+                <Box>
+                  <Stack direction="row" spacing={4}>
+                    <OutlineBtnBlack
+                      style={{ margin: "0", padding: ".4rem 4rem" }}
+                    >
+                      order now
+                    </OutlineBtnBlack>
+                    <OutlineBtnBlack style={{ padding: ".4rem 5.5rem" }}>
+                      compare
+                    </OutlineBtnBlack>
+                  </Stack>
+                </Box>
+              </Stack>
+            </Box>
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/1c9e3fa8-7eba-4d75-bf00-03a3dbdd6d06/bvlatuR/std/1660x920/MS-Order-Hero-Desktop"
+              loading="lazy"
+              style={{
+                width: "50vw",
+                height: "100%",
+                objectFit: "contain",
+                float: "right",
+              }}
+            />
+          </Stack>
+        </Box>
       </BackgroundWrapper>
     </>
   );
