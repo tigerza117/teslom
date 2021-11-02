@@ -161,6 +161,7 @@ const RowSectionBlock = styled(Box)(({ theme }) => ({
 function Model3() {
   return (
     <>
+      <Chat />
       <BackgroundWrapper
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D)`,
