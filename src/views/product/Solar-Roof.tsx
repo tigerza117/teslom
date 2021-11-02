@@ -138,6 +138,53 @@ const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
   padding: "0",
 }));
 
+const TriBtnTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "1rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  textTransform: "capitalize",
+}));
+
+const TriBtnContent = styled("h5")(({ theme }) => ({
+  fontWeight: 500,
+  fontSize: ".75rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  textTransform: "capitalize",
+}));
+
+const BtnFeatTitle = styled("h5")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "1.5rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  textTransform: "capitalize",
+}));
+
+const MapButton = styled("h5")(({ theme }) => ({
+  width: "14rem",
+  borderTop: "3px solid black",
+  borderRadius: "0",
+}));
+
+const ButtonStack = styled(Stack)(({ theme }) => ({
+  flexDirection: "column",
+  padding: "1rem",
+  textAlign: "left",
+}));
+
+const RowSectionBlock = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-around",
+  flexDirection: "row",
+  textAlign: "left",
+  width: "80vw",
+}));
+
 function SolarRoof() {
   return (
     <>
@@ -217,33 +264,30 @@ function SolarRoof() {
             objectPosition: "0 62%",
           }}
         />
-        <Box sx={{ padding: "3rem 0 6rem 0" }}>
-          <Stack
-            direction="row"
-            spacing={6}
-            sx={{ display: "flex", justifyContent: "center" }}
+        <RowSectionBlock
+            style={{
+              margin: "3rem auto 0 auto",
+            }}
           >
-            <Box>
+            <Box style={{ width: "40%" }}>
               <Stack direction="column">
-                <SubTitleContent>Quis autem vel eum</SubTitleContent>
-                <MainTitleContent>voluptate velit esse</MainTitleContent>
-                <Stack
-                  direction="row"
-                  display="flex"
-                  justifyContent="space-between"
-                >
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
-                </Stack>
+                <SubTitleContent>quod maxime placeat</SubTitleContent>
+                <MainTitleContent>maxime placeat</MainTitleContent>
+                <Box style={{ padding: "1rem 0" }}>
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    Order now
+                  </OutlineBtnBlack>
+                </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box>
               <SubContent>
-                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                Enter a destination on your touchscreen and Trip Planner will
+                automatically calculate your route with Superchargers along the
+                way.
               </SubContent>
             </Box>
-          </Stack>
-        </Box>
+          </RowSectionBlock>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
@@ -354,9 +398,110 @@ function SolarRoof() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "#f5f5f5" }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5", height: "auto" }}>
+        <TitleWrapper>
+          <RowSectionBlock
+            style={{
+              margin: "3rem auto 0 auto",
+            }}
+          >
+            <Box style={{ width: "40%" }}>
+              <Stack direction="column">
+                <SubTitleContent>quod maxime placeat</SubTitleContent>
+                <MainTitleContent>maxime placeat</MainTitleContent>
+                <Box style={{ padding: "1rem 0" }}>
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    Order now
+                  </OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box>
+              <SubContent>
+                Enter a destination on your touchscreen and Trip Planner will
+                automatically calculate your route with Superchargers along the
+                way.
+              </SubContent>
+            </Box>
+          </RowSectionBlock>
+          <Box>
+            <Stack>
+              <Box
+                sx={{
+                  padding: "1rem 0",
+                }}
+              >
+                <video
+                  autoPlay
+                  muted
+                  style={{
+                    width: "45vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://www.tesla.com/sites/default/files/solarroof/v3/installation/Carousel_Design.mp4"
+                />
+                <video
+                  autoPlay
+                  muted
+                  style={{
+                    width: "45vw",
+                    margin: "0 auto",
+                  }}
+                  src="https://www.tesla.com/sites/default/files/solarroof/v3/installation/Carousel_Installation2.mp4"
+                />
+                <video
+                  autoPlay
+                  muted
+                  style={{
+                    width: "45vw",
+                    margin: "0 auto",
+                    display: "none",
+                  }}
+                  src="https://tesla-cdn.thron.com/delivery/public/video/tesla/18fba275-3adb-4c8f-b2aa-f151350ad5c9/bvlatuR/WEBHD/Carousel-PowerOn"
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "1rem 0",
+                }}
+              >
+                <Stack direction="row" spacing={4}>
+                  <MapButton style={{ margin: "0", padding: "0 0 1rem 0" }}>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnContent>
+                        Et harum quidem rerum facilis est et expedita
+                        distinctio.
+                      </TriBtnContent>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnContent>
+                        Et harum quidem rerum facilis est et expedita
+                        distinctio.
+                      </TriBtnContent>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnContent>
+                        Et harum quidem rerum facilis est et expedita
+                        distinctio.
+                      </TriBtnContent>
+                    </ButtonStack>
+                  </MapButton>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
+        </TitleWrapper>
+      </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
           <Stack direction="row">
@@ -423,33 +568,30 @@ function SolarRoof() {
             objectPosition: "0 51%",
           }}
         />
-        <Box sx={{ padding: "3rem 0 6rem 0" }}>
-          <Stack
-            direction="row"
-            spacing={6}
-            sx={{ display: "flex", justifyContent: "center" }}
+        <RowSectionBlock
+            style={{
+              margin: "3rem auto 0 auto",
+            }}
           >
-            <Box>
+            <Box style={{ width: "40%" }}>
               <Stack direction="column">
-                <SubTitleContent>Quis autem vel eum</SubTitleContent>
-                <MainTitleContent>voluptate velit esse</MainTitleContent>
-                <Stack
-                  direction="row"
-                  display="flex"
-                  justifyContent="space-between"
-                >
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
-                </Stack>
+                <SubTitleContent>quod maxime placeat</SubTitleContent>
+                <MainTitleContent>maxime placeat</MainTitleContent>
+                <Box style={{ padding: "1rem 0" }}>
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    Order now
+                  </OutlineBtnBlack>
+                </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box>
               <SubContent>
-                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                Enter a destination on your touchscreen and Trip Planner will
+                automatically calculate your route with Superchargers along the
+                way.
               </SubContent>
             </Box>
-          </Stack>
-        </Box>
+          </RowSectionBlock>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
