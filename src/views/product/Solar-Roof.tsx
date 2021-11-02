@@ -69,55 +69,44 @@ const OutlineBtnBlack = styled(Button)(({ theme }) => ({
   marginTop: ".8rem",
 }));
 
-const AdsTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
+const SpecTitle = styled("h5")(({ theme }) => ({
   fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: "auto 0",
-  "&::after": {
-    content: '""',
-    display: "block",
-    position: "absolute",
-    width: "100%",
-    height: "40vh",
-    marginTop: "2vh",
-    background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
+  fontSize: "2rem",
+  margin: "0",
+  padding: "0",
+  color: "#393c41",
+  "& span": {
+    fontWeight: 300,
   },
 }));
 
-const InfoFeature = styled(Box)(({ theme }) => ({
-  margin: "auto",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "5rem 0",
+const SpecUl = styled("ul")(({ theme }) => ({
+  listStyleType: "none",
+  display: "block",
+  width: "250px",
+  margin: "0",
+  padding: "2.5rem 0",
 }));
 
-const GalleryContainer = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "45vh",
-  width: "80vh",
-}));
-
-const InfoContainer = styled(Box)(({ theme }) => ({
-  height: "45vh",
-  width: "80vh",
-  verticalAlign: "middle",
-}));
-
-const InfoTitle = styled(Typography)(({ theme }) => ({
+const Specli = styled("li")(({ theme }) => ({
+  display: "list-item",
   color: "white",
-  fontWeight: 700,
-  fontSize: ".9rem",
-  padding: "6rem 0 0 0",
+  margin: "0",
+  padding: "0",
+  lineHeight: "6px",
+  "&::before": {
+    content: "''",
+    display: "block",
+    blockSize: "1px",
+    width: "2rem",
+    backgroundColor: "#8f8f8f",
+  },
 }));
 
-const InfoSubTitle = styled(Typography)(({ theme }) => ({
+const SpecSubText = styled("p")(({ theme }) => ({
   color: "white",
-  fontWeight: 500,
-  fontSize: "0.9rem",
+  margin: "1rem 0 2rem 0",
+  padding: "0",
 }));
 
 const MainTitleContent = styled(Typography)(({ theme }) => ({
@@ -143,6 +132,12 @@ const SubContent = styled("h5")(({ theme }) => ({
   color: "#393c41",
 }));
 
+const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
+  width: "210px",
+  margin: "0",
+  padding: "0",
+}));
+
 function SolarRoof() {
   return (
     <>
@@ -153,64 +148,60 @@ function SolarRoof() {
         }}
       >
         <TitleWrapper>
-          <Box sx={{ marginTop: "12vh" }}>
+          <Box sx={{ marginTop: "12vh", marginBottom: "auto" }}>
             <Stack direction="column" spacing={-1}>
               <MainTitle>Solar Roof</MainTitle>
               <MainSubTitle>
-                Transform your roof and produce clean energy
+                sed quia consequuntur magni dolores eos qui ratione
               </MainSubTitle>
             </Stack>
           </Box>
-          <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>
-            <Stack direction="row" spacing={12}>
+          <Box margin="0 auto" display="flex">
+            <Stack direction="column">
               <Box>
-                <Stack direction="column" spacing={-1.5}>
-                  <FeatureTitle>
-                    <img
-                      style={{
-                        height: "2.8rem",
-                        margin: "0",
-                      }}
-                      src="https://www.tesla.com/sites/default/files/solarroof/v3/hero/solar-roof-hero-solar_badge.svg"
-                      alt=""
-                    />
-                  </FeatureTitle>
-                  <FeatureSubTitle
-                    style={{
-                      padding: "-2rem 0 0 0",
-                    }}
-                  >
-                    Beautiful Solar
-                    <br />
-                    Without Compromise
-                  </FeatureSubTitle>
+                <Stack direction="row" margin="auto">
+                  <HomeFeatureWrapper>
+                    <Box>
+                      <img
+                        style={{
+                          height: "2.8rem",
+                          margin: "0",
+                        }}
+                        src="https://www.tesla.com/sites/default/files/solarroof/v3/hero/solar-roof-hero-solar_badge.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <FeatureSubTitle>
+                      Sed ut perspiciatis unde
+                      <br />
+                      Lorem
+                    </FeatureSubTitle>
+                  </HomeFeatureWrapper>
+                  <HomeFeatureWrapper>
+                    <FeatureTitle>Lorem</FeatureTitle>
+                    <FeatureSubTitle>
+                      Sed ut perspiciatis unde
+                      <br />
+                      Lorem
+                    </FeatureSubTitle>
+                  </HomeFeatureWrapper>
+                  <HomeFeatureWrapper>
+                    <FeatureTitle>Lorem</FeatureTitle>
+                    <FeatureSubTitle>
+                      Sed ut perspiciatis unde
+                      <br />
+                      Lorem
+                    </FeatureSubTitle>
+                  </HomeFeatureWrapper>
+                  <HomeFeatureWrapper>
+                    <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
+                  </HomeFeatureWrapper>
                 </Stack>
               </Box>
               <Box>
-                <Stack direction="column">
-                  <FeatureTitle>25-Year</FeatureTitle>
-                  <FeatureSubTitle>
-                    Tile
-                    <br />
-                    Warranty
-                  </FeatureSubTitle>
-                </Stack>
-              </Box>
-              <Box>
-                <Stack direction="column">
-                  <FeatureTitle>24/7</FeatureTitle>
-                  <FeatureSubTitle>
-                    Outage
-                    <br />
-                    Protection
-                  </FeatureSubTitle>
-                </Stack>
-              </Box>
-              <Box>
-                <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
+                <ExpandingLight />
               </Box>
             </Stack>
-            <ExpandingLight />
           </Box>
         </TitleWrapper>
       </BackgroundWrapper>
@@ -221,51 +212,204 @@ function SolarRoof() {
           loading="lazy"
           style={{
             width: "100vw",
-            height: "72vh",
+            height: "63vh",
             objectFit: "cover",
-            objectPosition: "0 60%",
+            objectPosition: "0 62%",
           }}
         />
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={6}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Quis autem vel eum</SubTitleContent>
+                <MainTitleContent>voluptate velit esse</MainTitleContent>
+                <Stack
+                  direction="row"
+                  display="flex"
+                  justifyContent="space-between"
+                >
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Stack>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop"
-          alt=""
-          loading="lazy"
-          style={{
-            width: "73vw",
-            height: "100vh",
-            objectFit: "cover",
-            float: "right",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box>
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box
+                  sx={{
+                    padding: "3rem 1.5rem",
+                  }}
+                >
+                  <SubTitleContent>At vero eos et</SubTitleContent>
+                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubContent style={{ padding: "1rem 0" }}>
+                    cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus.
+                  </SubContent>
+                </Box>
+                <Box
+                  style={{
+                    padding: "10rem 0 0 1.5rem",
+                  }}
+                >
+                  <Stack direction="row" spacing={1}>
+                    <OutlineBtnBlack style={{ margin: "0" }}>
+                      ORDER NOW
+                    </OutlineBtnBlack>
+                    <OutlineBtnBlack>LEARN MORE</OutlineBtnBlack>
+                  </Stack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "70vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  float: "right",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <video
-          src="https://www.tesla.com/sites/default/files/solarroof/v3/durability/SR-Durability-Desktop.mp4"
-          style={{
-            width: "74vw",
-            height: "100vh",
-            objectFit: "cover",
-            float: "left",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box>
+              <video
+                src="https://www.tesla.com/sites/default/files/solarroof/v3/durability/SR-Durability-Desktop.mp4"
+                autoPlay
+                muted
+                style={{
+                  width: "74vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  float: "left",
+                }}
+              />
+            </Box>
+            <Box>
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box
+                  sx={{
+                    padding: "3rem 1.5rem",
+                  }}
+                >
+                  <SubTitleContent>At vero eos et</SubTitleContent>
+                  <MainTitleContent>Itaque rerum</MainTitleContent>
+                  <SubContent style={{ padding: "1rem 0" }}>
+                    cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio. Nam libero tempore.
+                  </SubContent>
+                </Box>
+                <Box
+                  style={{
+                    padding: "12rem 0 0 1.5rem",
+                  }}
+                >
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    ORDER NOW
+                  </OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{ backgroundColor: "#f5f5f5" }}
       ></BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <img
-          src="https://www.tesla.com/sites/default/files/solarroof/v3/inverter/Inverter_V8_D.jpg"
-          alt=""
-          loading="lazy"
-          style={{
-            width: "73vw",
-            height: "100vh",
-            objectFit: "cover",
-            float: "right",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box>
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box
+                  sx={{
+                    padding: "3rem 1.5rem",
+                  }}
+                >
+                  <SubTitleContent>At vero eos et</SubTitleContent>
+                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubContent style={{ padding: "1rem 0" }}>
+                    cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus.
+                  </SubContent>
+                </Box>
+                <Box
+                  style={{
+                    padding: "10rem 0 0 1.5rem",
+                  }}
+                >
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    ORDER NOW
+                  </OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box>
+              <img
+                src="https://www.tesla.com/sites/default/files/solarroof/v3/inverter/Inverter_V8_D.jpg"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "73vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  float: "right",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <img
@@ -279,26 +423,187 @@ function SolarRoof() {
             objectPosition: "0 51%",
           }}
         />
+        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+          <Stack
+            direction="row"
+            spacing={6}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Quis autem vel eum</SubTitleContent>
+                <MainTitleContent>voluptate velit esse</MainTitleContent>
+                <Stack
+                  direction="row"
+                  display="flex"
+                  justifyContent="space-between"
+                >
+                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                </Stack>
+              </Stack>
+            </Box>
+            <Box width="45%">
+              <SubContent>
+                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+              </SubContent>
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <img
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/4aedd73e-cd73-4051-9cc7-68955ad4646d/bvlatuR/std/2880x1800/SR-Value-D"
-          alt=""
-          loading="lazy"
-          style={{
-            width: "73vw",
-            height: "100vh",
-            objectFit: "cover",
-            float: "right",
-          }}
-        />
+        <Box>
+          <Stack direction="row">
+            <Box>
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box
+                  sx={{
+                    padding: "3rem 1.5rem",
+                  }}
+                >
+                  <SubTitleContent>At vero eos et</SubTitleContent>
+                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubContent style={{ padding: "1rem 0" }}>
+                    cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus.
+                  </SubContent>
+                </Box>
+                <Box
+                  style={{
+                    padding: "10rem 0 0 1.5rem",
+                  }}
+                >
+                  <OutlineBtnBlack style={{ margin: "0" }}>
+                    ORDER NOW
+                  </OutlineBtnBlack>
+                </Box>
+              </Stack>
+            </Box>
+            <Box>
+              <img
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/4aedd73e-cd73-4051-9cc7-68955ad4646d/bvlatuR/std/2880x1800/SR-Value-D"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "70vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  float: "right",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "black" }}>
+        <Box style={{ width: "100%" }}>
+          <Stack direction="row">
+            <Box>
+              <img
+                src="https://www.tesla.com/sites/default/files/solarroof/specs/PanelMeasure_desktop2x.png"
+                alt=""
+                loading="lazy"
+                style={{
+                  width: "50vw",
+                  height: "100vh",
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+            <Box>
+              <Box style={{ padding: "8rem 3rem" }}>
+                <Stack direction="column">
+                  <Box>
+                    <SpecTitle style={{ color: "white" }}>
+                      Solar Roof <span>Specs</span>{" "}
+                    </SpecTitle>
+                  </Box>
+                  <Box>
+                    <Stack direction="row">
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                      <Box>
+                        <SpecUl>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                          <Specli>
+                            <SpecSubText>
+                              <strong>Wattage</strong>
+                              <p>425 W</p>
+                              <p>425 W</p>
+                            </SpecSubText>
+                          </Specli>
+                        </SpecUl>
+                      </Box>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
+      </BackgroundWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "black" }}>
+        <TitleWrapper style={{ justifyContent: "center" }}>
+          <Stack direction="column" spacing={1}>
+            <Box>
+              <MainTitleContent style={{ color: "white" }}>
+                Transform Your Roof
+              </MainTitleContent>
+            </Box>
+            <Box>
+              <SubContent style={{ color: "white" }}>
+                Power your home with Solar Roof
+              </SubContent>
+            </Box>
+            <Box>
+              <OutlineBtnWhite style={{ margin: "1.5rem 0" }}>
+                ORDER NOW
+              </OutlineBtnWhite>
+            </Box>
+          </Stack>
+        </TitleWrapper>
+      </BackgroundWrapper>
     </>
   );
 }
