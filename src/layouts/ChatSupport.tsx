@@ -13,6 +13,9 @@ const ChatBtn = styled(Button)(({ theme }) => ({
     right: "3rem",
     boxShadow: "0 1px 4px 0 rgb(0 0 0 / 50%) ",
     zIndex: 1000,
+    "&:hover":{
+        backgroundColor: "white",
+    }
   }));
 
 export default function Chat() {
