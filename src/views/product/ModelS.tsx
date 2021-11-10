@@ -1176,38 +1176,38 @@ function ModelS() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Range</strong>
+                              <p>396 mi (EPA est.)</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>1/4 Mile</strong>
+                              <p>9.23@155 mph trap speed</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Peak Power</strong>
+                              <p>1,020 hp</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Wheels</strong>
+                              <p>19" or 21"</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Cargo</strong>
+                              <p>28 cu ft</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Weight</strong>
+                              <p>4,766 lbs</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -1216,15 +1216,20 @@ function ModelS() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Acceleration</strong>
+                              <p>1.99 s 0-60 mph*</p>
+                              <p
+                                style={{
+                                  lineHeight: "120%",
+                                  fontStyle: "italic",
+                                }}
+                              >*with rollout subtracted</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Top Speed</strong>
+                              <p>200 mph†</p>
                               <p
                                 style={{
                                   lineHeight: "120%",
@@ -1238,20 +1243,20 @@ function ModelS() {
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Drag Coefficient</strong>
+                              <p>0.208 Cd</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Powertrain</strong>
+                              <p>Tri Motor</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Supercharging Max</strong>
+                              <p>250 kW</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>

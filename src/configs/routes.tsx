@@ -1,14 +1,15 @@
 import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "@layouts/Layout";
-import ModelS from "@views/product/ModelS";
-import Model3 from "@views/product/Model3";
-import ModelX from "@views/product/ModelX";
-import ModelY from "@views/product/ModelY";
-import SolarRoof from "@views/product/Solar-Roof";
-import SolarPanel from "@views/product/Solar-Panel";
 
 const Home = React.lazy(() => import("@views/home/Home"));
+const ModelS = React.lazy(() => import("@views/product/ModelS"));
+const Model3 = React.lazy(() => import("@views/product/Model3"));
+const ModelX = React.lazy(() => import("@views/product/ModelX"));
+const ModelY = React.lazy(() => import("@views/product/ModelY"));
+const SolarRoof = React.lazy(() => import("@views/product/Solar-Roof"));
+const SolarPanel = React.lazy(() => import("@views/product/Solar-Panel"));
+const Cybertruck = React.lazy(() => import("@views/product/Cybertruck"));
 
 const publicPaths = [
   { exact: true, path: "/", component: Home },
@@ -17,7 +18,9 @@ const publicPaths = [
   { exact: true, path: "/modelX", component: ModelX },
   { exact: true, path: "/ModelY", component: ModelY },
   { exact: true, path: "/solar-roof", component: SolarRoof },
-  { exact: true, path: "/solar-panel", component: SolarPanel },];
+  { exact: true, path: "/solar-panel", component: SolarPanel },
+  { exact: true, path: "/cybertruck", component: Cybertruck },
+];
 
 const publicRoutes = publicPaths.map(({ path, ...props }) => (
   <Route key={path} path={path} {...props} />
