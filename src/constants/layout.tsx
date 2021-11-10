@@ -113,3 +113,42 @@ export const DrawerBarList = [
     path: "more",
   },
 ];
+
+export const ShowCaseList_SolarPanel = [
+  {
+    label: "Solar panel",
+    path: "solar-panel",
+  },
+  {
+    label: "Savings",
+    path: "savings",
+  },
+  {
+    label: "Design",
+    path: "design",
+  },
+  {
+    label: "Powerwall",
+    path: "powerwall",
+  },
+  {
+    label: "Power on",
+    path: "power-on",
+  },
+  {
+    label: "Efficiency",
+    path: "efficiency",
+  },
+  {
+    label: "Experience",
+    path: "experience",
+  },
+  {
+    label: "Specs",
+    path: "specs",
+  },
+  {
+    label: "Order",
+    path: "order",
+  },
+];
