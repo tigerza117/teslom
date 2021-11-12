@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import { Box } from "@mui/system";
 import LayoutContext from "@contexts/LayoutContext";
 import Footer from "./Footer";
+import ChatSupport from "./ChatSupport";
 
 export const Layout: React.FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
@@ -37,6 +38,7 @@ export const Layout: React.FC = ({ children }) => {
         sx={{ minHeight: "100vh", position: "relative" }}
       >
         <Navbar />
+        <ChatSupport />
         <Box className="layout__content__wrapper">{children}</Box>
         <Footer />
       </Box>
