@@ -5,164 +5,44 @@ import { height } from "@mui/system";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
 import ExpandingLight from "@layouts/ExpandIcon-light";
-
-const BackgroundWrapper = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-}));
-
-const TitleWrapper = styled(Box)(({ theme }) => ({
-  height: "100%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  textAlign: "center",
-  margin: "auto",
-}));
-
-const MainTitle = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2.5rem",
-  marginBottom: 0,
-  color: "white",
-  padding: 0,
-  transform: "translateY(20px)",
-}));
-
-const MainSubTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 200,
-  fontSize: "1.2rem",
-  padding: "1.3rem 0",
-}));
-
-const FeatureTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-}));
-
-const FeatureSubTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 500,
-  fontSize: "0.8rem",
-}));
-
-const OutlineBtnWhite = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".3rem 2.5rem",
-  borderRadius: "25px",
-  border: "3px solid white",
-  boxShadow: "none",
-  color: "white",
-  marginTop: ".8rem",
-  "&:hover": {
-    backgroundColor: "white",
-    color: "black",
-  },
-}));
-
-const OutlineBtnBlack = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".3rem 2.5rem",
-  borderRadius: "25px",
-  border: "3px solid black",
-  boxShadow: "none",
-  color: "black",
-  marginTop: ".8rem",
-}));
-
-const AdsTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: "auto 0",
-  "&::after": {
-    content: '""',
-    display: "block",
-    position: "absolute",
-    width: "100%",
-    height: "40vh",
-    marginTop: "2vh",
-    background: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0))",
-  },
-}));
-
-const InfoFeature = styled(Box)(({ theme }) => ({
-  margin: "auto",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "5rem 0",
-}));
-
-const GalleryContainer = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "45vh",
-  width: "80vh",
-}));
-
-const InfoContainer = styled(Box)(({ theme }) => ({
-  height: "45vh",
-  width: "80vh",
-  verticalAlign: "middle",
-}));
-
-const InfoTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 700,
-  fontSize: ".9rem",
-  padding: "6rem 0 0 0",
-}));
-
-const InfoSubTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 500,
-  fontSize: "0.9rem",
-}));
-
-const MainTitleContent = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: 0,
-  color: "#181b21",
-  padding: 0,
-}));
-
-const SubTitleContent = styled("h5")(({ theme }) => ({
-  fontWeight: 200,
-  fontSize: "1.2rem",
-  margin: "0",
-  padding: "0",
-}));
-
-const SubContent = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-}));
-
-const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
-  width: "190px",
-  margin: "0",
-  padding: "0",
-}));
-
-const RowSectionBlock = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "space-around",
-  flexDirection: "row",
-  textAlign: "left",
-}));
+import {
+  Container,
+  GalleryContainer,
+  InfoContainer,
+} from "@components/shared/Container";
+import {
+  BackgroundWrapper,
+  BtnFeatTitle,
+  ButtonStack,
+  HomeFeatureWrapper,
+  InfoFeatureWrapper,
+  TitleWrapper,
+} from "@components/shared/Wrapper";
+import {
+  BtnOutline,
+  MapButton,
+  TriBtnContent,
+  TriBtnTitle,
+} from "@components/shared/Button";
+import {
+  AdsTitle,
+  FeatureSubTitle,
+  FeatureTitle,
+  InfoSubTitle,
+  InfoTitle,
+  MainSubTitle,
+  MainTitle,
+  MainTitleContent,
+  SpecTitle,
+  SubContent,
+  SubTitleContent,
+} from "@components/shared/Title";
+import { RowSectionBlock } from "@components/shared/Section";
+import { Specli, SpecSubText, SpecUl } from "@components/shared/Spect";
 
 function ModelY() {
   return (
-    <>
+    <Container>
       <Chat />
       <BackgroundWrapper
         sx={{
@@ -194,7 +74,7 @@ function ModelY() {
                     <FeatureSubTitle>Zombie ipsum</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
+                    <BtnOutline color="white">ORDER NOW</BtnOutline>
                   </HomeFeatureWrapper>
                 </Stack>
               </Box>
@@ -237,9 +117,7 @@ function ModelY() {
                   }}
                 >
                   <Stack direction="row" spacing={1}>
-                    <OutlineBtnBlack style={{ margin: "0" }}>
-                      ORDER NOW
-                    </OutlineBtnBlack>
+                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                   </Stack>
                 </Box>
               </Stack>
@@ -272,9 +150,7 @@ function ModelY() {
               <SubTitleContent>quod maxime placeat</SubTitleContent>
               <MainTitleContent>maxime placeat</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
-                <OutlineBtnBlack style={{ margin: "0" }}>
-                  Order now
-                </OutlineBtnBlack>
+                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
             </Stack>
           </Box>
@@ -370,7 +246,7 @@ function ModelY() {
                 <SubTitleContent>lumbering </SubTitleContent>
                 <MainTitleContent>rick grimes</MainTitleContent>
                 <Box>
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                  <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -456,7 +332,7 @@ function ModelY() {
                 </SubContent>
               </Stack>
               <Box>
-                <OutlineBtnBlack
+                <BtnOutline
                   style={{
                     padding: ".3rem 1.5rem",
                     marginLeft: "1.5rem",
@@ -464,7 +340,7 @@ function ModelY() {
                   }}
                 >
                   Order now
-                </OutlineBtnBlack>
+                </BtnOutline>
               </Box>
             </Box>
           </Stack>
@@ -493,7 +369,7 @@ function ModelY() {
                 <SubTitleContent>Autopilot</SubTitleContent>
                 <MainTitleContent>Future of Driving</MainTitleContent>
                 <Box>
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                  <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -530,7 +406,7 @@ function ModelY() {
                 <SubTitleContent>Autopilot</SubTitleContent>
                 <MainTitleContent>Future of Driving</MainTitleContent>
                 <Box>
-                  <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                  <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -577,17 +453,23 @@ function ModelY() {
           >
             <Box alignItems="center" margin="auto" padding="0 1rem 0 10rem ">
               <Stack spacing={6}>
-                <MainTitleContent style={{color: "white"}}>Order Model Y</MainTitleContent>
+                <MainTitleContent style={{ color: "white" }}>
+                  Order Model Y
+                </MainTitleContent>
                 <Box>
                   <Stack direction="row" spacing={4}>
-                    <OutlineBtnWhite
+                    <BtnOutline
+                      color="white"
                       style={{ margin: "0", padding: ".4rem 4rem" }}
                     >
                       order now
-                    </OutlineBtnWhite>
-                    <OutlineBtnWhite style={{ padding: ".4rem 5.5rem" }}>
+                    </BtnOutline>
+                    <BtnOutline
+                      color="white"
+                      style={{ padding: ".4rem 5.5rem" }}
+                    >
                       compare
-                    </OutlineBtnWhite>
+                    </BtnOutline>
                   </Stack>
                 </Box>
               </Stack>
@@ -605,7 +487,7 @@ function ModelY() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-    </>
+    </Container>
   );
 }
 

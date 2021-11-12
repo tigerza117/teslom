@@ -1,166 +1,30 @@
 import styled from "@emotion/styled";
-import { ImageAspectRatio } from "@mui/icons-material";
-import { Box, Button, Stack, Typography } from "@mui/material";
-import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
 import Chat from "@layouts/ChatSupport";
 import ExpandingLight from "@layouts/ExpandIcon-light";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
-import ShowCaseWrapper from "@layouts/ShowCase_SolarPanel";
+import { Container } from "@components/shared/Container";
+import {
+  BackgroundWrapper,
+  HomeFeatureWrapper,
+  TitleWrapper,
+} from "@components/shared/Wrapper";
+import { BtnOutline } from "@components/shared/Button";
+import {
+  FeatureSubTitle,
+  FeatureTitle,
+  MainTitle,
+  MainTitleContent,
+  SpecTitle,
+  SubContent,
+  SubTitleContent,
+} from "@components/shared/Title";
+import { RowSectionBlock } from "@components/shared/Section";
+import { Specli, SpecSubText, SpecUl } from "@components/shared/Spect";
 
-const BackgroundWrapper = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-}));
-
-const TitleWrapper = styled(Box)(({ theme }) => ({
-  height: "100%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  textAlign: "center",
-  margin: "auto",
-}));
-
-const MainTitle = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2.5rem",
-  marginBottom: 0,
-  color: "white",
-  padding: 0,
-  transform: "translateY(20px)",
-}));
-
-const MainSubTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  padding: "1.5rem 0",
-  color: "white",
-}));
-
-const FeatureTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-}));
-
-const FeatureSubTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 500,
-  fontSize: "0.8rem",
-}));
-
-const OutlineBtnWhite = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".35rem 3.5rem",
-  borderRadius: "25px",
-  border: "3px solid white",
-  boxShadow: "none",
-  color: "white",
-  marginTop: ".8rem",
-  "&:hover": {
-    backgroundColor: "white",
-    color: "black",
-  },
-}));
-
-const OutlineBtnBlack = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".4rem 1.5rem",
-  borderRadius: "25px",
-  border: "3px solid black",
-  boxShadow: "none",
-  color: "black",
-  marginTop: ".8rem",
-  "&:hover": {
-    backgroundColor: "black",
-    color: "white",
-  },
-}));
-
-const MainTitleContent = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: 0,
-  color: "#181b21",
-  padding: 0,
-}));
-
-const SubTitleContent = styled("h5")(({ theme }) => ({
-  fontWeight: 200,
-  fontSize: "1.2rem",
-  margin: "0",
-  padding: "0",
-}));
-
-const SubContent = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  "& a": {
-    color: "#393c41",
-  },
-}));
-
-const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
-  width: "210px",
-  margin: "0",
-  padding: "0",
-}));
-
-const SpecTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  "& span": {
-    fontWeight: 300,
-  },
-}));
-
-const SpecUl = styled("ul")(({ theme }) => ({
-  listStyleType: "none",
-  display: "block",
-  width: "250px",
-  margin: "0",
-  padding: "2.5rem 0",
-}));
-
-const Specli = styled("li")(({ theme }) => ({
-  display: "list-item",
-  color: "white",
-  margin: "0",
-  padding: "0",
-  lineHeight: "6px",
-  "&::before": {
-    content: "''",
-    display: "block",
-    blockSize: "1px",
-    width: "2rem",
-    backgroundColor: "#8f8f8f",
-  },
-}));
-
-const SpecSubText = styled("p")(({ theme }) => ({
-  color: "white",
-  margin: "1rem 0 2rem 0",
-  padding: "0",
-}));
-
-const RowSectionBlock = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "space-around",
-  flexDirection: "row",
-  textAlign: "left",
-  width: "80vw",
-}));
 function Model3() {
   return (
-    <>
+    <Container>
       <Chat />
       <BackgroundWrapper
         sx={{
@@ -190,7 +54,7 @@ function Model3() {
                     <FeatureSubTitle>sapien</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
+                    <BtnOutline color="white">ORDER NOW</BtnOutline>
                   </HomeFeatureWrapper>
                 </Stack>
               </Box>
@@ -246,7 +110,7 @@ function Model3() {
                     <SubContent>LEARN MORE</SubContent>
                   </Box>
                   <Box>
-                    <OutlineBtnBlack>ORDER NOW</OutlineBtnBlack>
+                    <BtnOutline>ORDER NOW</BtnOutline>
                   </Box>
                 </Stack>
               </Box>
@@ -334,9 +198,7 @@ function Model3() {
                       <SubContent>LEARN MORE</SubContent>
                     </Box>
                     <Box>
-                      <OutlineBtnBlack style={{ margin: "0" }}>
-                        ORDER NOW
-                      </OutlineBtnBlack>
+                      <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                     </Box>
                   </Stack>
                 </Box>
@@ -400,9 +262,7 @@ function Model3() {
               <SubTitleContent>quod maxime placeat</SubTitleContent>
               <MainTitleContent>maxime placeat</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
-                <OutlineBtnBlack style={{ margin: "0" }}>
-                  Order now
-                </OutlineBtnBlack>
+                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
             </Stack>
           </Box>
@@ -519,9 +379,7 @@ function Model3() {
                     <SubContent>LEARN MORE</SubContent>
                   </Box>
                   <Box>
-                    <OutlineBtnBlack style={{ margin: "0" }}>
-                      ORDER NOW
-                    </OutlineBtnBlack>
+                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                   </Box>
                 </Stack>
               </Box>
@@ -571,9 +429,7 @@ function Model3() {
                     <SubContent>LEARN MORE</SubContent>
                   </Box>
                   <Box>
-                    <OutlineBtnBlack style={{ margin: "0" }}>
-                      ORDER NOW
-                    </OutlineBtnBlack>
+                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                   </Box>
                 </Stack>
               </Stack>
@@ -629,9 +485,7 @@ function Model3() {
                     <SubContent>LEARN MORE</SubContent>
                   </Box>
                   <Box>
-                    <OutlineBtnBlack style={{ margin: "0" }}>
-                      ORDER NOW
-                    </OutlineBtnBlack>
+                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                   </Box>
                 </Stack>
               </Stack>
@@ -672,7 +526,8 @@ function Model3() {
                     </SpecTitle>
                     <Box>
                       <Stack direction="row" spacing={1} marginTop="1rem">
-                        <OutlineBtnWhite
+                        <BtnOutline
+                          color="white"
                           style={{
                             margin: "0",
                             padding: ".1rem 6rem",
@@ -680,18 +535,20 @@ function Model3() {
                           }}
                         >
                           Plaid
-                        </OutlineBtnWhite>
-                        <OutlineBtnWhite
+                        </BtnOutline>
+                        <BtnOutline
+                          color="white"
                           style={{
                             padding: ".1rem 6rem",
                             textTransform: "capitalize",
                           }}
                         >
                           Long Range
-                        </OutlineBtnWhite>
+                        </BtnOutline>
                       </Stack>
                       <Stack direction="row" spacing={1} marginTop=".2rem">
-                        <OutlineBtnWhite
+                        <BtnOutline
+                          color="white"
                           style={{
                             margin: "0",
                             padding: ".1rem 6rem",
@@ -699,15 +556,16 @@ function Model3() {
                           }}
                         >
                           Plaid
-                        </OutlineBtnWhite>
-                        <OutlineBtnWhite
+                        </BtnOutline>
+                        <BtnOutline
+                          color="white"
                           style={{
                             padding: ".1rem 6rem",
                             textTransform: "capitalize",
                           }}
                         >
                           Long Range
-                        </OutlineBtnWhite>
+                        </BtnOutline>
                       </Stack>
                     </Box>
                   </Box>
@@ -825,14 +683,18 @@ function Model3() {
                 </MainTitleContent>
                 <Box>
                   <Stack direction="row" spacing={4}>
-                    <OutlineBtnWhite
+                    <BtnOutline
+                      color="white"
                       style={{ margin: "0", padding: ".4rem 4rem" }}
                     >
                       order now
-                    </OutlineBtnWhite>
-                    <OutlineBtnWhite style={{ padding: ".4rem 5.5rem" }}>
+                    </BtnOutline>
+                    <BtnOutline
+                      color="white"
+                      style={{ padding: ".4rem 5.5rem" }}
+                    >
                       compare
-                    </OutlineBtnWhite>
+                    </BtnOutline>
                   </Stack>
                 </Box>
               </Stack>
@@ -850,7 +712,7 @@ function Model3() {
           </Stack>
         </Box>
       </BackgroundWrapper>
-    </>
+    </Container>
   );
 }
 

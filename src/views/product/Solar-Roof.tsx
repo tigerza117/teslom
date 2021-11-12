@@ -4,190 +4,44 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Chat from "@layouts/ChatSupport";
 import ExpandingLight from "@layouts/ExpandIcon-light";
-
-const BackgroundWrapper = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-}));
-
-const TitleWrapper = styled(Box)(({ theme }) => ({
-  height: "100%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  textAlign: "center",
-  margin: "auto",
-}));
-
-const MainTitle = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2.5rem",
-  marginBottom: 0,
-  color: "white",
-  padding: 0,
-  transform: "translateY(20px)",
-}));
-
-const MainSubTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  padding: "1.5rem 0",
-  color: "white",
-}));
-
-const FeatureTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-}));
-
-const FeatureSubTitle = styled(Typography)(({ theme }) => ({
-  color: "white",
-  fontWeight: 500,
-  fontSize: "0.8rem",
-}));
-
-const OutlineBtnWhite = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".3rem 3.5rem",
-  borderRadius: "25px",
-  border: "3px solid white",
-  boxShadow: "none",
-  color: "white",
-  marginTop: ".8rem",
-}));
-
-const OutlineBtnBlack = styled(Button)(({ theme }) => ({
-  fontSize: ".8rem",
-  padding: ".3rem 2.5rem",
-  borderRadius: "25px",
-  border: "3px solid black",
-  boxShadow: "none",
-  color: "black",
-  marginTop: ".8rem",
-}));
-
-const SpecTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  "& span": {
-    fontWeight: 300,
-  },
-}));
-
-const SpecUl = styled("ul")(({ theme }) => ({
-  listStyleType: "none",
-  display: "block",
-  width: "250px",
-  margin: "0",
-  padding: "2.5rem 0",
-}));
-
-const Specli = styled("li")(({ theme }) => ({
-  display: "list-item",
-  color: "white",
-  margin: "0",
-  padding: "0",
-  lineHeight: "6px",
-  "&::before": {
-    content: "''",
-    display: "block",
-    blockSize: "1px",
-    width: "2rem",
-    backgroundColor: "#8f8f8f",
-  },
-}));
-
-const SpecSubText = styled("p")(({ theme }) => ({
-  color: "white",
-  margin: "1rem 0 2rem 0",
-  padding: "0",
-}));
-
-const MainTitleContent = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  margin: 0,
-  color: "#181b21",
-  padding: 0,
-}));
-
-const SubTitleContent = styled("h5")(({ theme }) => ({
-  fontWeight: 200,
-  fontSize: "1.2rem",
-  margin: "0",
-  padding: "0",
-}));
-
-const SubContent = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-}));
-
-const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
-  width: "210px",
-  margin: "0",
-  padding: "0",
-}));
-
-const TriBtnTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "1rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  textTransform: "capitalize",
-}));
-
-const TriBtnContent = styled("h5")(({ theme }) => ({
-  fontWeight: 500,
-  fontSize: ".75rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  textTransform: "capitalize",
-}));
-
-const BtnFeatTitle = styled("h5")(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "1.5rem",
-  margin: "0",
-  padding: "0",
-  color: "#393c41",
-  textTransform: "capitalize",
-}));
-
-const MapButton = styled("h5")(({ theme }) => ({
-  width: "14rem",
-  borderTop: "3px solid black",
-  borderRadius: "0",
-}));
-
-const ButtonStack = styled(Stack)(({ theme }) => ({
-  flexDirection: "column",
-  padding: "1rem",
-  textAlign: "left",
-}));
-
-const RowSectionBlock = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "space-around",
-  flexDirection: "row",
-  textAlign: "left",
-  width: "80vw",
-}));
+import {
+  Container,
+  GalleryContainer,
+  InfoContainer,
+} from "@components/shared/Container";
+import {
+  BackgroundWrapper,
+  BtnFeatTitle,
+  ButtonStack,
+  HomeFeatureWrapper,
+  InfoFeatureWrapper,
+  TitleWrapper,
+} from "@components/shared/Wrapper";
+import {
+  BtnOutline,
+  MapButton,
+  TriBtnContent,
+  TriBtnTitle,
+} from "@components/shared/Button";
+import {
+  AdsTitle,
+  FeatureSubTitle,
+  FeatureTitle,
+  InfoSubTitle,
+  InfoTitle,
+  MainSubTitle,
+  MainTitle,
+  MainTitleContent,
+  SpecTitle,
+  SubContent,
+  SubTitleContent,
+} from "@components/shared/Title";
+import { RowSectionBlock } from "@components/shared/Section";
+import { Specli, SpecSubText, SpecUl } from "@components/shared/Spect";
 
 function SolarRoof() {
   return (
-    <>
+    <Container>
       <Chat />
       <BackgroundWrapper
         sx={{
@@ -241,7 +95,7 @@ function SolarRoof() {
                     </FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <OutlineBtnWhite>ORDER NOW</OutlineBtnWhite>
+                    <BtnOutline color="white">ORDER NOW</BtnOutline>
                   </HomeFeatureWrapper>
                 </Stack>
               </Box>
@@ -265,29 +119,27 @@ function SolarRoof() {
           }}
         />
         <RowSectionBlock
-            style={{
-              margin: "3rem auto 0 auto",
-            }}
-          >
-            <Box style={{ width: "40%" }}>
-              <Stack direction="column">
-                <SubTitleContent>quod maxime placeat</SubTitleContent>
-                <MainTitleContent>maxime placeat</MainTitleContent>
-                <Box style={{ padding: "1rem 0" }}>
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    Order now
-                  </OutlineBtnBlack>
-                </Box>
-              </Stack>
-            </Box>
-            <Box>
-              <SubContent>
-                Enter a destination on your touchscreen and Trip Planner will
-                automatically calculate your route with Superchargers along the
-                way.
-              </SubContent>
-            </Box>
-          </RowSectionBlock>
+          style={{
+            margin: "3rem auto 0 auto",
+          }}
+        >
+          <Box style={{ width: "40%" }}>
+            <Stack direction="column">
+              <SubTitleContent>quod maxime placeat</SubTitleContent>
+              <MainTitleContent>maxime placeat</MainTitleContent>
+              <Box style={{ padding: "1rem 0" }}>
+                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
+              </Box>
+            </Stack>
+          </Box>
+          <Box>
+            <SubContent>
+              Enter a destination on your touchscreen and Trip Planner will
+              automatically calculate your route with Superchargers along the
+              way.
+            </SubContent>
+          </Box>
+        </RowSectionBlock>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
@@ -322,10 +174,8 @@ function SolarRoof() {
                   }}
                 >
                   <Stack direction="row" spacing={1}>
-                    <OutlineBtnBlack style={{ margin: "0" }}>
-                      ORDER NOW
-                    </OutlineBtnBlack>
-                    <OutlineBtnBlack>LEARN MORE</OutlineBtnBlack>
+                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
+                    <BtnOutline>LEARN MORE</BtnOutline>
                   </Stack>
                 </Box>
               </Stack>
@@ -389,9 +239,7 @@ function SolarRoof() {
                     padding: "12rem 0 0 1.5rem",
                   }}
                 >
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    ORDER NOW
-                  </OutlineBtnBlack>
+                  <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -410,9 +258,7 @@ function SolarRoof() {
                 <SubTitleContent>quod maxime placeat</SubTitleContent>
                 <MainTitleContent>maxime placeat</MainTitleContent>
                 <Box style={{ padding: "1rem 0" }}>
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    Order now
-                  </OutlineBtnBlack>
+                  <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -534,9 +380,7 @@ function SolarRoof() {
                     padding: "10rem 0 0 1.5rem",
                   }}
                 >
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    ORDER NOW
-                  </OutlineBtnBlack>
+                  <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -569,29 +413,27 @@ function SolarRoof() {
           }}
         />
         <RowSectionBlock
-            style={{
-              margin: "3rem auto 0 auto",
-            }}
-          >
-            <Box style={{ width: "40%" }}>
-              <Stack direction="column">
-                <SubTitleContent>quod maxime placeat</SubTitleContent>
-                <MainTitleContent>maxime placeat</MainTitleContent>
-                <Box style={{ padding: "1rem 0" }}>
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    Order now
-                  </OutlineBtnBlack>
-                </Box>
-              </Stack>
-            </Box>
-            <Box>
-              <SubContent>
-                Enter a destination on your touchscreen and Trip Planner will
-                automatically calculate your route with Superchargers along the
-                way.
-              </SubContent>
-            </Box>
-          </RowSectionBlock>
+          style={{
+            margin: "3rem auto 0 auto",
+          }}
+        >
+          <Box style={{ width: "40%" }}>
+            <Stack direction="column">
+              <SubTitleContent>quod maxime placeat</SubTitleContent>
+              <MainTitleContent>maxime placeat</MainTitleContent>
+              <Box style={{ padding: "1rem 0" }}>
+                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
+              </Box>
+            </Stack>
+          </Box>
+          <Box>
+            <SubContent>
+              Enter a destination on your touchscreen and Trip Planner will
+              automatically calculate your route with Superchargers along the
+              way.
+            </SubContent>
+          </Box>
+        </RowSectionBlock>
       </BackgroundWrapper>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <Box>
@@ -625,9 +467,7 @@ function SolarRoof() {
                     padding: "10rem 0 0 1.5rem",
                   }}
                 >
-                  <OutlineBtnBlack style={{ margin: "0" }}>
-                    ORDER NOW
-                  </OutlineBtnBlack>
+                  <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
@@ -739,14 +579,14 @@ function SolarRoof() {
               </SubContent>
             </Box>
             <Box>
-              <OutlineBtnWhite style={{ margin: "1.5rem 0" }}>
+              <BtnOutline color="white" style={{ margin: "1.5rem 0" }}>
                 ORDER NOW
-              </OutlineBtnWhite>
+              </BtnOutline>
             </Box>
           </Stack>
         </TitleWrapper>
       </BackgroundWrapper>
-    </>
+    </Container>
   );
 }
 

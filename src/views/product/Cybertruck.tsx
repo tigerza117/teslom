@@ -1,17 +1,10 @@
 import styled from "@emotion/styled";
-import { ImageAspectRatio } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { CybertruckPictureSlider } from "@constants/cybertruckSlider";
-
-const BackgroundWrapper = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-}));
+import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { Container } from "@components/shared/Container";
 
 const TitleWrapper = styled(Box)(({ theme }) => ({
   height: "100%",
@@ -46,7 +39,7 @@ const FeatureContainer = styled(Box)(({ theme }) => ({
   margin: "auto",
 }));
 
-const InfoFeature = styled(Box)(({ theme }) => ({
+const InfoFeatureWrapper = styled(Box)(({ theme }) => ({
   margin: "auto",
   display: "flex",
   flexDirection: "column",
@@ -156,7 +149,6 @@ const ImageSlider = ({ slides }: { slides: any }) => {
             >
               {index === current && <img src={slide.image}></img>}
             </Box>
-
             <Box>
               <Stack direction="column">
                 <Box
@@ -218,7 +210,7 @@ const ImageSlider = ({ slides }: { slides: any }) => {
 
 const Cybertruck = () => {
   return (
-    <>
+    <Container>
       <BackgroundWrapper
         sx={{
           backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/01_Main_Hero_Desktop.jpg)`,
@@ -253,7 +245,7 @@ const Cybertruck = () => {
       </BackgroundWrapper>
 
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
-        <InfoFeature>
+        <InfoFeatureWrapper>
           <Stack direction="column">
             <GalleryContainer
               style={{
@@ -381,7 +373,7 @@ const Cybertruck = () => {
               </Box>
             </InfoContainer>
           </Stack>
-        </InfoFeature>
+        </InfoFeatureWrapper>
       </BackgroundWrapper>
 
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
@@ -402,7 +394,7 @@ const Cybertruck = () => {
       </BackgroundWrapper>
 
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
-        <InfoFeature>
+        <InfoFeatureWrapper>
           <Stack direction="column">
             <video
               src="https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4"
@@ -461,7 +453,7 @@ const Cybertruck = () => {
               </Box>
             </InfoContainer>
           </Stack>
-        </InfoFeature>
+        </InfoFeatureWrapper>
       </BackgroundWrapper>
 
       <BackgroundWrapper
@@ -477,7 +469,7 @@ const Cybertruck = () => {
           }}
         ></GalleryContainer>
       </BackgroundWrapper>
-    </>
+    </Container>
   );
 };
 
