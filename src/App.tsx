@@ -6,6 +6,13 @@ import { useEffect } from "react";
 const App = () => {
   const theme = responsiveFontSizes(
     createTheme({
+      components: {
+        MuiButtonBase: {
+          defaultProps: {
+            disableRipple: true,
+          },
+        },
+      },
       typography: {
         fontFamily: ["Montserrat", "sans-serif"].join(","),
       },
