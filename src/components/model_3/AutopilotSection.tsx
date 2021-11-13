@@ -60,11 +60,9 @@ export function Autopilot() {
             </Box>
             <Box width="45%">
               <SubContent>
-                Autopilot enables your car to steer, accelerate and brake
-                automatically within its lane under your active supervision,
-                assisting with the most burdensome parts of driving. With
-                over-the-air software updates, the latest enhancements are
-                available instantly.
+                Autopilot's advanced safety and convenience features are
+                designed to assist you with the most burdensome parts of
+                driving.
               </SubContent>
             </Box>
           </Stack>

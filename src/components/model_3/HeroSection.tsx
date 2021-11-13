@@ -31,16 +31,16 @@ export function HeroSection() {
               <Box>
                 <Stack direction="row" margin="auto">
                   <HomeFeatureWrapper>
-                    <FeatureTitle>magna</FeatureTitle>
-                    <FeatureSubTitle>sapien</FeatureSubTitle>
+                    <FeatureTitle>3.1 s</FeatureTitle>
+                    <FeatureSubTitle>0-60 mph*</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <FeatureTitle>magna</FeatureTitle>
-                    <FeatureSubTitle>sapien</FeatureSubTitle>
+                    <FeatureTitle>358mi</FeatureTitle>
+                    <FeatureSubTitle>Range (EPA est.)</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <FeatureTitle>magna</FeatureTitle>
-                    <FeatureSubTitle>sapien</FeatureSubTitle>
+                    <FeatureTitle>AWD</FeatureTitle>
+                    <FeatureSubTitle>Dual Motor</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <BtnOutline color="white">ORDER NOW</BtnOutline>

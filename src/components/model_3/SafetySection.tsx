@@ -25,16 +25,17 @@ export function Safety() {
               justifyContent="space-between"
             >
               <Box>
-                <SubTitleContent>vitae proin</SubTitleContent>
-                <MainTitleContent>vitae proin mattis</MainTitleContent>
+                <SubTitleContent>Safety</SubTitleContent>
+                <MainTitleContent>Built for Safety</MainTitleContent>
               </Box>
               <Box>
                 <SubContent>
-                  Etiam erat velit scelerisque in dictum non consectetur a. Dui
-                  nunc mattis enim ut tellus elementum sagittis vitae et. A cras
-                  semper auctor neque vitae tempus quam pellentesque. Tellus
-                  rutrum tellus pellentesque eu tincidunt tortor aliquam nulla
-                  facilisi. Lectus quam id leo in.
+                  Safety is the most important part of the overall Model 3
+                  design. The metal structure is a combination of aluminum and
+                  steel, for maximum strength in every area. In a roof-crush
+                  test, Model 3 resisted four times its own mass, even with an
+                  all-glass roof: that's the same weight as two full-grown
+                  African elephants.
                 </SubContent>
               </Box>
               <Box padding="4rem 0">
