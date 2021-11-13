@@ -911,26 +911,26 @@ function ModelS() {
                 <Stack direction="row" spacing={4}>
                   <MapButton style={{ margin: "0" }}>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>San Jose to Los Angeles</TriBtnTitle>
-                      <BtnFeatTitle>340 miles</BtnFeatTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Berkeley to Lake Tahoe</TriBtnTitle>
-                      <BtnFeatTitle>178 miles</BtnFeatTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Manhattan to Boston</TriBtnTitle>
-                      <BtnFeatTitle>211 miles</BtnFeatTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Fort Landerdale to Orlando</TriBtnTitle>
-                      <BtnFeatTitle>195 miles</BtnFeatTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <BtnFeatTitle>670 hp</BtnFeatTitle>
                     </ButtonStack>
                   </MapButton>
                 </Stack>
@@ -1076,18 +1076,9 @@ function ModelS() {
                 <Stack direction="row" spacing={4}>
                   <MapButton style={{ margin: "0" }}>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Navigate on Autopilot</TriBtnTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
-                        <TriBtnContent>
-                          Active guidance from on-ramp to off-ramp
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Auto Lane Change</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
                         <TriBtnContent>
                           Automatically change lanes while driving on the
                           highway
@@ -1097,20 +1088,36 @@ function ModelS() {
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Summon</TriBtnTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
                         <TriBtnContent>
-                          Automatically retrieve your car
+                          Automatically change lanes while driving on the
+                          highway
                         </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>Autopark</TriBtnTitle>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
                         <TriBtnContent>
-                          Parallel and perpendicular parking with a single touch
+                          Automatically change lanes while driving on the
+                          highway
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
+                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Automatically change lanes while driving on the
+                          highway
                         </TriBtnContent>
                       </Stack>
                     </ButtonStack>
