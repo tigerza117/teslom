@@ -8,9 +8,8 @@ import {
 import {
   MainTitleContent,
   SubContent,
-  TriBtnContent,
 } from "@components/shared/Title";
-import { MapButton, TriBtnTitle } from "@components/shared/Button";
+import { MapButton, TriBtnTitle, TriBtnContent } from "@components/shared/Button";
 
 export function Feature() {
   return (
