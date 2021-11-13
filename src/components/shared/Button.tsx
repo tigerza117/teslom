@@ -6,6 +6,7 @@ export const BaseButton = styled(ButtonBase)(({ theme }) => ({
   fontWeight: 600,
   textTransform: "capitalize",
   transition: "all .5s",
+  fontFamily: ["Montserrat", "sans-serif"].join(","),
 }));
 
 interface BtnOutlineProps {
