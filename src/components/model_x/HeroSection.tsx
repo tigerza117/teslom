@@ -27,26 +27,26 @@ export function HeroSection() {
             <Stack direction="row" spacing={8}>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>morbi</FeatureTitle>
-                  <FeatureSubTitle>tristique</FeatureSubTitle>
+                  <FeatureTitle>333mi</FeatureTitle>
+                  <FeatureSubTitle>Range (EPA est.)</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>morbi</FeatureTitle>
-                  <FeatureSubTitle>tristique</FeatureSubTitle>
+                  <FeatureTitle>2.5s</FeatureTitle>
+                  <FeatureSubTitle>0-60 mph*</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>morbi</FeatureTitle>
-                  <FeatureSubTitle>tristique</FeatureSubTitle>
+                  <FeatureTitle>9.9s</FeatureTitle>
+                  <FeatureSubTitle>1/4 Mile</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>morbi</FeatureTitle>
-                  <FeatureSubTitle>tristique</FeatureSubTitle>
+                  <FeatureTitle>1,020hp</FeatureTitle>
+                  <FeatureSubTitle>Peak Power</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>

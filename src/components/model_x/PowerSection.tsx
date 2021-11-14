@@ -23,11 +23,10 @@ export function PowerTrain() {
             <Stack direction="column" textAlign="left" spacing={1}>
               <MainTitleContent>Electric Powertrain</MainTitleContent>
               <SubContent>
-                Eget sit amet tellus cras adipiscing. Volutpat commodo sed
-                egestas egestas. Mattis pellentesque id nibh tortor id aliquet.
-                Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
-                Condimentum vitae sapien pellentesque habitant morbi tristique
-                senectus et netus.
+                Model X platform unite powertrain and battery technology for
+                unrivaled performance, range and efficiency. New module and pack
+                thermal architecture allows faster charging and gives you more
+                power and endurance in all conditions.
               </SubContent>
             </Stack>
           </Box>
@@ -79,11 +78,11 @@ export function PowerTrain() {
                       }}
                       spacing={2}
                     >
-                      <TriBtnTitle style={{}}>Long Range</TriBtnTitle>
+                      <TriBtnTitle style={{}}>Model X</TriBtnTitle>
                       <TriBtnContent>
-                        Dual Motor All-Wheel Drive platform allows for the
-                        longest range, and now delivers insane power and
-                        acceleration
+                        Dual Motor All-Wheel Drive platform has the longest
+                        range, and now delivers incredible power and
+                        acceleration.
                       </TriBtnContent>
                       <Box sx={{ margin: "0 auto", padding: "1.5rem 0 0 0" }}>
                         <Stack
@@ -96,13 +95,13 @@ export function PowerTrain() {
                         >
                           <Box>
                             <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>3.1 s</BtnFeatTitle>
+                              <BtnFeatTitle>3.8 s</BtnFeatTitle>
                               <TriBtnContent>0-60 mph</TriBtnContent>
                             </Stack>
                           </Box>
                           <Box>
                             <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>405 mi</BtnFeatTitle>
+                              <BtnFeatTitle>348 mi</BtnFeatTitle>
                               <TriBtnContent>range (est.)</TriBtnContent>
                             </Stack>
                           </Box>
@@ -124,7 +123,7 @@ export function PowerTrain() {
                     }}
                   >
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle style={{}}>Plaid</TriBtnTitle>
+                      <TriBtnTitle style={{}}>Model X Plaid</TriBtnTitle>
                       <TriBtnContent>
                         Tri Motor All-Wheel Drive platform with torque vectoring
                         features three independent motors, each with a
@@ -142,13 +141,13 @@ export function PowerTrain() {
                         >
                           <Box>
                             <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>1.99 s*</BtnFeatTitle>
+                              <BtnFeatTitle>2.5 s*</BtnFeatTitle>
                               <TriBtnContent>0-60 mph</TriBtnContent>
                             </Stack>
                           </Box>
                           <Box>
                             <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>396 mi</BtnFeatTitle>
+                              <BtnFeatTitle>333 mi</BtnFeatTitle>
                               <TriBtnContent>range (EPA est.)</TriBtnContent>
                             </Stack>
                           </Box>

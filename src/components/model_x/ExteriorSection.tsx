@@ -28,15 +28,17 @@ export function Exterior() {
             <Stack direction="row" spacing={12} textAlign="center">
               <Box>
                 <Stack direction="column" margin="3rem 0">
-                  <FeatureSubTitle>Performance-focused chassis</FeatureSubTitle>
+                  <FeatureSubTitle>
+                    New wheels and improved handling
+                  </FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={0.5}>
                   <FeatureTitle style={{ textAlign: "left" }}>
-                    0.208 <i style={{ fontSize: "1rem" }}>Cd</i>
+                    0.24 <i style={{ fontSize: "1rem" }}>Cd</i>
                   </FeatureTitle>
-                  <FeatureSubTitle>Lowest-drag car on Earth</FeatureSubTitle>
+                  <FeatureSubTitle>Lowest-drag SUV Earth</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
@@ -64,11 +66,10 @@ export function Exterior() {
             </Box>
             <Box width="45%">
               <SubContent>
-                Turpis egestas sed tempus urna et pharetra pharetra massa.
-                Imperdiet nulla malesuada pellentesque elit eget gravida cum
-                sociis. Nec feugiat nisl pretium fusce id velit. Diam ut
-                venenatis tellus in metus vulputate. Faucibus scelerisque
-                eleifend donec pretium vulputate sapien nec sagittis aliquam.
+                With the lowest drag coefficient of any SUV, Model X is built
+                for speed and range. Refined aerodynamic elements work together
+                with new wheels and tires to help you travel farther, with
+                sharper handling and better ride comfort.
               </SubContent>
             </Box>
           </Stack>

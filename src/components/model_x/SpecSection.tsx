@@ -38,7 +38,7 @@ export function Specs() {
                           textTransform: "capitalize",
                         }}
                       >
-                        Plaid
+                        Model X Plaid
                       </BtnOutline>
                       <BtnOutline
                         color="white"
@@ -47,7 +47,7 @@ export function Specs() {
                           textTransform: "capitalize",
                         }}
                       >
-                        Long Range
+                        Model X
                       </BtnOutline>
                     </Stack>
                   </Box>
@@ -57,38 +57,38 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Range (EPA est.)</strong>
+                              <p>333 mi</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>1/4 Mile</strong>
+                              <p>9.9 s</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Peak Power</strong>
+                              <p>1,020 hp</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Wheels</strong>
+                              <p>20" or 22"</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Towing</strong>
+                              <p>5,000 lbs</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Seating</strong>
+                              <p>Up to 7</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -97,8 +97,8 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Acceleration</strong>
+                              <p>2.5 s 0-60 mph*</p>
 
                               <p
                                 style={{
@@ -112,32 +112,32 @@ export function Specs() {
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Top Speed</strong>
+                              <p>163 mph</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Drag Coefficient</strong>
+                              <p>0.24 Cd</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Weight</strong>
+                              <p>5,390 lbs</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Powertrain</strong>
+                              <p>Tro Motor</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Supercharging Max</strong>
+                              <p>250 kW</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
