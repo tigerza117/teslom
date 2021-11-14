@@ -20,8 +20,8 @@ export function Utility() {
         >
           <Box style={{ width: "100%" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>maxime placeat</MainTitleContent>
+              <SubTitleContent>Utility</SubTitleContent>
+              <MainTitleContent>A Place For Everything</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
                 <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
@@ -29,11 +29,11 @@ export function Utility() {
           </Box>
           <Box style={{ width: "100vw" }}>
             <SubContent>
-              De carne lumbering animata corpora quaeritis. Summus brains sit​​,
-              morbo vel maleficia? De apocalypsi gorger omero undead survivor
-              dictum mauris. Hi mindless mortuis soulless creaturas, imo evil
-              stalking monstra adventus resi dentevil vultus comedat cerebella
-              viventium.
+              Model Y provides maximum versatility--able to carry 7 passengers
+              and their cargo. Each second row seat folds flat independently,
+              creating flexible storage for skis, furniture, luggage and more.
+              The lifegate opens to a low trunk floor that makes loading and
+              unloading easy and quick.
             </SubContent>
           </Box>
         </RowSectionBlock>
@@ -61,7 +61,9 @@ export function Utility() {
                 padding: ".5rem",
               }}
             />
-            <SubTitleContent>quod maxime placeat</SubTitleContent>
+            <SubTitleContent>
+              Versatile seating and storage for cargo and passengers
+            </SubTitleContent>
           </Stack>
         </Box>
       </BackgroundWrapper>

@@ -26,14 +26,13 @@ export function Safety() {
                     padding: "3rem 0 0 2.5rem",
                   }}
                 >
-                  <SubTitleContent>At vero eos et</SubTitleContent>
-                  <MainTitleContent>Itaque earum</MainTitleContent>
+                  <SubTitleContent>Safety</SubTitleContent>
+                  <MainTitleContent>Designed for Safety</MainTitleContent>
                   <SubContent style={{ padding: "3.5rem 0 0 0" }}>
-                    cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque
+                    Like every Tesla, Model Y is designed to be the safest
+                    vehicle in its class. The lower center of gravity, rigid
+                    body structure and large crumple zones provide unparalleled
+                    protection.
                   </SubContent>
                 </Box>
                 <Box

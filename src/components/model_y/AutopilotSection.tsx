@@ -39,10 +39,9 @@ export function Autopilot() {
             </Box>
             <Box width="45%">
               <SubContent>
-                Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake
-                muffin. Halvah croissant candy canes bonbon candy. Apple pie
-                jelly beans topping carrot cake danish tart cake cheesecake.
-                Muffin danish chocolate soufflé pastry icing bonbon oat cake.
+                Autopilot's advanced safety and convenience features are
+                designed to assist you with the most burdensome parts of
+                driving.
               </SubContent>
             </Box>
           </Stack>

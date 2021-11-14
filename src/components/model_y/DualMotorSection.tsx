@@ -35,24 +35,24 @@ export function DualMotor() {
               justifyContent="center"
             >
               <HomeFeatureWrapper style={{ width: "25%" }}>
-                <FeatureTitle>evil stalking</FeatureTitle>
+                <FeatureTitle>2</FeatureTitle>
                 <FeatureSubTitle>
-                  imo evil stalking monstra adventus resi dentevil vultus
-                  comedat cerebella viventium.
+                  Independent motors digitally control torque to the front and
+                  rear wheels
                 </FeatureSubTitle>
               </HomeFeatureWrapper>
               <HomeFeatureWrapper style={{ width: "25%" }}>
-                <FeatureTitle>evil stalking</FeatureTitle>
+                <FeatureTitle>3.5 s</FeatureTitle>
                 <FeatureSubTitle>
-                  imo evil stalking monstra adventus resi dentevil vultus
-                  comedat cerebella viventium.
+                  Quickest acceleration--from zero to 60 mph* in as little as
+                  3.5 seconds
                 </FeatureSubTitle>
               </HomeFeatureWrapper>
               <HomeFeatureWrapper style={{ width: "25%" }}>
-                <FeatureTitle>evil stalking</FeatureTitle>
+                <FeatureTitle>ICON</FeatureTitle>
                 <FeatureSubTitle>
-                  imo evil stalking monstra adventus resi dentevil vultus
-                  comedat cerebella viventium.
+                  Capable in rain, snow, mud and off-road with superior traction
+                  control
                 </FeatureSubTitle>
               </HomeFeatureWrapper>
             </Stack>
@@ -66,8 +66,8 @@ export function DualMotor() {
           >
             <Box>
               <Stack direction="column">
-                <SubTitleContent>lumbering </SubTitleContent>
-                <MainTitleContent>rick grimes</MainTitleContent>
+                <SubTitleContent>All-Wheel Drive</SubTitleContent>
+                <MainTitleContent>Dual Motor</MainTitleContent>
                 <Box>
                   <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
@@ -75,10 +75,10 @@ export function DualMotor() {
             </Box>
             <Box width="45%">
               <SubContent>
-                blue bottle waistcoat tbh semiotics artisan synth stumptown
-                gastropub cornhole celiac swag. Brunch raclette vexillologist
-                post-ironic glossier ennui XOXO mlkshk godard pour-over blog
-                tumblr humblebrag
+                Tesla All-Wheel Drive has two ultra-responsive, independent
+                electric motors that digitally control torque to the front and
+                rear wheels—for far better handling, traction and stability
+                control. Model Y is capable in rain, snow, mud and off-road.
               </SubContent>
             </Box>
           </Stack>

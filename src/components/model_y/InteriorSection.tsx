@@ -29,8 +29,8 @@ export function Interior() {
           >
             <Box>
               <Stack direction="column">
-                <SubTitleContent>Autopilot</SubTitleContent>
-                <MainTitleContent>Future of Driving</MainTitleContent>
+                <SubTitleContent>Interior</SubTitleContent>
+                <MainTitleContent>Built Around the Driver</MainTitleContent>
                 <Box>
                   <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
@@ -38,10 +38,11 @@ export function Interior() {
             </Box>
             <Box width="45%">
               <SubContent>
-                Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake
-                muffin. Halvah croissant candy canes bonbon candy. Apple pie
-                jelly beans topping carrot cake danish tart cake cheesecake.
-                Muffin danish chocolate soufflé pastry icing bonbon oat cake.
+                With an elevated seating position and low dash, the driver has a
+                commanding view of the road ahead. The interior of Model Y is
+                simple and clean, with a 15-inch touch screen, immersive sound
+                system and an expansive all-glass roof that creates extra
+                headroom and provides a seamless view of the sky.
               </SubContent>
             </Box>
           </Stack>

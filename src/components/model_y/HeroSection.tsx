@@ -31,18 +31,18 @@ export function HeroSection() {
               <Box>
                 <Stack direction="row" margin="auto">
                   <HomeFeatureWrapper>
-                    <FeatureTitle>inferno</FeatureTitle>
-                    <FeatureSubTitle>Zombie ipsum</FeatureSubTitle>
+                    <FeatureTitle>76 cu ft</FeatureTitle>
+                    <FeatureSubTitle>Cargo Space</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <FeatureTitle>inferno</FeatureTitle>
-                    <FeatureSubTitle>Zombie ipsum</FeatureSubTitle>
+                    <FeatureTitle>330 mi</FeatureTitle>
+                    <FeatureSubTitle>Range (EPA est.)</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <FeatureTitle>
-                      <FeatureTitle>inferno</FeatureTitle>
+                      <FeatureTitle>AWD</FeatureTitle>
                     </FeatureTitle>
-                    <FeatureSubTitle>Zombie ipsum</FeatureSubTitle>
+                    <FeatureSubTitle>Dual Motor</FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <BtnOutline color="white">ORDER NOW</BtnOutline>
