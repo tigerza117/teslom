@@ -11,3 +11,4 @@ export * from "./AutopilotSection";
 export * from "./FeatureSection";
 export * from "./SpecSection";
 export * from "./OrderNowSection";
+export * from "./NewInterior";
