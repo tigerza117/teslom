@@ -1,6 +1,5 @@
 import { Container } from "@components/shared/Container";
-import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
-import { AdsTitle } from "@components/shared/Title";
+import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
   GridGall,
