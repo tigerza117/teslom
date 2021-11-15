@@ -6,22 +6,26 @@ import {
   SubTitleContent,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import VidsOverlay from "@components/shared/VdoOverlay";
 
 export function Autopilot() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <video
-          src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
-          style={{
-            width: "100%",
-            height: "75vh",
-            objectFit: "cover",
-          }}
-          autoPlay
-          loop
-          preload="auto"
-        />
+        <Box>
+          <video
+            src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
+            style={{
+              width: "100%",
+              height: "75vh",
+              objectFit: "cover",
+            }}
+            autoPlay
+            loop
+            preload="auto"
+          />
+          <VidsOverlay />
+        </Box>
         <Box sx={{ padding: "2rem 0" }}>
           <Stack
             direction="row"
