@@ -50,7 +50,16 @@ export function DualMotor() {
                       </FeatureSubTitle>
                     </HomeFeatureWrapper>
                     <HomeFeatureWrapper>
-                      <FeatureTitle>ICON</FeatureTitle>
+                      <FeatureTitle>
+                        <img
+                          style={{
+                            width: "40px",
+                            height: "auto",
+                          }}
+                          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba09ef22-e9cc-4bda-a171-de1cd6f6cf6a/bvlatuR/std/0x0/weather"
+                          alt=""
+                        />
+                      </FeatureTitle>
                       <FeatureSubTitle>
                         Unparelleled traction and control, in all weather
                         conditions

@@ -16,14 +16,16 @@ export function Range() {
         <Box>
           <Stack direction="row">
             <Stack>
-              <img
-                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
-                loading="lazy"
+              <video
+                src="https://tesla-cdn.thron.com/static/WVNSU3_Range_Desktop.mp4-2000_WJLESL.mp4?xseo="
                 style={{
                   width: "70vw",
                   height: "100vh",
                   objectFit: "cover",
                 }}
+                autoPlay
+                loop
+                preload="auto"
               />
               <Box sx={{ margin: "-10rem auto 0 auto" }}>
                 <Stack

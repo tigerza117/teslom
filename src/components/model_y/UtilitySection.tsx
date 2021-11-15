@@ -11,10 +11,10 @@ import { RowSectionBlock } from "@components/shared/Section";
 export function Utility() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5", height: "auto" }}>
+      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
         <RowSectionBlock
           style={{
-            margin: "3rem auto 0 auto",
+            margin: "auto",
             width: "60%",
           }}
         >

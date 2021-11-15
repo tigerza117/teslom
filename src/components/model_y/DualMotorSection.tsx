@@ -34,23 +34,32 @@ export function DualMotor() {
               textAlign="center"
               justifyContent="center"
             >
-              <HomeFeatureWrapper style={{ width: "25%" }}>
+              <HomeFeatureWrapper style={{ width: "20%" }}>
                 <FeatureTitle>2</FeatureTitle>
                 <FeatureSubTitle>
                   Independent motors digitally control torque to the front and
                   rear wheels
                 </FeatureSubTitle>
               </HomeFeatureWrapper>
-              <HomeFeatureWrapper style={{ width: "25%" }}>
+              <HomeFeatureWrapper style={{ width: "20%" }}>
                 <FeatureTitle>3.5 s</FeatureTitle>
                 <FeatureSubTitle>
                   Quickest acceleration--from zero to 60 mph* in as little as
                   3.5 seconds
                 </FeatureSubTitle>
               </HomeFeatureWrapper>
-              <HomeFeatureWrapper style={{ width: "25%" }}>
-                <FeatureTitle>ICON</FeatureTitle>
-                <FeatureSubTitle>
+              <HomeFeatureWrapper style={{ width: "20%" }}>
+                <FeatureTitle>
+                  <img
+                    style={{
+                      width: "40px",
+                      height: "auto",
+                    }}
+                    src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba09ef22-e9cc-4bda-a171-de1cd6f6cf6a/bvlatuR/std/0x0/weather"
+                    alt=""
+                  />
+                </FeatureTitle>
+                <FeatureSubTitle style={{ marginTop: "-8px" }}>
                   Capable in rain, snow, mud and off-road with superior traction
                   control
                 </FeatureSubTitle>
