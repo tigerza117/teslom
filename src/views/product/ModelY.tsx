@@ -9,6 +9,7 @@ import {
   Autopilot,
   Interior,
   OrderNow,
+  Specs
 } from "@components/model_y/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
@@ -31,19 +32,7 @@ function ModelY() {
       <Range />
       <Autopilot />
       <Interior />
-      <BackgroundWrapper style={{ backgroundColor: "black" }}>
-        <img
-          src="https://www.tesla.com/sites/default/files/drupal8/modely/ModelYSilhouette.png"
-          loading="lazy"
-          style={{
-            width: "50vw",
-            height: "100%",
-            objectFit: "contain",
-            float: "left",
-          }}
-          alt=""
-        />
-      </BackgroundWrapper>
+      <Specs />
       <OrderNow />
     </Container>
   );
