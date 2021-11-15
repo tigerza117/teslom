@@ -94,3 +94,9 @@ export const InfoSubTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 500,
   fontSize: "0.9rem",
 }));
+
+export const VdoOverlayText = styled("p")(({ theme }) => ({
+  fontSize: ".9rem",
+  margin: "0",
+  opacity: .8
+}));
