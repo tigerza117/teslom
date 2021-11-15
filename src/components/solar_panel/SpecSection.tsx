@@ -41,29 +41,29 @@ export function Specs() {
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Operating Temperature</strong>
+                              <p>-40°F up to +185°F</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Dimensions</strong>
+                              <p>82.4" x 40.9" x 1.57"</p>
+                              <p>(including frame)</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Frame Type</strong>
+                              <p>Black anodized</p>
+                              <p>aluminum alloy</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Warranty</strong>
+                              <p>25-year performance</p>
+                              <p>guarantee</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -72,29 +72,29 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Certifications</strong>
+                              <p>IEC / UL 61730,</p>
+                              <p>CE Compliant,</p>
+                              <p>IEC 61215</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Inverter Power</strong>
+                              <p>3.8kW / 7.6kW</p>
+                              <p>97.5% efficiency</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Inverter Dimensions</strong>
+                              <p>26" x 16" x 6"</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Inverter Warranty</strong>
+                              <p>12.5 years</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
