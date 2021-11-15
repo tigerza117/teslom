@@ -1,7 +1,7 @@
 import { NavbarProducts } from "@constants/layout";
 import { Box, Button, Fade, Grid, Stack } from "@mui/material";
 import { styled } from "@mui/system";
-import Logo from "@assets/images/logo.svg";
+import Logo from "@assets/images/Logo";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { DrawerBar } from "./DrawerBar";
 import { useEffect, useRef, useState } from "react";
@@ -116,7 +116,7 @@ export const Navbar = () => {
         <TabsHighlight ref={highlightRef} style={highlightStyles} />
         <SideWrapper>
           <Link to="/">
-            <img src={Logo} style={{ height: "12.5px" }} />
+            <Logo />
           </Link>
         </SideWrapper>
         <NavbarProductsWrapper>
