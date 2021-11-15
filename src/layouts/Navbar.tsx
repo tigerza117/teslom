@@ -55,7 +55,7 @@ const TabsHighlight = styled("div")`
 `;
 
 export const Navbar = () => {
-  const { toggleDrawer } = useLayoutContext();
+  const { toggleDrawer, heroColor } = useLayoutContext();
   const ref = useRef(null);
 
   useEffect(() => {
@@ -123,11 +123,11 @@ export const Navbar = () => {
           <Stack direction="row" spacing={0}>
             {NavbarProducts.map(({ label, path }, index) => (
               <ResponsiveBtn
-                size="large"
                 key={index}
                 {...({ to: "/" + path } as any)}
                 component={Link}
                 onMouseOver={repositionHighlight}
+                sx={{ color: heroColor }}
               >
                 {label}
               </ResponsiveBtn>
@@ -136,13 +136,23 @@ export const Navbar = () => {
         </NavbarProductsWrapper>
         <SideWrapper>
           <Stack direction="row" spacing={0} padding=".5rem 0">
-            <ResponsiveBtn onMouseOver={repositionHighlight}>
+            <ResponsiveBtn
+              onMouseOver={repositionHighlight}
+              sx={{ color: heroColor }}
+            >
               shop
             </ResponsiveBtn>
-            <ResponsiveBtn onMouseOver={repositionHighlight}>
+            <ResponsiveBtn
+              onMouseOver={repositionHighlight}
+              sx={{ color: heroColor }}
+            >
               account
             </ResponsiveBtn>
-            <Btn onMouseOver={repositionHighlight} onClick={toggleDrawer}>
+            <Btn
+              onMouseOver={repositionHighlight}
+              onClick={toggleDrawer}
+              sx={{ color: heroColor }}
+            >
               Menu
             </Btn>
           </Stack>

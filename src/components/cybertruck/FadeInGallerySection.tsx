@@ -41,7 +41,7 @@ export function Gallery() {
                       padding: "0px 0px 80px",
                     }}
                   >
-                    <MainTitleContent sx={{ letterSpacing: "0.188rem" }}>
+                    <MainTitleContent >
                       EXOSKELETON
                     </MainTitleContent>
 

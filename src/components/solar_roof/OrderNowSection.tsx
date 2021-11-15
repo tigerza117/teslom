@@ -10,12 +10,12 @@ export function OrderNow() {
         <TitleWrapper style={{ justifyContent: "center" }}>
           <Stack direction="column" spacing={1}>
             <Box>
-              <MainTitleContent style={{ color: "white" }}>
+              <MainTitleContent >
                 Transform Your Roof
               </MainTitleContent>
             </Box>
             <Box>
-              <SubContent style={{ color: "white" }}>
+              <SubContent >
                 Power your home with Solar Roof
               </SubContent>
             </Box>
