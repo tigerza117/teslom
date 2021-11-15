@@ -30,8 +30,8 @@ export function BeautyRoof() {
         >
           <Box style={{ width: "40%" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>maxime placeat</MainTitleContent>
+              <SubTitleContent>Design</SubTitleContent>
+              <MainTitleContent>A Beautiful Roof</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
                 <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
@@ -39,9 +39,10 @@ export function BeautyRoof() {
           </Box>
           <Box>
             <SubContent>
-              Enter a destination on your touchscreen and Trip Planner will
-              automatically calculate your route with Superchargers along the
-              way.
+              Install Solar Roof and power your home with a fully integrated
+              solar and storage system. With a seamless design, each tile looks
+              great up-close or from the street, complementing your home’s
+              natural aesthetic styling.
             </SubContent>
           </Box>
         </RowSectionBlock>
