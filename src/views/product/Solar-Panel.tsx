@@ -11,8 +11,18 @@ import {
   Specs,
   OrderNow,
 } from "@components/solar_panel/section";
+import { useEffect } from "react";
+import { useLayoutContext } from "@contexts/LayoutContext";
 
 function SolarPanel() {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+  
   return (
     <Container>
       <ShowCaseWrapper />

@@ -17,8 +17,18 @@ import {
 import { Container } from "@components/shared/Container";
 import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
 import { AdsTitle } from "@components/shared/Title";
+import { useLayoutContext } from "@contexts/LayoutContext";
+import { useEffect } from "react";
 
 function ModelX() {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+
   return (
     <Container>
       <HeroSection />

@@ -7,15 +7,13 @@ import ChatSupport from "./ChatSupport";
 
 export const Layout: React.FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+  const [isDark, setDark] = useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const textColor = isDark ? "#393c41": "white"
 
   const handleResize = () => {
     const width = window.innerWidth;
     setIsMobile(width < 1200);
-  };
-
-  const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
   };
 
   useEffect(() => {
@@ -29,8 +27,15 @@ export const Layout: React.FC = ({ children }) => {
     <LayoutContext.Provider
       value={{
         isMobile: isMobile,
+        isDark: isDark,
         isDrawerOpen: isDrawerOpen,
-        toggleDrawer: toggleDrawer,
+        toggleDrawer: () => {
+          setIsDrawerOpen(!isDrawerOpen);
+        },
+        setDark: (d: boolean) => {
+          setDark(d);
+        },
+        heroColor: textColor
       }}
     >
       <Box

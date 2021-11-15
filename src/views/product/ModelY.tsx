@@ -10,8 +10,18 @@ import {
   Interior,
   OrderNow,
 } from "@components/model_y/section";
+import { useLayoutContext } from "@contexts/LayoutContext";
+import { useEffect } from "react";
 
 function ModelY() {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(false);
+    return () => {};
+  }, []);
+
   return (
     <Container>
       <HeroSection />

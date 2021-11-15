@@ -11,8 +11,18 @@ import {
   Value,
   Specs,
 } from "@components/solar_roof/section";
+import { useLayoutContext } from "@contexts/LayoutContext";
+import { useEffect } from "react";
 
 function SolarRoof() {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(false);
+    return () => {};
+  }, []);
+
   return (
     <Container>
       <HeroSection />
