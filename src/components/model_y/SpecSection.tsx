@@ -59,47 +59,47 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Battery</strong>
+                              <p>Long Range</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Acceleration</strong>
+                              <p>3.5s 0-60 mph*</p>
                               <p
                                 style={{
                                   lineHeight: "120%",
                                   fontStyle: "italic",
                                 }}
                               >
-                                †with rollout subtracted
+                                *with rollout subtracted
                               </p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Range</strong>
+                              <p>303 miles (EPA est.)</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Drive</strong>
+                              <p>Dual Motor All-Wheel</p>
+                              <p>Drive</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Seating</strong>
+                              <p>Up to 5</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Wheels</strong>
+                              <p>21"</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -108,43 +108,43 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                           <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Weight</strong>
+                              <p>4,416 lbs</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Max Cargo Volume</strong>
+                              <p>76 cu ft</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Top Speed</strong>
+                              <p>155 mph</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Displays</strong>
+                              <p>15" Center Touchscreen</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Supercharging</strong>
+                              <p>Pay Per Use</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
-                              <p>425 W</p>
-                              <p>425 W</p>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Warranty</strong>
+                              <p>Basic Vehicle - 4 years or</p>
+                              <p>50,000 mi, whichever</p>
+                              <p>comes first</p>
+                              <p>Battery & Drive Unit - 8</p>
+                              <p>years or 120,000 mi,</p>
+                              <p>whichever comes first</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
