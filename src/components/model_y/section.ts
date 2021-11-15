@@ -6,3 +6,4 @@ export * from "./OrderNowSection";
 export * from "./RangeSection";
 export * from "./SafetySection";
 export * from "./UtilitySection";
+export * from "./SpecSection";
