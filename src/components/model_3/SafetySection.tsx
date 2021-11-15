@@ -7,6 +7,7 @@ import {
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import OverAll from "@components/model_x/OverAll";
 
 export function Safety() {
   return (
@@ -37,7 +38,9 @@ export function Safety() {
                   facilisi. Lectus quam id leo in.
                 </SubContent>
               </Box>
+
               <Box padding="4rem 0">
+                <OverAll />
                 <Stack
                   direction="row"
                   display="flex"
@@ -69,7 +72,7 @@ export function Safety() {
               loading="lazy"
               style={{
                 float: "right",
-                width: "67.5vw",
+                width: "73vw",
                 height: "100vh",
                 objectFit: "cover",
                 objectPosition: "-15rem",
