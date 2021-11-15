@@ -35,20 +35,23 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Tile and Power
+                                <br />
+                                Warranty
+                              </strong>
+                              <p>25 years</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Wind Rating</strong>
+                              <p>ASTM D3161 Class F</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>FIre Rating</strong>
+                              <p>Class A (highest rating)</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -57,21 +60,21 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Hail Rating</strong>
+                              <p>ANSI FM 4473 Class 3</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Roof Pitch</strong>
+                              <p>2:12 to 24:12</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
-                              <p>425 W</p>
+                              <strong>Inverter Power</strong>
+                              <p>3.8kW / 7.6kW</p>
+                              <p>97.5% efficiency</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>

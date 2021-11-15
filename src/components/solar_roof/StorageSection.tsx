@@ -26,15 +26,14 @@ export function Storage() {
                     padding: "3rem 1.5rem",
                   }}
                 >
-                  <SubTitleContent>At vero eos et</SubTitleContent>
-                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubTitleContent>Energy Storage</SubTitleContent>
+                  <MainTitleContent>Backup Protection</MainTitleContent>
                   <SubContent style={{ padding: "1rem 0" }}>
-                    cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime
-                    placeat facere possimus.
+                    Powerwall is a compact home battery that is bundled with
+                    every Tesla solar purchase, providing you with 24/7 energy
+                    security. It stores the energy you produce with Solar Roof,
+                    so you can power your home anytime—at night or during an
+                    outage.
                   </SubContent>
                 </Box>
                 <Box

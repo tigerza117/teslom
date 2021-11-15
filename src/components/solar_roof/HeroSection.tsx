@@ -26,7 +26,7 @@ export function HeroSection() {
             <Stack direction="column" spacing={-1}>
               <MainTitle>Solar Roof</MainTitle>
               <MainSubTitle>
-                sed quia consequuntur magni dolores eos qui ratione
+                Transform your roof and produce clean energy
               </MainSubTitle>
             </Stack>
           </Box>
@@ -46,25 +46,24 @@ export function HeroSection() {
                       />
                     </Box>
                     <FeatureSubTitle>
-                      Sed ut perspiciatis unde
+                      Beautyful Solar Without Compromise
                       <br />
-                      Lorem
                     </FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <FeatureTitle>Lorem</FeatureTitle>
+                    <FeatureTitle>25-Year</FeatureTitle>
                     <FeatureSubTitle>
-                      Sed ut perspiciatis unde
+                      Tile
                       <br />
-                      Lorem
+                      Warranty
                     </FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
-                    <FeatureTitle>Lorem</FeatureTitle>
+                    <FeatureTitle>24/7</FeatureTitle>
                     <FeatureSubTitle>
-                      Sed ut perspiciatis unde
+                      Outage
                       <br />
-                      Lorem
+                      Protection
                     </FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
