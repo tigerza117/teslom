@@ -44,14 +44,13 @@ const ResponsiveBtn = styled(Btn)(({ theme }) => ({
 }));
 
 const TabsHighlight = styled("div")`
-  background: hsl(0 0% 90.9%);
-  backdrop-filter: blur(5px) contrast(200%);
+  backdrop-filter: blur(5px);
   position: absolute;
   left: 0;
   border-radius: 10px;
   height: 32px;
   transition: 0.15s ease;
-  transition-property: width, transform, opacity;
+  transition-property: all;
 `;
 
 export const Navbar = () => {
@@ -89,11 +88,13 @@ export const Navbar = () => {
 
   const resetHighlight = () => setHighlightedTab(false);
 
-  const highlightStyles = {} as React.CSSProperties;
+  const highlightStyles = {
+    background: heroColor,
+  } as React.CSSProperties;
 
   if (tabBoundingBox && wrapperBoundingBox) {
     highlightStyles.transitionDuration = isHoveredFromNull ? "0ms" : "500ms";
-    highlightStyles.opacity = highlightedTab ? 0.5 : 0;
+    highlightStyles.opacity = highlightedTab ? 0.1 : 0;
     highlightStyles.width = `${tabBoundingBox.width}px`;
     highlightStyles.transform = `translate(${
       tabBoundingBox.left - wrapperBoundingBox.left
