@@ -42,7 +42,7 @@ export function Autopilot() {
                 </VdoOverlayText>
               </Box>
               <Box zIndex={1}>
-                <Stack direction="row" spacing>
+                <Stack direction="row" spacing={1}>
                   <img
                     style={{
                       width: "40px",
