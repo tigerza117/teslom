@@ -26,11 +26,10 @@ export function GridGall() {
                 float: "right",
               }}
             >
-              <InfoTitle>Game from Anywhere</InfoTitle>
+              <InfoTitle>Nunc consequat</InfoTitle>
               <InfoSubTitle>
-                Up to 10 teraflops of processing power enables in-car gaming
-                on-par with today’s newest consoles. Wireless controller
-                compatibility lets you game from any seat.
+                Condimentum vitae sapien pellentesque habitant morbi tristique
+                senectus et netus. Ac tortor dignissim convallis aenean et.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -46,11 +45,10 @@ export function GridGall() {
                 float: "left",
               }}
             >
-              <InfoTitle>Stay Connected</InfoTitle>
+              <InfoTitle>Convallis posuere</InfoTitle>
               <InfoSubTitle>
-                Multi-device Bluetooth, wireless and USB-C charging for every
-                passenger, with enough power to fast-charge your tablets and
-                laptop.
+                Condimentum vitae sapien pellentesque habitant morbi tristique
+                senectus et netus. Ac tortor dignissim convallis aenean et.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -76,13 +74,37 @@ export function GridGall() {
                 float: "right",
               }}
             >
-              <InfoTitle>Your Best Audio System</InfoTitle>
+              <InfoTitle>Aenean sed</InfoTitle>
               <InfoSubTitle>
-                A 22-speaker, 960-watt audio system with Active Road Noise
-                Reduction offers the best listening experience wherever you are.
+                Condimentum vitae sapien pellentesque habitant morbi tristique
+                senectus et netus. Ac tortor dignissim convallis aenean et.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
+        </Stack>
+        <Stack direction="row">
+          <InfoContainer>
+            <Stack
+              direction="column"
+              spacing={1}
+              sx={{
+                width: "80%",
+                margin: "auto 0",
+                float: "left",
+              }}
+            >
+              <InfoTitle>Convallis posuere</InfoTitle>
+              <InfoSubTitle>
+                Condimentum vitae sapien pellentesque habitant morbi tristique
+                senectus et netus. Ac tortor dignissim convallis aenean et.
+              </InfoSubTitle>
+            </Stack>
+          </InfoContainer>
+          <GalleryContainer
+            sx={{
+              backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ab165f41-fa4e-4abe-b82a-51bdc295cf42/bvlatuR/std/1040x584/MS-Interior-Grid-D-Desktop)`,
+            }}
+          ></GalleryContainer>
         </Stack>
       </InfoFeatureWrapper>
     </BackgroundWrapper>
