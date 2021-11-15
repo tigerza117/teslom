@@ -1,12 +1,12 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper, VdoOverlay } from "@components/shared/Wrapper";
+import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
-  VdoOverlayText,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import VidsOverlay from "@components/shared/VdoOverlay";
 
 export function Autopilot() {
   return (
@@ -26,46 +26,7 @@ export function Autopilot() {
             loop
             preload="auto"
           />
-          <VdoOverlay>
-            <Stack direction="column" spacing={3}>
-              <Box zIndex={1}>
-                <MainTitleContent>360°</MainTitleContent>
-                <VdoOverlayText>
-                  Rear, side and forward-facing cameras provide maximum
-                  visibility
-                </VdoOverlayText>
-              </Box>
-              <Box zIndex={1}>
-                <MainTitleContent>250 m</MainTitleContent>
-                <VdoOverlayText>
-                  Powerful visual processing at up to 250 meters of range
-                </VdoOverlayText>
-              </Box>
-              <Box zIndex={1}>
-                <Stack direction="row" spacing={1}>
-                  <img
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "inline",
-                      marginBottom: "8px",
-                    }}
-                    src="https://tesla-cdn.thron.com/delivery/public/image/tesla/0244c34f-2054-4549-9aff-a055db265926/bvlatuR/std/0x0/autopilot"
-                    alt=""
-                  />
-                  <MainTitleContent style={{ fontSize: ".9rem" }}>
-                    Ultrasonic
-                    <br />
-                    Sensors
-                  </MainTitleContent>
-                </Stack>
-                <VdoOverlayText>
-                  Detects nearby cars, helps prevent potential collisions and
-                  assists with parking
-                </VdoOverlayText>
-              </Box>
-            </Stack>
-          </VdoOverlay>
+          <VidsOverlay />
         </Box>
         <Box sx={{ padding: "2rem 0" }}>
           <Stack
