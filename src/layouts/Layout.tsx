@@ -9,7 +9,7 @@ export const Layout: React.FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
   const [isDark, setDark] = useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const textColor = isDark ? "#393c41": "white"
+  const textColor = isDark ? "#181B21" : "white";
 
   const handleResize = () => {
     const width = window.innerWidth;
@@ -35,7 +35,7 @@ export const Layout: React.FC = ({ children }) => {
         setDark: (d: boolean) => {
           setDark(d);
         },
-        heroColor: textColor
+        heroColor: textColor,
       }}
     >
       <Box
