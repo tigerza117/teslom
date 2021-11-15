@@ -1,4 +1,3 @@
-import { Container } from "@components/shared/Container";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
@@ -29,7 +28,7 @@ function ModelS() {
   }, []);
 
   return (
-    <Container>
+    <>
       <HeroSection />
       <AllNewInterior />
       <BackgroundWrapper
@@ -47,7 +46,7 @@ function ModelS() {
       <Feature />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 
