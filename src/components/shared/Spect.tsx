@@ -27,4 +27,7 @@ export const SpecSubText = styled("p")(({ theme }) => ({
   color: "white",
   margin: "1rem 0 2rem 0",
   padding: "0",
+  "& p":{
+    opacity: .85
+  }
 }));
