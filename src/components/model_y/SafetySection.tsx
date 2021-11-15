@@ -6,6 +6,7 @@ import {
   SubTitleContent,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import OverAll from "./OverAll";
 
 export function Safety() {
   return (
@@ -23,7 +24,7 @@ export function Safety() {
               >
                 <Box
                   sx={{
-                    padding: "3rem 0 0 2.5rem",
+                    padding: "0rem 0 0 2.5rem",
                   }}
                 >
                   <SubTitleContent>At vero eos et</SubTitleContent>
@@ -38,7 +39,14 @@ export function Safety() {
                 </Box>
                 <Box
                   style={{
-                    padding: "10rem 0 0 2.5rem",
+                    padding: "3rem 0 0 2.5rem",
+                  }}
+                >
+                  <OverAll />
+                </Box>
+                <Box
+                  style={{
+                    padding: "3rem 0 0 2.5rem",
                   }}
                 >
                   <Stack direction="row" spacing={1}>
@@ -53,7 +61,7 @@ export function Safety() {
                 alt=""
                 loading="lazy"
                 style={{
-                  width: "75vw",
+                  width: "80vw",
                   height: "100vh",
                   objectFit: "cover",
                   float: "right",
