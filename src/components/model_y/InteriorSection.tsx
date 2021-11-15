@@ -6,11 +6,13 @@ import {
   SubTitleContent,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import PicsOverlay from "@components/shared/ImgOverlay";
 
 export function Interior() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <Box>
         <img
           loading="lazy"
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/8288d520-cd1a-468d-89eb-e73cfde99355/bvlatuR/std/2880x1800/Model-Y-Interior-Hero-Desktop-NA-KR"
@@ -21,6 +23,8 @@ export function Interior() {
           }}
           alt=""
         />
+        <PicsOverlay />
+        </Box>
         <Box sx={{ padding: "2rem 0" }}>
           <Stack
             direction="row"
