@@ -48,7 +48,7 @@ export const TriBtnContent = styled("h5")(({ theme }) => ({
 }));
 
 export const MapButton = styled("h5")(({ theme }) => ({
-  width: "12rem",
+  width: "15rem",
   borderTop: "3px solid black",
   borderRadius: "0",
 }));
