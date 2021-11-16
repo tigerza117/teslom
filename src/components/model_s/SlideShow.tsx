@@ -2,12 +2,19 @@ import { Box, Stack } from "@mui/material";
 import { BackgroundWrapper, SliderAdjust } from "@components/shared/Wrapper";
 import { MainTitleContent, FeatureSubTitle } from "@components/shared/Title";
 import SimpleImageSlider from "react-simple-image-slider";
-import { MsContainer_images } from "@constants/cybertruckSlider";
 import { MsContainer_text } from "@constants/cybertruckSlider";
 import { useRef, useState } from "react";
 import { keys } from "@mui/system";
 
+interface ImageSlic {
+  title: string;
+  url: string;
+  subContent: string;
+}
 export function SlideShow() {
+  const [currentIndex, setCurrentIndex] = useState<ImageSlic>(
+    MsContainer_text[0]
+  );
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "black" }}>
@@ -24,22 +31,24 @@ export function SlideShow() {
               <SimpleImageSlider
                 width={"65vw"}
                 height={534}
-                images={MsContainer_images}
-                showBullets={true}
+                images={MsContainer_text}
+                showBullets={false}
                 showNavs={true}
                 navSize={30}
+                slideDuration={0.1}
+                onCompleteSlide={(index) => {
+                  setCurrentIndex(MsContainer_text[index - 1]);
+                }}
               />
               <Box width="50%" padding="1.2rem">
-                {MsContainer_text.map(({ title, subContent }, index) => (
-                  <Stack direction="column" spacing={2} key={index}>
-                    <MainTitleContent
-                      style={{ color: "white", fontSize: "1.5rem" }}
-                    >
-                      {title}
-                    </MainTitleContent>
-                    <FeatureSubTitle>{subContent}</FeatureSubTitle>
-                  </Stack>
-                ))}
+                <Box>
+                  <MainTitleContent
+                    style={{ color: "white", fontSize: "1.5rem" }}
+                  >
+                    {currentIndex.title}
+                  </MainTitleContent>
+                  <FeatureSubTitle>{currentIndex.subContent}</FeatureSubTitle>
+                </Box>
               </Box>
             </Box>
           </Stack>
