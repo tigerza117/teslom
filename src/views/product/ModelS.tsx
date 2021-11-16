@@ -1,4 +1,3 @@
-import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
   GridGall,

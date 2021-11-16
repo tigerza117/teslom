@@ -3,10 +3,9 @@ import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
 import {
   FeatureSubTitle,
   FeatureTitle,
-  MainTitle,
-  MainSubTitle,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import { HeroSubTitle, HeroTitle } from "@components/shared/Heroes";
 
 export function HeroSection() {
   return (
@@ -20,8 +19,8 @@ export function HeroSection() {
         <TitleWrapper>
           <Box sx={{ marginTop: "12vh" }}>
             <Stack direction="column" spacing={-1}>
-              <MainTitle>Model X</MainTitle>
-              <MainSubTitle>Plaid</MainSubTitle>
+              <HeroTitle>Model X</HeroTitle>
+              <HeroSubTitle>Plaid</HeroSubTitle>
             </Stack>
           </Box>
           <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>

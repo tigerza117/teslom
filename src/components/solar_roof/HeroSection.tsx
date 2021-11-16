@@ -7,11 +7,10 @@ import {
 import {
   FeatureSubTitle,
   FeatureTitle,
-  MainSubTitle,
-  MainTitle,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ExpandingLight from "@layouts/ExpandIcon-light";
+import { HeroSubTitle, HeroTitle } from "@components/shared/Heroes";
 
 export function HeroSection() {
   return (
@@ -25,10 +24,10 @@ export function HeroSection() {
         <TitleWrapper>
           <Box sx={{ marginTop: "12vh", marginBottom: "auto" }}>
             <Stack direction="column" spacing={-1}>
-              <MainTitle>Solar Roof</MainTitle>
-              <MainSubTitle>
+              <HeroTitle>Solar Roof</HeroTitle>
+              <HeroSubTitle>
                 Transform your roof and produce clean energy
-              </MainSubTitle>
+              </HeroSubTitle>
             </Stack>
           </Box>
           <Box margin="0 auto" display="flex">

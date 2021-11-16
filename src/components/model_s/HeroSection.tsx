@@ -1,12 +1,12 @@
 import { Box, Stack } from "@mui/material";
 import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
 import { BtnOutline } from "@components/shared/Button";
+import { FeatureSubTitle, FeatureTitle } from "@components/shared/Title";
 import {
-  FeatureSubTitle,
-  FeatureTitle,
-  MainSubTitle,
-  MainTitle,
-} from "@components/shared/Title";
+  HeroTitle,
+  HeroTitleContent,
+  HeroSubTitle,
+} from "@components/shared/Heroes";
 
 export const HeroSection = () => {
   return (
@@ -19,8 +19,8 @@ export const HeroSection = () => {
       <TitleWrapper>
         <Box sx={{ marginTop: "12vh" }}>
           <Stack direction="column" spacing={-1}>
-            <MainTitle>Model S</MainTitle>
-            <MainSubTitle>Plaid</MainSubTitle>
+            <HeroTitle>Model S</HeroTitle>
+            <HeroSubTitle>Plaid</HeroSubTitle>
           </Stack>
         </Box>
         <Box sx={{ margin: "0 auto", padding: "1.8rem 0" }}>

@@ -2,38 +2,6 @@ import { useLayoutContext } from "@contexts/LayoutContext";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
-export const MainTitle:React.FC = ({children}) => {
-  const {heroColor} = useLayoutContext()
-  const Render = styled(Typography)(({ theme }) => ({
-    fontWeight: 600,
-    fontSize: "2.5rem",
-    marginBottom: 0,
-    color: heroColor,
-    padding: 0,
-    transform: "translateY(20px)",
-  }))
-  return (
-    <Render>
-      {children}
-    </Render>
-  )
-};
-
-export const MainSubTitle:React.FC = ({children}) => {
-  const {heroColor} = useLayoutContext()
-  const Render = styled("h5")(({ theme }) => ({
-  fontWeight: 400,
-  fontSize: "1rem",
-  padding: "1.5rem 0",
-  color: heroColor,
-  }))
-  return (
-    <Render>
-      {children}
-    </Render>
-  )
-};
-
 export const FeatureTitle = styled(Typography)(({ theme }) => ({
   color: "white",
   fontWeight: 600,
@@ -53,22 +21,6 @@ export const MainTitleContent = styled(Typography)(({ theme }) => ({
   color: "#181b21",
   padding: 0,
 }));
-
-export const SubTitleContent:React.FC = ({children}) => {
-  const {heroColor} = useLayoutContext()
-  const Render = styled("h5")(({ theme }) => ({
-    fontWeight: 200,
-    fontSize: "1.2rem",
-    margin: "0",
-    padding: "0",
-  color: heroColor,
-  }))
-  return (
-    <Render>
-      {children}
-    </Render>
-  )
-};
 
 export const SubContent = styled("h5")(({ theme }) => ({
   fontWeight: 400,
@@ -124,5 +76,29 @@ export const InfoSubTitle = styled(Typography)(({ theme }) => ({
 export const VdoOverlayText = styled("p")(({ theme }) => ({
   fontSize: ".9rem",
   margin: "0",
-  opacity: .8
+  opacity: 0.8,
+}));
+
+export const MainTitle = styled("p")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "2.5rem",
+  marginBottom: 0,
+  color: "#393c41",
+  padding: 0,
+  transform: "translateY(20px)",
+}));
+
+export const SubTitleContent = styled("p")(({ theme }) => ({
+  fontWeight: 400,
+  fontSize: "1rem",
+  color: "#393c41",
+  margin: "0",
+}));
+
+export const MainSubTitle = styled("p")(({ theme }) => ({
+  fontWeight: 400,
+  fontSize: "1rem",
+  padding: "1.5rem 0",
+  color: "#393c41",
+  margin: "0",
 }));
