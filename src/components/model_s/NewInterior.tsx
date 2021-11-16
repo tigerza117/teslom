@@ -12,7 +12,6 @@ export function AllNewInterior() {
       </BackgroundWrapper>
       <BackgroundWrapper
         style={{
-          height: "100vh",
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/177c0faf-b852-47ea-a218-394368e15a20/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop)`,
         }}
       ></BackgroundWrapper>
