@@ -9,6 +9,7 @@ export function HeroSection() {
         sx={{
           backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/01_Main_Hero_Desktop.jpg)`,
         }}
+        id="hero"
       >
         <Box
           sx={{
