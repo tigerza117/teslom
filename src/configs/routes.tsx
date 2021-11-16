@@ -29,12 +29,12 @@ const publicRoutes = publicPaths.map(({ path, ...props }) => (
 export default () => (
   <Router>
     <Switch>
-      <Suspense fallback={<div />}>
-        <Layout>
+      <Layout>
+        <Suspense fallback={<div />}>
           {publicRoutes}
           {/* <Route component={NotFound} /> */}
-        </Layout>
-      </Suspense>
+        </Suspense>
+      </Layout>
     </Switch>
   </Router>
 );
