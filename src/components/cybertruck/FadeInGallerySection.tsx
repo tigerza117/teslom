@@ -13,6 +13,7 @@ import {
   PictureSliderContainer,
   PictureSliderImage,
   SliderBtn,
+  Carousel,
 } from "@components/cybertruck/Components";
 
 export function Gallery() {
@@ -22,26 +23,26 @@ export function Gallery() {
         <InfoFeatureWrapper>
           <Stack direction="column">
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
             <Box
-              sx={{
-                margin: "0 auto",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
+                sx={{
+                  margin: "0 auto",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
             >
               <Box sx={{ display: "inline" }}>
                 <FeatureContainer>
                   <InfoContainer
-                    style={{
-                      padding: "0px 0px 80px",
-                    }}
+                      style={{
+                        padding: "0px 0px 80px",
+                      }}
                   >
-                    <MainTitleContent >
+                    <MainTitleContent sx={{ letterSpacing: "0.188rem" }}>
                       EXOSKELETON
                     </MainTitleContent>
 
@@ -59,37 +60,37 @@ export function Gallery() {
             </Box>
 
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
             <InfoContainer
-              style={{
-                padding: "0px 0px 40px",
-              }}
+                style={{
+                  padding: "0px 0px 40px",
+                }}
             >
               <Box sx={{ padding: "0px 0px 80px", width: "133vh" }}>
                 <Stack
-                  direction="row"
-                  spacing={14}
-                  sx={{ display: "flex", justifyContent: "center" }}
+                    direction="row"
+                    spacing={14}
+                    sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <Box>
                     <MainSubtitleContent
-                      sx={{
-                        letterSpacing: "0.110rem",
-                        padding: "0 0 1.125rem",
-                        width: "31vh",
-                      }}
+                        sx={{
+                          letterSpacing: "0.110rem",
+                          padding: "0 0 1.125rem",
+                          width: "31vh",
+                        }}
                     >
                       ULTRA-HARD 30X COLD-ROLLED STAINLESS STEEL
                     </MainSubtitleContent>
                   </Box>
                   <Box
-                    sx={{
-                      width: "100%",
-                      textAlign: "left",
-                    }}
+                      sx={{
+                        width: "100%",
+                        textAlign: "left",
+                      }}
                   >
                     <SubtitleContent>
                       If there was something better, we’d use it. Help eliminate
@@ -104,38 +105,38 @@ export function Gallery() {
             </InfoContainer>
 
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
 
             <InfoContainer
-              style={{
-                padding: "0px 0px 40px",
-              }}
+                style={{
+                  padding: "0px 0px 40px",
+                }}
             >
-              <Box sx={{ padding: "0px 0px 80px", width: "133vh" }}>
+              <Box sx={{ padding: "0px 0px 40px", width: "133vh"}}>
                 <Stack
-                  direction="row"
-                  spacing={14}
-                  sx={{ display: "flex", justifyContent: "center" }}
+                    direction="row"
+                    spacing={14}
+                    sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <Box>
                     <MainSubtitleContent
-                      sx={{
-                        letterSpacing: "0.110rem",
-                        padding: "0 0 1.125rem",
-                        width: "31vh",
-                      }}
+                        sx={{
+                          letterSpacing: "0.110rem",
+                          padding: "0 0 1.125rem",
+                          width: "31vh",
+                        }}
                     >
                       TESLA ARMOR GLASS
                     </MainSubtitleContent>
                   </Box>
                   <Box
-                    sx={{
-                      width: " 100%",
-                      textAlign: "left",
-                    }}
+                      sx={{
+                        width: " 100%",
+                        textAlign: "left",
+                      }}
                   >
                     <SubtitleContent>
                       Ultra-strong glass and polymer-layered composite can
