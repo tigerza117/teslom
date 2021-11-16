@@ -2,13 +2,10 @@ import { Box, Stack } from "@mui/material";
 import { BackgroundWrapper, SliderAdjust } from "@components/shared/Wrapper";
 import { MainTitleContent, FeatureSubTitle } from "@components/shared/Title";
 import SimpleImageSlider from "react-simple-image-slider";
-
-const images = [
-  { url: "https://tesla-cdn.thron.com/delivery/public/image/tesla/82d678c3-1d60-4827-887b-eb44bbac528f/bvlatuR/std/2442x1124/MS-Interior-Carousel-A-Desktop" },
-  { url: "https://tesla-cdn.thron.com/delivery/public/image/tesla/bb2fe12c-36d1-4e56-957c-cd6c1b8a8f40/bvlatuR/std/2442x1124/MS-Interior-Carousel-B-Desktop" },
-  { url: "https://tesla-cdn.thron.com/delivery/public/image/tesla/118a3cee-9850-437d-b9e8-e88695d58906/bvlatuR/std/2442x1124/MS-Interior-Carousel-C-Desktop" },
-  { url: "https://tesla-cdn.thron.com/delivery/public/image/tesla/8dfd0c9e-45d5-4782-a071-c597c372429f/bvlatuR/std/2442x1124/MS-Interior-Carousel-D-Desktop" },
-];
+import { MsContainer_images } from "@constants/cybertruckSlider";
+import { MsContainer_text } from "@constants/cybertruckSlider";
+import { useRef, useState } from "react";
+import { keys } from "@mui/system";
 
 export function SlideShow() {
   return (
@@ -26,24 +23,23 @@ export function SlideShow() {
             >
               <SimpleImageSlider
                 width={"65vw"}
-                height={504}
-                images={images}
+                height={534}
+                images={MsContainer_images}
                 showBullets={true}
                 showNavs={true}
+                navSize={30}
               />
               <Box width="50%" padding="1.2rem">
-                <Stack direction="column" spacing={2}>
-                  <MainTitleContent
-                    style={{ color: "white", fontSize: "1.5rem" }}
-                  >
-                    Redesigned Second Row
-                  </MainTitleContent>
-                  <FeatureSubTitle>
-                    Seating for three adults, with extra legroom, headroom and a
-                    stowable armrest with integrated storage and wireless
-                    charging.
-                  </FeatureSubTitle>
-                </Stack>
+                {MsContainer_text.map(({ title, subContent }, index) => (
+                  <Stack direction="column" spacing={2} key={index}>
+                    <MainTitleContent
+                      style={{ color: "white", fontSize: "1.5rem" }}
+                    >
+                      {title}
+                    </MainTitleContent>
+                    <FeatureSubTitle>{subContent}</FeatureSubTitle>
+                  </Stack>
+                ))}
               </Box>
             </Box>
           </Stack>
