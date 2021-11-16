@@ -4,10 +4,7 @@ import {
   HomeFeatureWrapper,
   TitleWrapper,
 } from "@components/shared/Wrapper";
-import {
-  FeatureSubTitle,
-  FeatureTitle,
-} from "@components/shared/Title";
+import { FeatureSubTitle, FeatureTitle } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ExpandingLight from "@layouts/ExpandIcon-light";
 import { HeroSubTitle, HeroTitle } from "@components/shared/Heroes";
@@ -46,13 +43,13 @@ export function HeroSection() {
                       />
                     </Box>
                     <FeatureSubTitle>
-                      Beautyful Solar Without Compromise
+                      Beautyful Solar <br /> Without Compromise
                       <br />
                     </FeatureSubTitle>
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <FeatureTitle>25-Year</FeatureTitle>
-                    <FeatureSubTitle>
+                    <FeatureSubTitle style={{ marginTop: ".15rem" }}>
                       Tile
                       <br />
                       Warranty
@@ -60,7 +57,7 @@ export function HeroSection() {
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <FeatureTitle>24/7</FeatureTitle>
-                    <FeatureSubTitle>
+                    <FeatureSubTitle style={{ marginTop: ".15rem" }}>
                       Outage
                       <br />
                       Protection
