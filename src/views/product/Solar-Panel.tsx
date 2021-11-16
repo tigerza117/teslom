@@ -22,9 +22,9 @@ function SolarPanel() {
     setDark(true);
     return () => {};
   }, []);
-  
+
   return (
-    <Container>
+    <>
       <ShowCaseWrapper />
       <HeroSection />
       <SavingSection />
@@ -35,7 +35,7 @@ function SolarPanel() {
       <Experience />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 

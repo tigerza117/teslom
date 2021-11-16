@@ -9,7 +9,7 @@ import {
   Autopilot,
   Interior,
   OrderNow,
-  Specs
+  Specs,
 } from "@components/model_y/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
@@ -24,7 +24,7 @@ function ModelY() {
   }, []);
 
   return (
-    <Container>
+    <>
       <HeroSection />
       <Safety />
       <Utility />
@@ -34,7 +34,7 @@ function ModelY() {
       <Interior />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 
