@@ -18,7 +18,7 @@ export function BeyondLu() {
           loading="lazy"
           style={{
             width: "100%",
-            height: "75vh",
+            height: "70vh",
             objectFit: "cover",
           }}
         />
@@ -46,7 +46,8 @@ export function BeyondLu() {
             </Stack>
           </Box>
         </Box>
-        <Box sx={{ padding: "3rem 0 6rem 0" }}>
+
+        <Box sx={{ padding: "3rem 0 6rem 0", width: "75vw", margin: "0 auto" }}>
           <Stack
             direction="row"
             spacing={15}

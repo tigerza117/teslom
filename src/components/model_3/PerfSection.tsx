@@ -37,16 +37,25 @@ export function Perf() {
                 <Box>
                   <Stack direction="row" margin="auto">
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>3.1 s</FeatureTitle>
+                      <FeatureSubTitle>
+                        Quickest acceleration from zero to 60 mph* in as little
+                        as 3.1 seconds
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>162mph</FeatureTitle>
+                      <FeatureSubTitle>
+                        Improved handling and aerodynamics allow for a top speed
+                        of 162 mph
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>AWD</FeatureTitle>
+                      <FeatureSubTitle>
+                        Dual Motor All-Wheel Drive instantly controls traction
+                        and torque, in all weather conditions
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                   </Stack>
                 </Box>
@@ -61,8 +70,8 @@ export function Perf() {
         >
           <Box style={{ width: "65%", marginRight: "2.5rem" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>max integer placeat</MainTitleContent>
+              <SubTitleContent>Performance</SubTitleContent>
+              <MainTitleContent>Quickest Acceleration</MainTitleContent>
               <Box style={{ padding: ".5rem 0" }}>
                 <Box>
                   <Stack
@@ -92,11 +101,11 @@ export function Perf() {
           </Box>
           <Box>
             <SubContent>
-              fermentum iaculis eu. In nulla posuere sollicitudin aliquam
-              ultrices sagittis orci. Etiam erat velit scelerisque in dictum non
-              consectetur a. Dui nunc mattis enim ut tellus elementum sagittis
-              vitae et. A cras semper auctor neque vitae tempus quam
-              pellentesque.
+              Model 3 comes with the option of dual motor all-wheel drive, 20”
+              Überturbine Wheels and Performance Brakes and lowered suspension
+              for total control, in all weather conditions. And a carbon fiber
+              spoiler improves stability at high speeds, all allowing Model 3 to
+              accelerate from 0-60 mph* in as little as 3.1 seconds.
             </SubContent>
           </Box>
         </RowSectionBlock>

@@ -30,8 +30,8 @@ export function Powerwall() {
         >
           <Box style={{ width: "40%" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>maxime placeat</MainTitleContent>
+              <SubTitleContent>Powerwall</SubTitleContent>
+              <MainTitleContent>Home Batter Backup</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
                 <Stack direction="row" spacing={2}>
                   <Box>
@@ -46,9 +46,9 @@ export function Powerwall() {
           </Box>
           <Box>
             <SubContent>
-              Enter a destination on your touchscreen and Trip Planner will
-              automatically calculate your route with Superchargers along the
-              way.
+              Powerwall is bundled with every Tesla solar purchase, allowing you
+              to store your solar energy for use anytime—at night or during an
+              outage.
             </SubContent>
           </Box>
         </RowSectionBlock>

@@ -22,13 +22,13 @@ export function Safety() {
             >
               <Stack direction="column" padding="2.5rem 0 0 3rem">
                 <SubTitleContent>Safety</SubTitleContent>
-                <MainTitleContent>Nunc consequat</MainTitleContent>
+                <MainTitleContent>Built for Safety</MainTitleContent>
                 <SubContent style={{ padding: "4rem 0 0 0" }}>
-                  Curabitur vitae nunc sed velit. Placerat in egestas erat
-                  imperdiet sed. Ut faucibus pulvinar elementum integer enim
-                  neque. Amet facilisis magna etiam tempor orci eu. Posuere urna
-                  nec tincidunt praesent semper feugiat nibh sed pulvinar. Velit
-                  euismod in pellentesque massa.
+                  Model X is built from the ground up as an electric vehicle,
+                  with a high-strength architecture and floor-mounted battery
+                  pack for incredible occupant protection and low rollover risk.
+                  Every Model X includes Tesla's latest active safety features,
+                  such as Automatic Emergency Braking, at no extra cost.
                 </SubContent>
               </Stack>
               <Box>

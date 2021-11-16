@@ -38,18 +38,18 @@ export function Range() {
                 >
                   <Box>
                     <Stack direction="column" spacing={1} textAlign="center">
-                      <FeatureTitle>405 mi</FeatureTitle>
+                      <FeatureTitle>348mi</FeatureTitle>
                       <FeatureSubTitle>
-                        Go anywhere with up to 405 miles of estimated range on a
+                        Go anywhere with up to 348 miles of estimated range on a
                         single charge
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
                   <Box>
                     <Stack direction="column" spacing={1} textAlign="center">
-                      <FeatureTitle>200 mi</FeatureTitle>
+                      <FeatureTitle>175mi</FeatureTitle>
                       <FeatureSubTitle>
-                        Supercharge up to 200 miles in 15 minutes
+                        Supercharge up to 175 miles in 15 minutes
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
@@ -76,8 +76,8 @@ export function Range() {
                 <MainTitleContent>Go Anywhere</MainTitleContent>
                 <SubContent style={{ padding: "1rem 0" }}>
                   Travel farther on a single charge than any other electric
-                  vehicle—and keep going with access to 25,000+ Superchargers
-                  globally. By combining up to 405 miles of estimated range with
+                  SUV—and keep going with access to 25,000+ Superchargers
+                  globally. By combining up to 348 miles of estimated range with
                   Tesla fast charging technology, you’ll spend less time
                   charging and even more time on the road.
                 </SubContent>

@@ -16,14 +16,16 @@ export function Range() {
         <Box>
           <Stack direction="row">
             <Stack>
-              <img
-                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop"
-                loading="lazy"
+              <video
+                src="https://tesla-cdn.thron.com/static/WVNSU3_Range_Desktop.mp4-2000_WJLESL.mp4?xseo="
                 style={{
                   width: "70vw",
                   height: "100vh",
                   objectFit: "cover",
                 }}
+                autoPlay
+                loop
+                preload="auto"
               />
               <Box sx={{ margin: "-10rem auto 0 auto" }}>
                 <Stack
@@ -38,17 +40,19 @@ export function Range() {
                 >
                   <Box>
                     <Stack direction="column" spacing={1} textAlign="center">
-                      <FeatureTitle>405 mi</FeatureTitle>
+                      <FeatureTitle>330 mi</FeatureTitle>
                       <FeatureSubTitle>
-                        pig sausage prosciutto chicken spare ribs
+                        Go anywhere with up to 330 miles of estimated range on a
+                        single charge
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
                   <Box>
                     <Stack direction="column" spacing={1} textAlign="center">
-                      <FeatureTitle>200 mi</FeatureTitle>
+                      <FeatureTitle>15 min</FeatureTitle>
                       <FeatureSubTitle>
-                        short ribs brisket venison rump
+                        Recharge up to 162 miles in 15 minutes at Supercharger
+                        locations
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
@@ -56,7 +60,8 @@ export function Range() {
                     <Stack direction="column" spacing={1} textAlign="center">
                       <FeatureTitle>25,000+</FeatureTitle>
                       <FeatureSubTitle>
-                        short ribs brisket venison rump
+                        Superchargers placed along well-traveled routes around
+                        the world
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
@@ -74,12 +79,13 @@ export function Range() {
                 <SubTitleContent>Range</SubTitleContent>
                 <MainTitleContent>Go Anywhere</MainTitleContent>
                 <SubContent style={{ padding: "1rem 0" }}>
-                  Bacon ipsum dolor amet short ribs brisket venison rump
-                  drumstick pig sausage prosciutto chicken spare ribs salami
-                  picanha doner. Kevin capicola sausage, buffalo bresaola
-                  venison turkey shoulder picanha ham pork tri-tip meatball
-                  meatloaf ribeye. Doner spare ribs andouille bacon sausage.
-                  Ground round jerky brisket pastrami shank.
+                  Model Y is fully electric, so you never need to visit a gas
+                  station again. If you charge overnight at home, you can wake
+                  up to a full battery every morning. And when you’re on the
+                  road, it’s easy to plug in along the way—at any public station
+                  or with the Tesla charging network. We currently have over
+                  25,000 Superchargers worldwide, with six new locations opening
+                  every week.
                 </SubContent>
               </Stack>
               <Box>
