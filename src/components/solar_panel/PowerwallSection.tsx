@@ -6,29 +6,21 @@ import {
   SubTitleContent,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
-import { RowSectionBlock } from "@components/shared/Section";
+import { VerticalWrapper } from "@components/shared/Wrapper";
+import { VerticalContent } from "@layouts/VertiContent";
+import { VertiImg } from "@components/shared/Container";
 
 export function Powerwall() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <img
+        <VertiImg
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/173055ff-afe2-4114-947e-ba62cf8e05c6/bvlatuR/std/2880x1800/PW-Inverter-Hero-D"
           alt=""
           loading="lazy"
-          style={{
-            width: "100vw",
-            height: "67vh",
-            objectFit: "cover",
-            objectPosition: "50%",
-          }}
         />
-        <RowSectionBlock
-          style={{
-            margin: "3rem auto 0 auto",
-          }}
-        >
-          <Box style={{ width: "40%" }}>
+        <VerticalContent>
+          <Box>
             <Stack direction="column">
               <SubTitleContent>Powerwall</SubTitleContent>
               <MainTitleContent>Home Batter Backup</MainTitleContent>
@@ -44,14 +36,14 @@ export function Powerwall() {
               </Box>
             </Stack>
           </Box>
-          <Box>
+          <VerticalWrapper>
             <SubContent>
               Powerwall is bundled with every Tesla solar purchase, allowing you
               to store your solar energy for use anytime—at night or during an
               outage.
             </SubContent>
-          </Box>
-        </RowSectionBlock>
+          </VerticalWrapper>
+        </VerticalContent>
       </BackgroundWrapper>
     </>
   );
