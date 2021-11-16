@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
-export const Container = styled(Box)(({ theme }) => ({
+export const SnapContainer = styled(Box)(({ theme }) => ({
   scrollSnapType: "y mandatory",
   maxHeight: "100vh",
   minWidth: "100vw",
@@ -21,3 +21,19 @@ export const InfoContainer = styled(Box)(({ theme }) => ({
   width: "80vh",
   verticalAlign: "middle",
 }));
+
+export const ContainerWrapper: React.FC = ({ children }) => {
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Container>{children}</Container>
+    </Box>
+  );
+};

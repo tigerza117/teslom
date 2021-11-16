@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import LayoutContext from "@contexts/LayoutContext";
 import Footer from "./Footer";
 import ChatSupport from "./ChatSupport";
-import { Container } from "@components/shared/Container";
+import { SnapContainer } from "@components/shared/Container";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { ViewAction } from "schema/types";
@@ -45,9 +45,6 @@ export const Layout: React.FC = ({ children }) => {
         callViewAction: (a: ViewAction) => {
           switch (a) {
             case ViewAction.OPENING:
-              ScrollTrigger.getAll().forEach((s) => {
-                s.kill();
-              });
               window.history.scrollRestoration = "manual";
               break;
             case ViewAction.OPENED:
@@ -58,7 +55,6 @@ export const Layout: React.FC = ({ children }) => {
                     scrub: true,
                     start: "80% 0%",
                     end: "100% 0%",
-                    markers: true,
                     scroller: "#con",
                     id: "hero",
                   },
@@ -71,11 +67,24 @@ export const Layout: React.FC = ({ children }) => {
                     scrub: true,
                     start: "90% 0%",
                     end: "100% 0%",
-                    markers: true,
                     scroller: "#con",
                   },
                   display: "inline",
                   opacity: 1,
+                });
+                gsap.set(".show", { y: 100, opacity: 0 });
+
+                ScrollTrigger.batch(".show", {
+                  scroller: "#con",
+                  onEnter: (batch) =>
+                    gsap.to(batch, {
+                      opacity: 1,
+                      y: 0,
+                      stagger: { each: 0.15, grid: [1, 3] },
+                      overwrite: true,
+                    }),
+                  onLeaveBack: (batch) =>
+                    gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
                 });
               }
               break;
@@ -88,7 +97,7 @@ export const Layout: React.FC = ({ children }) => {
         },
       }}
     >
-      <Container id="con">
+      <SnapContainer id="con">
         <Box
           className="layout__main__wrapper"
           sx={{ minHeight: "100vh", position: "relative" }}
@@ -103,7 +112,7 @@ export const Layout: React.FC = ({ children }) => {
           </Box>
           <Footer />
         </Box>
-      </Container>
+      </SnapContainer>
     </LayoutContext.Provider>
   );
 };
