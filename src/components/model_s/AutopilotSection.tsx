@@ -28,7 +28,7 @@ export function Autopilot() {
           />
           <VidsOverlay />
         </Box>
-        <Box sx={{ padding: "2rem 0" }}>
+        <Box sx={{ padding: "2rem 0 6rem 0", width: "75vw", margin: "0 auto" }}>
           <Stack
             direction="row"
             spacing={14}

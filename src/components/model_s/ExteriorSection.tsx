@@ -12,7 +12,7 @@ import { BtnOutline } from "@components/shared/Button";
 export function Exterior() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <img
           src="https://tesla-cdn.thron.com/delivery/public/image/tesla/06af56e3-91c4-4bad-8d2e-0a24f64ec2a8/bvlatuR/std/2880x1800/MS-Exterior-Hero-Desktop"
           loading="lazy"
@@ -47,7 +47,7 @@ export function Exterior() {
             </Stack>
           </Box>
         </Box>
-        <Box sx={{ padding: "2rem 0" }}>
+        <Box sx={{ padding: "3rem 0 6rem 0", width: "75vw", margin: "0 auto" }}>
           <Stack
             direction="row"
             spacing={5}
