@@ -47,7 +47,7 @@ export function BeyondLu() {
           </Box>
         </Box>
 
-        <Box sx={{ padding: "3rem 0 6rem 0", width: "75vw", margin: "0 auto" }}>
+        <Box sx={{ padding: "3rem 0 6rem 0", width: "65vw", margin: "0 auto" }}>
           <Stack
             direction="row"
             spacing={15}
