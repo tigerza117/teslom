@@ -20,6 +20,7 @@ export function HeroSection() {
         sx={{
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/b614dd66-cc50-4cba-8c15-186b95bb4a8d/bvlatuR/std/2880x1800/sr-storm-desktop)`,
         }}
+        id="hero"
       >
         <TitleWrapper>
           <Box sx={{ marginTop: "12vh", marginBottom: "auto" }}>

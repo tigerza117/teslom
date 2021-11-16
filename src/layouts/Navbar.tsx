@@ -4,10 +4,11 @@ import { styled } from "@mui/system";
 import Logo from "@assets/images/Logo";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { DrawerBar } from "./DrawerBar";
-import { useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 import { BaseButton } from "@components/shared/Button";
+import ScrollUpBtn from "./ScrollUpBtn";
 
 const NavbarWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -52,6 +53,23 @@ const TabsHighlight = styled("div")`
   transition: 0.15s ease;
   transition-property: all;
 `;
+
+const HideScroll: FC = ({ children }) => {
+  const ref = useRef(null);
+
+  gsap.to(ref.current, {
+    scrollTrigger: {
+      trigger: "#hero",
+      scrub: true,
+      start: "80% 0%",
+      end: "100% 0%",
+    },
+    display: "none",
+    opacity: 0,
+  });
+
+  return <Box ref={ref}>{children}</Box>;
+};
 
 export const Navbar = () => {
   const { toggleDrawer, heroColor } = useLayoutContext();
@@ -120,44 +138,49 @@ export const Navbar = () => {
             <Logo />
           </Link>
         </SideWrapper>
-        <NavbarProductsWrapper>
-          <Stack direction="row" spacing={0}>
-            {NavbarProducts.map(({ label, path }, index) => (
+        <HideScroll>
+          <NavbarProductsWrapper>
+            <Stack direction="row" spacing={0}>
+              {NavbarProducts.map(({ label, path }, index) => (
+                <ResponsiveBtn
+                  key={index}
+                  {...({ to: "/" + path } as any)}
+                  component={Link}
+                  onMouseOver={repositionHighlight}
+                  sx={{ color: heroColor }}
+                >
+                  {label}
+                </ResponsiveBtn>
+              ))}
+            </Stack>
+          </NavbarProductsWrapper>
+        </HideScroll>
+        <HideScroll>
+          <SideWrapper id="nav">
+            <Stack direction="row" spacing={0} padding=".5rem 0">
               <ResponsiveBtn
-                key={index}
-                {...({ to: "/" + path } as any)}
-                component={Link}
                 onMouseOver={repositionHighlight}
                 sx={{ color: heroColor }}
               >
-                {label}
+                shop
               </ResponsiveBtn>
-            ))}
-          </Stack>
-        </NavbarProductsWrapper>
-        <SideWrapper>
-          <Stack direction="row" spacing={0} padding=".5rem 0">
-            <ResponsiveBtn
-              onMouseOver={repositionHighlight}
-              sx={{ color: heroColor }}
-            >
-              shop
-            </ResponsiveBtn>
-            <ResponsiveBtn
-              onMouseOver={repositionHighlight}
-              sx={{ color: heroColor }}
-            >
-              account
-            </ResponsiveBtn>
-            <Btn
-              onMouseOver={repositionHighlight}
-              onClick={toggleDrawer}
-              sx={{ color: heroColor }}
-            >
-              Menu
-            </Btn>
-          </Stack>
-        </SideWrapper>
+              <ResponsiveBtn
+                onMouseOver={repositionHighlight}
+                sx={{ color: heroColor }}
+              >
+                account
+              </ResponsiveBtn>
+              <Btn
+                onMouseOver={repositionHighlight}
+                onClick={toggleDrawer}
+                sx={{ color: heroColor }}
+              >
+                Menu
+              </Btn>
+            </Stack>
+          </SideWrapper>
+        </HideScroll>
+        <ScrollUpBtn />
       </Grid>
     </NavbarWrapper>
   );
