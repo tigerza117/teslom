@@ -67,5 +67,12 @@ export const SliderText = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",
-  paddingTop: "1.2rem"
+  paddingTop: "1.2rem",
+}));
+
+export const ContentWrapper = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  height: "90vh",
 }));
