@@ -1,29 +1,35 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { BackgroundWrapper, VdoOverlay } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
+  VdoOverlayText,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import VidsOverlay from "@components/shared/VdoOverlay";
 
 export function Autopilot() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <video
-          src="https://tesla-cdn.thron.com/delivery/public/video/tesla/65011bbb-6f1c-422e-9e7a-727ba24bad15/bvlatuR/WEBHD/autopilot"
-          style={{
-            width: "100vw",
-            height: "75vh",
-            objectFit: "cover",
-            zIndex: -1,
-          }}
-          autoPlay
-          loop
-          preload="auto"
-        />
+        <Box>
+          <video
+            src="https://tesla-cdn.thron.com/delivery/public/video/tesla/65011bbb-6f1c-422e-9e7a-727ba24bad15/bvlatuR/WEBHD/autopilot"
+            style={{
+              width: "100vw",
+              height: "75vh",
+              objectFit: "cover",
+              zIndex: -1,
+            }}
+            autoPlay
+            loop
+            preload="auto"
+          />
+
+          <VidsOverlay />
+        </Box>
         <Box padding="1rem 0 0 0">
           <Stack
             direction="row"

@@ -7,16 +7,26 @@ import {
   OrderNow,
   ImageSlide,
 } from "@components/cybertruck/section";
+import { useLayoutContext } from "@contexts/LayoutContext";
+import { useEffect } from "react";
 
 const Cybertruck = () => {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+
   return (
-    <Container>
+    <>
       <HeroSection />
       <Gallery />
       <ImageSlide />
       <PerfText />
       <OrderNow />
-    </Container>
+    </>
   );
 };
 

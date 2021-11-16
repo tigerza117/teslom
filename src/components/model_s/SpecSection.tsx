@@ -22,7 +22,15 @@ export function Specs() {
               />
             </Box>
             <Box>
-              <Box style={{ padding: "2.2rem 3rem" }}>
+              <Box
+                style={{
+                  padding: "2.2rem 3rem",
+                  height: "100%",
+                  display: "flex",
+                  alignContent: "center",
+                  transform: "translateY(10%)",
+                }}
+              >
                 <Stack direction="column">
                   <Box>
                     <SpecTitle style={{ color: "white" }}>

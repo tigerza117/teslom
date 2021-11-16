@@ -13,25 +13,25 @@ import {
   Feature,
   Specs,
   OrderNow,
+  AllNewInterior
 } from "@components/model_x/section";
-import { Container } from "@components/shared/Container";
-import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
-import { AdsTitle } from "@components/shared/Title";
+import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { useLayoutContext } from "@contexts/LayoutContext";
+import { useEffect } from "react";
 
 function ModelX() {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+
   return (
-    <Container>
+    <>
       <HeroSection />
-      <BackgroundWrapper style={{ backgroundColor: "black", height: "15vh" }}>
-        <TitleWrapper>
-          <AdsTitle>All-New Interior</AdsTitle>
-        </TitleWrapper>
-      </BackgroundWrapper>
-      <BackgroundWrapper
-        sx={{
-          backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/177c0faf-b852-47ea-a218-394368e15a20/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop)`,
-        }}
-      ></BackgroundWrapper>
+      <AllNewInterior />
       <BackgroundWrapper
         style={{ backgroundColor: "black" }}
       ></BackgroundWrapper>
@@ -48,7 +48,7 @@ function ModelX() {
       <Feature />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 

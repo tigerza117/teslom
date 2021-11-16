@@ -1,21 +1,38 @@
+import { useLayoutContext } from "@contexts/LayoutContext";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
-export const MainTitle = styled(Typography)(({ theme }) => ({
-  fontWeight: 600,
-  fontSize: "2.5rem",
-  marginBottom: 0,
-  color: "white",
-  padding: 0,
-  transform: "translateY(20px)",
-}));
+export const MainTitle:React.FC = ({children}) => {
+  const {heroColor} = useLayoutContext()
+  const Render = styled(Typography)(({ theme }) => ({
+    fontWeight: 600,
+    fontSize: "2.5rem",
+    marginBottom: 0,
+    color: heroColor,
+    padding: 0,
+    transform: "translateY(20px)",
+  }))
+  return (
+    <Render>
+      {children}
+    </Render>
+  )
+};
 
-export const MainSubTitle = styled("h5")(({ theme }) => ({
+export const MainSubTitle:React.FC = ({children}) => {
+  const {heroColor} = useLayoutContext()
+  const Render = styled("h5")(({ theme }) => ({
   fontWeight: 400,
   fontSize: "1rem",
   padding: "1.5rem 0",
-  color: "white",
-}));
+  color: heroColor,
+  }))
+  return (
+    <Render>
+      {children}
+    </Render>
+  )
+};
 
 export const FeatureTitle = styled(Typography)(({ theme }) => ({
   color: "white",
@@ -37,12 +54,21 @@ export const MainTitleContent = styled(Typography)(({ theme }) => ({
   padding: 0,
 }));
 
-export const SubTitleContent = styled("h5")(({ theme }) => ({
-  fontWeight: 200,
-  fontSize: "1.2rem",
-  margin: "0",
-  padding: "0",
-}));
+export const SubTitleContent:React.FC = ({children}) => {
+  const {heroColor} = useLayoutContext()
+  const Render = styled("h5")(({ theme }) => ({
+    fontWeight: 200,
+    fontSize: "1.2rem",
+    margin: "0",
+    padding: "0",
+  color: heroColor,
+  }))
+  return (
+    <Render>
+      {children}
+    </Render>
+  )
+};
 
 export const SubContent = styled("h5")(({ theme }) => ({
   fontWeight: 400,
@@ -93,4 +119,10 @@ export const InfoSubTitle = styled(Typography)(({ theme }) => ({
   color: "white",
   fontWeight: 500,
   fontSize: "0.9rem",
+}));
+
+export const VdoOverlayText = styled("p")(({ theme }) => ({
+  fontSize: ".9rem",
+  margin: "0",
+  opacity: .8
 }));

@@ -4,6 +4,8 @@ import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
+  FeatureTitle,
+  FeatureSubTitle,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 
@@ -54,6 +56,46 @@ export function Utility() {
               }}
             />
           </Stack>
+          <Box sx={{ margin: "-10rem auto" }}>
+            <Stack
+              direction="row"
+              spacing={5}
+              sx={{
+                width: "55vw",
+                display: "flex",
+                justifyContent: "space-around",
+                paddingLeft: "38vw",
+              }}
+            >
+              <Box>
+                <Stack direction="column" spacing={1} textAlign="center">
+                  <FeatureTitle>91 ft³</FeatureTitle>
+                  <FeatureSubTitle>Storage Capacity</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack direction="column" spacing={1} textAlign="center">
+                  <FeatureTitle>5,000 lbs</FeatureTitle>
+                  <FeatureSubTitle>Towning capacity</FeatureSubTitle>
+                </Stack>
+              </Box>
+              <Box>
+                <Stack
+                  direction="column"
+                  spacing={1}
+                  textAlign="center"
+                  alignItems="center"
+                >
+                  <img
+                    style={{ width: "50px", padding: "7px 0 5px 0" }}
+                    src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2aaf5525-7188-4a96-9c6a-3ce06aa61c64/bvlatuR/std/111x84/MX-Falcon-Wings-Badge"
+                    alt=""
+                  />
+                  <FeatureSubTitle>Falcon Wing doors</FeatureSubTitle>
+                </Stack>
+              </Box>
+            </Stack>
+          </Box>
         </Box>
       </BackgroundWrapper>
     </>

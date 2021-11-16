@@ -4,25 +4,27 @@ import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
-  FeatureSubTitle,
-  FeatureTitle,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import PicsOverlay from "@components/shared/ImgOverlay";
 
 export function Interior() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <img
-          loading="lazy"
-          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/d4f29128-35ad-4912-9282-32701225c77b/bvlatuR/std/1920x1080/lhd-interior-hero-desktop"
-          style={{
-            width: "100%",
-            height: "72vh",
-            objectFit: "cover",
-          }}
-        />
+        <Box>
+          <img
+            loading="lazy"
+            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/d4f29128-35ad-4912-9282-32701225c77b/bvlatuR/std/1920x1080/lhd-interior-hero-desktop"
+            style={{
+              width: "100%",
+              height: "72vh",
+              objectFit: "cover",
+            }}
+          />
+          <PicsOverlay />
+        </Box>
         <Box padding="1.5rem 0 0 0">
           <Stack
             direction="row"

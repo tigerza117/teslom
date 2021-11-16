@@ -125,7 +125,7 @@ export function Specs() {
                             </SpecSubText>
                           </Specli>
                           <Specli>
-                            <SpecSubText>
+                            <SpecSubText
                               <strong>Displays</strong>
                               <p>15" Center Touchscreen</p>
                             </SpecSubText>
