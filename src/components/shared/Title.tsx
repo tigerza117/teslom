@@ -102,3 +102,18 @@ export const MainSubTitle = styled("p")(({ theme }) => ({
   color: "#393c41",
   margin: "0",
 }));
+
+export const SlideSubContent = styled("p")(({ theme }) => ({
+  fontWeight: 400,
+  fontSize: ".8rem",
+  color: "white",
+  margin: "0",
+  marginTop: ".5rem",
+}));
+
+export const SlideTitle = styled("h1")(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: "1.2rem",
+  color: "white",
+  margin: "0",
+}));
