@@ -61,3 +61,11 @@ export const SliderAdjust = styled(Box)(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
 }));
+
+export const SliderText = styled(Box)(({ theme }) => ({
+  width: "100%",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "row",
+  paddingTop: "1.2rem"
+}));

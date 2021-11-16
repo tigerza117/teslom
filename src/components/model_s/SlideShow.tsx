@@ -1,18 +1,22 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper, SliderAdjust } from "@components/shared/Wrapper";
+import {
+  BackgroundWrapper,
+  SliderAdjust,
+  SliderText,
+} from "@components/shared/Wrapper";
 import { MainTitleContent, FeatureSubTitle } from "@components/shared/Title";
 import SimpleImageSlider from "react-simple-image-slider";
 import { MsContainer_text } from "@constants/cybertruckSlider";
-import { useRef, useState } from "react";
-import { keys } from "@mui/system";
+import { useState } from "react";
+import { Dots } from "@components/shared/Button";
 
-interface ImageSlic {
+interface ImageSlide {
   title: string;
   url: string;
   subContent: string;
 }
 export function SlideShow() {
-  const [currentIndex, setCurrentIndex] = useState<ImageSlic>(
+  const [currentIndex, setCurrentIndex] = useState<ImageSlide>(
     MsContainer_text[0]
   );
   return (
@@ -29,27 +33,35 @@ export function SlideShow() {
               }}
             >
               <SimpleImageSlider
-                width={"65vw"}
-                height={534}
+                width={"75vw"}
+                height={545}
                 images={MsContainer_text}
                 showBullets={false}
                 showNavs={true}
-                navSize={30}
-                slideDuration={0.1}
+                navSize={35}
+                slideDuration={0.01}
                 onCompleteSlide={(index) => {
                   setCurrentIndex(MsContainer_text[index - 1]);
                 }}
               />
-              <Box width="50%" padding="1.2rem">
-                <Box>
-                  <MainTitleContent
-                    style={{ color: "white", fontSize: "1.5rem" }}
-                  >
-                    {currentIndex.title}
-                  </MainTitleContent>
-                  <FeatureSubTitle>{currentIndex.subContent}</FeatureSubTitle>
+              <SliderText>
+                <Box padding="0 3rem">
+                  <Dots />
+                  <Dots />
+                  <Dots />
+                  <Dots />
                 </Box>
-              </Box>
+                <Box width="60%">
+                  <Stack spacing={2}>
+                    <MainTitleContent
+                      style={{ color: "white", fontSize: "1.5rem" }}
+                    >
+                      {currentIndex.title}
+                    </MainTitleContent>
+                    <FeatureSubTitle>{currentIndex.subContent}</FeatureSubTitle>
+                  </Stack>
+                </Box>
+              </SliderText>
             </Box>
           </Stack>
         </SliderAdjust>
