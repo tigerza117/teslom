@@ -16,7 +16,7 @@ export function AllNewInterior() {
         }}
       ></BackgroundWrapper>
       <BackgroundWrapper
-        style={{ backgroundColor: "black", height: "9vh" }}
+        style={{ backgroundColor: "black", height: "4vh" }}
       ></BackgroundWrapper>
     </>
   );

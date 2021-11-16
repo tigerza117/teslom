@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Button, Typography } from "@mui/material";
+import {BaseButton} from "@components/shared/Button";
 
 export const TitleWrapper = styled(Box)(({ theme }) => ({
   height: "100%",
@@ -62,6 +63,7 @@ export const ButtonSlider = styled(Button)(({ theme }) => ({
 export const InfoContainer = styled(Box)(({ theme }) => ({
   height: "10vh",
   width: "80vh",
+  alignItems: "center",
 }));
 
 export const PictureSliderContainer = styled(Box)(({ theme }) => ({
@@ -91,4 +93,132 @@ export const SliderBtn = styled(Button)(({ theme }) => ({
   border: "solid 2px white",
   zIndex: 10,
   height: "4vh",
+}));
+
+
+export const SlidershowContent = styled(Box)(({theme}) => ({
+  width: "660px",
+  height: "63px",
+  color: "white",
+  padding: "0 0 0 180px",
+  margin: "auto",
+  display: "block"
+}));
+
+
+export const OrderNowBtn = styled(Button)(({theme}) => ({
+  position: "relative",
+  display: "inline-flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "200px",
+  height: "40px",
+  textTransform: "uppercase",
+  backgroundColor: "transparent",
+  fontSize: "12px",
+  fontWeight: "bold",
+  letterSpacing: 2,
+  color: "white",
+  border: "none",
+  outline: "none",
+  cursor: "pointer",
+  transition :"0.5s ease",
+  zIndex: 1,
+  "&:before": {
+      position: "absolute",
+      display: "block",
+      content: "''",
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      clipPath: "polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 4px,4px 4px,4px calc(100% - 4px),calc(100% - 12px) calc(100% - 4px),calc(100% - 4px) calc(100% - 12px),calc(100% - 4px) 4px,0 4px)",
+      backgroundColor: "#fff",
+      zIndex: -1,
+      opacity: 1,
+  },
+  "&:after": {
+      position: "absolute",
+      display: "block",
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      clipPath: "polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)",
+      backgroundColor: "#fff",
+      opacity: 0,
+      zIndex: -1,
+  },
+  "&:hover": {
+      animation: "turn-on--outline 1s",
+      animationFillMode: "forwards",
+      filter: "drop-shadow(0 0 8px rgba(255,255,255,.33))",
+      "&:before": {
+          animation: "turn-on--outline-before 1s",
+      },
+      "&:after": {
+          animation: "turn-on--outline-after 1s",
+          animationFillMode: "forwards",
+          backgroundColor: "#fff",
+      },
+  },
+  "@keyframes turn-on--outline ": {
+      "0%": {
+          color: "#fff",
+      },
+    "48%": {
+          color: "#fff"
+    },
+    "to": {
+          color: "#000",
+    },
+  },
+    "@keyframes turn-on--outline-before": {
+        "0%": {
+            opacity: 1,
+        },
+        "8%": {
+            opacity: .5,
+        },
+        "16%": {
+            opacity: 1,
+        },
+        "24%": {
+            opacity: .5,
+        },
+        "32%": {
+            opacity: 1,
+        },
+        "40%": {
+            opacity: .5,
+        },
+        "48%": {
+            opacity: 1,
+        },
+        "to": {
+            opacity: 1,
+        },
+    },
+    "@keyframes turn-on--outline-after": {
+        "0%": {
+            opacity: 0,
+        },
+        "48%": {
+            opacity: 0,
+        },
+        "to": {
+            opacity: 1,
+        },
+    },
+}));
+
+export const Carousel = styled(Box)(({theme}) => ({
+    width: "16px",
+    height: "16px",
+    border: "solid white 3px",
+    backgroundColor: "transparent",
+    ":hover": {
+      backgroundColor: "red",
+    },
+    cursor: "pointer",
 }));
