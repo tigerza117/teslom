@@ -29,6 +29,13 @@ export const VertiImg = styled('img')(({ theme }) => ({
   objectPosition: "0 50%",
 }));
 
+export const HoriImg = styled('img')(({ theme }) => ({
+  width: "73vw",
+  height: "100vh",
+  objectFit: "cover",
+  float: "right",
+}));
+
 export const ContainerWrapper: React.FC = ({ children }) => {
   return (
     <Box
