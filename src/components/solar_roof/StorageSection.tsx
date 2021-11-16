@@ -5,7 +5,7 @@ import {
   SubContent,
   SubTitleContent,
 } from "@components/shared/Title";
-import { ContentLeft } from "@layouts/ContentLeft";
+import { ContentLeft } from "@layouts/HoriContent";
 
 export function Storage() {
   return (
