@@ -36,7 +36,6 @@ function ModelS() {
       <HeroSection />
       <AllNewInterior />
       <ImageSlide />
-      <GridGall />
       <BeyondLu />
       <PowerTrain />
       <Exterior />
