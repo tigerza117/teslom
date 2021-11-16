@@ -6,6 +6,7 @@ import {
   SubTitleContent,
 } from "@components/shared/Title";
 import { HorizonContent } from "@layouts/HoriContent";
+import { HoriImg } from "@components/shared/Container";
 
 export function Storage() {
   return (
@@ -24,16 +25,10 @@ export function Storage() {
               </SubContent>
             </HorizonContent>
             <Box>
-              <img
+              <HoriImg
                 src="https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop"
                 alt=""
                 loading="lazy"
-                style={{
-                  width: "73vw",
-                  height: "100vh",
-                  objectFit: "cover",
-                  float: "right",
-                }}
               />
             </Box>
           </Stack>
