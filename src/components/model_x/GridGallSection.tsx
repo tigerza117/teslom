@@ -26,10 +26,11 @@ export function GridGall() {
                 float: "right",
               }}
             >
-              <InfoTitle>Nunc consequat</InfoTitle>
+              <InfoTitle>Wireless Gaming</InfoTitle>
               <InfoSubTitle>
-                Condimentum vitae sapien pellentesque habitant morbi tristique
-                senectus et netus. Ac tortor dignissim convallis aenean et.
+                Up to 10 teraflops of processing power enables in-car gaming
+                on-par with today's newest consloes. Wireless controller
+                compatibility lets you game from any seat.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -45,10 +46,11 @@ export function GridGall() {
                 float: "left",
               }}
             >
-              <InfoTitle>Convallis posuere</InfoTitle>
+              <InfoTitle>Stay Connected</InfoTitle>
               <InfoSubTitle>
-                Condimentum vitae sapien pellentesque habitant morbi tristique
-                senectus et netus. Ac tortor dignissim convallis aenean et.
+                Multi-device Bluetooth, wireless and USB-C charging for every
+                passenger, with enough power to fast-charge your tablets and
+                laptop.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -74,10 +76,11 @@ export function GridGall() {
                 float: "right",
               }}
             >
-              <InfoTitle>Aenean sed</InfoTitle>
+              <InfoTitle>Your Best Audio System</InfoTitle>
               <InfoSubTitle>
-                Condimentum vitae sapien pellentesque habitant morbi tristique
-                senectus et netus. Ac tortor dignissim convallis aenean et.
+                A 22-speaker, 960-watt audio system with Active Road Noise
+                Reduction offers the best listening exxperience wherever you
+                are.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>

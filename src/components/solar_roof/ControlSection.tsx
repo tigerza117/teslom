@@ -30,8 +30,8 @@ export function Control() {
         >
           <Box style={{ width: "40%" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>maxime placeat</MainTitleContent>
+              <SubTitleContent>Control</SubTitleContent>
+              <MainTitleContent>Monitor and Optimize</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
                 <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
@@ -39,9 +39,9 @@ export function Control() {
           </Box>
           <Box>
             <SubContent>
-              Enter a destination on your touchscreen and Trip Planner will
-              automatically calculate your route with Superchargers along the
-              way.
+              With the Tesla app, you can monitor your energy production in real
+              time. Control your system from anywhere with instant alerts and
+              remote access.
             </SubContent>
           </Box>
         </RowSectionBlock>

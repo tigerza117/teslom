@@ -39,7 +39,7 @@ export function Specs() {
                             textTransform: "capitalize",
                           }}
                         >
-                          Plaid
+                          Performance
                         </BtnOutline>
                         <BtnOutline
                           color="white"
@@ -48,7 +48,7 @@ export function Specs() {
                             textTransform: "capitalize",
                           }}
                         >
-                          Long Range
+                          Long Range AWD
                         </BtnOutline>
                       </Stack>
                       <Stack direction="row" spacing={1} marginTop=".2rem">
@@ -60,7 +60,7 @@ export function Specs() {
                             textTransform: "capitalize",
                           }}
                         >
-                          Plaid
+                          Rear-Wheel Drive
                         </BtnOutline>
                         <BtnOutline
                           color="white"
@@ -69,7 +69,7 @@ export function Specs() {
                             textTransform: "capitalize",
                           }}
                         >
-                          Long Range
+                          Compare
                         </BtnOutline>
                       </Stack>
                     </Box>
@@ -80,38 +80,38 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Battery</strong>
+                              <p>Long Range</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Acceleration</strong>
+                              <p>3.1s 0-60 mph* with rollout subtracted</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Range</strong>
+                              <p>315 miles (EPA est.)</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Drive</strong>
+                              <p>Dual motor All-Wheel Drive</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Seating</strong>
+                              <p>5 Adults</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Wheels</strong>
+                              <p>20"</p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>
@@ -120,38 +120,42 @@ export function Specs() {
                         <SpecUl>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Weight</strong>
+                              <p>4,065 lbs</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Cargo</strong>
+                              <p>23 cu ft</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Displays</strong>
+                              <p>15" Center Touchscreen</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Supercharging Max/ Payment Type</strong>
+                              <p>250 kW max; Pay Per Use</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Onboard Charger Max</strong>
+                              <p>11.5 kW max (48A)</p>
                             </SpecSubText>
                           </Specli>
                           <Specli>
                             <SpecSubText>
-                              <strong>Wattage</strong>
-                              <p>425 W</p>
+                              <strong>Warranty</strong>
+                              <p>
+                                Basic Vehicle - 4 years or 50,000 mi, whichover
+                                comes first Battery & Drive Unit - 8 years or
+                                120,000 mi, whichover comes first
+                              </p>
                             </SpecSubText>
                           </Specli>
                         </SpecUl>

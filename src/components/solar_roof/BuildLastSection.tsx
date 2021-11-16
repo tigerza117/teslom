@@ -39,13 +39,13 @@ export function BuildLast() {
                     padding: "3rem 1.5rem",
                   }}
                 >
-                  <SubTitleContent>At vero eos et</SubTitleContent>
-                  <MainTitleContent>Itaque rerum</MainTitleContent>
+                  <SubTitleContent>Durability</SubTitleContent>
+                  <MainTitleContent>Built to Last</MainTitleContent>
                   <SubContent style={{ padding: "1rem 0" }}>
-                    cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero tempore.
+                    Solar Roof tiles are durable, strong and engineered for
+                    all-weather protection. With a 25-year warranty, Solar Roof
+                    tiles will continue to produce clean energy for your home
+                    for decades to come.
                   </SubContent>
                 </Box>
                 <Box

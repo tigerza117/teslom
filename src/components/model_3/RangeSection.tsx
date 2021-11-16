@@ -43,9 +43,9 @@ export function Range() {
                       textAlign="center"
                       width="85%"
                     >
-                      <FeatureTitle>405 mi</FeatureTitle>
+                      <FeatureTitle>358mi</FeatureTitle>
                       <FeatureSubTitle>
-                        Go anywhere with up to 405 miles of estimated range on a
+                        Go anywhere with up to 358 miles of estimated range on a
                         single charge
                       </FeatureSubTitle>
                     </Stack>
@@ -57,9 +57,10 @@ export function Range() {
                       textAlign="center"
                       width="85%"
                     >
-                      <FeatureTitle>200 mi</FeatureTitle>
+                      <FeatureTitle>15min</FeatureTitle>
                       <FeatureSubTitle>
-                        Supercharge up to 200 miles in 15 minutes
+                        Supercharge up to 175 miles in 15 minutes at
+                        Supercharger locations
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
@@ -72,7 +73,8 @@ export function Range() {
                     >
                       <FeatureTitle>25,000+</FeatureTitle>
                       <FeatureSubTitle>
-                        Superchargers placed along popular routes
+                        Superchargers placed along popular well-traveled routes
+                        around the world
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
@@ -90,12 +92,13 @@ export function Range() {
                 <SubTitleContent>Range</SubTitleContent>
                 <MainTitleContent>Go Anywhere</MainTitleContent>
                 <SubContent style={{ padding: "1rem 0" }}>
-                  In nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                  Etiam erat velit scelerisque in dictum non consectetur a. Dui
-                  nunc mattis enim ut tellus elementum sagittis vitae et. A cras
-                  semper auctor neque vitae tempus quam pellentesque. Tellus
-                  rutrum tellus pellentesque eu tincidunt tortor aliquam nulla
-                  facilisi.
+                  Model 3 is fully electric, so you never need to visit a gas
+                  station again. If you charge overnight at home, you can wake
+                  up to a full battery every morning. And when you’re on the
+                  road, it’s easy to plug in along the way—at any public station
+                  or with the Tesla charging network. We currently have over
+                  25,000 Superchargers worldwide, with six new locations opening
+                  every week.
                 </SubContent>
               </Stack>
               <Box padding="0 2rem">

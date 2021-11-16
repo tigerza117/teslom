@@ -36,16 +36,34 @@ export function DualMotor() {
                 <Box>
                   <Stack direction="row" margin="auto">
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>2</FeatureTitle>
+                      <FeatureSubTitle>
+                        Independent motors digitally control torque to the front
+                        and rear wheels
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>10ms</FeatureTitle>
+                      <FeatureSubTitle>
+                        Dual motors respond to charging conditions in as little
+                        as 10 milliseconds
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                     <HomeFeatureWrapper>
-                      <FeatureTitle>magna</FeatureTitle>
-                      <FeatureSubTitle>sapien</FeatureSubTitle>
+                      <FeatureTitle>
+                        <img
+                          style={{
+                            width: "40px",
+                            height: "auto",
+                          }}
+                          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba09ef22-e9cc-4bda-a171-de1cd6f6cf6a/bvlatuR/std/0x0/weather"
+                          alt=""
+                        />
+                      </FeatureTitle>
+                      <FeatureSubTitle>
+                        Unparelleled traction and control, in all weather
+                        conditions
+                      </FeatureSubTitle>
                     </HomeFeatureWrapper>
                   </Stack>
                 </Box>
@@ -60,8 +78,8 @@ export function DualMotor() {
         >
           <Box style={{ width: "40%" }}>
             <Stack direction="column">
-              <SubTitleContent>quod maxime placeat</SubTitleContent>
-              <MainTitleContent>maxime placeat</MainTitleContent>
+              <SubTitleContent>All-Wheel Drive</SubTitleContent>
+              <MainTitleContent>Dual Motor</MainTitleContent>
               <Box style={{ padding: "1rem 0" }}>
                 <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
               </Box>
@@ -69,9 +87,11 @@ export function DualMotor() {
           </Box>
           <Box>
             <SubContent>
-              Enter a destination on your touchscreen and Trip Planner will
-              automatically calculate your route with Superchargers along the
-              way.
+              Tesla All-Wheel Drive has two independent motors for improved
+              redundancy, each with only one moving part for minimal maintenance
+              and maximum durability. Unlike traditional all-wheel drive
+              systems, they digitally control torque to the front and rear
+              wheels for far better handling and traction control.
             </SubContent>
           </Box>
         </RowSectionBlock>

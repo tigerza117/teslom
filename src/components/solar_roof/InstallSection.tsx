@@ -29,8 +29,8 @@ export function Installation() {
           >
             <Box style={{ width: "40%" }}>
               <Stack direction="column">
-                <SubTitleContent>quod maxime placeat</SubTitleContent>
-                <MainTitleContent>maxime placeat</MainTitleContent>
+                <SubTitleContent>Installation</SubTitleContent>
+                <MainTitleContent>Trusted Expertise</MainTitleContent>
                 <Box style={{ padding: "1rem 0" }}>
                   <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
                 </Box>
@@ -38,9 +38,10 @@ export function Installation() {
             </Box>
             <Box>
               <SubContent>
-                Enter a destination on your touchscreen and Trip Planner will
-                automatically calculate your route with Superchargers along the
-                way.
+                Our in-house team of energy professionals has installed more
+                than 3.6 GW of clean solar energy across 400,000 roofs—the
+                equivalent of 10 million traditional solar panels. From design
+                to power on, we take care of everything.
               </SubContent>
             </Box>
           </RowSectionBlock>
@@ -91,28 +92,25 @@ export function Installation() {
                 <Stack direction="row" spacing={4}>
                   <MapButton style={{ margin: "0", padding: "0 0 1rem 0" }}>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Design</TriBtnTitle>
                       <TriBtnContent>
-                        Et harum quidem rerum facilis est et expedita
-                        distinctio.
+                        Aerial imagery and 3D modeling determine your custom design
                       </TriBtnContent>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Installation</TriBtnTitle>
                       <TriBtnContent>
-                        Et harum quidem rerum facilis est et expedita
-                        distinctio.
+                        Our integrated design enables quick tile and Powerwall installation
                       </TriBtnContent>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Power On</TriBtnTitle>
                       <TriBtnContent>
-                        Et harum quidem rerum facilis est et expedita
-                        distinctio.
+                        Final cleanup is completed before system activation
                       </TriBtnContent>
                     </ButtonStack>
                   </MapButton>
