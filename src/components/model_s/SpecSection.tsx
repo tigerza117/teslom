@@ -30,6 +30,7 @@ export function Specs() {
                   alignContent: "center",
                   transform: "translateY(10%)",
                 }}
+                className="show"
               >
                 <Stack direction="column">
                   <Box>

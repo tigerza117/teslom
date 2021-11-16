@@ -63,14 +63,14 @@ export const AdsTitle = styled(Typography)(({ theme }) => ({
 export const InfoTitle = styled(Typography)(({ theme }) => ({
   color: "white",
   fontWeight: 700,
-  fontSize: ".9rem",
-  padding: "6rem 0 0 0",
+  fontSize: "1.5rem",
 }));
 
 export const InfoSubTitle = styled(Typography)(({ theme }) => ({
   color: "white",
-  fontWeight: 500,
-  fontSize: "0.9rem",
+  fontWeight: 400,
+  fontSize: "1rem",
+  width: "80%",
 }));
 
 export const VdoOverlayText = styled("p")(({ theme }) => ({

@@ -26,12 +26,12 @@ export function Exterior() {
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box sx={{ margin: "-11rem auto", padding: "1.8rem 0" }}>
             <Stack direction="row" spacing={12} textAlign="center">
-              <Box>
+              <Box className="show">
                 <Stack direction="column" margin="3rem 0">
                   <FeatureSubTitle>Performance-focused chassis</FeatureSubTitle>
                 </Stack>
               </Box>
-              <Box>
+              <Box className="show">
                 <Stack direction="column" spacing={0.5}>
                   <FeatureTitle style={{ textAlign: "left" }}>
                     0.208 <i style={{ fontSize: "1rem" }}>Cd</i>
@@ -39,7 +39,7 @@ export function Exterior() {
                   <FeatureSubTitle>Lowest-drag car on Earth</FeatureSubTitle>
                 </Stack>
               </Box>
-              <Box>
+              <Box className="show">
                 <Stack direction="column" margin="3rem 0">
                   <FeatureSubTitle>Refined exterior styling</FeatureSubTitle>
                 </Stack>
@@ -53,7 +53,7 @@ export function Exterior() {
             spacing={5}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <Box>
+            <Box className="show">
               <Stack direction="column">
                 <SubTitleContent>Exterior</SubTitleContent>
                 <MainTitleContent>Designed for Efficiency</MainTitleContent>
@@ -62,7 +62,7 @@ export function Exterior() {
                 </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box width="45%" className="show">
               <SubContent>
                 With the lowest drag coefficient on Earth and unmatched
                 efficiency, Model S is built for speed and range. Together with
