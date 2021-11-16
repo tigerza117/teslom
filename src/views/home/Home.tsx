@@ -3,13 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import gsap, { Power2 } from "gsap";
 import { ProductList } from "@constants/home";
-
-const BackgroundWrapper = styled(Box)(({ theme }) => ({
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-}));
+import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { Container } from "@components/shared/Container";
+import { BaseButton } from "@components/shared/Button";
+import { useLayoutContext } from "@contexts/LayoutContext";
 
 const FixedWrapper = styled(Box)(({ theme }) => ({
   height: "100%",
@@ -48,6 +45,14 @@ const MainSubTitle = styled("h5")(({ theme }) => ({
 }));
 
 const Home: React.FC = () => {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+
   return (
     <>
       {ProductList.map(({ title, subTitle, image }, index) => (
@@ -83,7 +88,7 @@ const MockExpandBtn = styled(ExpandBtn)(({ theme }) => ({
   color: "transparent",
 }));
 
-const OrderBtn = styled(Button)(({ theme }) => ({
+const OrderBtn = styled(BaseButton)(({ theme }) => ({
   fontSize: ".8rem",
   padding: ".55rem 4.6rem",
   borderRadius: "25px",
@@ -93,7 +98,7 @@ const OrderBtn = styled(Button)(({ theme }) => ({
   color: "white",
 }));
 
-const InventoryBtn = styled(Button)(({ theme }) => ({
+const InventoryBtn = styled(BaseButton)(({ theme }) => ({
   fontSize: ".8rem",
   padding: ".35rem 3.6rem",
   borderRadius: "25px",
