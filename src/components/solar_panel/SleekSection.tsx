@@ -8,6 +8,8 @@ import {
 import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 
+import { HorizonWrapper } from "@components/shared/Wrapper";
+
 export function SleekAndDurable() {
   return (
     <>
@@ -15,27 +17,24 @@ export function SleekAndDurable() {
         <Stack direction="row">
           <Box
             sx={{
-              padding: "3rem",
-              display: "flex",
+              padding: "3rem 3rem 0 3rem",
             }}
           >
-            <Stack
-              direction="column"
-              display="flex"
-              justifyContent="space-between"
-            >
+            <HorizonWrapper style={{ height: "95vh" }}>
               <Box>
-                <SubTitleContent>Design</SubTitleContent>
-                <MainTitleContent>Sleek and Durable</MainTitleContent>
-              </Box>
-              <Box>
-                <SubContent>
-                  Our solar panels are low-profile and durable — quietly
-                  converting sunlight to energy for decades to come. Integrated
-                  hardware and simple design achieve this by securing the panels
-                  close to your roof and to each other for a minimalist
-                  aesthetic.
-                </SubContent>
+                <Box>
+                  <SubTitleContent>Design</SubTitleContent>
+                  <MainTitleContent>Sleek and Durable</MainTitleContent>
+                </Box>
+                <Box marginTop=".5rem">
+                  <SubContent>
+                    Our solar panels are low-profile and durable — quietly
+                    converting sunlight to energy for decades to come.
+                    Integrated hardware and simple design achieve this by
+                    securing the panels close to your roof and to each other for
+                    a minimalist aesthetic.
+                  </SubContent>
+                </Box>
               </Box>
               <Box padding="4rem 0">
                 <Stack
@@ -60,7 +59,7 @@ export function SleekAndDurable() {
                   </Box>
                 </Stack>
               </Box>
-            </Stack>
+            </HorizonWrapper>
           </Box>
           <Box>
             <img
@@ -68,7 +67,7 @@ export function SleekAndDurable() {
               alt=""
               loading="lazy"
               style={{
-                width: "70vw",
+                width: "73vw",
                 height: "100vh",
                 objectFit: "cover",
                 objectPosition: "0 100%",
