@@ -30,7 +30,6 @@ export const CybertruckPictureSlider = [
     title: "ff",
   },
 ];
-
 export const MsContainer_text = [
   {
     title: "17” Cinematic Display",
