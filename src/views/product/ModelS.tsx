@@ -14,6 +14,7 @@ import {
   Specs,
   OrderNow,
   AllNewInterior,
+  SlideShow,
 } from "@components/model_s/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
@@ -31,9 +32,7 @@ function ModelS() {
     <>
       <HeroSection />
       <AllNewInterior />
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+      <SlideShow />
       <GridGall />
       <BeyondLu />
       <PowerTrain />

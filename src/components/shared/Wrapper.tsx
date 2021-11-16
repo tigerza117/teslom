@@ -53,3 +53,11 @@ export const VdoOverlay = styled(Box)(({ theme }) => ({
   marginTop: "-65vh",
   marginBottom: "30vh",
 }));
+
+export const SliderAdjust = styled(Box)(({ theme }) => ({
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
