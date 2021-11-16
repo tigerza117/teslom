@@ -199,7 +199,7 @@ export function ImageSlide() {
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
         <ContainerWrapper>
           <ImageSliderController slides={MsContainer_text} />
-          <GridGall data={Galls} side="left" />
+          <GridGall data={Galls} side="right" />
         </ContainerWrapper>
       </BackgroundWrapper>
     </>
