@@ -107,109 +107,71 @@ export const SlidershowContent = styled(Box)(({theme}) => ({
 
 
 export const OrderNowBtn = styled(Button)(({theme}) => ({
-  position: "relative",
-  display: "inline-flex",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "200px",
-  height: "40px",
+  color: "#fff",
+  backgroundColor: "#fff",
   textTransform: "uppercase",
-  backgroundColor: "transparent",
-  fontSize: "12px",
-  fontWeight: "bold",
-  letterSpacing: 2,
-  color: "white",
   border: "none",
-  outline: "none",
+  borderRadius: "0px",
   cursor: "pointer",
-  transition :"0.5s ease",
-  zIndex: 1,
-  "&:before": {
-      position: "absolute",
-      display: "block",
-      content: "''",
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-      clipPath: "polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 4px,4px 4px,4px calc(100% - 4px),calc(100% - 12px) calc(100% - 4px),calc(100% - 4px) calc(100% - 12px),calc(100% - 4px) 4px,0 4px)",
-      backgroundColor: "#fff",
-      zIndex: -1,
-      opacity: 1,
-  },
+  transition: ".5s ease",
+  clipPath: "polygon(0 0, 100% 0, 100% calc(100% - .625rem), calc(100% - .625rem) 100%, 0 100%)",
+  fontWeight: "bold",
+  fontSize: ".75rem",
+  height: "1.875rem",
+  letterSpacing: ".125rem",
+  padding: "0 1.875rem",
+  position: "relative",
+  width: "165px",
+  height: "40px",
+  display: "block",
+  margin: "auto",
   "&:after": {
-      position: "absolute",
-      display: "block",
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-      clipPath: "polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)",
-      backgroundColor: "#fff",
-      opacity: 0,
-      zIndex: -1,
+    content: "''",
+    position: "absolute",
+    display: "block",
+    backgroundColor: "#000",
+    top: ".18rem",
+    left: ".18rem",
+    width: "calc(100% - 2 * .18rem)",
+    height: "calc(100% - 2 * .18rem)",
+    clipPath: "polygon(0 0, 100% 0, 100% calc(100% - .625rem), calc(100% - .625rem) 100%, 0 100%)",
+    zIndex: -1,
   },
   "&:hover": {
-      animation: "turn-on--outline 1s",
-      animationFillMode: "forwards",
-      filter: "drop-shadow(0 0 8px rgba(255,255,255,.33))",
-      "&:before": {
-          animation: "turn-on--outline-before 1s",
-      },
-      "&:after": {
-          animation: "turn-on--outline-after 1s",
-          animationFillMode: "forwards",
-          backgroundColor: "#fff",
-      },
+    color: "#000",
+    backgroundColor: "#fff",
+    transition: ".5s ease .48",
+    animation: "lighting-fx 1s forwards",
+    "&:after": {
+      backgroundColor: "#fff",
+    },
   },
-  "@keyframes turn-on--outline ": {
-      "0%": {
-          color: "#fff",
-      },
+  "@keyframes lighting-fx": {
+    "0%": {
+      opacity: 1
+    },
+    "8%": {
+      opacity: .75
+    },
+    "16%": {
+      opacity: 1
+    },
+    "24%": {
+      opacity: .75
+    },
+    "32%": {
+      opacity: 1
+    },
+    "40%": {
+      opacity: .75
+    },
     "48%": {
-          color: "#fff"
+      opacity: 1
     },
     "to": {
-          color: "#000",
+      opacity: 1
     },
   },
-    "@keyframes turn-on--outline-before": {
-        "0%": {
-            opacity: 1,
-        },
-        "8%": {
-            opacity: .5,
-        },
-        "16%": {
-            opacity: 1,
-        },
-        "24%": {
-            opacity: .5,
-        },
-        "32%": {
-            opacity: 1,
-        },
-        "40%": {
-            opacity: .5,
-        },
-        "48%": {
-            opacity: 1,
-        },
-        "to": {
-            opacity: 1,
-        },
-    },
-    "@keyframes turn-on--outline-after": {
-        "0%": {
-            opacity: 0,
-        },
-        "48%": {
-            opacity: 0,
-        },
-        "to": {
-            opacity: 1,
-        },
-    },
 }));
 
 export const Carousel = styled(Box)(({theme}) => ({
