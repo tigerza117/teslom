@@ -1,4 +1,5 @@
 import { createContext, useContext } from "react";
+import { ViewAction } from "schema/types";
 
 interface ILayoutContext {
   isMobile: boolean;
@@ -7,6 +8,7 @@ interface ILayoutContext {
   toggleDrawer: () => void;
   setDark: (isDark: boolean) => void;
   heroColor: string;
+  callViewAction: (a: ViewAction) => void;
 }
 
 const LayoutContext = createContext<ILayoutContext>({
@@ -15,7 +17,8 @@ const LayoutContext = createContext<ILayoutContext>({
   isDark: false,
   toggleDrawer: () => {},
   setDark: () => {},
-  heroColor: "white"
+  heroColor: "white",
+  callViewAction: () => {},
 });
 
 export default LayoutContext;

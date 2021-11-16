@@ -1,3 +1,0 @@
-interface Car {
-  models: string;
-}

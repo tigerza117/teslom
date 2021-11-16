@@ -9,14 +9,18 @@ import {
 } from "@components/cybertruck/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 const Cybertruck = () => {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (

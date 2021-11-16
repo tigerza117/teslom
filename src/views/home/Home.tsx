@@ -7,6 +7,7 @@ import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { Container } from "@components/shared/Container";
 import { BaseButton } from "@components/shared/Button";
 import { useLayoutContext } from "@contexts/LayoutContext";
+import { ViewAction } from "schema/types";
 
 const FixedWrapper = styled(Box)(({ theme }) => ({
   height: "100%",
@@ -45,12 +46,15 @@ const MainSubTitle = styled("h5")(({ theme }) => ({
 }));
 
 const Home: React.FC = () => {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (

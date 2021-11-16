@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { Box } from "@mui/system";
 import LayoutContext from "@contexts/LayoutContext";
 import Footer from "./Footer";
 import ChatSupport from "./ChatSupport";
+import { Container } from "@components/shared/Container";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { ViewAction } from "schema/types";
 
 export const Layout: React.FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
@@ -30,6 +34,7 @@ export const Layout: React.FC = ({ children }) => {
         isMobile: isMobile,
         isDark: isDark,
         isDrawerOpen: isDrawerOpen,
+        heroColor: textColor,
         toggleDrawer: () => {
           setIsDrawerOpen(!isDrawerOpen);
         },
@@ -37,10 +42,53 @@ export const Layout: React.FC = ({ children }) => {
           setDark(d);
           setTextColor(d ? "#181B21" : "white");
         },
-        heroColor: textColor,
+        callViewAction: (a: ViewAction) => {
+          switch (a) {
+            case ViewAction.OPENING:
+              ScrollTrigger.getAll().forEach((s) => {
+                s.kill();
+              });
+              window.history.scrollRestoration = "manual";
+              break;
+            case ViewAction.OPENED:
+              if (document.getElementById("hero") !== null) {
+                gsap.to(".nav", {
+                  scrollTrigger: {
+                    trigger: "#hero",
+                    scrub: true,
+                    start: "80% 0%",
+                    end: "100% 0%",
+                    markers: true,
+                    scroller: "#con",
+                    id: "hero",
+                  },
+                  display: "none",
+                  opacity: 0,
+                });
+                gsap.to(".scroll-up", {
+                  scrollTrigger: {
+                    trigger: "#hero",
+                    scrub: true,
+                    start: "90% 0%",
+                    end: "100% 0%",
+                    markers: true,
+                    scroller: "#con",
+                  },
+                  display: "inline",
+                  opacity: 1,
+                });
+              }
+              break;
+            case ViewAction.CLOSED:
+              ScrollTrigger.getAll().forEach((s) => {
+                s.kill();
+              });
+              break;
+          }
+        },
       }}
     >
-      <>
+      <Container id="con">
         <Box
           className="layout__main__wrapper"
           sx={{ minHeight: "100vh", position: "relative" }}
@@ -55,7 +103,7 @@ export const Layout: React.FC = ({ children }) => {
           </Box>
           <Footer />
         </Box>
-      </>
+      </Container>
     </LayoutContext.Provider>
   );
 };

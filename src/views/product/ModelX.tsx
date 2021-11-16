@@ -13,19 +13,23 @@ import {
   Feature,
   Specs,
   OrderNow,
-  AllNewInterior
+  AllNewInterior,
 } from "@components/model_x/section";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 function ModelX() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (
