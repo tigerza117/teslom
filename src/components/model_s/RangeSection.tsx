@@ -36,7 +36,7 @@ export function Range() {
                     paddingRight: "10vh",
                   }}
                 >
-                  <Box>
+                  <Box className="show">
                     <Stack direction="column" spacing={1} textAlign="center">
                       <FeatureTitle>405 mi</FeatureTitle>
                       <FeatureSubTitle>
@@ -45,7 +45,7 @@ export function Range() {
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
-                  <Box>
+                  <Box className="show">
                     <Stack direction="column" spacing={1} textAlign="center">
                       <FeatureTitle>200 mi</FeatureTitle>
                       <FeatureSubTitle>
@@ -53,7 +53,7 @@ export function Range() {
                       </FeatureSubTitle>
                     </Stack>
                   </Box>
-                  <Box>
+                  <Box className="show">
                     <Stack direction="column" spacing={1} textAlign="center">
                       <FeatureTitle>25,000+</FeatureTitle>
                       <FeatureSubTitle>
@@ -72,9 +72,11 @@ export function Range() {
               }}
             >
               <Stack direction="column" padding="2.5rem 0 0 1.5rem">
-                <SubTitleContent>Range</SubTitleContent>
-                <MainTitleContent>Go Anywhere</MainTitleContent>
-                <SubContent style={{ padding: "1rem 0" }}>
+                <SubTitleContent className="show">Range</SubTitleContent>
+                <MainTitleContent className="show">
+                  Go Anywhere
+                </MainTitleContent>
+                <SubContent style={{ padding: "1rem 0" }} className="show">
                   Travel farther on a single charge than any other electric
                   vehicle—and keep going with access to 25,000+ Superchargers
                   globally. By combining up to 405 miles of estimated range with
@@ -89,6 +91,7 @@ export function Range() {
                     marginLeft: "1.5rem",
                     marginBottom: "7rem",
                   }}
+                  className="show"
                 >
                   Order now
                 </BtnOutline>

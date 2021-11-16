@@ -15,8 +15,9 @@ export function AllNewInterior() {
           backgroundImage: `url(https://tesla-cdn.thron.com/delivery/public/image/tesla/177c0faf-b852-47ea-a218-394368e15a20/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop)`,
         }}
       ></BackgroundWrapper>
-      <BackgroundWrapper style={{ backgroundColor: "black", height: "9vh" }}>
-      </BackgroundWrapper>
+      <BackgroundWrapper
+        style={{ backgroundColor: "black", height: "4vh" }}
+      ></BackgroundWrapper>
     </>
   );
 }

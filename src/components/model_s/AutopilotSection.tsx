@@ -36,14 +36,16 @@ export function Autopilot() {
           >
             <Box>
               <Stack direction="column">
-                <SubTitleContent>Autopilot</SubTitleContent>
-                <MainTitleContent>Future of Driving</MainTitleContent>
-                <Box>
+                <SubTitleContent className="show">Autopilot</SubTitleContent>
+                <MainTitleContent className="show">
+                  Future of Driving
+                </MainTitleContent>
+                <Box className="show">
                   <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box width="45%" className="show">
               <SubContent>
                 Autopilot enables your car to steer, accelerate and brake
                 automatically within its lane under your active supervision,

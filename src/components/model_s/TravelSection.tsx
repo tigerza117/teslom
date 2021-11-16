@@ -111,6 +111,7 @@ export function Travel() {
               style={{
                 margin: "2rem 0",
               }}
+              className="show"
             >
               Learn more
             </BtnOutline>

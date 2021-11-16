@@ -21,9 +21,11 @@ export function Safety() {
               }}
             >
               <Stack direction="column" padding="2.5rem 0 0 3rem">
-                <SubTitleContent>Safety</SubTitleContent>
-                <MainTitleContent>High Impact Protection</MainTitleContent>
-                <SubContent style={{ padding: "4rem 0 0 0" }}>
+                <SubTitleContent className="show">Safety</SubTitleContent>
+                <MainTitleContent className="show">
+                  High Impact Protection
+                </MainTitleContent>
+                <SubContent style={{ padding: "4rem 0 0 0" }} className="show">
                   Model S is built from the ground up as an electric vehicle,
                   with a high-strength architecture and floor-mounted battery
                   pack for incredible occupant protection and low rollover risk.
@@ -38,6 +40,7 @@ export function Safety() {
                     marginLeft: "3rem",
                     marginBottom: "7rem",
                   }}
+                  className="show"
                 >
                   Order now
                 </BtnOutline>

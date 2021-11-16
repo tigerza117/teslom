@@ -13,7 +13,7 @@ import {
   Specs,
   OrderNow,
   AllNewInterior,
-  SlideShow,
+  ImageSlide,
 } from "@components/model_s/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
@@ -35,7 +35,7 @@ function ModelS() {
     <>
       <HeroSection />
       <AllNewInterior />
-      <SlideShow />
+      <ImageSlide />
       <GridGall />
       <BeyondLu />
       <PowerTrain />

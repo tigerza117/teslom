@@ -19,6 +19,7 @@ export function PowerTrain() {
               width: "60vw",
               padding: "1rem 0",
             }}
+            className="show"
           >
             <Stack direction="column" textAlign="left" spacing={1}>
               <MainTitleContent>Electric Powertrain</MainTitleContent>
@@ -169,6 +170,7 @@ export function PowerTrain() {
                 padding: "0 0 12rem 0",
                 color: "#5c5d61",
               }}
+              className="show"
             >
               * With rollout subtracted
             </TriBtnContent>
