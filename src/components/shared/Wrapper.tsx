@@ -76,3 +76,7 @@ export const ContentWrapper = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   height: "90vh",
 }));
+
+export const VerticalWrapper = styled(Box)(({ theme }) => ({
+  width: "45%",
+}));
