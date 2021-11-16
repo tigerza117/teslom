@@ -60,7 +60,19 @@ export const Dots = styled(BaseButton)(({ theme }) => ({
   backgroundColor: "transparent",
   border: "1px solid #ddd",
   margin: "0 .2rem",
-  "&:active":{
+  "&:active": {
     backgroundColor: "#ddd",
-  }
+  },
+}));
+
+export const Dot = styled(BaseButton)(({ theme }) => ({
+  width: "9px",
+  height: "9px",
+  borderRadius: "100%",
+  backgroundColor: "transparent",
+  border: "1px solid #ddd",
+  margin: "0 .2rem",
+  "&.active": {
+    backgroundColor: "#ddd",
+  },
 }));
