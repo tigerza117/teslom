@@ -17,7 +17,7 @@ export function SlideShow() {
               }}
             >
               <img
-                style={{ width: "70vw" }}
+                style={{ width: "67vw" }}
                 src="https://tesla-cdn.thron.com/delivery/public/image/tesla/8dfd0c9e-45d5-4782-a071-c597c372429f/bvlatuR/std/2442x1124/MS-Interior-Carousel-D-Desktop"
                 alt=""
               />
