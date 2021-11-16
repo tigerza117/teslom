@@ -1,10 +1,10 @@
 import { Box, Stack } from "@mui/material";
-import { ContentWrapper } from "@components/shared/Wrapper";
+import { HorizonWrapper } from "@components/shared/Wrapper";
 import { BtnOutline } from "@components/shared/Button";
 
-export const ContentLeft: React.FC = ({ children }) => {
+export const HorizonContent: React.FC = ({ children }) => {
   return (
-    <ContentWrapper>
+    <HorizonWrapper>
       <Box
         sx={{
           padding: "3rem 1.5rem 0 1.5rem",
@@ -23,6 +23,6 @@ export const ContentLeft: React.FC = ({ children }) => {
           <BtnOutline>LEARN MORE</BtnOutline>
         </Stack>
       </Box>
-    </ContentWrapper>
+    </HorizonWrapper>
   );
 };

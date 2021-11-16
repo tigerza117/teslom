@@ -70,7 +70,7 @@ export const SliderText = styled(Box)(({ theme }) => ({
   paddingTop: "1.2rem",
 }));
 
-export const ContentWrapper = styled(Box)(({ theme }) => ({
+export const HorizonWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
