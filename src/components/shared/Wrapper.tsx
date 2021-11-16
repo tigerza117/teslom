@@ -51,5 +51,5 @@ export const VdoOverlay = styled(Box)(({ theme }) => ({
   width: "20%",
   padding: "0 10rem",
   marginTop: "-65vh",
-  marginBottom: "14vh",
+  marginBottom: "30vh",
 }));
