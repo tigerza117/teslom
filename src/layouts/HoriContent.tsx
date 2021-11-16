@@ -20,7 +20,6 @@ export const HorizonContent: React.FC = ({ children }) => {
           style={{ justifyContent: "space-between" }}
         >
           <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
-          <BtnOutline>LEARN MORE</BtnOutline>
         </Stack>
       </Box>
     </HorizonWrapper>
