@@ -60,9 +60,18 @@ export function Feature() {
                 <Stack direction="row" spacing={4}>
                   <MapButton style={{ margin: "0" }}>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Navigate on Autopilot</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
-                        <BtnFeatTitle>670 hp</BtnFeatTitle>
+                        <TriBtnContent>
+                          Active guidance from highway on-ramp to off-ramp
+                        </TriBtnContent>
+                      </Stack>
+                    </ButtonStack>
+                  </MapButton>
+                  <MapButton>
+                    <ButtonStack spacing={2}>
+                      <TriBtnTitle>Auto Lane Change</TriBtnTitle>
+                      <Stack direction="column" spacing={3}>
                         <TriBtnContent>
                           Automatically change lanes while driving on the
                           highway
@@ -72,36 +81,20 @@ export function Feature() {
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Summon</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
-                        <BtnFeatTitle>670 hp</BtnFeatTitle>
                         <TriBtnContent>
-                          Automatically change lanes while driving on the
-                          highway
+                          Automatically retrieve your car
                         </TriBtnContent>
                       </Stack>
                     </ButtonStack>
                   </MapButton>
                   <MapButton>
                     <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
+                      <TriBtnTitle>Autopark</TriBtnTitle>
                       <Stack direction="column" spacing={3}>
-                        <BtnFeatTitle>670 hp</BtnFeatTitle>
                         <TriBtnContent>
-                          Automatically change lanes while driving on the
-                          highway
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>LoremLoremLorem</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
-                        <BtnFeatTitle>670 hp</BtnFeatTitle>
-                        <TriBtnContent>
-                          Automatically change lanes while driving on the
-                          highway
+                          Parallel and perpendicular parking with a single touch
                         </TriBtnContent>
                       </Stack>
                     </ButtonStack>

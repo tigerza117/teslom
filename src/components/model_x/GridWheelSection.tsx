@@ -21,10 +21,9 @@ export function GridWheel() {
                 float: "left",
               }}
             >
-              <InfoTitle>Eget felis eget</InfoTitle>
+              <InfoTitle>New Wheels and Tires</InfoTitle>
               <InfoSubTitle>
-                Etiam non quam lacus suspendisse faucibus. Facilisis volutpat
-                est velit egestas dui id ornare.
+                New performance tires deliver better handling and ride quality with lower rolling resistance and are paired with new aerodynamics wheels for an updated look.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -50,10 +49,9 @@ export function GridWheel() {
                 float: "right",
               }}
             >
-              <InfoTitle>Eget felis egets</InfoTitle>
+              <InfoTitle>Optimized Aerodynamics</InfoTitle>
               <InfoSubTitle>
-                Etiam non quam lacus suspendisse faucibus. Facilisis volutpat
-                est velit egestas dui id ornare.
+                Attention to detail on all exterior surfaces makes Model X the most aerodynamic production SUV on Earth.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>
@@ -69,10 +67,9 @@ export function GridWheel() {
                 float: "left",
               }}
             >
-              <InfoTitle>Eget felis eget</InfoTitle>
+              <InfoTitle>Refined Styling</InfoTitle>
               <InfoSubTitle>
-                Etiam non quam lacus suspendisse faucibus. Facilisis volutpat
-                est velit egestas dui id ornare.
+                Exterior desgin combines an iconic look with elegant proportions.
               </InfoSubTitle>
             </Stack>
           </InfoContainer>

@@ -27,19 +27,19 @@ export function BeyondLu() {
             <Stack direction="row" spacing={8} textAlign="center">
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>Mattis</FeatureTitle>
+                  <FeatureTitle>1,020hp</FeatureTitle>
                   <FeatureSubTitle>Peak power</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>Mattis</FeatureTitle>
-                  <FeatureSubTitle>@155 mph 1/4 mile</FeatureSubTitle>
+                  <FeatureTitle>9.9s</FeatureTitle>
+                  <FeatureSubTitle>1/4 mile</FeatureSubTitle>
                 </Stack>
               </Box>
               <Box>
                 <Stack direction="column" spacing={1}>
-                  <FeatureTitle>Mattis</FeatureTitle>
+                  <FeatureTitle>2.5s</FeatureTitle>
                   <FeatureSubTitle>0-60 mph</FeatureSubTitle>
                 </Stack>
               </Box>
@@ -63,11 +63,10 @@ export function BeyondLu() {
             </Box>
             <Box width="45%">
               <SubContent>
-                Eget sit amet tellus cras adipiscing. Volutpat commodo sed
-                egestas egestas. Mattis pellentesque id nibh tortor id aliquet.
-                Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
-                Condimentum vitae sapien pellentesque habitant morbi tristique
-                senectus et netus.
+                With the most power ad quickest acceleration of any SUC, Model X
+                Plaid is the highest performing SUV ever built. All Model X
+                powertrains, with updated battery architecture, can deliver
+                instant torque at any speed.
               </SubContent>
             </Box>
           </Stack>

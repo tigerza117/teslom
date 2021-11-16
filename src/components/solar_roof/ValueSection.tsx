@@ -26,15 +26,13 @@ export function Value() {
                     padding: "3rem 1.5rem",
                   }}
                 >
-                  <SubTitleContent>At vero eos et</SubTitleContent>
-                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubTitleContent>Value</SubTitleContent>
+                  <MainTitleContent>Pay Less for Electricity</MainTitleContent>
                   <SubContent style={{ padding: "1rem 0" }}>
-                    cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime
-                    placeat facere possimus.
+                    Solar Roof is the only roof that can help pay for itself
+                    with the enery you produce. Power your home at the lowest
+                    price per watt of any national provider and take control of
+                    your monthly electricity bill.
                   </SubContent>
                 </Box>
                 <Box

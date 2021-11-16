@@ -23,14 +23,15 @@ export function Utility() {
               }}
             >
               <Stack direction="column" padding="2.5rem 2rem 0 2rem">
-                <SubTitleContent>Pharetra</SubTitleContent>
-                <MainTitleContent>Facilisis volutpat</MainTitleContent>
+                <SubTitleContent>Utility</SubTitleContent>
+                <MainTitleContent>Even More Capable</MainTitleContent>
                 <SubContent style={{ padding: "4rem 0 0 0" }}>
-                  Turpis egestas sed tempus urna et pharetra pharetra massa.
-                  Imperdiet nulla malesuada pellentesque elit eget gravida cum
-                  sociis. Nec feugiat nisl pretium fusce id velit. Diam ut
-                  venenatis tellus in metus vulputate. Faucibus scelerisque
-                  eleifend donec pretium vulputate sapien nec sagittis aliquam.
+                  With the most storage space and towing capacity of any
+                  electric SUV, and seating for up to seven adults, Model X
+                  delivers maximum utility. Front doors open and close
+                  automatically, Falcon Wing doors allow for easier loading and
+                  a standard trailer hitch lets you bring your gear anywhere you
+                  go.
                 </SubContent>
               </Stack>
               <Box>

@@ -36,8 +36,8 @@ export function Experience() {
             >
               <Box style={{ width: "40%" }}>
                 <Stack direction="column">
-                  <SubTitleContent>quod maxime placeat</SubTitleContent>
-                  <MainTitleContent>maxime placeat</MainTitleContent>
+                  <SubTitleContent>Experience</SubTitleContent>
+                  <MainTitleContent>24/7 Monitoring</MainTitleContent>
                   <Box style={{ padding: "1rem 0" }}>
                     <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
                   </Box>
@@ -45,9 +45,9 @@ export function Experience() {
               </Box>
               <Box>
                 <SubContent>
-                  Enter a destination on your touchscreen and Trip Planner will
-                  automatically calculate your route with Superchargers along
-                  the way.
+                  Manage your solar system from anywhere in the world with 24/7
+                  mobile monitoring. Watch your energy in real time or set your
+                  preferences to optimize for energy independence.
                 </SubContent>
               </Box>
             </RowSectionBlock>

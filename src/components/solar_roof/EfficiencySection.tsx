@@ -26,15 +26,15 @@ export function Efficiency() {
                     padding: "3rem 1.5rem",
                   }}
                 >
-                  <SubTitleContent>At vero eos et</SubTitleContent>
-                  <MainTitleContent>Itaque earum rerum</MainTitleContent>
+                  <SubTitleContent>Efficiency</SubTitleContent>
+                  <MainTitleContent>Maximum Solar Production</MainTitleContent>
                   <SubContent style={{ padding: "1rem 0" }}>
-                    cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id quod maxime
-                    placeat facere possimus.
+                    Generate the most energy possible, even on roofs with
+                    complicated angles and intermittent sunlight. Combined with
+                    Tesla Solar Inverter, your fully integrated system is safe,
+                    reliable and outage ready. With built-in connectivity, Tesla
+                    Solar Inverter will continue to improve with each
+                    over-the-air software update.
                   </SubContent>
                 </Box>
                 <Box
