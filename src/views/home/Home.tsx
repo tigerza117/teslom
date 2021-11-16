@@ -6,6 +6,7 @@ import { ProductList } from "@constants/home";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { Container } from "@components/shared/Container";
 import { BaseButton } from "@components/shared/Button";
+import { useLayoutContext } from "@contexts/LayoutContext";
 
 const FixedWrapper = styled(Box)(({ theme }) => ({
   height: "100%",
@@ -44,6 +45,14 @@ const MainSubTitle = styled("h5")(({ theme }) => ({
 }));
 
 const Home: React.FC = () => {
+  const { setDark } = useLayoutContext();
+
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    setDark(true);
+    return () => {};
+  }, []);
+
   return (
     <>
       {ProductList.map(({ title, subTitle, image }, index) => (
