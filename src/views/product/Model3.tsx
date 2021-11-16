@@ -24,7 +24,7 @@ function Model3() {
   }, []);
 
   return (
-    <Container>
+    <>
       <HeroSection />
       <Safety />
       <Perf />
@@ -34,7 +34,7 @@ function Model3() {
       <Interior />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 

@@ -24,7 +24,7 @@ function SolarRoof() {
   }, []);
 
   return (
-    <Container>
+    <>
       <HeroSection />
       <BeautyRoof />
       <Storage />
@@ -35,7 +35,7 @@ function SolarRoof() {
       <Value />
       <Specs />
       <OrderNow />
-    </Container>
+    </>
   );
 }
 
