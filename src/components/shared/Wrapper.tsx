@@ -19,6 +19,12 @@ export const TitleWrapper = styled(Box)(({ theme }) => ({
 }));
 
 export const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
+  width: "210px",
+  margin: "0",
+  padding: "0",
+}));
+
+export const SubFeatureWrapper = styled(Box)(({ theme }) => ({
   width: "340px",
   margin: "0",
   padding: "0",

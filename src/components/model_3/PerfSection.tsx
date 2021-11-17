@@ -2,7 +2,7 @@ import { Box, Stack } from "@mui/material";
 import {
   BackgroundWrapper,
   TitleWrapper,
-  HomeFeatureWrapper,
+  SubFeatureWrapper,
   VerticalWrapper,
 } from "@components/shared/Wrapper";
 import {
@@ -32,27 +32,27 @@ export function Perf() {
               <Stack direction="column">
                 <Box>
                   <Stack direction="row" margin="auto">
-                    <HomeFeatureWrapper className="show">
+                    <SubFeatureWrapper className="show">
                       <FeatureTitle>3.1 s</FeatureTitle>
                       <FeatureSubTitle>
                         Quickest acceleration from zero to 60 mph* in as little
                         as 3.1 seconds
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
-                    <HomeFeatureWrapper  className="show">
+                    </SubFeatureWrapper>
+                    <SubFeatureWrapper  className="show">
                       <FeatureTitle>162mph</FeatureTitle>
                       <FeatureSubTitle>
                         Improved handling and aerodynamics allow for a top speed
                         of 162 mph
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
-                    <HomeFeatureWrapper  className="show">
+                    </SubFeatureWrapper>
+                    <SubFeatureWrapper  className="show">
                       <FeatureTitle>AWD</FeatureTitle>
                       <FeatureSubTitle>
                         Dual Motor All-Wheel Drive instantly controls traction
                         and torque, in all weather conditions
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
+                    </SubFeatureWrapper>
                   </Stack>
                 </Box>
               </Stack>
