@@ -2,7 +2,6 @@ import { Box, Stack } from "@mui/material";
 import {
   BackgroundWrapper,
   ButtonStack,
-  TitleWrapper,
   VerticalWrapper,
 } from "@components/shared/Wrapper";
 import {
@@ -22,25 +21,28 @@ export function Installation() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <VerticalContent>
-          <Box>
-            <Stack direction="column">
-              <SubTitleContent>Installation</SubTitleContent>
-              <MainTitleContent>Trusted Expertise</MainTitleContent>
-              <Box>
-                <BtnOutline>ORDER NOW</BtnOutline>
-              </Box>
-            </Stack>
-          </Box>
-          <VerticalWrapper>
-            <SubContent>
-              Our in-house team of energy professionals has installed more than
-              3.6 GW of clean solar energy across 400,000 roofs—the equivalent
-              of 10 million traditional solar panels. From design to power on,
-              we take care of everything.
-            </SubContent>
-          </VerticalWrapper>
-        </VerticalContent>
+        ฺ
+        <Box padding=".5rem">
+          <VerticalContent>
+            <Box>
+              <Stack direction="column">
+                <SubTitleContent>Installation</SubTitleContent>
+                <MainTitleContent>Trusted Expertise</MainTitleContent>
+                <Box>
+                  <BtnOutline>ORDER NOW</BtnOutline>
+                </Box>
+              </Stack>
+            </Box>
+            <VerticalWrapper>
+              <SubContent>
+                Our in-house team of energy professionals has installed more
+                than 3.6 GW of clean solar energy across 400,000 roofs—the
+                equivalent of 10 million traditional solar panels. From design
+                to power on, we take care of everything.
+              </SubContent>
+            </VerticalWrapper>
+          </VerticalContent>
+        </Box>
         <Box>
           <Stack>
             <Box
@@ -55,7 +57,7 @@ export function Installation() {
                 autoPlay
                 muted
                 style={{
-                  width: "45vw",
+                  width: "52vw",
                   margin: "0 auto",
                   display: "none",
                 }}
@@ -65,7 +67,7 @@ export function Installation() {
                 autoPlay
                 muted
                 style={{
-                  width: "45vw",
+                  width: "52vw",
                   margin: "0 auto",
                 }}
                 src="https://www.tesla.com/sites/default/files/solarroof/v3/installation/Carousel_Installation2.mp4"
@@ -74,7 +76,7 @@ export function Installation() {
                 autoPlay
                 muted
                 style={{
-                  width: "45vw",
+                  width: "52vw",
                   margin: "0 auto",
                   display: "none",
                 }}
