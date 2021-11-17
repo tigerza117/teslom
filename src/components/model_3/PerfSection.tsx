@@ -31,7 +31,7 @@ export function Perf() {
             <Box margin="-10rem auto" display="flex">
               <Stack direction="column">
                 <Box>
-                  <Stack direction="row" margin="auto">
+                  <Stack direction="row" margin="auto" spacing={2}>
                     <SubFeatureWrapper className="show">
                       <FeatureTitle>3.1 s</FeatureTitle>
                       <FeatureSubTitle>
