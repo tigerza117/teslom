@@ -23,7 +23,7 @@ export function Range() {
               <video
                 src="https://tesla-cdn.thron.com/delivery/public/video/tesla/c63301a9-96bc-463d-9e5d-65f581cd87d6/bvlatuR/WEBHD/Range_Desktop"
                 style={{
-                  width: "74vw",
+                  width: "79vw",
                   height: "100vh",
                   objectFit: "cover",
                 }}
