@@ -28,7 +28,7 @@ export function Interior() {
         </Box>
         <VerticalContent>
           <Box className="show">
-            <SubTitleContent>Autopilot</SubTitleContent>
+            <SubTitleContent>Interior</SubTitleContent>
             <MainTitleContent>Future of Driving</MainTitleContent>
             <Stack
               direction="row"
@@ -55,8 +55,10 @@ export function Interior() {
           </Box>
           <VerticalWrapper className="show">
             <SubContent>
-              Autopilot's advanced safety and convenience features are designed
-              to assist you with the most burdensome parts of driving.
+              The inside of Model 3 is unlike any other car. You can use your
+              smartphone as a key, and access all driver controls in the central
+              15-inch touchscreen. The all-glass roof extends from front to
+              back, creating a sense of openness from every seat.
             </SubContent>
           </VerticalWrapper>
         </VerticalContent>
