@@ -14,18 +14,16 @@ export function Autopilot() {
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box position="relative">
           <video
-            src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
+            src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4"
             style={{
               width: "100%",
-              height: "75vh",
+              height: "70vh",
               objectFit: "cover",
-              zIndex: 0,
-              position: "relative",
             }}
             autoPlay
             loop
-            preload="auto"
           />
+
           <VidsOverlay />
         </Box>
         <Box sx={{ padding: "2rem 0 6rem 0", width: "75vw", margin: "0 auto" }}>
