@@ -14,6 +14,7 @@ import {
   Specs,
   OrderNow,
   AllNewInterior,
+  ImageSlide
 } from "@components/model_x/section";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { useLayoutContext } from "@contexts/LayoutContext";
@@ -36,9 +37,7 @@ function ModelX() {
     <>
       <HeroSection />
       <AllNewInterior />
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
+      <ImageSlide />
       <GridGall />
       <BeyondLu />
       <PowerTrain />

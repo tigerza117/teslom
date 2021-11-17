@@ -49,8 +49,8 @@ export const GridGall = ({ data, side }: GridGallProps) => {
                     <Typography
                       sx={{
                         color: "white",
-                        fontWeight: 700,
-                        fontSize: "1.5rem",
+                        fontWeight: 600,
+                        fontSize: "1.3rem",
                       }}
                     >
                       {title}
