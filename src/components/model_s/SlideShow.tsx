@@ -1,14 +1,12 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useState, useRef, useEffect } from "react";
-import { PictureSliderContainer } from "@components/cybertruck/Components";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { useState } from "react";
 import { MsContainer_text } from "@constants/cybertruckSlider";
 import { ContainerWrapper } from "@components/shared/Container";
-import { SlideSubContent, SlideTitle } from "@components/shared/Title";
 import { GridGall } from "./GridGallSection";
-import { styled } from "@mui/system";
 import { Dot } from "@components/shared/Button";
+import { styled } from "@mui/system";
+import { BackgroundWrapper } from "@components/shared/Wrapper";
 
 const Arrow = styled(ArrowForwardIosIcon)(() => ({
   color: "#fff",
@@ -173,23 +171,23 @@ const ImageSliderViewer = ({
 const Galls = [
   {
     img: "https://tesla-cdn.thron.com/delivery/public/image/tesla/287c75d3-2f5d-481e-8a0f-0dc987f54e6b/bvlatuR/std/1040x584/MX-Interior-Grid-A-Desktop",
-    title: "Nunc consequat",
-    sub: "Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ac tortor dignissim convallis aenean et.",
+    title: "Game from Anywhere",
+    sub: "Up to 10 teraflops of processing power enables in-car gaming on-par with today’s newest consoles. Wireless controller compatibility lets you game from any seat.",
   },
   {
     img: "https://tesla-cdn.thron.com/delivery/public/image/tesla/08d2e941-2be2-4e1a-bed9-924ac30fb115/bvlatuR/std/1040x584/MS-Interior-Grid-B-Desktop",
     title: "Stay Connected",
-    sub: "Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ac tortor dignissim convallis aenean et.",
+    sub: "Multi-device Bluetooth, wireless and USB-C charging for every passenger, with enough power to fast-charge your tablets and laptop.",
   },
   {
     img: "https://tesla-cdn.thron.com/delivery/public/image/tesla/dcfc40cb-6b46-4be7-b173-be10e0c9143c/bvlatuR/std/1040x584/MS-Interior-Grid-C-Desktop",
     title: "Your Best Audio System",
-    sub: "Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ac tortor dignissim convallis aenean et.",
+    sub: "A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers the best listening experience wherever you are.",
   },
   {
     img: "https://tesla-cdn.thron.com/delivery/public/image/tesla/ab165f41-fa4e-4abe-b82a-51bdc295cf42/bvlatuR/std/1040x584/MS-Interior-Grid-D-Desktop",
     title: "Real Storage",
-    sub: "Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ac tortor dignissim convallis aenean et.",
+    sub: "With front and rear trunks and fold-flat seats, Model S is a luxury car where you can fit your bike without taking the wheel off, and your luggage too.",
   },
 ];
 
