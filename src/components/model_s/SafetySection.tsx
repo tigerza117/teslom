@@ -18,9 +18,10 @@ export function Safety() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                padding: "4rem 2rem",
               }}
             >
-              <Stack direction="column" padding="2.5rem 0 0 3rem">
+              <Stack direction="column">
                 <SubTitleContent className="show">Safety</SubTitleContent>
                 <MainTitleContent className="show">
                   High Impact Protection
@@ -34,27 +35,21 @@ export function Safety() {
                 </SubContent>
               </Stack>
               <Box>
-                <BtnOutline
-                  style={{
-                    padding: ".3rem 1.5rem",
-                    marginLeft: "3rem",
-                    marginBottom: "7rem",
-                  }}
-                  className="show"
-                >
-                  Order now
-                </BtnOutline>
+                <BtnOutline className="show">Order now</BtnOutline>
               </Box>
             </Box>
-            <img
-              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop"
-              loading="lazy"
-              style={{
-                width: "70vw",
-                height: "100vh",
-                objectFit: "cover",
-              }}
-            />
+            <Box sx={{ display: "flex", height: "100vh" }}>
+              <img
+                src="https://media.discordapp.net/attachments/896728497979019294/910434771757322280/Screenshot_2.png"
+                loading="lazy"
+                style={{
+                  width: "75vw",
+                  height: "auto",
+                  objectFit: "cover",
+                  margin: "auto 0",
+                }}
+              />
+            </Box>
           </Stack>
         </Box>
       </BackgroundWrapper>
