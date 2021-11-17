@@ -8,7 +8,7 @@ export function Specs() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
-        <Box style={{ width: "100%" }}>
+        <Box style={{ width: "100%" }} className="show">
           <Stack direction="row">
             <Box>
               <img
@@ -23,7 +23,7 @@ export function Specs() {
               />
             </Box>
             <Box>
-              <Box style={{ padding: "5rem 3rem" }}>
+              <Box style={{ padding: "1rem 3rem" }}>
                 <Stack direction="column">
                   <Box>
                     <SpecTitle style={{ color: "white" }}>
@@ -35,7 +35,7 @@ export function Specs() {
                           color="white"
                           style={{
                             margin: "0",
-                            padding: ".1rem 6rem",
+                            padding: ".25rem 5rem",
                             textTransform: "capitalize",
                           }}
                         >
@@ -44,7 +44,7 @@ export function Specs() {
                         <BtnOutline
                           color="white"
                           style={{
-                            padding: ".1rem 6rem",
+                            padding: ".25rem 4.3rem",
                             textTransform: "capitalize",
                           }}
                         >
@@ -56,7 +56,7 @@ export function Specs() {
                           color="white"
                           style={{
                             margin: "0",
-                            padding: ".1rem 6rem",
+                            padding: ".25rem 4.1rem",
                             textTransform: "capitalize",
                           }}
                         >
@@ -65,7 +65,7 @@ export function Specs() {
                         <BtnOutline
                           color="white"
                           style={{
-                            padding: ".1rem 6rem",
+                            padding: ".25rem 6rem",
                             textTransform: "capitalize",
                           }}
                         >

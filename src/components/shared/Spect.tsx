@@ -28,6 +28,7 @@ export const SpecSubText = styled("p")(({ theme }) => ({
   margin: "1rem 0 2rem 0",
   padding: "0",
   "& p":{
-    opacity: .85
+    opacity: .85,
+    lineHeight: "105%"
   }
 }));
