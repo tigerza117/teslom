@@ -80,7 +80,7 @@ export const HorizonWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  height: "90vh",
+  height: "95vh",
 }));
 
 export const VerticalWrapper = styled(Box)(({ theme }) => ({
