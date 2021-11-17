@@ -14,7 +14,7 @@ const Data = [
     image:
       "https://tesla-cdn.thron.com/delivery/public/image/tesla/209dce99-0353-49b1-b0ac-c3aa6de68b71/bvlatuR/std/1920x900/Model-S-Performance-Dual-Motor-Desktop",
     txt: {
-      title: "Long Range",
+      title: "Model",
       subtitle:
         "Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration",
       feats: [
@@ -37,20 +37,20 @@ const Data = [
     image:
       "https://tesla-cdn.thron.com/delivery/public/image/tesla/3da49427-d22a-4fe1-bc36-3653dc426dfd/bvlatuR/std/1920x900/Model-S-Performance-Tri-Motor-Desktop",
     txt: {
-      title: "Long Range",
+      title: "Model Plaid",
       subtitle:
-        "Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration",
+        "Tri Motor All-Wheel Drive platform with torque vectoring features three independent motors, each with a carbon-sleeved rotor that maintains peak power output all the way to top speed.",
       feats: [
         {
-          name: "3.1 s",
+          name: "1.99 s*",
           detail: "0-60 mph",
         },
         {
-          name: "405 mi",
-          detail: "range (est.)",
+          name: "396 mi",
+          detail: "range (EPA est.)",
         },
         {
-          name: "670 hp",
+          name: "1,020 hp",
           detail: "peak power",
         },
       ],
