@@ -1,19 +1,13 @@
 import { Box, Button, Stack } from "@mui/material";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
-  TitleWrapper,
   MainTitleContent,
   MainSubtitleContent,
   SubtitleContent,
   FeatureContainer,
   InfoFeatureWrapper,
   GalleryContainer,
-  ButtonSlider,
   InfoContainer,
-  PictureSliderContainer,
-  PictureSliderImage,
-  SliderBtn,
-  Carousel,
 } from "@components/cybertruck/Components";
 
 export function Gallery() {
@@ -28,12 +22,12 @@ export function Gallery() {
                 }}
             ></GalleryContainer>
             <Box
-                sx={{
-                  margin: "0 auto",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                }}
+              sx={{
+                margin: "0 auto",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
             >
               <Box sx={{ display: "inline" }}>
                 <FeatureContainer>
@@ -71,26 +65,26 @@ export function Gallery() {
             >
               <Box sx={{ padding: "0px 0px 80px", width: "133vh" }}>
                 <Stack
-                    direction="row"
-                    spacing={14}
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  direction="row"
+                  spacing={14}
+                  sx={{ display: "flex", justifyContent: "center" }}
                 >
-                  <Box>
+                  <Box className="show">
                     <MainSubtitleContent
-                        sx={{
-                          letterSpacing: "0.110rem",
-                          padding: "0 0 1.125rem",
-                          width: "31vh",
-                        }}
+                      sx={{
+                        letterSpacing: "0.110rem",
+                        padding: "0 0 1.125rem",
+                        width: "31vh",
+                      }}
                     >
                       ULTRA-HARD 30X COLD-ROLLED STAINLESS STEEL
                     </MainSubtitleContent>
                   </Box>
                   <Box
-                      sx={{
-                        width: "100%",
-                        textAlign: "left",
-                      }}
+                    sx={{
+                      width: "100%",
+                      textAlign: "left",
+                    }}
                   >
                     <SubtitleContent>
                       If there was something better, we’d use it. Help eliminate
@@ -112,31 +106,31 @@ export function Gallery() {
 
             <InfoContainer
                 style={{
-                  padding: "0px 0px 40px",
+                  padding: "0px 0px 10px",
                 }}
             >
               <Box sx={{ padding: "0px 0px 40px", width: "133vh"}}>
                 <Stack
-                    direction="row"
-                    spacing={14}
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  direction="row"
+                  spacing={14}
+                  sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <Box>
                     <MainSubtitleContent
-                        sx={{
-                          letterSpacing: "0.110rem",
-                          padding: "0 0 1.125rem",
-                          width: "31vh",
-                        }}
+                      sx={{
+                        letterSpacing: "0.110rem",
+                        padding: "0 0 1.125rem",
+                        width: "31vh",
+                      }}
                     >
                       TESLA ARMOR GLASS
                     </MainSubtitleContent>
                   </Box>
                   <Box
-                      sx={{
-                        width: " 100%",
-                        textAlign: "left",
-                      }}
+                    sx={{
+                      width: " 100%",
+                      textAlign: "left",
+                    }}
                   >
                     <SubtitleContent>
                       Ultra-strong glass and polymer-layered composite can
