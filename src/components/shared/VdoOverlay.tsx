@@ -8,7 +8,7 @@ import {
 export default function VidsOverlay() {
   return (
     <VdoOverlay>
-      <Stack direction="column" spacing={3}>
+      <Stack direction="column" spacing={10}>
         <Box zIndex={1}>
           <MainTitleContent>360°</MainTitleContent>
           <VdoOverlayText>
