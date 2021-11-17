@@ -50,7 +50,7 @@ export function HeroSection() {
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <FeatureTitle>$</FeatureTitle>
-                    <FeatureSubTitle>
+                    <FeatureSubTitle style={{marginTop:".3rem"}}>
                       Guaranteed Lowest
                       <br />
                       Price for Solar
@@ -58,7 +58,7 @@ export function HeroSection() {
                   </HomeFeatureWrapper>
                   <HomeFeatureWrapper>
                     <FeatureTitle>24/7</FeatureTitle>
-                    <FeatureSubTitle>
+                    <FeatureSubTitle style={{marginTop:".25rem"}}>
                       Energy
                       <br />
                       Monitoring

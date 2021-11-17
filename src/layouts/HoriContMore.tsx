@@ -2,7 +2,7 @@ import { Box, Stack } from "@mui/material";
 import { HorizonWrapper } from "@components/shared/Wrapper";
 import { BtnOutline } from "@components/shared/Button";
 
-export const HorizonContent: React.FC = ({ children }) => {
+export const HorizonContentMore: React.FC = ({ children }) => {
   return (
     <HorizonWrapper>
       <Box
@@ -20,6 +20,7 @@ export const HorizonContent: React.FC = ({ children }) => {
           style={{ justifyContent: "space-between" }}
         >
           <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
+          <BtnOutline>LEARN MORE</BtnOutline>
         </Stack>
       </Box>
     </HorizonWrapper>
