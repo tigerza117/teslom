@@ -29,30 +29,6 @@ export const NavbarProducts = [
 
 export const DrawerBarList = [
   {
-    label: "Model S",
-    path: "models",
-  },
-  {
-    label: "Model 3",
-    path: "model3",
-  },
-  {
-    label: "Model X",
-    path: "modelx",
-  },
-  {
-    label: "Model Y",
-    path: "modely",
-  },
-  {
-    label: "Solar Roof",
-    path: "solar-roof",
-  },
-  {
-    label: "Solar Panels",
-    path: "solar-panel",
-  },
-  {
     label: "Existing Inventory",
     path: "existing-inventory",
   },
