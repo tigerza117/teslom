@@ -2,6 +2,7 @@ import { Box, Stack } from "@mui/material";
 import { BackgroundWrapper, TitleWrapper } from "@components/shared/Wrapper";
 import { MainTitleContent, SubContent } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
+import { BaseButton } from "@components/shared/Button";
 
 export function OrderNow() {
   return (
@@ -29,17 +30,18 @@ export function OrderNow() {
                   Experience Model 3
                 </MainTitleContent>
                 <Box>
-                  <Stack direction="row" spacing={4}>
-                    <BtnOutline
-                      color="white"
-                      style={{ margin: "0", padding: ".4rem 4rem" }}
+                  <Stack direction="row" spacing={4} className="show">
+                    <BaseButton
+                      style={{
+                        margin: "0",
+                        padding: ".4rem 4rem",
+                        backgroundColor: "white",
+                        borderRadius: "25px",
+                      }}
                     >
                       order now
-                    </BtnOutline>
-                    <BtnOutline
-                      color="white"
-                      style={{ padding: ".4rem 5.5rem" }}
-                    >
+                    </BaseButton>
+                    <BtnOutline color="white" style={{ padding: ".4rem 5rem" }}>
                       compare
                     </BtnOutline>
                   </Stack>
