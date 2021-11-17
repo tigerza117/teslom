@@ -1,13 +1,16 @@
 import { Box, Stack } from "@mui/material";
 import { VdoOverlay } from "@components/shared/Wrapper";
-import {
-  MainTitleContent,
-  VdoOverlayText,
-} from "@components/shared/Title";
+import { MainTitleContent, VdoOverlayText } from "@components/shared/Title";
 
 export default function VidsOverlay() {
   return (
-    <VdoOverlay>
+    <Box
+      sx={{
+        position: "absolute",
+        top: 0,
+        padding: "10rem",
+      }}
+    >
       <Stack direction="column" spacing={10}>
         <Box zIndex={1} className="show">
           <MainTitleContent>360°</MainTitleContent>
@@ -33,7 +36,7 @@ export default function VidsOverlay() {
               src="https://tesla-cdn.thron.com/delivery/public/image/tesla/0244c34f-2054-4549-9aff-a055db265926/bvlatuR/std/0x0/autopilot"
               alt=""
             />
-            <MainTitleContent style={{ fontSize: ".9rem" }}  className="show" >
+            <MainTitleContent style={{ fontSize: ".9rem" }} className="show">
               Ultrasonic
               <br />
               Sensors
@@ -45,6 +48,6 @@ export default function VidsOverlay() {
           </VdoOverlayText>
         </Box>
       </Stack>
-    </VdoOverlay>
+    </Box>
   );
 }
