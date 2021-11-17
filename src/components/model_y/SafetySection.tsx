@@ -1,5 +1,5 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { BackgroundWrapper, HorizonWrapper } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
@@ -7,63 +7,46 @@ import {
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import OverAll from "./OverAll";
+import { HoriImg } from "@components/shared/Container";
 
 export function Safety() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
-            <Box>
-              <Stack
+            <HorizonWrapper style={{ height: "95vh" }}>
+              <Box
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
+                  padding: "3rem 3.5rem 0 3.5rem",
                 }}
+                className="show"
               >
-                <Box
-                  sx={{
-                    padding: "0rem 0 0 2.5rem",
-                  }}
-                >
-                  <SubTitleContent>Safety</SubTitleContent>
-                  <MainTitleContent>Designed for Safety</MainTitleContent>
-                  <SubContent style={{ padding: "3.5rem 0 0 0" }}>
-                    Like every Tesla, Model Y is designed to be the safest
-                    vehicle in its class. The lower center of gravity, rigid
-                    body structure and large crumple zones provide unparalleled
-                    protection.
-                  </SubContent>
+                <SubTitleContent>Safety</SubTitleContent>
+                <MainTitleContent>Designed for Safety</MainTitleContent>
+                <SubContent>
+                  Like every Tesla, Model Y is designed to be the safest vehicle
+                  in its class. The lower center of gravity, rigid body
+                  structure and large crumple zones provide unparalleled
+                  protection.
+                </SubContent>
+              </Box>
+              <Box padding="0 3.5rem" className="show">
+                <OverAll />
+              </Box>
+              <Box padding="0 3.5rem">
+                <Box>
+                  <BtnOutline>ORDER NOW</BtnOutline>
                 </Box>
-                <Box
-                  style={{
-                    padding: "3rem 0 0 2.5rem",
-                  }}
-                >
-                  <OverAll />
-                </Box>
-                <Box
-                  style={{
-                    padding: "3rem 0 0 2.5rem",
-                  }}
-                >
-                  <Stack direction="row" spacing={1}>
-                    <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
-                  </Stack>
-                </Box>
-              </Stack>
-            </Box>
+              </Box>
+            </HorizonWrapper>
             <Box>
-              <img
-                src="https://www.tesla.com/themes/custom/tesla_frontend/components/images/safety-model-y-hero.png"
+              <HoriImg
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
                 alt=""
                 loading="lazy"
                 style={{
-                  width: "80vw",
-                  height: "100vh",
-                  objectFit: "cover",
-                  float: "right",
+                  objectPosition: "100% 0",
                 }}
               />
             </Box>
