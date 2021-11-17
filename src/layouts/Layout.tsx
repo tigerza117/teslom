@@ -55,7 +55,6 @@ export const Layout: React.FC = ({ children }) => {
                     scrub: true,
                     start: "80% 0%",
                     end: "100% 0%",
-                    scroller: "#con",
                     id: "hero",
                   },
                   display: "none",
@@ -67,7 +66,6 @@ export const Layout: React.FC = ({ children }) => {
                     scrub: true,
                     start: "90% 0%",
                     end: "100% 0%",
-                    scroller: "#con",
                   },
                   display: "inline",
                   opacity: 1,
@@ -75,7 +73,6 @@ export const Layout: React.FC = ({ children }) => {
                 gsap.set(".show", { y: 100, opacity: 0 });
 
                 ScrollTrigger.batch(".show", {
-                  scroller: "#con",
                   onEnter: (batch) =>
                     gsap.to(batch, {
                       opacity: 1,
@@ -97,7 +94,7 @@ export const Layout: React.FC = ({ children }) => {
         },
       }}
     >
-      <SnapContainer id="con">
+      <>
         <Box
           className="layout__main__wrapper"
           sx={{ minHeight: "100vh", position: "relative" }}
@@ -112,7 +109,7 @@ export const Layout: React.FC = ({ children }) => {
           </Box>
           <Footer />
         </Box>
-      </SnapContainer>
+      </>
     </LayoutContext.Provider>
   );
 };
