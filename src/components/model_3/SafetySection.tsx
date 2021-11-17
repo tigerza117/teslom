@@ -8,28 +8,24 @@ import {
 import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import OverAll from "@components/model_x/OverAll";
+import { HorizonWrapper } from "@components/shared/Wrapper";
+import { HoriImg } from "@components/shared/Container";
 
 export function Safety() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <Stack direction="row">
-          <Box
-            sx={{
-              padding: "3rem",
-              display: "flex",
-            }}
-          >
-            <Stack
-              direction="column"
-              display="flex"
-              justifyContent="space-between"
-            >
-              <Box>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <Box>
+          <Stack direction="row">
+            <HorizonWrapper style={{ height: "95vh" }}>
+              <Box
+                sx={{
+                  padding: "3rem 3rem 0 3rem",
+                }}
+                className="show"
+              >
                 <SubTitleContent>Safety</SubTitleContent>
                 <MainTitleContent>Built for Safety</MainTitleContent>
-              </Box>
-              <Box>
                 <SubContent>
                   Safety is the most important part of the overall Model 3
                   design. The metal structure is a combination of aluminum and
@@ -39,14 +35,16 @@ export function Safety() {
                   African elephants.
                 </SubContent>
               </Box>
-
-              <Box padding="4rem 0">
-                <OverAll />
+              <Box padding="4rem 3rem">
+                <Box className="show">
+                  <OverAll />
+                </Box>
                 <Stack
                   direction="row"
                   display="flex"
                   justifyContent="space-between"
                   alignItems="center"
+                  className="show"
                 >
                   <Box>
                     <ControlPointIcon
@@ -64,24 +62,19 @@ export function Safety() {
                   </Box>
                 </Stack>
               </Box>
-            </Stack>
-          </Box>
-          <Box>
-            <img
-              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
-              alt=""
-              loading="lazy"
-              style={{
-                float: "right",
-                width: "73vw",
-                height: "100vh",
-                objectFit: "cover",
-                objectPosition: "-15rem",
-                paddingRight: "1.5rem",
-              }}
-            />
-          </Box>
-        </Stack>
+            </HorizonWrapper>
+            <Box>
+              <HoriImg
+                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
+                alt=""
+                loading="lazy"
+                style={{
+                  objectPosition: "-17vw 0",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </BackgroundWrapper>
     </>
   );

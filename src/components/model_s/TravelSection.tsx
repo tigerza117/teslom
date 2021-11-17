@@ -1,23 +1,175 @@
-import { Box, Stack } from "@mui/material";
-import {
-  BackgroundWrapper,
-  ButtonStack,
-  TitleWrapper,
-  BtnFeatTitle,
-} from "@components/shared/Wrapper";
+import { Box, Grid, Stack } from "@mui/material";
+import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { MainTitleContent, SubContent } from "@components/shared/Title";
-import { BtnOutline, MapButton, TriBtnTitle } from "@components/shared/Button";
+import {
+  BaseButton,
+  BtnOutline,
+  TriBtnContent,
+  TriBtnTitle,
+} from "@components/shared/Button";
+import { ContainerWrapper } from "@components/shared/Container";
+import { useState } from "react";
+
+const Data = [
+  {
+    image:
+      "https://cdn.discordapp.com/attachments/896728497979019294/902589779466653706/1635264436900.jpg",
+    txt: {
+      title: "San Jose to Los Angeles",
+      subtitle: "340 miles",
+    },
+  },
+  {
+    image:
+      "https://cdn.discordapp.com/attachments/896728497979019294/902589782742417418/1635264486681.jpg",
+    txt: {
+      title: "Berkeley to Lake Tahoe",
+      subtitle: "178 miles",
+    },
+  },
+  {
+    image:
+      "https://cdn.discordapp.com/attachments/896728497979019294/902589778741055528/1635264404630.jpg",
+    txt: {
+      title: "Manhattan to Boston",
+      subtitle: "211 miles",
+    },
+  },
+  {
+    image:
+      "https://cdn.discordapp.com/attachments/896728497979019294/902589783585460294/1635264519801.jpg",
+    txt: {
+      title: "Fort Lauderdale to Orlando",
+      subtitle: "195 miles",
+    },
+  },
+];
+
+interface SlideMeta {
+  image: string;
+  txt: {
+    title: string;
+    subtitle: string;
+  };
+}
+
+interface ImageSliderControllerProps {
+  slides: SlideMeta[];
+}
+
+const ImageSliderController = ({ slides }: ImageSliderControllerProps) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const goIndex = (index: number) => {
+    setCurrent(index);
+  };
+
+  return (
+    <>
+      <ImageSliderViewer current={slides[current]} />
+      <ImageSliderDetail currentIndex={current} goIndex={goIndex} />
+    </>
+  );
+};
+
+interface ImageSliderDetailPorps {
+  currentIndex: number;
+  goIndex: (index: number) => void;
+}
+
+const ImageSliderDetail = ({
+  currentIndex,
+  goIndex,
+}: ImageSliderDetailPorps) => {
+  return (
+    <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          margin: "0 auto",
+          width: "840px",
+        }}
+      >
+        <Grid container spacing={4} sx={{ marginTop: "1rem" }}>
+          {Data.map((data, i) => {
+            return (
+              <Grid item xs={3} key={i}>
+                <BaseButton
+                  className={currentIndex === i ? "active" : ""}
+                  sx={{
+                    boxShadow: "0 -3px 0 0 black",
+                    "&.active": {
+                      boxShadow: "0 0 0 3px black",
+                    },
+                    padding: "1rem",
+                    transition: "none",
+                  }}
+                  onClick={() => {
+                    goIndex(i);
+                  }}
+                >
+                  <Stack
+                    direction="column"
+                    sx={{
+                      padding: ".6rem",
+                      textAlign: "left",
+                    }}
+                    spacing={2}
+                  >
+                    <TriBtnTitle>{data.txt.title}</TriBtnTitle>
+                    <TriBtnContent>{data.txt.subtitle}</TriBtnContent>
+                  </Stack>
+                </BaseButton>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+    </Box>
+  );
+};
+
+interface ImageSliderViewerProps {
+  current: SlideMeta;
+}
+
+const ImageSliderViewer = ({ current }: ImageSliderViewerProps) => {
+  return (
+    <Box
+      sx={{
+        backgroundPosition: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundSize: "cover",
+        margin: "auto",
+        display: "flex",
+        padding: 0,
+        width: "100%",
+        position: "relative",
+      }}
+    >
+      <Box>
+        <img
+          src={current.image}
+          style={{
+            display: "flex",
+            width: "100%",
+          }}
+        />
+      </Box>
+    </Box>
+  );
+};
 
 export function Travel() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
-        <TitleWrapper>
+        <ContainerWrapper>
           <Box
             sx={{
               margin: "auto",
-              width: "55vw",
-              padding: "22vh 0 2rem 0",
+              padding: "2rem 0",
             }}
           >
             <Stack direction="column" textAlign="left" spacing={1}>
@@ -30,92 +182,19 @@ export function Travel() {
             </Stack>
           </Box>
           <Box>
-            <Stack>
-              <Box
-                sx={{
-                  padding: "1rem 0",
+            <ImageSliderController slides={Data} />
+            <Box sx={{ display: "flex" }}>
+              <BtnOutline
+                style={{
+                  margin: "2rem auto",
                 }}
+                className="show"
               >
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                  }}
-                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589779466653706/1635264436900.jpg"
-                  alt="SanJose"
-                />
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                    display: "none",
-                  }}
-                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589782742417418/1635264486681.jpg"
-                  alt="Berkeley"
-                />
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                    display: "none",
-                  }}
-                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589778741055528/1635264404630.jpg"
-                  alt="Manhattan"
-                />
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                    display: "none",
-                  }}
-                  src="https://cdn.discordapp.com/attachments/896728497979019294/902589783585460294/1635264519801.jpg"
-                  alt="Fort"
-                />
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1rem 0",
-                }}
-              >
-                <Stack direction="row" spacing={4}>
-                  <MapButton style={{ margin: "0" }}>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>San Jose to Los Angeles</TriBtnTitle>
-                      <BtnFeatTitle>340 miles</BtnFeatTitle>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Berkeley to Lake Tahoe</TriBtnTitle>
-                      <BtnFeatTitle>178 miles</BtnFeatTitle>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Manhattan to Boston</TriBtnTitle>
-                      <BtnFeatTitle>211 miles</BtnFeatTitle>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Fort Lauderdale to Orlando</TriBtnTitle>
-                      <BtnFeatTitle>195 miles</BtnFeatTitle>
-                    </ButtonStack>
-                  </MapButton>
-                </Stack>
-              </Box>
-            </Stack>
-            <BtnOutline
-              style={{
-                margin: "2rem 0",
-              }}
-            >
-              Learn more
-            </BtnOutline>
+                Learn more
+              </BtnOutline>
+            </Box>
           </Box>
-        </TitleWrapper>
+        </ContainerWrapper>
       </BackgroundWrapper>
     </>
   );

@@ -26,7 +26,7 @@ export function OrderNow() {
             <Box alignItems="center" margin="auto" padding="0 1rem 0 10rem ">
               <Stack spacing={6}>
                 <MainTitleContent>Model S</MainTitleContent>
-                <Box>
+                <Box className="show">
                   <Stack direction="row" spacing={4}>
                     <BtnOutline style={{ margin: "0", padding: ".4rem 4rem" }}>
                       order now

@@ -1,5 +1,4 @@
 import ShowCaseWrapper from "@layouts/ShowCase_SolarPanel";
-import { Container } from "@components/shared/Container";
 import {
   HeroSection,
   SavingSection,
@@ -13,14 +12,18 @@ import {
 } from "@components/solar_panel/section";
 import { useEffect } from "react";
 import { useLayoutContext } from "@contexts/LayoutContext";
+import { ViewAction } from "schema/types";
 
 function SolarPanel() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (

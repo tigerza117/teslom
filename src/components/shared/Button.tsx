@@ -48,7 +48,43 @@ export const TriBtnContent = styled("h5")(({ theme }) => ({
 }));
 
 export const MapButton = styled("h5")(({ theme }) => ({
-  width: "12rem",
+  width: "15rem",
   borderTop: "3px solid black",
   borderRadius: "0",
+}));
+
+export const Dots = styled(BaseButton)(({ theme }) => ({
+  width: "9px",
+  height: "9px",
+  borderRadius: "100%",
+  backgroundColor: "transparent",
+  border: "1px solid #ddd",
+  margin: "0 .2rem",
+  "&:active": {
+    backgroundColor: "#ddd",
+  },
+}));
+
+export const Dot = styled(BaseButton)(({ theme }) => ({
+  width: "9px",
+  height: "9px",
+  borderRadius: "100%",
+  backgroundColor: "transparent",
+  border: "1px solid #ddd",
+  margin: "0 .2rem",
+  "&.active": {
+    backgroundColor: "#ddd",
+  },
+}));
+
+export const DotBox = styled(BaseButton)(({ theme }) => ({
+  width: "9px",
+  height: "9px",
+  borderRadius: "20%",
+  backgroundColor: "transparent",
+  border: "1px solid #ddd",
+  margin: "0 .2rem",
+  "&.active": {
+    backgroundColor: "#ddd",
+  },
 }));

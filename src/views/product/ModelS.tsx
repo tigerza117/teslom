@@ -1,4 +1,3 @@
-import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
   GridGall,
@@ -14,26 +13,29 @@ import {
   Specs,
   OrderNow,
   AllNewInterior,
-  SlideShow,
+  ImageSlide,
 } from "@components/model_s/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 function ModelS() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (
     <>
       <HeroSection />
       <AllNewInterior />
-      <SlideShow />
-      <GridGall />
+      <ImageSlide />
       <BeyondLu />
       <PowerTrain />
       <Exterior />

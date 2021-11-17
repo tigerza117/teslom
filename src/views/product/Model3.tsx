@@ -1,26 +1,27 @@
-import { Container } from "@components/shared/Container";
-
 import {
   HeroSection,
-  Safety,
   Perf,
   DualMotor,
   Range,
-  Autopilot,
   Interior,
   Specs,
   OrderNow,
 } from "@components/model_3/section";
+import { Safety, Autopilot } from "@components/model_s/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 function Model3() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(false);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (

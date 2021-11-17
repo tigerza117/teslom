@@ -28,7 +28,7 @@ export function Specs() {
                   height: "100%",
                   display: "flex",
                   alignContent: "center",
-                  transform: "translateY(10%)",
+                  transform: "translateY(15%)",
                 }}
               >
                 <Stack direction="column">

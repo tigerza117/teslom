@@ -14,12 +14,14 @@ const StarTitle = styled("h1")(({ theme }) => ({
   fontWeight: 600,
   fontSize: "1.5rem",
   textAlign: "center",
+  color: "#1f2228"
 }));
 
 const StarSubTitle = styled("h1")(({ theme }) => ({
   fontWeight: 600,
   fontSize: "1rem",
   textAlign: "center",
+  color: "#393c41",
   "& span": {
     fontWeight: 400,
     fontSize: ".6rem",
@@ -59,7 +61,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Passenger <span>Frontal</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -72,7 +74,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Front Seat <span>Side</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -85,7 +87,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Rear Seat <span>Side</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -97,7 +99,7 @@ export default function OverAll() {
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
                 <Box>
-                  <StarSubTitle>Driver</StarSubTitle>
+                  <StarSubTitle>Rollover</StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
               </Stack>

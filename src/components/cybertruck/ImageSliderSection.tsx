@@ -1,139 +1,202 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useState, useRef } from "react";
-import { PictureSliderContainer } from "@components/cybertruck/Components";
+import { useState } from "react";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { CybertruckPictureSlider } from "@constants/cybertruckSlider";
+import { ContainerWrapper } from "@components/shared/Container";
+import { styled } from "@mui/system";
+import { DotBox} from "@components/shared/Button";
+import {TitleSlideShow} from "@components/cybertruck/Components";
 
-interface picSub {
-  image: string;
-  txt: string;
-  title: string;
+const Arrow = styled(ArrowForwardIosIcon)(() => ({
+    color: "#fff",
+    position: "absolute",
+    right: "-100px",
+    top: "45%",
+    border: "#fff solid 2px",
+    fontSize: "1.25rem",
+    padding: "0.5rem",
+    backgroundColor: "#00000066",
+    cursor: "pointer",
+    zIndex: 10,
+}));
+
+interface SlideMeta {
+    image: string;
+    txt: {
+        title: string;
+        subtitle: string;
+    };
 }
 
-const ImageSlider = ({ slides }: { slides: any }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
-  const refText = useRef(null);
-  const refTitle = useRef(null);
+interface ImageSliderControllerProps {
+    slides: SlideMeta[];
+}
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+const ImageSliderController = ({ slides }: ImageSliderControllerProps) => {
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+    const nextSlide = () => {
+        setCurrent((current + 1) % length);
+    };
 
-  return (
-    <PictureSliderContainer
-      sx={{
-        height: "100%",
-        width: "100%",
-      }}
-    >
-      <ArrowForwardIosIcon
-        sx={{
-          color: "#fff",
-          position: "relative",
-          left: "80px",
-          border: "#fff solid 2px",
-          fontSize: "25px",
-          backgroundColor: "#00000066",
-          transform: "rotate(180deg)",
-          cursor: "pointer",
-        }}
-        onClick={prevSlide}
-      ></ArrowForwardIosIcon>
-      {CybertruckPictureSlider.map((slide, index) => {
-        return (
-          <BackgroundWrapper
-            style={{ backgroundColor: "black", height: "auto" }}
-          >
-            <Box
-              className={index === current ? "slide active" : "slide"}
-              key={index}
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+
+    const goIndex = (index: number) => {
+        setCurrent(index);
+    };
+
+    return (
+        <>
+            <ImageSliderViewer
+                current={slides[current]}
+                nextSlide={nextSlide}
+                prevSlide={prevSlide}
+            />
+          <Stack direction="row">
+            <TitleSlideShow>VERSATILE UTILITY</TitleSlideShow>
+            <Stack
+              direction="row"
+              sx={{
+                padding: "0rem 1rem 7rem",
+              }}
+              spacing={5}
             >
-              {index === current && <img src={slide.image}></img>}
-            </Box>
+
+              <ImageSliderDetail current={slides[current]} />
+              <ImageSliderBullets
+                currentIndex={current}
+                size={length}
+                goIndex={goIndex}
+              />
+            </Stack>
+          </Stack>
+        </>
+    );
+};
+
+interface ImageSliderBulletsPorps {
+    currentIndex: number;
+    size: number;
+    goIndex: (index: number) => void;
+}
+
+const ImageSliderBullets = ({
+    currentIndex,
+    size,
+    goIndex,
+}: ImageSliderBulletsPorps) => {
+    const list = [...Array(size).keys()];
+
+    return (
+        <Stack direction="row" sx={{ paddingTop: "0.5rem" }}>
+            {list.map((i) => {
+                return (
+                    <DotBox
+                        className={currentIndex === i ? "active" : ""}
+                        key={i}
+                        onClick={() => {
+                            goIndex(i);
+                        }}
+                    />
+                );
+            })}
+        </Stack>
+    );
+};
+
+interface ImageSliderDetailPorps {
+    current: SlideMeta;
+}
+
+const ImageSliderDetail = ({ current }: ImageSliderDetailPorps) => {
+    return (
+        <Box sx={{
+          color: "white" ,
+          width: "43rem",
+          height: "5.5rem",
+        }}>
+          {current.txt.title === "" && (<Box sx={{
+            fontSize: "1rem",
+            fontWeight: "400",
+            paddingBottom: "1rem",
+            paddingTop: "4px",
+          }}>{current.txt.subtitle}</Box>)}
+
+          {current.txt.title != "" && (<Box
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "600",
+              paddingBottom: "1rem",
+              paddingTop: "4px",
+            }}
+          >
+            {current.txt.title}
+          </Box>)}
+
+          {current.txt.title != "" && (<Box sx={{
+            paddingBottom: "60px",
+          }}>{current.txt.subtitle}</Box>)}
+        </Box>
+    );
+};
+
+interface ImageSliderViewerProps {
+    current: SlideMeta;
+    nextSlide: () => void;
+    prevSlide: () => void;
+}
+
+const ImageSliderViewer = ({
+   current,
+   nextSlide,
+   prevSlide,
+}: ImageSliderViewerProps) => {
+    return (
+        <Box
+            sx={{
+                backgroundPosition: "center",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundSize: "cover",
+                margin: "auto",
+                display: "flex",
+                padding: 0,
+                width: "100%",
+                position: "relative",
+                paddingBottom: "1.5rem",
+            }}
+        >
+            <Arrow
+                sx={{ transform: "rotate(180deg)", left: "-100px" }}
+                onClick={prevSlide}
+            />
             <Box>
-              <Stack direction="column">
-                <Box
-                  sx={{
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  className={index === current ? "slide active" : "slide"}
-                  key={index}
-                >
-                  {index === current && (
-                    <Box
-                      ref={refTitle}
-                      sx={{
-                        color: "white",
-                        fontSize: "100px",
-                      }}
-                    >
-                      {slide.title}
-                    </Box>
-                  )}
-                </Box>
-                <Box
-                  className={index === current ? "slide active" : "slide"}
-                  key={index}
-                >
-                  {index === current && (
-                    <Box
-                      ref={refText}
-                      sx={{
-                        color: "white",
-                        fontSize: "100px",
-                      }}
-                    >
-                      {slide.txt}
-                    </Box>
-                  )}
-                </Box>
-              </Stack>
+                <img
+                    src={current.image}
+                    style={{
+                        display: "flex",
+                        width: "90rem",
+                        height: "45rem",
+                    }}
+                />
             </Box>
-          </BackgroundWrapper>
-        );
-      })}
-      <ArrowForwardIosIcon
-        sx={{
-          color: "#fff",
-          position: "relative",
-          right: "80px",
-          border: "#fff solid 2px",
-          fontSize: "25px",
-          backgroundColor: "#00000066",
-          cursor: "pointer",
-        }}
-        onClick={nextSlide}
-      ></ArrowForwardIosIcon>
-    </PictureSliderContainer>
-  );
+            <Arrow onClick={nextSlide} />
+        </Box>
+    );
 };
 
 export function ImageSlide() {
-  return (
-    <>
-      <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
-        <PictureSliderContainer
-          sx={{
-            height: "100%",
-            width: "100%",
-          }}
-        >
-          <BackgroundWrapper
-            style={{ backgroundColor: "black", height: "auto" }}
-          >
-            <PictureSliderContainer>
-              <ImageSlider slides={CybertruckPictureSlider}></ImageSlider>
-            </PictureSliderContainer>
-          </BackgroundWrapper>
-        </PictureSliderContainer>
-      </BackgroundWrapper>
-    </>
-  );
+    return (
+        <>
+            <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
+                <ContainerWrapper>
+                    <ImageSliderController slides={CybertruckPictureSlider} />
+                </ContainerWrapper>
+            </BackgroundWrapper>
+        </>
+    );
 }

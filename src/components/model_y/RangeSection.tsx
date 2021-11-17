@@ -1,5 +1,9 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import {
+  BackgroundWrapper,
+  HorizonWrapper,
+  SubFeatureWrapper,
+} from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
@@ -15,11 +19,11 @@ export function Range() {
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
-            <Stack>
+            <Box>
               <video
-                src="https://tesla-cdn.thron.com/static/WVNSU3_Range_Desktop.mp4-2000_WJLESL.mp4?xseo="
+                src="https://tesla-cdn.thron.com/delivery/public/video/tesla/c63301a9-96bc-463d-9e5d-65f581cd87d6/bvlatuR/WEBHD/Range_Desktop"
                 style={{
-                  width: "70vw",
+                  width: "79vw",
                   height: "100vh",
                   objectFit: "cover",
                 }}
@@ -27,58 +31,66 @@ export function Range() {
                 loop
                 preload="auto"
               />
-              <Box sx={{ margin: "-10rem auto 0 auto" }}>
+              <Box sx={{ margin: "-10rem 5rem" }}>
                 <Stack
                   direction="row"
-                  spacing={5}
+                  spacing={3}
                   sx={{
-                    width: "55vw",
+                    width: "60vw",
                     display: "flex",
                     justifyContent: "space-between",
-                    paddingRight: "10vh",
+                    textAlign: "center",
                   }}
                 >
                   <Box>
-                    <Stack direction="column" spacing={1} textAlign="center">
+                    <SubFeatureWrapper
+                      style={{ width: "280px" }}
+                      className="show"
+                    >
                       <FeatureTitle>330 mi</FeatureTitle>
                       <FeatureSubTitle>
                         Go anywhere with up to 330 miles of estimated range on a
                         single charge
                       </FeatureSubTitle>
-                    </Stack>
+                    </SubFeatureWrapper>
                   </Box>
                   <Box>
-                    <Stack direction="column" spacing={1} textAlign="center">
+                    <SubFeatureWrapper
+                      style={{ width: "280px" }}
+                      className="show"
+                    >
                       <FeatureTitle>15 min</FeatureTitle>
                       <FeatureSubTitle>
                         Recharge up to 162 miles in 15 minutes at Supercharger
                         locations
                       </FeatureSubTitle>
-                    </Stack>
+                    </SubFeatureWrapper>
                   </Box>
                   <Box>
-                    <Stack direction="column" spacing={1} textAlign="center">
-                      <FeatureTitle>25,000+</FeatureTitle>
+                    <SubFeatureWrapper
+                      style={{ width: "280px" }}
+                      className="show"
+                    >
+                      <FeatureTitle>30,000+</FeatureTitle>
                       <FeatureSubTitle>
-                        Superchargers placed along well-traveled routes around
+                        Superchargers placed along well- traveled routes around
                         the world
                       </FeatureSubTitle>
-                    </Stack>
+                    </SubFeatureWrapper>
                   </Box>
                 </Stack>
               </Box>
-            </Stack>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
-            >
-              <Stack direction="column" padding="2.5rem 1.5rem">
+            </Box>
+            <HorizonWrapper style={{ height: "95vh" }}>
+              <Box
+                sx={{
+                  padding: "3rem 1.5rem 0 1.5rem",
+                }}
+                className="show"
+              >
                 <SubTitleContent>Range</SubTitleContent>
                 <MainTitleContent>Go Anywhere</MainTitleContent>
-                <SubContent style={{ padding: "1rem 0" }}>
+                <SubContent>
                   Model Y is fully electric, so you never need to visit a gas
                   station again. If you charge overnight at home, you can wake
                   up to a full battery every morning. And when you’re on the
@@ -87,19 +99,13 @@ export function Range() {
                   25,000 Superchargers worldwide, with six new locations opening
                   every week.
                 </SubContent>
-              </Stack>
-              <Box>
-                <BtnOutline
-                  style={{
-                    padding: ".3rem 1.5rem",
-                    marginLeft: "1.5rem",
-                    marginBottom: "7rem",
-                  }}
-                >
-                  Order now
-                </BtnOutline>
               </Box>
-            </Box>
+              <Box padding="0 1.5rem">
+                <Box>
+                  <BtnOutline>ORDER NOW</BtnOutline>
+                </Box>
+              </Box>
+            </HorizonWrapper>
           </Stack>
         </Box>
       </BackgroundWrapper>

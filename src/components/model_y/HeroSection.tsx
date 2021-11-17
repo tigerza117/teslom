@@ -4,13 +4,10 @@ import {
   HomeFeatureWrapper,
   TitleWrapper,
 } from "@components/shared/Wrapper";
-import {
-  FeatureSubTitle,
-  FeatureTitle,
-  MainTitle,
-} from "@components/shared/Title";
+import { FeatureSubTitle, FeatureTitle } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
 import ExpandingLight from "@layouts/ExpandIcon-light";
+import { HeroTitle } from "@components/shared/Heroes";
 
 export function HeroSection() {
   return (
@@ -24,7 +21,7 @@ export function HeroSection() {
         <TitleWrapper>
           <Box sx={{ marginTop: "12vh", marginBottom: "auto" }}>
             <Stack direction="column" spacing={-1}>
-              <MainTitle>Model Y</MainTitle>
+              <HeroTitle>Model Y</HeroTitle>
             </Stack>
           </Box>
           <Box margin="0 auto" display="flex">

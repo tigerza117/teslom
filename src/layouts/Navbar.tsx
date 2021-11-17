@@ -55,20 +55,7 @@ const TabsHighlight = styled("div")`
 `;
 
 const HideScroll: FC = ({ children }) => {
-  const ref = useRef(null);
-
-  gsap.to(ref.current, {
-    scrollTrigger: {
-      trigger: "#hero",
-      scrub: true,
-      start: "80% 0%",
-      end: "100% 0%",
-    },
-    display: "none",
-    opacity: 0,
-  });
-
-  return <Box ref={ref}>{children}</Box>;
+  return <Box className="nav">{children}</Box>;
 };
 
 export const Navbar = () => {

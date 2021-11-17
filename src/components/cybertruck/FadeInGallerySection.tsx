@@ -1,18 +1,13 @@
 import { Box, Button, Stack } from "@mui/material";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
-  TitleWrapper,
   MainTitleContent,
   MainSubtitleContent,
   SubtitleContent,
   FeatureContainer,
   InfoFeatureWrapper,
   GalleryContainer,
-  ButtonSlider,
   InfoContainer,
-  PictureSliderContainer,
-  PictureSliderImage,
-  SliderBtn,
 } from "@components/cybertruck/Components";
 
 export function Gallery() {
@@ -22,9 +17,9 @@ export function Gallery() {
         <InfoFeatureWrapper>
           <Stack direction="column">
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
             <Box
               sx={{
@@ -37,11 +32,11 @@ export function Gallery() {
               <Box sx={{ display: "inline" }}>
                 <FeatureContainer>
                   <InfoContainer
-                    style={{
-                      padding: "0px 0px 80px",
-                    }}
+                      style={{
+                        padding: "0px 0px 80px",
+                      }}
                   >
-                    <MainTitleContent >
+                    <MainTitleContent sx={{ letterSpacing: "0.188rem" }}>
                       EXOSKELETON
                     </MainTitleContent>
 
@@ -59,14 +54,14 @@ export function Gallery() {
             </Box>
 
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
             <InfoContainer
-              style={{
-                padding: "0px 0px 40px",
-              }}
+                style={{
+                  padding: "0px 0px 40px",
+                }}
             >
               <Box sx={{ padding: "0px 0px 80px", width: "133vh" }}>
                 <Stack
@@ -74,7 +69,7 @@ export function Gallery() {
                   spacing={14}
                   sx={{ display: "flex", justifyContent: "center" }}
                 >
-                  <Box>
+                  <Box className="show">
                     <MainSubtitleContent
                       sx={{
                         letterSpacing: "0.110rem",
@@ -104,17 +99,17 @@ export function Gallery() {
             </InfoContainer>
 
             <GalleryContainer
-              style={{
-                backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,
-              }}
+                style={{
+                  backgroundImage: `url(https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg)`,
+                }}
             ></GalleryContainer>
 
             <InfoContainer
-              style={{
-                padding: "0px 0px 40px",
-              }}
+                style={{
+                  padding: "0px 0px 10px",
+                }}
             >
-              <Box sx={{ padding: "0px 0px 80px", width: "133vh" }}>
+              <Box sx={{ padding: "0px 0px 40px", width: "133vh"}}>
                 <Stack
                   direction="row"
                   spacing={14}

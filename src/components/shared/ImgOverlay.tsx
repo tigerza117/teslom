@@ -6,8 +6,8 @@ export default function PicsOverlay() {
   return (
     <Box>
       <VdoOverlay style={{ float: "right", paddingRight: "1rem" }}>
-        <Stack direction="column" spacing={3}>
-          <Box zIndex={1} style={{ color: "white" }}>
+        <Stack direction="column" spacing={10}>
+          <Box zIndex={1} style={{ color: "white" }} className="show">
             <MainTitleContent style={{ color: "white" }}>
               15 inch
             </MainTitleContent>
@@ -15,7 +15,7 @@ export default function PicsOverlay() {
               A touchscreen display designed to improve over time
             </VdoOverlayText>
           </Box>
-          <Box zIndex={1} style={{ color: "white" }}>
+          <Box zIndex={1} style={{ color: "white" }} className="show">
             <Stack direction="row" spacing={1}>
               <img
                 style={{
@@ -33,7 +33,7 @@ export default function PicsOverlay() {
               functionality and performance
             </VdoOverlayText>
           </Box>
-          <Box zIndex={1} style={{ color: "white" }}>
+          <Box zIndex={1} style={{ color: "white" }} className="show">
             <Stack direction="row" spacing={1}>
               <img
                 style={{

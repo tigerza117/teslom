@@ -11,8 +11,11 @@ import {
 export function PerfText() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
-        <InfoFeatureWrapper>
+      <BackgroundWrapper style={{ backgroundColor: "black", height: "auto"}}>
+        <InfoFeatureWrapper sx={{
+          position: "relative",
+          bottom: "40px",
+        }}>
           <Stack direction="column">
             <video
               src="https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4"
@@ -23,7 +26,7 @@ export function PerfText() {
                 paddingBottom: "20px",
               }}
               autoPlay
-              loop
+              muted
               preload="auto"
             />
             <InfoContainer

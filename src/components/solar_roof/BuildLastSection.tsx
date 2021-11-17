@@ -5,12 +5,12 @@ import {
   SubContent,
   SubTitleContent,
 } from "@components/shared/Title";
-import { BtnOutline } from "@components/shared/Button";
+import { HorizonContent } from "@layouts/HoriContent";
 
 export function BuildLast() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
             <Box>
@@ -19,44 +19,22 @@ export function BuildLast() {
                 autoPlay
                 muted
                 style={{
-                  width: "74vw",
+                  width: "79vw",
                   height: "100vh",
                   objectFit: "cover",
-                  float: "left",
                 }}
               />
             </Box>
-            <Box>
-              <Stack
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                }}
-              >
-                <Box
-                  sx={{
-                    padding: "3rem 1.5rem",
-                  }}
-                >
-                  <SubTitleContent>Durability</SubTitleContent>
-                  <MainTitleContent>Built to Last</MainTitleContent>
-                  <SubContent style={{ padding: "1rem 0" }}>
-                    Solar Roof tiles are durable, strong and engineered for
-                    all-weather protection. With a 25-year warranty, Solar Roof
-                    tiles will continue to produce clean energy for your home
-                    for decades to come.
-                  </SubContent>
-                </Box>
-                <Box
-                  style={{
-                    padding: "12rem 0 0 1.5rem",
-                  }}
-                >
-                  <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
-                </Box>
-              </Stack>
-            </Box>
+            <HorizonContent>
+              <SubTitleContent>Durability</SubTitleContent>
+              <MainTitleContent>Built to Last</MainTitleContent>
+              <SubContent style={{ padding: "1rem 0" }}>
+                Solar Roof tiles are durable, strong and engineered for
+                all-weather protection. With a 25-year warranty, Solar Roof
+                tiles will continue to produce clean energy for your home for
+                decades to come.
+              </SubContent>
+            </HorizonContent>
           </Stack>
         </Box>
       </BackgroundWrapper>

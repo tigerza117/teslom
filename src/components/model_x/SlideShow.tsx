@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
-import { MsContainer_text } from "@constants/cybertruckSlider";
+import { MxContainer } from "@constants/cybertruckSlider";
 import { ContainerWrapper } from "@components/shared/Container";
 import { GridGall } from "./GridGallSection";
 import { Dot } from "@components/shared/Button";
@@ -196,8 +196,7 @@ export function ImageSlide() {
     <>
       <BackgroundWrapper style={{ backgroundColor: "black", height: "auto" }}>
         <ContainerWrapper>
-          <ImageSliderController slides={MsContainer_text} />
-          <GridGall data={Galls} side="right" />
+          <ImageSliderController slides={MxContainer} />
         </ContainerWrapper>
       </BackgroundWrapper>
     </>

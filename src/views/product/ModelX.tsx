@@ -1,41 +1,44 @@
 import {
   HeroSection,
-  GridGall,
   BeyondLu,
-  PowerTrain,
   Utility,
   Exterior,
   GridWheel,
   Range,
+  Specs,
+  OrderNow,
+  AllNewInterior,
+} from "@components/model_x/section";
+import {
+  ImageSlide,
+  PowerTrain,
   Travel,
   Safety,
   Autopilot,
   Feature,
-  Specs,
-  OrderNow,
-  AllNewInterior
-} from "@components/model_x/section";
+} from "@components/model_s/section";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 function ModelX() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
+    callViewAction(ViewAction.OPENING);
     setDark(true);
-    return () => {};
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (
     <>
       <HeroSection />
       <AllNewInterior />
-      <BackgroundWrapper
-        style={{ backgroundColor: "black" }}
-      ></BackgroundWrapper>
-      <GridGall />
+      <ImageSlide />
       <BeyondLu />
       <PowerTrain />
       <Utility />

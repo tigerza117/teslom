@@ -1,33 +1,31 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { BackgroundWrapper, VerticalWrapper } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
 } from "@components/shared/Title";
-import { BtnOutline } from "@components/shared/Button";
-import { RowSectionBlock } from "@components/shared/Section";
+import { BtnOutline, Dot } from "@components/shared/Button";
+import { VerticalContent } from "@layouts/VertiContent";
 
 export function Utility() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <RowSectionBlock
-          style={{
-            margin: "auto",
-            width: "60%",
-          }}
-        >
-          <Box style={{ width: "100%" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <VerticalContent>
+          <Box>
             <Stack direction="column">
               <SubTitleContent>Utility</SubTitleContent>
-              <MainTitleContent>A Place For Everything</MainTitleContent>
-              <Box style={{ padding: "1rem 0" }}>
-                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
+              <MainTitleContent>
+                A Place For
+                <br /> Everything
+              </MainTitleContent>
+              <Box>
+                <BtnOutline>ORDER NOW</BtnOutline>
               </Box>
             </Stack>
           </Box>
-          <Box style={{ width: "100vw" }}>
+          <VerticalWrapper>
             <SubContent>
               Model Y provides maximum versatility--able to carry 7 passengers
               and their cargo. Each second row seat folds flat independently,
@@ -35,8 +33,8 @@ export function Utility() {
               The lifegate opens to a low trunk floor that makes loading and
               unloading easy and quick.
             </SubContent>
-          </Box>
-        </RowSectionBlock>
+          </VerticalWrapper>
+        </VerticalContent>
         <Box
           style={{
             margin: "0 auto",
@@ -53,12 +51,12 @@ export function Utility() {
               alt=""
               loading="lazy"
               style={{
-                width: "55vw",
+                width: "65vw",
                 height: "auto",
                 objectFit: "cover",
                 objectPosition: "0 62%",
                 margin: "auto",
-                padding: ".5rem",
+                padding: "1rem",
               }}
             />
             <SubTitleContent>

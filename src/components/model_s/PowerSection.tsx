@@ -1,24 +1,213 @@
-import { Box, Stack, Button } from "@mui/material";
-import {
-  BackgroundWrapper,
-  TitleWrapper,
-  ButtonStack,
-  BtnFeatTitle,
-} from "@components/shared/Wrapper";
+import { Box, Stack, Grid } from "@mui/material";
+import { BackgroundWrapper, BtnFeatTitle } from "@components/shared/Wrapper";
 import { MainTitleContent, SubContent } from "@components/shared/Title";
-import { TriBtnContent, TriBtnTitle } from "@components/shared/Button";
+import {
+  BaseButton,
+  TriBtnContent,
+  TriBtnTitle,
+} from "@components/shared/Button";
+import { ContainerWrapper } from "@components/shared/Container";
+import { useState } from "react";
+
+const Data = [
+  {
+    image:
+      "https://tesla-cdn.thron.com/delivery/public/image/tesla/209dce99-0353-49b1-b0ac-c3aa6de68b71/bvlatuR/std/1920x900/Model-S-Performance-Dual-Motor-Desktop",
+    txt: {
+      title: "Long Range",
+      subtitle:
+        "Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration",
+      feats: [
+        {
+          name: "3.1 s",
+          detail: "0-60 mph",
+        },
+        {
+          name: "405 mi",
+          detail: "range (est.)",
+        },
+        {
+          name: "670 hp",
+          detail: "peak power",
+        },
+      ],
+    },
+  },
+  {
+    image:
+      "https://tesla-cdn.thron.com/delivery/public/image/tesla/3da49427-d22a-4fe1-bc36-3653dc426dfd/bvlatuR/std/1920x900/Model-S-Performance-Tri-Motor-Desktop",
+    txt: {
+      title: "Long Range",
+      subtitle:
+        "Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration",
+      feats: [
+        {
+          name: "3.1 s",
+          detail: "0-60 mph",
+        },
+        {
+          name: "405 mi",
+          detail: "range (est.)",
+        },
+        {
+          name: "670 hp",
+          detail: "peak power",
+        },
+      ],
+    },
+  },
+];
+
+interface SlideMeta {
+  image: string;
+  txt: {
+    title: string;
+    subtitle: string;
+    feats: {
+      name: string;
+      detail: string;
+    }[];
+  };
+}
+
+interface ImageSliderControllerProps {
+  slides: SlideMeta[];
+}
+
+const ImageSliderController = ({ slides }: ImageSliderControllerProps) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const goIndex = (index: number) => {
+    setCurrent(index);
+  };
+
+  return (
+    <>
+      <ImageSliderViewer current={slides[current]} />
+      <ImageSliderDetail currentIndex={current} goIndex={goIndex} />
+    </>
+  );
+};
+
+interface ImageSliderDetailPorps {
+  currentIndex: number;
+  goIndex: (index: number) => void;
+}
+
+const ImageSliderDetail = ({
+  currentIndex,
+  goIndex,
+}: ImageSliderDetailPorps) => {
+  return (
+    <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          margin: "0 auto",
+        }}
+      >
+        <Grid container spacing={4} sx={{ marginTop: "2rem" }}>
+          {Data.map((data, i) => {
+            return (
+              <Grid item xs={6} key={i}>
+                <BaseButton
+                  className={currentIndex === i ? "active" : ""}
+                  sx={{
+                    width: "25rem",
+                    boxShadow: "0 -3px 0 0 black",
+                    "&.active": {
+                      boxShadow: "0 0 0 3px black",
+                    },
+                    padding: "1rem",
+                    transition: "none",
+                  }}
+                  onClick={() => {
+                    goIndex(i);
+                  }}
+                >
+                  <Stack
+                    direction="column"
+                    sx={{
+                      padding: ".6rem",
+                      textAlign: "left",
+                    }}
+                    spacing={2}
+                  >
+                    <TriBtnTitle>{data.txt.title}</TriBtnTitle>
+                    <TriBtnContent>{data.txt.subtitle}</TriBtnContent>
+                    <Box sx={{ margin: "0 auto", padding: "1.5rem 0 0 0" }}>
+                      <Stack
+                        direction="row"
+                        spacing={2}
+                        sx={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        {data.txt.feats.map(({ name, detail }, j) => (
+                          <Box key={j}>
+                            <Stack direction="column" spacing={1}>
+                              <BtnFeatTitle>{name}</BtnFeatTitle>
+                              <TriBtnContent>{detail}</TriBtnContent>
+                            </Stack>
+                          </Box>
+                        ))}
+                      </Stack>
+                    </Box>
+                  </Stack>
+                </BaseButton>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+    </Box>
+  );
+};
+
+interface ImageSliderViewerProps {
+  current: SlideMeta;
+}
+
+const ImageSliderViewer = ({ current }: ImageSliderViewerProps) => {
+  return (
+    <Box
+      sx={{
+        backgroundPosition: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundSize: "cover",
+        margin: "auto",
+        display: "flex",
+        padding: 0,
+        width: "100%",
+        position: "relative",
+      }}
+    >
+      <Box>
+        <img
+          src={current.image}
+          style={{
+            display: "flex",
+            width: "100%",
+          }}
+        />
+      </Box>
+    </Box>
+  );
+};
 
 export function PowerTrain() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "#f5f5f5", height: "auto" }}>
-        <TitleWrapper>
+        <ContainerWrapper>
           <Box
             sx={{
               margin: "auto",
-              width: "60vw",
-              padding: "1rem 0",
+              padding: "4rem 0",
             }}
+            className="show"
           >
             <Stack direction="column" textAlign="left" spacing={1}>
               <MainTitleContent>Electric Powertrain</MainTitleContent>
@@ -31,149 +220,19 @@ export function PowerTrain() {
             </Stack>
           </Box>
           <Box>
-            <Stack>
-              <Box
-                sx={{
-                  padding: "1rem 0",
-                }}
-              >
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                    display: "none",
-                  }}
-                  src="https://tesla-cdn.thron.com/delivery/public/image/tesla/209dce99-0353-49b1-b0ac-c3aa6de68b71/bvlatuR/std/1920x900/Model-S-Performance-Dual-Motor-Desktop"
-                  alt="LongRange"
-                />
-                <img
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                  }}
-                  src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3da49427-d22a-4fe1-bc36-3653dc426dfd/bvlatuR/std/1920x900/Model-S-Performance-Tri-Motor-Desktop"
-                  alt="Plaid"
-                />
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1rem 0",
-                }}
-              >
-                <Stack direction="row" spacing={4}>
-                  <Button
-                    sx={{
-                      width: "25rem",
-                      borderTop: "3px solid black",
-                      borderRadius: "0",
-                    }}
-                  >
-                    <Stack
-                      direction="column"
-                      sx={{
-                        padding: ".6rem",
-                        textAlign: "left",
-                      }}
-                      spacing={2}
-                    >
-                      <TriBtnTitle style={{}}>Long Range</TriBtnTitle>
-                      <TriBtnContent>
-                        Dual Motor All-Wheel Drive platform allows for the
-                        longest range, and now delivers insane power and
-                        acceleration
-                      </TriBtnContent>
-                      <Box sx={{ margin: "0 auto", padding: "1.5rem 0 0 0" }}>
-                        <Stack
-                          direction="row"
-                          spacing={2}
-                          sx={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>3.1 s</BtnFeatTitle>
-                              <TriBtnContent>0-60 mph</TriBtnContent>
-                            </Stack>
-                          </Box>
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>405 mi</BtnFeatTitle>
-                              <TriBtnContent>range (est.)</TriBtnContent>
-                            </Stack>
-                          </Box>
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>670 hp</BtnFeatTitle>
-                              <TriBtnContent>peak power</TriBtnContent>
-                            </Stack>
-                          </Box>
-                        </Stack>
-                      </Box>
-                    </Stack>
-                  </Button>
-                  <Button
-                    sx={{
-                      width: "25rem",
-                      borderTop: "3px solid black",
-                      borderRadius: "0",
-                    }}
-                  >
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle style={{}}>Plaid</TriBtnTitle>
-                      <TriBtnContent>
-                        Tri Motor All-Wheel Drive platform with torque vectoring
-                        features three independent motors, each with a
-                        carbon-sleeved rotor that maintains peak power output
-                        all the way to top speed.
-                      </TriBtnContent>
-                      <Box sx={{ margin: "0 auto", padding: ".3rem 0 0 0" }}>
-                        <Stack
-                          direction="row"
-                          spacing={2}
-                          sx={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>1.99 s*</BtnFeatTitle>
-                              <TriBtnContent>0-60 mph</TriBtnContent>
-                            </Stack>
-                          </Box>
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>396 mi</BtnFeatTitle>
-                              <TriBtnContent>range (EPA est.)</TriBtnContent>
-                            </Stack>
-                          </Box>
-                          <Box>
-                            <Stack direction="column" spacing={1}>
-                              <BtnFeatTitle>1,020 hp</BtnFeatTitle>
-                              <TriBtnContent>peak power</TriBtnContent>
-                            </Stack>
-                          </Box>
-                        </Stack>
-                      </Box>
-                    </ButtonStack>
-                  </Button>
-                </Stack>
-              </Box>
-            </Stack>
+            <ImageSliderController slides={Data} />
             <TriBtnContent
               style={{
-                padding: "0 0 12rem 0",
+                padding: "6rem 0",
                 color: "#5c5d61",
+                textAlign: "center",
               }}
+              className="show"
             >
               * With rollout subtracted
             </TriBtnContent>
           </Box>
-        </TitleWrapper>
+        </ContainerWrapper>
       </BackgroundWrapper>
     </>
   );

@@ -46,7 +46,7 @@ export default function OverAll() {
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
                 <Box>
-                  <StarSubTitle>Driver</StarSubTitle>
+                  <StarSubTitle>Overall</StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
               </Stack>
@@ -58,7 +58,7 @@ export default function OverAll() {
               >
                 <Stack direction="row">
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Frontal <span>Driver</span>
                   </StarSubTitle>
                 </Stack>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -71,7 +71,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Frontal <span>Passenger</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -84,7 +84,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Side <span>Front Seat</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -97,7 +97,7 @@ export default function OverAll() {
               >
                 <Box>
                   <StarSubTitle>
-                    Driver <span>Frontal</span>
+                    Side <span>Rear Seat</span>
                   </StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
@@ -109,7 +109,7 @@ export default function OverAll() {
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
                 <Box>
-                  <StarSubTitle>Driver</StarSubTitle>
+                  <StarSubTitle>Rollover</StarSubTitle>
                 </Box>
                 <StarSubTitle>★ ★ ★ ★ ★</StarSubTitle>
               </Stack>

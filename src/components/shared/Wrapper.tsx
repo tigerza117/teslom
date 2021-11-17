@@ -24,6 +24,12 @@ export const HomeFeatureWrapper = styled(Box)(({ theme }) => ({
   padding: "0",
 }));
 
+export const SubFeatureWrapper = styled(Box)(({ theme }) => ({
+  width: "340px",
+  margin: "0",
+  padding: "0",
+}));
+
 export const InfoFeatureWrapper = styled(Box)(({ theme }) => ({
   margin: "auto",
   display: "flex",
@@ -51,7 +57,7 @@ export const VdoOverlay = styled(Box)(({ theme }) => ({
   width: "20%",
   padding: "0 10rem",
   marginTop: "-65vh",
-  marginBottom: "30vh",
+  marginBottom: "10vh",
 }));
 
 export const SliderAdjust = styled(Box)(({ theme }) => ({
@@ -60,4 +66,23 @@ export const SliderAdjust = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+}));
+
+export const SliderText = styled(Box)(({ theme }) => ({
+  width: "100%",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "row",
+  paddingTop: "1.2rem",
+}));
+
+export const HorizonWrapper = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  height: "96vh",
+}));
+
+export const VerticalWrapper = styled(Box)(({ theme }) => ({
+  width: "30%",
 }));

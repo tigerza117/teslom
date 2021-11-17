@@ -42,8 +42,9 @@ export function Specs() {
                       <Box>
                         <SpecUl>
                           <Specli>
-                            <SpecSubText>
-                              <strong>Tile and Power
+                            <SpecSubText style={{lineHeight: "120%"}}>
+                              <strong>
+                                Tile and Power
                                 <br />
                                 Warranty
                               </strong>

@@ -4,19 +4,6 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default () => {
-  const ref = useRef(null);
-
-  gsap.to(ref.current, {
-    scrollTrigger: {
-      trigger: "#hero",
-      scrub: true,
-      start: "90% 0%",
-      end: "100% 0%",
-    },
-    display: "inline",
-    opacity: 1,
-  });
-
   const handleClick = () => {
     document
       .getElementById("hero")
@@ -31,7 +18,7 @@ export default () => {
         opacity: 0,
         fontSize: "0.8rem",
       }}
-      ref={ref}
+      className="scroll-up"
     >
       <KeyboardArrowUpRoundedIcon style={{ fontSize: "2rem" }} />
     </BaseButton>

@@ -1,4 +1,3 @@
-import { Container } from "@components/shared/Container";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
@@ -13,14 +12,18 @@ import {
 } from "@components/model_y/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
+import { ViewAction } from "schema/types";
 
 function ModelY() {
-  const { setDark } = useLayoutContext();
+  const { setDark, callViewAction } = useLayoutContext();
 
   useEffect(() => {
-    window.history.scrollRestoration = "manual";
-    setDark(false);
-    return () => {};
+    callViewAction(ViewAction.OPENING);
+    setDark(true);
+    callViewAction(ViewAction.OPENED);
+    return () => {
+      callViewAction(ViewAction.CLOSED);
+    };
   }, []);
 
   return (

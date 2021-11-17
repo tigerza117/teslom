@@ -28,8 +28,8 @@ export function Interior() {
         <Box sx={{ padding: "2rem 0" }}>
           <Stack
             direction="row"
-            spacing={14}
-            sx={{ display: "flex", justifyContent: "center" }}
+            spacing={5}
+            sx={{ display: "flex", justifyContent: "center", }}
           >
             <Box>
               <Stack direction="column">
@@ -40,7 +40,7 @@ export function Interior() {
                 </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box width="35%">
               <SubContent>
                 With an elevated seating position and low dash, the driver has a
                 commanding view of the road ahead. The interior of Model Y is

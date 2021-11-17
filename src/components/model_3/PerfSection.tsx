@@ -2,7 +2,8 @@ import { Box, Stack } from "@mui/material";
 import {
   BackgroundWrapper,
   TitleWrapper,
-  HomeFeatureWrapper,
+  SubFeatureWrapper,
+  VerticalWrapper,
 } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
@@ -12,64 +13,55 @@ import {
   FeatureSubTitle,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
-import { RowSectionBlock } from "@components/shared/Section";
+import { VerticalContent } from "@layouts/VertiContent";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import { VertiImg } from "@components/shared/Container";
 
 export function Perf() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
-          <img
+          <VertiImg
             src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop"
             alt=""
             loading="lazy"
-            style={{
-              width: "100vw",
-              height: "72vh",
-              objectFit: "cover",
-              objectPosition: "0 60%",
-            }}
           />
           <TitleWrapper>
-            <Box margin="-8rem auto" display="flex">
+            <Box margin="-10rem auto" display="flex">
               <Stack direction="column">
                 <Box>
-                  <Stack direction="row" margin="auto">
-                    <HomeFeatureWrapper>
+                  <Stack direction="row" margin="auto" spacing={2}>
+                    <SubFeatureWrapper className="show">
                       <FeatureTitle>3.1 s</FeatureTitle>
                       <FeatureSubTitle>
                         Quickest acceleration from zero to 60 mph* in as little
                         as 3.1 seconds
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
-                    <HomeFeatureWrapper>
+                    </SubFeatureWrapper>
+                    <SubFeatureWrapper  className="show">
                       <FeatureTitle>162mph</FeatureTitle>
                       <FeatureSubTitle>
                         Improved handling and aerodynamics allow for a top speed
                         of 162 mph
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
-                    <HomeFeatureWrapper>
+                    </SubFeatureWrapper>
+                    <SubFeatureWrapper  className="show">
                       <FeatureTitle>AWD</FeatureTitle>
                       <FeatureSubTitle>
                         Dual Motor All-Wheel Drive instantly controls traction
                         and torque, in all weather conditions
                       </FeatureSubTitle>
-                    </HomeFeatureWrapper>
+                    </SubFeatureWrapper>
                   </Stack>
                 </Box>
               </Stack>
             </Box>
           </TitleWrapper>
         </Box>
-        <RowSectionBlock
-          style={{
-            margin: "1.5rem auto 0 auto",
-          }}
-        >
-          <Box style={{ width: "65%", marginRight: "2.5rem" }}>
-            <Stack direction="column">
+        <VerticalContent>
+          <Box>
+            <Stack direction="column" className="show">
               <SubTitleContent>Performance</SubTitleContent>
               <MainTitleContent>Quickest Acceleration</MainTitleContent>
               <Box style={{ padding: ".5rem 0" }}>
@@ -99,7 +91,7 @@ export function Perf() {
               </Box>
             </Stack>
           </Box>
-          <Box>
+          <VerticalWrapper className="show">
             <SubContent>
               Model 3 comes with the option of dual motor all-wheel drive, 20”
               Überturbine Wheels and Performance Brakes and lowered suspension
@@ -107,8 +99,8 @@ export function Perf() {
               spoiler improves stability at high speeds, all allowing Model 3 to
               accelerate from 0-60 mph* in as little as 3.1 seconds.
             </SubContent>
-          </Box>
-        </RowSectionBlock>
+          </VerticalWrapper>
+        </VerticalContent>
       </BackgroundWrapper>
     </>
   );
