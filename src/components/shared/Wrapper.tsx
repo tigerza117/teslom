@@ -56,8 +56,8 @@ export const ButtonStack = styled(Stack)(({ theme }) => ({
 export const VdoOverlay = styled(Box)(({ theme }) => ({
   width: "20%",
   padding: "0 10rem",
-  marginTop: "-65vh",
-  marginBottom: "30vh",
+  marginTop: "-67vh",
+  marginBottom: "10vh",
 }));
 
 export const SliderAdjust = styled(Box)(({ theme }) => ({
