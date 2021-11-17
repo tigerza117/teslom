@@ -30,9 +30,10 @@ export function Safety() {
                   structure and large crumple zones provide unparalleled
                   protection.
                 </SubContent>
-              </Box>
-              <Box padding="0 3.5rem" className="show">
+
+              <Box padding="2rem 0" className="show">
                 <OverAll />
+              </Box>
               </Box>
               <Box padding="0 3.5rem">
                 <Box>
@@ -42,11 +43,13 @@ export function Safety() {
             </HorizonWrapper>
             <Box>
               <HoriImg
-                src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero"
+                src="https://www.tesla.com/themes/custom/tesla_frontend/components/images/safety-model-y-hero.png"
                 alt=""
                 loading="lazy"
                 style={{
-                  objectPosition: "100% 0",
+                  objectFit: "contain",
+                  objectPosition: "30% 40%",
+                  backgroundColor: "#f5f5f5"
                 }}
               />
             </Box>
