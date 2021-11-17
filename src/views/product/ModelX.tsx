@@ -1,21 +1,22 @@
 import {
   HeroSection,
-  GridGall,
   BeyondLu,
-  PowerTrain,
   Utility,
   Exterior,
   GridWheel,
   Range,
+  Specs,
+  OrderNow,
+  AllNewInterior,
+} from "@components/model_x/section";
+import {
+  ImageSlide,
+  PowerTrain,
   Travel,
   Safety,
   Autopilot,
   Feature,
-  Specs,
-  OrderNow,
-  AllNewInterior,
-  ImageSlide
-} from "@components/model_x/section";
+} from "@components/model_s/section";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
@@ -38,7 +39,6 @@ function ModelX() {
       <HeroSection />
       <AllNewInterior />
       <ImageSlide />
-      <GridGall />
       <BeyondLu />
       <PowerTrain />
       <Utility />
