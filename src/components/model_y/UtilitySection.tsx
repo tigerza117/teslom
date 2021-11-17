@@ -1,42 +1,48 @@
 import { Box, Stack } from "@mui/material";
-import { BackgroundWrapper } from "@components/shared/Wrapper";
+import { BackgroundWrapper, VerticalWrapper } from "@components/shared/Wrapper";
 import {
   MainTitleContent,
   SubContent,
   SubTitleContent,
 } from "@components/shared/Title";
 import { BtnOutline } from "@components/shared/Button";
-import { RowSectionBlock } from "@components/shared/Section";
+import { VerticalContent } from "@layouts/VertiContent";
 
 export function Utility() {
   return (
     <>
-      <BackgroundWrapper style={{ backgroundColor: "#f5f5f5" }}>
-        <RowSectionBlock
-          style={{
-            margin: "auto",
-            width: "60%",
-          }}
-        >
-          <Box style={{ width: "100%" }}>
-            <Stack direction="column">
+      <BackgroundWrapper style={{ backgroundColor: "white" }}>
+        <VerticalContent>
+          <Box>
+            <Stack direction="column" className="show">
               <SubTitleContent>Utility</SubTitleContent>
               <MainTitleContent>A Place For Everything</MainTitleContent>
-              <Box style={{ padding: "1rem 0" }}>
-                <BtnOutline style={{ margin: "0" }}>Order now</BtnOutline>
+              <Box style={{ padding: ".5rem 0" }}>
+                <Box>
+                  <Stack
+                    direction="row"
+                    display="flex"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Box>
+                      <BtnOutline style={{ margin: "0" }}>ORDER NOW</BtnOutline>
+                    </Box>
+                  </Stack>
+                </Box>
               </Box>
             </Stack>
           </Box>
-          <Box style={{ width: "100vw" }}>
+          <VerticalWrapper className="show">
             <SubContent>
-              Model Y provides maximum versatility--able to carry 7 passengers
+              Model Y provides maximum versatility—able to carry 7 passengers
               and their cargo. Each second row seat folds flat independently,
               creating flexible storage for skis, furniture, luggage and more.
               The lifegate opens to a low trunk floor that makes loading and
               unloading easy and quick.
             </SubContent>
-          </Box>
-        </RowSectionBlock>
+          </VerticalWrapper>
+        </VerticalContent>
         <Box
           style={{
             margin: "0 auto",
