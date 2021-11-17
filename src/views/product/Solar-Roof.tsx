@@ -1,4 +1,3 @@
-import { Container } from "@components/shared/Container";
 import {
   Efficiency,
   Installation,

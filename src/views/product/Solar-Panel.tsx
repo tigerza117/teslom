@@ -1,5 +1,4 @@
 import ShowCaseWrapper from "@layouts/ShowCase_SolarPanel";
-import { Container } from "@components/shared/Container";
 import {
   HeroSection,
   SavingSection,
