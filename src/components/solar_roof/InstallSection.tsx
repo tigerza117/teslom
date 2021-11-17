@@ -1,7 +1,6 @@
 import { Box, Grid, Stack } from "@mui/material";
 import {
   BackgroundWrapper,
-  ButtonStack,
   VerticalWrapper,
 } from "@components/shared/Wrapper";
 import {
@@ -12,13 +11,11 @@ import {
 import {
   BaseButton,
   BtnOutline,
-  MapButton,
   TriBtnContent,
   TriBtnTitle,
 } from "@components/shared/Button";
 import { VerticalContent } from "@layouts/VertiContent";
 import { useState } from "react";
-import { ContainerWrapper } from "@components/shared/Container";
 
 const Data = [
   {
