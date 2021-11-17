@@ -1,5 +1,3 @@
-import { Container } from "@components/shared/Container";
-
 import {
   HeroSection,
   Safety,
