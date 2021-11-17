@@ -155,6 +155,8 @@ const ImageSliderViewer = ({ current }: ImageSliderViewerProps) => {
             width: "52vw",
             margin: "auto",
           }}
+          autoPlay
+          loop
         />
       </Box>
     </Box>
