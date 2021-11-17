@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 import {
   BackgroundWrapper,
   ButtonStack,
@@ -10,18 +10,174 @@ import {
   MapButton,
   TriBtnTitle,
   TriBtnContent,
+  BaseButton,
 } from "@components/shared/Button";
+import { useState } from "react";
+import { ContainerWrapper } from "@components/shared/Container";
+
+const Data = [
+  {
+    image:
+      "https://tesla-cdn.thron.com/static/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4",
+    txt: {
+      title: "Navigate on Autopilot",
+      subtitle: "Active guidance from on-ramp to off-ramp",
+    },
+  },
+  {
+    image:
+      "https://tesla-cdn.thron.com/static/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4",
+    txt: {
+      title: "Auto Lane Change",
+      subtitle: "Automatically change lanes while driving on the highway",
+    },
+  },
+  {
+    image:
+      "https://tesla-cdn.thron.com/delivery/public/video/tesla/14877527-9b58-40e9-8a5e-fc47c4afb126/bvlatuR/WEBHD/summon_1",
+    txt: {
+      title: "Summon",
+      subtitle: "Automatically retrieve your car",
+    },
+  },
+  {
+    image:
+      "https://tesla-cdn.thron.com/delivery/public/video/tesla/53faf083-f129-4c48-a28f-0f56c8ca5d90/bvlatuR/WEBHD/parking",
+    txt: {
+      title: "Autopark",
+      subtitle: "Parallel and perpendicular parking with a single touch",
+    },
+  },
+];
+
+interface SlideMeta {
+  image: string;
+  txt: {
+    title: string;
+    subtitle: string;
+  };
+}
+
+interface ImageSliderControllerProps {
+  slides: SlideMeta[];
+}
+
+const ImageSliderController = ({ slides }: ImageSliderControllerProps) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const goIndex = (index: number) => {
+    setCurrent(index);
+  };
+
+  return (
+    <>
+      <ImageSliderViewer current={slides[current]} />
+      <ImageSliderDetail currentIndex={current} goIndex={goIndex} />
+    </>
+  );
+};
+
+interface ImageSliderDetailPorps {
+  currentIndex: number;
+  goIndex: (index: number) => void;
+}
+
+const ImageSliderDetail = ({
+  currentIndex,
+  goIndex,
+}: ImageSliderDetailPorps) => {
+  return (
+    <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          margin: "0 auto",
+          width: "840px",
+        }}
+      >
+        <Grid container spacing={4} sx={{ margin: "1rem 0" }}>
+          {Data.map((data, i) => {
+            return (
+              <Grid item xs={3} key={i}>
+                <BaseButton
+                  className={currentIndex === i ? "active" : ""}
+                  sx={{
+                    boxShadow: "0 -3px 0 0 black",
+                    "&.active": {
+                      boxShadow: "0 0 0 3px black",
+                    },
+                    padding: "1rem",
+                    transition: "none",
+                    height: "100%",
+                  }}
+                  onClick={() => {
+                    goIndex(i);
+                  }}
+                >
+                  <Stack
+                    direction="column"
+                    sx={{
+                      padding: ".6rem",
+                      textAlign: "left",
+                    }}
+                    spacing={2}
+                  >
+                    <TriBtnTitle>{data.txt.title}</TriBtnTitle>
+                    <TriBtnContent>{data.txt.subtitle}</TriBtnContent>
+                  </Stack>
+                </BaseButton>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+    </Box>
+  );
+};
+
+interface ImageSliderViewerProps {
+  current: SlideMeta;
+}
+
+const ImageSliderViewer = ({ current }: ImageSliderViewerProps) => {
+  return (
+    <Box
+      sx={{
+        backgroundPosition: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundSize: "cover",
+        margin: "auto",
+        display: "flex",
+        padding: 0,
+        width: "100%",
+        position: "relative",
+      }}
+    >
+      <Box>
+        <video
+          style={{
+            width: "100%",
+          }}
+          autoPlay
+          loop
+          preload="auto"
+          src={current.image}
+        />
+      </Box>
+    </Box>
+  );
+};
 
 export function Feature() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white", height: "auto" }}>
-        <TitleWrapper>
+        <ContainerWrapper>
           <Box
             sx={{
               margin: "auto",
-              width: "55vw",
-              padding: "14vh 0 2rem 0",
+              padding: "1rem 0",
             }}
           >
             <Stack direction="column" textAlign="left" spacing={1}>
@@ -34,77 +190,9 @@ export function Feature() {
             </Stack>
           </Box>
           <Box>
-            <Stack marginBottom="3rem">
-              <Box
-                sx={{
-                  padding: "1rem 0",
-                }}
-              >
-                <video
-                  style={{
-                    width: "80vw",
-                    margin: "0 auto",
-                  }}
-                  autoPlay
-                  loop
-                  preload="auto"
-                  src="https://tesla-cdn.thron.com/static/0GSNWC_Model_S_Navigate_0.mp4-2000_OY92ST.mp4?xseo="
-                />
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1rem 0",
-                }}
-              >
-                <Stack direction="row" spacing={4}>
-                  <MapButton style={{ margin: "0" }}>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Navigate on Autopilot</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
-                        <TriBtnContent>
-                          Active guidance from on-ramp to off-ramp
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Auto Lane Change</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
-                        <TriBtnContent>
-                          Automatically change lanes while driving on the
-                          highway
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Summon</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
-                        <TriBtnContent>
-                          Automatically retrieve your car
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                  <MapButton>
-                    <ButtonStack spacing={2}>
-                      <TriBtnTitle>Autopark</TriBtnTitle>
-                      <Stack direction="column" spacing={3}>
-                        <TriBtnContent>
-                          Parallel and perpendicular parking with a single touch
-                        </TriBtnContent>
-                      </Stack>
-                    </ButtonStack>
-                  </MapButton>
-                </Stack>
-              </Box>
-            </Stack>
+            <ImageSliderController slides={Data} />
           </Box>
-        </TitleWrapper>
+        </ContainerWrapper>
       </BackgroundWrapper>
     </>
   );
