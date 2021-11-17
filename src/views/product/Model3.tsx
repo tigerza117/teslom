@@ -1,14 +1,13 @@
 import {
   HeroSection,
-  Safety,
   Perf,
   DualMotor,
   Range,
-  Autopilot,
   Interior,
   Specs,
   OrderNow,
 } from "@components/model_3/section";
+import { Safety, Autopilot } from "@components/model_s/section";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { useEffect } from "react";
 import { ViewAction } from "schema/types";
