@@ -26,7 +26,7 @@ export function Autopilot() {
           />
           <VidsOverlay />
         </Box>
-        <Box sx={{ padding: "2rem 0" }}>
+        <Box sx={{ padding: "10rem 0" }}>
           <Stack
             direction="row"
             spacing={14}
@@ -41,7 +41,7 @@ export function Autopilot() {
                 </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box width="30%">
               <SubContent>
                 Autopilot's advanced safety and convenience features are
                 designed to assist you with the most burdensome parts of
