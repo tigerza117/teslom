@@ -2,6 +2,7 @@ export const CybertruckPictureSlider = [
   {
     image: "https://www.tesla.com/xNVh4yUEc3B9/05_Desktop.jpg",
     txt: {
+      title: "",
       subtitle: "With up to 3,500 pounds of payload capacity and adjustable air suspension, Cybertruck is the most powerful tool we have ever built, " +
           "engineered with 100 cubic feet of exterior, lockable storage — including a magic tonneau cover that is strong enough to stand on.",
     },

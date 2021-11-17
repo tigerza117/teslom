@@ -40,7 +40,7 @@ export const InfoFeatureWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  padding: "5rem 0",
+  padding: "2rem 0",
 }));
 
 export const GalleryContainer = styled(Box)(({ theme }) => ({
@@ -117,12 +117,11 @@ export const OrderNowBtn = styled(Button)(({theme}) => ({
   clipPath: "polygon(0 0, 100% 0, 100% calc(100% - .625rem), calc(100% - .625rem) 100%, 0 100%)",
   fontWeight: "bold",
   fontSize: ".75rem",
-  height: "1.875rem",
+  height: "2.5rem",
+  width: "11rem",
   letterSpacing: ".125rem",
   padding: "0 1.875rem",
   position: "relative",
-  width: "165px",
-  height: "40px",
   display: "block",
   margin: "auto",
   "&:after": {
@@ -175,12 +174,23 @@ export const OrderNowBtn = styled(Button)(({theme}) => ({
 }));
 
 export const Carousel = styled(Box)(({theme}) => ({
-    width: "16px",
-    height: "16px",
-    border: "solid white 3px",
-    backgroundColor: "transparent",
-    ":hover": {
-      backgroundColor: "red",
-    },
-    cursor: "pointer",
+  width: "16px",
+  height: "16px",
+  border: "solid white 3px",
+  backgroundColor: "transparent",
+  ":hover": {
+    backgroundColor: "red",
+  },
+  cursor: "pointer",
+}));
+
+export const TitleSlideShow = styled(Box)(({theme}) => ({
+  color: "#fff",
+  fontSize: "1.5rem",
+  textTransform: "uppercase",
+  width: "360px",
+  height: "80px",
+  letterSpacing: "3px",
+  fontWeight: 700,
+  position: "relative",
 }));

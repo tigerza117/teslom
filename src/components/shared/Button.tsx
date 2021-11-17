@@ -76,3 +76,15 @@ export const Dot = styled(BaseButton)(({ theme }) => ({
     backgroundColor: "#ddd",
   },
 }));
+
+export const DotBox = styled(BaseButton)(({ theme }) => ({
+  width: "9px",
+  height: "9px",
+  borderRadius: "20%",
+  backgroundColor: "transparent",
+  border: "1px solid #ddd",
+  margin: "0 .2rem",
+  "&.active": {
+    backgroundColor: "#ddd",
+  },
+}));
