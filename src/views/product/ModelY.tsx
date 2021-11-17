@@ -1,4 +1,3 @@
-import { Container } from "@components/shared/Container";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
 import {
   HeroSection,
