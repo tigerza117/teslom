@@ -19,7 +19,7 @@ export function Installation() {
           muted
           style={{
             width: "100vw",
-            height: "67vh",
+            height: "77vh",
             objectFit: "cover",
             objectPosition: "50%",
           }}

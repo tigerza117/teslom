@@ -19,7 +19,7 @@ export function BuildLast() {
                 autoPlay
                 muted
                 style={{
-                  width: "78.5vw",
+                  width: "79vw",
                   height: "100vh",
                   objectFit: "cover",
                 }}

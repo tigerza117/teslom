@@ -12,13 +12,18 @@ export function Autopilot() {
   return (
     <>
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
-        <Box>
+        <Box
+          style={{
+            position: "relative",
+          }}
+        >
           <video
             src="https://tesla-cdn.thron.com/static/WCL9WK_autopilot.mp4-2000_QQHSUM.mp4?xseo="
             style={{
               width: "100%",
               height: "75vh",
               objectFit: "cover",
+              position: "relative",
             }}
             autoPlay
             loop
@@ -41,7 +46,7 @@ export function Autopilot() {
                 </Box>
               </Stack>
             </Box>
-            <Box width="45%">
+            <Box width="30%">
               <SubContent>
                 Autopilot enables your car to steer, accelerate and brake
                 automatically within its lane under your active supervision,

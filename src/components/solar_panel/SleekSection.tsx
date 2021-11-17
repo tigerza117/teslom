@@ -9,6 +9,7 @@ import { BtnOutline } from "@components/shared/Button";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 
 import { HorizonWrapper } from "@components/shared/Wrapper";
+import { HoriImg } from "@components/shared/Container";
 
 export function SleekAndDurable() {
   return (
@@ -20,7 +21,7 @@ export function SleekAndDurable() {
               padding: "3rem 3rem 0 3rem",
             }}
           >
-            <HorizonWrapper style={{ height: "95vh" }}>
+            <HorizonWrapper>
               <Box>
                 <Box>
                   <SubTitleContent>Design</SubTitleContent>
@@ -62,16 +63,12 @@ export function SleekAndDurable() {
             </HorizonWrapper>
           </Box>
           <Box>
-            <img
+            <HoriImg
               src="https://tesla-cdn.thron.com/delivery/public/image/tesla/9ddad34a-7766-499d-b99e-65983e68f10a/bvlatuR/std/2090x1800/_25-Design-D"
               alt=""
               loading="lazy"
               style={{
-                width: "73vw",
-                height: "100vh",
-                objectFit: "cover",
-                objectPosition: "0 100%",
-                float: "right",
+                objectPosition: "0 80%",
               }}
             />
           </Box>

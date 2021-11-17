@@ -13,7 +13,7 @@ export function SavingSection() {
       <BackgroundWrapper style={{ backgroundColor: "white" }}>
         <Box>
           <Stack direction="row">
-            <HorizonWrapper style={{height:"95vh"}}>
+            <HorizonWrapper style={{height:"98vh"}}>
               <Box
                 sx={{
                   padding: "3rem 1.5rem 0 1.5rem",
@@ -48,7 +48,7 @@ export function SavingSection() {
                 muted
                 loop
                 style={{
-                  width: "73vw",
+                  width: "78vw",
                   height: "100vh",
                   objectFit: "cover",
                   objectPosition: "50%",

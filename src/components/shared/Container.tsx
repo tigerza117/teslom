@@ -24,7 +24,7 @@ export const InfoContainer = styled(Box)(({ theme }) => ({
 
 export const VertiImg = styled("img")(({ theme }) => ({
   width: "100vw",
-  height: "66vh",
+  height: "77vh",
   objectFit: "cover",
   objectPosition: "0 50%",
 }));

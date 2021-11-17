@@ -9,6 +9,7 @@ export default function VidsOverlay() {
         position: "absolute",
         top: 0,
         padding: "10rem",
+        width: "15vw",
       }}
     >
       <Stack direction="column" spacing={10}>
