@@ -4,7 +4,6 @@ import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import gsap, { Power2 } from "gsap";
 import { ProductList } from "@constants/home";
 import { BackgroundWrapper } from "@components/shared/Wrapper";
-import { Container } from "@components/shared/Container";
 import { BaseButton } from "@components/shared/Button";
 import { useLayoutContext } from "@contexts/LayoutContext";
 import { ViewAction } from "schema/types";
